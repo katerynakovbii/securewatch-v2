@@ -32,7 +32,7 @@ jobs:
           node-version: 20
 
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
 
       - name: Install root deps
         run: npm ci
