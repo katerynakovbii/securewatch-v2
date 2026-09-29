@@ -51,6 +51,7 @@ jobs:
         run: npm run fetch-news
 
       - name: Detect trends
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FORCE_TRENDS: ${{ github.event.inputs.force_trends }}

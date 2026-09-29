@@ -24,6 +24,7 @@ export function shouldRun(lastRunAt, now, force = false) {
   if (force) return true;
   if (!lastRunAt) return true;
   const last = new Date(lastRunAt);
+  if (isNaN(last)) return true;
   return last.toISOString().slice(0, 10) !== now.toISOString().slice(0, 10);
 }
 
@@ -55,16 +56,40 @@ function meetsConfirmedThresholds(articles, sources) {
   return articles.length >= CONFIRMED_MIN_ARTICLES && sources.length >= CONFIRMED_MIN_SOURCES;
 }
 
+// Claude's response is untrusted input: drop any article whose url doesn't
+// actually exist in the corpus we sent (a hallucinated "citation" must
+// never become permanent archive evidence), source fields from the corpus
+// record rather than the model's echo, and drop any signalTypes value
+// outside our vocabulary (a junk value would render raw in the UI forever).
+export function sanitizeClusters(clusters, inWindow) {
+  const byUrl = new Map(inWindow.map(a => [a.url, a]));
+  return clusters.map(cluster => {
+    const articles = (cluster.articles || [])
+      .filter(a => a && byUrl.has(a.url))
+      .map(a => {
+        const corpus = byUrl.get(a.url);
+        return { url: corpus.url, title: corpus.title, source: corpus.source, publishedAt: corpus.publishedAt };
+      });
+    const signalTypes = (cluster.signalTypes || []).filter(s => SIGNAL_TYPES.includes(s));
+    return { ...cluster, articles, signalTypes };
+  });
+}
+
 function mergeIntoExisting(existing, cluster, today) {
   const articles = dedupeArticles(existing.articles, cluster.articles || []);
   const sources = [...new Set(articles.map(a => a.source))];
   const signalTypes = [...new Set([...(existing.signalTypes || []), ...(cluster.signalTypes || [])])];
+
   // Already-confirmed archive trends never demote. A trend newly claiming
   // confirmed status this run must actually clear the article/source
-  // thresholds, not just be asserted by the LLM (guards against one
-  // prolific source posting near-duplicate items looking like a trend).
+  // thresholds on its OWN evidence from this run (not the lifetime
+  // accumulated total), not just be asserted by the LLM (guards against a
+  // long-lived emerging trend crossing the confirmed bar on a single new
+  // article, or one prolific source posting near-duplicate items).
+  const clusterArticles = dedupeArticles([], cluster.articles || []);
+  const clusterSources = [...new Set(clusterArticles.map(a => a.source))];
   const status = existing.status === 'confirmed'
-    || (cluster.status === 'confirmed' && meetsConfirmedThresholds(articles, sources))
+    || (cluster.status === 'confirmed' && meetsConfirmedThresholds(clusterArticles, clusterSources))
     ? 'confirmed' : 'emerging';
 
   return {
@@ -89,7 +114,7 @@ function newTrendRecord(id, cluster, today) {
 
   return {
     id,
-    name: cluster.name,
+    name: cluster.name || 'Untitled trend',
     status,
     firstDetected: today,
     lastActive: today,
@@ -112,7 +137,7 @@ export function mergeTrends(clusters, archiveTrends, today) {
 
   for (const cluster of clusters) {
     const existing = cluster.id ? archiveById.get(cluster.id) : null;
-    if (existing && existing.status !== 'cooled') {
+    if (existing && existing.status !== 'cooled' && !matchedIds.has(existing.id)) {
       matchedIds.add(existing.id);
       result.push(mergeIntoExisting(existing, cluster, today));
     } else {
@@ -181,18 +206,19 @@ function parseTrendsResponse(text) {
   return Array.isArray(parsed) ? parsed : [];
 }
 
-async function callClaude(anthropic, articles, existingTrends) {
+export async function callClaude(anthropic, articles, existingTrends) {
   const response = await anthropic.messages.create({
     model: 'claude-haiku-4-5-20251001',
     max_tokens: 4000,
     messages: [{ role: 'user', content: buildTrendsPrompt(articles, existingTrends) }],
   });
-  const text = response.content[0]?.text || '[]';
+  const text = response.content[0]?.text;
+  if (!text) return null;
   try {
     return parseTrendsResponse(text);
   } catch (e) {
     console.warn('detect-trends: failed to parse Claude response:', e.message);
-    return [];
+    return null;
   }
 }
 
@@ -228,17 +254,26 @@ export async function run({ apiKey = process.env.ANTHROPIC_API_KEY, force = fals
   const inWindow = windowArticles(articles, TREND_WINDOW_DAYS, now);
   const activeExisting = archive.trends.filter(t => t.status !== 'cooled');
 
-  let clusters = [];
-  if (inWindow.length > 0 && apiKey) {
-    const anthropic = new Anthropic({ apiKey });
-    try {
-      clusters = await callClaude(anthropic, inWindow, activeExisting);
-    } catch (e) {
-      console.warn('detect-trends: Claude call failed:', e.message);
-    }
+  if (inWindow.length === 0 || !apiKey) {
+    console.warn('detect-trends: no articles in window or no API key; leaving archive unchanged.');
+    return archive;
   }
 
-  const merged = mergeTrends(clusters, archive.trends, today);
+  let clusters = null;
+  const anthropic = new Anthropic({ apiKey });
+  try {
+    clusters = await callClaude(anthropic, inWindow, activeExisting);
+  } catch (e) {
+    console.warn('detect-trends: Claude call failed:', e.message);
+  }
+
+  if (clusters === null) {
+    console.warn('detect-trends: no usable response from Claude; leaving archive unchanged.');
+    return archive;
+  }
+
+  const sanitized = sanitizeClusters(clusters, inWindow);
+  const merged = mergeTrends(sanitized, archive.trends, today);
   const pruned = pruneTrends(merged, today, TREND_RETENTION_DAYS);
 
   const payload = { lastRunAt: now.toISOString(), trends: pruned };

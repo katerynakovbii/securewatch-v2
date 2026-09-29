@@ -1,5 +1,10 @@
 import { describe, test, expect } from 'vitest';
-import { windowArticles, shouldRun, mergeTrends, pruneTrends } from './detect-trends.mjs';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import {
+  windowArticles, shouldRun, mergeTrends, pruneTrends,
+  sanitizeClusters, callClaude, run,
+} from './detect-trends.mjs';
 
 describe('windowArticles', () => {
   const now = new Date('2026-09-29T12:00:00.000Z');
@@ -37,6 +42,10 @@ describe('shouldRun', () => {
 
   test('force=true always returns true', () => {
     expect(shouldRun('2026-09-29T01:00:00.000Z', now, true)).toBe(true);
+  });
+
+  test('true when lastRunAt is not a parseable date', () => {
+    expect(shouldRun('not-a-date', new Date('2026-09-29'))).toBe(true);
   });
 });
 
@@ -197,6 +206,81 @@ describe('mergeTrends', () => {
     expect(result).toHaveLength(2);
     expect(result[0].id).not.toBe(result[1].id);
   });
+
+  test('confirm-bump uses the cluster\'s own evidence, not lifetime accumulated evidence (Fix 4)', () => {
+    const existing = [{
+      id: 't1', name: 'X', status: 'emerging', firstDetected: '2026-09-01', lastActive: '2026-09-20',
+      cooledAt: null, rationale: 'r', signalTypes: [], articleCount: 3, sources: ['A', 'B', 'C'],
+      articles: [
+        { url: 'https://a.test/1', title: 'A', source: 'A', publishedAt: '2026-09-01' },
+        { url: 'https://a.test/2', title: 'B', source: 'B', publishedAt: '2026-09-05' },
+        { url: 'https://a.test/3', title: 'C', source: 'C', publishedAt: '2026-09-10' },
+      ],
+    }];
+    const clusters = [{
+      id: 't1', name: 'X', status: 'confirmed', rationale: 'claims confirmed off one new article',
+      signalTypes: [],
+      articles: [{ url: 'https://a.test/4', title: 'D', source: 'D', publishedAt: '2026-09-28' }],
+    }];
+    const result = mergeTrends(clusters, existing, today);
+    // 4 accumulated total, but the cluster's own evidence is only 1 article —
+    // doesn't meet CONFIRMED_MIN_ARTICLES, so status must stay emerging.
+    expect(result[0].status).toBe('emerging');
+    expect(result[0].articleCount).toBe(4);
+  });
+
+  test('duplicate cluster ids in one run do not collide (Fix 5)', () => {
+    const existing = [{
+      id: 'existing-1', name: 'X', status: 'emerging', firstDetected: '2026-09-01', lastActive: '2026-09-20',
+      cooledAt: null, rationale: 'r', signalTypes: [], articleCount: 1, sources: ['A'],
+      articles: [{ url: 'https://a.test/1', title: 'A', source: 'A', publishedAt: '2026-09-01' }],
+    }];
+    const clusters = [
+      {
+        id: 'existing-1', name: 'X', status: 'emerging', rationale: 'first dup',
+        signalTypes: [],
+        articles: [{ url: 'https://a.test/2', title: 'B', source: 'B', publishedAt: '2026-09-20' }],
+      },
+      {
+        id: 'existing-1', name: 'X copy', status: 'emerging', rationale: 'second dup',
+        signalTypes: [],
+        articles: [{ url: 'https://a.test/3', title: 'C', source: 'C', publishedAt: '2026-09-21' }],
+      },
+    ];
+    const result = mergeTrends(clusters, existing, today);
+    expect(result).toHaveLength(2);
+    const merged = result.find(t => t.id === 'existing-1');
+    expect(merged.articles.map(a => a.url)).toContain('https://a.test/1');
+    expect(merged.articles.map(a => a.url)).toContain('https://a.test/2');
+    const newOne = result.find(t => t.id !== 'existing-1');
+    expect(newOne).toBeTruthy();
+    expect(newOne.articles.map(a => a.url)).toEqual(['https://a.test/3']);
+  });
+});
+
+describe('sanitizeClusters', () => {
+  const inWindow = [
+    { url: 'https://a.test/1', title: 'Real title 1', source: 'HID', publishedAt: '2026-09-20' },
+    { url: 'https://a.test/2', title: 'Real title 2', source: 'SIA', publishedAt: '2026-09-21' },
+  ];
+
+  test('drops articles with urls not present in the article window, sources fields from corpus, and filters junk signalTypes', () => {
+    const clusters = [{
+      id: null, name: 'Cluster', status: 'emerging', rationale: 'r',
+      signalTypes: ['velocity', 'made-up-signal'],
+      articles: [
+        { url: 'https://a.test/1', title: 'Hallucinated title', source: 'Wrong Source', publishedAt: '2099-01-01' },
+        { url: 'https://a.test/nonexistent', title: 'Fabricated', source: 'Nobody', publishedAt: '2026-09-20' },
+      ],
+    }];
+    const [result] = sanitizeClusters(clusters, inWindow);
+
+    expect(result.articles).toHaveLength(1);
+    expect(result.articles[0]).toEqual({
+      url: 'https://a.test/1', title: 'Real title 1', source: 'HID', publishedAt: '2026-09-20',
+    });
+    expect(result.signalTypes).toEqual(['velocity']);
+  });
 });
 
 describe('pruneTrends', () => {
@@ -215,5 +299,41 @@ describe('pruneTrends', () => {
   test('never prunes a non-cooled trend regardless of age', () => {
     const trends = [{ id: 't1', status: 'confirmed', cooledAt: null, firstDetected: '2020-01-01' }];
     expect(pruneTrends(trends, today, 365)).toHaveLength(1);
+  });
+});
+
+describe('callClaude', () => {
+  test('returns null (not []) when response text is undefined', async () => {
+    const anthropic = { messages: { create: async () => ({ content: [{ text: undefined }] }) } };
+    const result = await callClaude(anthropic, [], []);
+    expect(result).toBeNull();
+  });
+
+  test('returns null (not []) when response text fails to parse as JSON', async () => {
+    const anthropic = { messages: { create: async () => ({ content: [{ text: 'not json' }] }) } };
+    const result = await callClaude(anthropic, [], []);
+    expect(result).toBeNull();
+  });
+});
+
+describe('run() guard paths (Fix 1)', () => {
+  const trendsPath = path.join(process.cwd(), 'client', 'public', 'data', 'trends.json');
+
+  test('returns the existing archive unchanged, without writing, when no apiKey is set', async () => {
+    const before = JSON.parse(await readFile(trendsPath, 'utf8'));
+    const result = await run({ apiKey: undefined, now: new Date() });
+    const after = JSON.parse(await readFile(trendsPath, 'utf8'));
+
+    expect(result.trends).toEqual(before.trends);
+    expect(after).toEqual(before);
+  });
+
+  test('returns the existing archive unchanged, without writing, when the article window is empty', async () => {
+    const before = JSON.parse(await readFile(trendsPath, 'utf8'));
+    const result = await run({ apiKey: 'fake', now: new Date('2030-01-01T00:00:00Z') });
+    const after = JSON.parse(await readFile(trendsPath, 'utf8'));
+
+    expect(result.trends).toEqual(before.trends);
+    expect(after).toEqual(before);
   });
 });
