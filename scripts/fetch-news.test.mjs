@@ -55,6 +55,16 @@ describe('parseRSS', () => {
     const xml = `<rss><channel><item><description>no title or link</description></item></channel></rss>`;
     expect(parseRSS(xml, 'TestSource')).toHaveLength(0);
   });
+
+  test('skips items with a non-http(s) link scheme', () => {
+    const xml = `<rss><channel>
+      <item>
+        <title>Bad Link</title>
+        <link>javascript:alert(1)</link>
+      </item>
+    </channel></rss>`;
+    expect(parseRSS(xml, 'TestSource')).toHaveLength(0);
+  });
 });
 
 describe('fixDate', () => {
@@ -88,5 +98,25 @@ describe('diffNew', () => {
     const fresh = [{ url: 'https://a.test/1' }, { url: 'https://a.test/2' }];
     const { newOnes } = diffNew(fresh, []);
     expect(newOnes).toHaveLength(2);
+  });
+
+  test('retains a previously-known article missing from the fresh fetch if still within the age window', () => {
+    const fresh = [{ url: 'https://a.test/1', title: 'A', publishedAt: '2026-09-28' }];
+    const known = [
+      { url: 'https://a.test/1', title: 'A', publishedAt: '2026-09-28' },
+      { url: 'https://a.test/old-but-fresh', title: 'Old', publishedAt: '2026-09-15', analysis: 'X' },
+    ];
+    const { merged } = diffNew(fresh, known);
+    expect(merged.find(a => a.url === 'https://a.test/old-but-fresh')).toBeTruthy();
+  });
+
+  test('drops a previously-known article missing from the fresh fetch once it ages past the window', () => {
+    const fresh = [{ url: 'https://a.test/1', title: 'A', publishedAt: '2026-09-28' }];
+    const known = [
+      { url: 'https://a.test/1', title: 'A', publishedAt: '2026-09-28' },
+      { url: 'https://a.test/too-old', title: 'TooOld', publishedAt: '2026-01-01', analysis: 'X' },
+    ];
+    const { merged } = diffNew(fresh, known);
+    expect(merged.find(a => a.url === 'https://a.test/too-old')).toBeFalsy();
   });
 });

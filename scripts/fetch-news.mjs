@@ -79,7 +79,7 @@ export function parseRSS(xml, sourceName) {
       const desc    = (item.match(/<description[^>]*>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/i)?.[1] || '').trim();
       const pubDate = (item.match(/<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i)?.[1] || '').trim();
 
-      if (!title || !link) continue;
+      if (!title || !link || !/^https?:\/\//i.test(link)) continue;
 
       const summary = desc.replace(/<[^>]+>/g, '').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#039;/g,"'").slice(0, 300).trim();
 
@@ -95,7 +95,10 @@ async function fetchRSSFeed(feed) {
       headers: { 'User-Agent': 'SecureWatch/1.0 RSS Reader' },
       signal: AbortSignal.timeout(8000)
     });
-    if (!res.ok) return [];
+    if (!res.ok) {
+      console.warn(`RSS non-OK: ${feed.source}: ${res.status}`);
+      return [];
+    }
     const xml = await res.text();
     return parseRSS(xml, feed.source);
   } catch (e) {
@@ -202,13 +205,30 @@ async function fetchAllRaw() {
   }));
 }
 
+function sortShapedArticles(articles) {
+  articles.sort((a, b) => {
+    const da = a.publishedAt ? new Date(a.publishedAt) : new Date(0);
+    const db = b.publishedAt ? new Date(b.publishedAt) : new Date(0);
+    const dateDiff = db - da;
+    if (Math.abs(dateDiff) > 86400000) return dateDiff;
+    const pa = a.source === PRIORITY_SOURCE ? 1 : 0;
+    const pb = b.source === PRIORITY_SOURCE ? 1 : 0;
+    return pb - pa || dateDiff;
+  });
+  return articles;
+}
+
 // Merge freshly-crawled articles with the previous run's data: carry over
-// .analysis for URLs already analyzed, and report which URLs are genuinely
-// new (or were seen before but never got a successful analysis).
+// .analysis for URLs already analyzed, report which URLs are genuinely new
+// (or were seen before but never got a successful analysis), and retain
+// previously-known articles that dropped out of the current crawl but are
+// still within the app's MAX_ARTICLE_AGE_DAYS window.
 export function diffNew(freshArticles, knownArticles) {
   const knownByUrl = new Map(knownArticles.map(a => [a.url, a]));
+  const freshByUrl = new Map(freshArticles.map(a => [a.url, a]));
   const merged = [];
   const newOnes = [];
+
   for (const a of freshArticles) {
     const prev = knownByUrl.get(a.url);
     if (prev && prev.analysis) {
@@ -218,7 +238,19 @@ export function diffNew(freshArticles, knownArticles) {
       newOnes.push(a);
     }
   }
-  return { merged, newOnes };
+
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - MAX_ARTICLE_AGE_DAYS);
+  for (const prev of knownArticles) {
+    if (freshByUrl.has(prev.url)) continue;
+    if (prev.publishedAt) {
+      const d = new Date(prev.publishedAt);
+      if (!isNaN(d) && d < cutoff) continue;
+    }
+    merged.push(prev);
+  }
+
+  return { merged: sortShapedArticles(merged), newOnes };
 }
 
 async function analyzeOne(anthropic, article) {
