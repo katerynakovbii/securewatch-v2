@@ -1,0 +1,14 @@
+{
+  "name": "securewatch-v2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch-news": "node scripts/fetch-news.mjs",
+    "test": "vitest run scripts"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "vitest": "^4.1.5"
+  }
+}
