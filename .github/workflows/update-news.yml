@@ -3,7 +3,12 @@ name: Update news data
 on:
   schedule:
     - cron: '0 */6 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force_trends:
+        description: 'Force trend detection to run even if it already ran today'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -45,12 +50,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run fetch-news
 
+      - name: Detect trends
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE_TRENDS: ${{ github.event.inputs.force_trends }}
+        run: npm run detect-trends
+
       - name: Commit updated article data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add client/public/data/articles.json
-          git diff --cached --quiet && echo "No article data changes" || git commit -m "chore: update article data [skip ci]"
+          git add client/public/data/articles.json client/public/data/trends.json
+          git diff --cached --quiet && echo "No article data changes" || git commit -m "chore: update article and trend data [skip ci]"
           git push
 
       - name: Build client
