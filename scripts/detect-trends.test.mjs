@@ -87,7 +87,7 @@ describe('mergeTrends', () => {
     expect(result[0].signalTypes.sort()).toEqual(['source_authority', 'velocity']);
   });
 
-  test('promotes emerging to confirmed when the cluster says confirmed', () => {
+  test('promotes emerging to confirmed when the cluster says confirmed and thresholds are met', () => {
     const existing = [{
       id: 't1', name: 'X', status: 'emerging', firstDetected: '2026-09-15', lastActive: '2026-09-20',
       cooledAt: null, rationale: 'r', signalTypes: ['velocity'], articleCount: 1, sources: ['A'],
@@ -95,12 +95,42 @@ describe('mergeTrends', () => {
     }];
     const clusters = [{
       id: 't1', name: 'X', status: 'confirmed', rationale: 'now confirmed', signalTypes: [],
-      articles: [{ url: 'https://a.test/1', title: 'A', source: 'A', publishedAt: '2026-09-15' }],
+      articles: [
+        { url: 'https://a.test/1', title: 'A', source: 'A', publishedAt: '2026-09-15' },
+        { url: 'https://a.test/2', title: 'B', source: 'B', publishedAt: '2026-09-20' },
+        { url: 'https://a.test/3', title: 'C', source: 'A', publishedAt: '2026-09-22' },
+        { url: 'https://a.test/4', title: 'D', source: 'C', publishedAt: '2026-09-25' },
+      ],
     }];
     const result = mergeTrends(clusters, existing, today);
     expect(result[0].status).toBe('confirmed');
     // signalTypes retained as historical record, not cleared on promotion
     expect(result[0].signalTypes).toEqual(['velocity']);
+  });
+
+  test('does not promote to confirmed when the cluster claims confirmed but article/source thresholds are not met', () => {
+    const existing = [{
+      id: 't1', name: 'X', status: 'emerging', firstDetected: '2026-09-15', lastActive: '2026-09-20',
+      cooledAt: null, rationale: 'r', signalTypes: ['velocity'], articleCount: 1, sources: ['A'],
+      articles: [{ url: 'https://a.test/1', title: 'A', source: 'A', publishedAt: '2026-09-15' }],
+    }];
+    const clusters = [{
+      id: 't1', name: 'X', status: 'confirmed', rationale: 'claims confirmed but thin', signalTypes: [],
+      articles: [{ url: 'https://a.test/1', title: 'A', source: 'A', publishedAt: '2026-09-15' }],
+    }];
+    const result = mergeTrends(clusters, existing, today);
+    expect(result[0].status).toBe('emerging');
+  });
+
+  test('does not create a new trend as confirmed when the cluster claims confirmed but article/source thresholds are not met', () => {
+    const clusters = [{
+      id: null, name: 'Weak Claim', status: 'confirmed', rationale: 'claims confirmed but thin',
+      signalTypes: [],
+      articles: [{ url: 'https://a.test/1', title: 'A', source: 'OnlyOne', publishedAt: today }],
+    }];
+    const result = mergeTrends(clusters, [], today);
+    expect(result).toHaveLength(1);
+    expect(result[0].status).toBe('emerging');
   });
 
   test('never demotes a confirmed trend back to emerging', () => {

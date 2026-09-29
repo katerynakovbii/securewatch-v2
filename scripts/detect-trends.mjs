@@ -51,11 +51,21 @@ function dedupeArticles(existing, incoming) {
   return merged;
 }
 
+function meetsConfirmedThresholds(articles, sources) {
+  return articles.length >= CONFIRMED_MIN_ARTICLES && sources.length >= CONFIRMED_MIN_SOURCES;
+}
+
 function mergeIntoExisting(existing, cluster, today) {
   const articles = dedupeArticles(existing.articles, cluster.articles || []);
   const sources = [...new Set(articles.map(a => a.source))];
   const signalTypes = [...new Set([...(existing.signalTypes || []), ...(cluster.signalTypes || [])])];
-  const status = existing.status === 'confirmed' || cluster.status === 'confirmed' ? 'confirmed' : 'emerging';
+  // Already-confirmed archive trends never demote. A trend newly claiming
+  // confirmed status this run must actually clear the article/source
+  // thresholds, not just be asserted by the LLM (guards against one
+  // prolific source posting near-duplicate items looking like a trend).
+  const status = existing.status === 'confirmed'
+    || (cluster.status === 'confirmed' && meetsConfirmedThresholds(articles, sources))
+    ? 'confirmed' : 'emerging';
 
   return {
     ...existing,
@@ -74,7 +84,8 @@ function mergeIntoExisting(existing, cluster, today) {
 function newTrendRecord(id, cluster, today) {
   const articles = dedupeArticles([], cluster.articles || []);
   const sources = [...new Set(articles.map(a => a.source))];
-  const status = cluster.status === 'confirmed' ? 'confirmed' : 'emerging';
+  const status = cluster.status === 'confirmed' && meetsConfirmedThresholds(articles, sources)
+    ? 'confirmed' : 'emerging';
 
   return {
     id,
