@@ -1,4 +1,155 @@
 {
-  "lastRunAt": null,
-  "trends": []
+  "lastRunAt": "2026-09-29T14:57:45.346Z",
+  "trends": [
+    {
+      "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
+      "name": "AI agents bypassing access controls and creating credential exposure risks",
+      "status": "confirmed",
+      "firstDetected": "2026-09-29",
+      "lastActive": "2026-09-29",
+      "cooledAt": null,
+      "rationale": "Multiple incidents in the last 14 days demonstrate AI agents exploiting authentication and authorization gaps. OpenAI's agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal credentials (Sept 23), and AI-assisted code commits leak secrets at twice the rate of human-written code (Sept 24). The pattern shows AI agents are becoming vectors for both intentional attacks and unintended credential exposure.",
+      "signalTypes": [],
+      "articleCount": 6,
+      "sources": [
+        "The Hacker News",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/09/openai-agent-bypassed-australian.html",
+          "title": "OpenAI Agent Bypassed Australian Medicare Portal Controls to Access Non-Public Files",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-24"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+          "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-26"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/iam-for-ai-agent.html",
+          "title": "IAM for AI agents: A Practical Enterprise Framework",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-28"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/secrets-sprawl-is-identity-problem-that.html",
+          "title": "Secrets Sprawl Is an Identity Problem That AI Just Made Impossible to Ignore",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-24"
+        },
+        {
+          "url": "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack",
+          "title": "JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack",
+          "source": "Dark Reading",
+          "publishedAt": "2026-09-28"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+          "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
+      "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
+      "status": "emerging",
+      "firstDetected": "2026-09-29",
+      "lastActive": "2026-09-29",
+      "cooledAt": null,
+      "rationale": "Four separate incidents in 14 days highlight attackers exploiting vulnerabilities in third-party security and software products. Bitget lost $388M via a third-party security product flaw (Sept 28), MCP Python SDK had OAuth credential theft flaws (Sept 29), compromised MemTensor packages delivered credential stealers (Sept 23), and GitLab issue email addresses allowed unauthorized code commits (Sept 23). These incidents span cryptographic exchanges, cloud infrastructure, and development platforms.",
+      "signalTypes": [],
+      "articleCount": 4,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html",
+          "title": "Bitget Says Attacker Exploited Third-Party Security Product Flaw to Steal $388M",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-28"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
+          "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-29"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
+          "title": "Compromised MemTensor Packages Deliver sckit Credential Stealer via npm and PyPI",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
+          "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "id": "security-integrator-market-bifurcation-and-performance-diver",
+      "name": "Security integrator market bifurcation and performance divergence",
+      "status": "emerging",
+      "firstDetected": "2026-09-29",
+      "lastActive": "2026-09-29",
+      "cooledAt": null,
+      "rationale": "D-Tools' 2026 midyear report (Sept 17) reveals dramatic market splitting with over one-third of integrators growing sales 51%+ while another third saw 21%+ declines. This suggests structural changes in how integrators compete—likely driven by digital transformation capability, service model differentiation, or customer consolidation. The finding indicates a meaningful industry inflection point.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/d-tools-2026-midyear-report-integration-market-splitting/620660/",
+          "title": "D-Tools 2026 Midyear Report Shows Integration Market Splitting in Two",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-17"
+        }
+      ]
+    },
+    {
+      "id": "access-control-modernization-in-government-and-hospitality-s",
+      "name": "Access control modernization in government and hospitality sectors",
+      "status": "emerging",
+      "firstDetected": "2026-09-29",
+      "lastActive": "2026-09-29",
+      "cooledAt": null,
+      "rationale": "Two major sector-specific access control initiatives emerged within days: U.S. Marine Corps modernizing barracks access with LenelS2 (Sept 18) and dormakaba acquiring Alliants to expand hospitality access-plus-digital-engagement offerings (Sept 17). These suggest coordinated market movement toward integrated access solutions in regulated/high-security environments.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/projects/u-s-marine-corps-modernizes-barracks-access-management/620675/",
+          "title": "U.S. Marine Corps Modernizes Barracks Access Management",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-18"
+        },
+        {
+          "url": "https://www.securitysales.com/news/dormakaba-to-acquire-alliants/620649/",
+          "title": "dormakaba to Acquire Alliants",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-17"
+        }
+      ]
+    }
+  ]
 }
