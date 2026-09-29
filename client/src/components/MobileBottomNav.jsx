@@ -42,6 +42,7 @@ function NavBtn({ active, onClick, label, badge, dot, children, ...rest }) {
 export default function MobileBottomNav({ tab, setTab, starCount, filterDrawerOpen, setFilterDrawerOpen, hasActiveFilter }) {
   function handleFeed() { setTab('feed'); setFilterDrawerOpen(false); }
   function handleStarred() { setTab('starred'); setFilterDrawerOpen(false); }
+  function handleTrends() { setTab('trends'); setFilterDrawerOpen(false); }
   function handleFilter() { setFilterDrawerOpen(!filterDrawerOpen); }
 
   return (
@@ -70,6 +71,12 @@ export default function MobileBottomNav({ tab, setTab, starCount, filterDrawerOp
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+        </svg>
+      </NavBtn>
+
+      <NavBtn active={tab === 'trends' && !filterDrawerOpen} onClick={handleTrends} label="Trends">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="3 17 9 11 13 15 21 6" /><polyline points="15 6 21 6 21 12" />
         </svg>
       </NavBtn>
     </div>

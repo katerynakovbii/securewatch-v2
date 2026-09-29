@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "fetch-news": "node scripts/fetch-news.mjs",
+    "detect-trends": "node scripts/detect-trends.mjs",
     "test": "vitest run scripts"
   },
   "devDependencies": {

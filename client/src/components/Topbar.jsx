@@ -138,7 +138,7 @@ export default function Topbar({ tab, setTab, starCount, fetchedAt, loading, day
 
       {/* Tabs */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 2, background: '#171c27', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 8, padding: 3 }}>
-        {['feed', 'starred'].map(t => (
+        {['feed', 'starred', 'trends'].map(t => (
           <button key={t} onClick={() => setTab(t)} style={{
             fontFamily: 'IBM Plex Mono,monospace', fontSize: 11, padding: '6px 16px',
             borderRadius: 5, border: 'none', cursor: 'pointer', letterSpacing: '0.04em',

@@ -5,13 +5,16 @@ import FeedPanel from './components/FeedPanel.jsx';
 import DetailPanel from './components/DetailPanel.jsx';
 import MobileBottomNav from './components/MobileBottomNav.jsx';
 import FilterDrawer from './components/FilterDrawer.jsx';
+import TrendsPanel from './components/TrendsPanel.jsx';
 import { useNews } from './hooks/useApi.js';
+import { useTrends } from './hooks/useTrends.js';
 import { useStarred } from './hooks/useStarred.js';
 import { useMobile } from './hooks/useMobile.js';
 import { filterArticles, sortArticles, topicCounts } from './utils.js';
 
 export default function App() {
   const { articles, loading, error, fetchedAt, days, load, refresh, switchRange } = useNews();
+  const { trends, loading: trendsLoading, error: trendsError, lastRunAt, load: loadTrends } = useTrends();
   const { starred, toggle, isStarred } = useStarred();
   const isMobile = useMobile();
 
@@ -22,7 +25,7 @@ export default function App() {
   const [selected, setSelected]                 = useState(null);
   const [filterDrawerOpen, setFilterDrawerOpen] = useState(false);
 
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); loadTrends(); }, []);
   useEffect(() => { if (!isMobile) setFilterDrawerOpen(false); }, [isMobile]);
 
   const pool = tab === 'starred'
@@ -50,27 +53,40 @@ export default function App() {
         isMobile={isMobile}
       />
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
-        {!isMobile && (
-          <Sidebar
-            topic={topic} setTopic={setTopic}
-            sort={sort} setSort={setSort}
-            counts={counts}
-            totalSources={new Set(articles.map(a => a.source)).size}
-            starCount={starred.size}
+        {tab === 'trends' ? (
+          <TrendsPanel
+            trends={trends}
+            loading={trendsLoading}
+            error={trendsError}
+            lastRunAt={lastRunAt}
+            onRetry={loadTrends}
+            isMobile={isMobile}
           />
+        ) : (
+          <>
+            {!isMobile && (
+              <Sidebar
+                topic={topic} setTopic={setTopic}
+                sort={sort} setSort={setSort}
+                counts={counts}
+                totalSources={new Set(articles.map(a => a.source)).size}
+                starCount={starred.size}
+              />
+            )}
+            <FeedPanel
+              articles={displayed}
+              loading={loading}
+              error={error}
+              selected={selected}
+              isStarred={isStarred}
+              onSelect={setSelected}
+              onToggleStar={toggle}
+              onRetry={load}
+              tab={tab}
+              isMobile={isMobile}
+            />
+          </>
         )}
-        <FeedPanel
-          articles={displayed}
-          loading={loading}
-          error={error}
-          selected={selected}
-          isStarred={isStarred}
-          onSelect={setSelected}
-          onToggleStar={toggle}
-          onRetry={load}
-          tab={tab}
-          isMobile={isMobile}
-        />
       </div>
       {selected && (
         <DetailPanel

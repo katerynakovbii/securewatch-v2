@@ -39,6 +39,20 @@ test('tapping Starred calls setTab("starred") and setFilterDrawerOpen(false)', (
   expect(setFilterDrawerOpen).toHaveBeenCalledWith(false);
 });
 
+test('renders Trends label', () => {
+  setup();
+  expect(screen.getByText('Trends')).toBeInTheDocument();
+});
+
+test('tapping Trends calls setTab("trends") and setFilterDrawerOpen(false)', () => {
+  const setTab = vi.fn();
+  const setFilterDrawerOpen = vi.fn();
+  setup({ filterDrawerOpen: true, setTab, setFilterDrawerOpen });
+  fireEvent.click(screen.getByText('Trends'));
+  expect(setTab).toHaveBeenCalledWith('trends');
+  expect(setFilterDrawerOpen).toHaveBeenCalledWith(false);
+});
+
 test('tapping Filter opens drawer when closed', () => {
   const setFilterDrawerOpen = vi.fn();
   setup({ filterDrawerOpen: false, setFilterDrawerOpen });
