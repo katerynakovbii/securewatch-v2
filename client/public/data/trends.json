@@ -1,16 +1,16 @@
 {
-  "lastRunAt": "2026-09-29T14:57:45.346Z",
+  "lastRunAt": "2026-09-30T03:07:00.871Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-09-29",
+      "lastActive": "2026-09-30",
       "cooledAt": null,
-      "rationale": "Multiple incidents in the last 14 days demonstrate AI agents exploiting authentication and authorization gaps. OpenAI's agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal credentials (Sept 23), and AI-assisted code commits leak secrets at twice the rate of human-written code (Sept 24). The pattern shows AI agents are becoming vectors for both intentional attacks and unintended credential exposure.",
+      "rationale": "Five separate incidents across the 14-day window demonstrate AI agents and AI-assisted development creating credential exposure and access control bypass risks. OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal Windows credentials (Sept 23), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), and MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29). These incidents span government systems, malware infrastructure, development practices, and cloud SDKs.",
       "signalTypes": [],
-      "articleCount": 6,
+      "articleCount": 7,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -51,6 +51,12 @@
           "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
           "source": "The Hacker News",
           "publishedAt": "2026-09-23"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
+          "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-29"
         }
       ]
     },
@@ -59,9 +65,9 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-09-29",
+      "lastActive": "2026-09-30",
       "cooledAt": null,
-      "rationale": "Four separate incidents in 14 days highlight attackers exploiting vulnerabilities in third-party security and software products. Bitget lost $388M via a third-party security product flaw (Sept 28), MCP Python SDK had OAuth credential theft flaws (Sept 29), compromised MemTensor packages delivered credential stealers (Sept 23), and GitLab issue email addresses allowed unauthorized code commits (Sept 23). These incidents span cryptographic exchanges, cloud infrastructure, and development platforms.",
+      "rationale": "Four major incidents in 14 days demonstrate attackers exploiting vulnerabilities in third-party security and development software to achieve high-impact breaches. Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), compromised MemTensor packages delivered credential stealers across npm and PyPI (Sept 23), and GitLab's issue email feature acted as an undisclosed credential allowing unauthorized code commits (Sept 23). The incidents span financial exchanges, cloud infrastructure, package repositories, and DevOps platforms.",
       "signalTypes": [],
       "articleCount": 4,
       "sources": [
@@ -99,14 +105,14 @@
       "name": "Security integrator market bifurcation and performance divergence",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-09-29",
+      "lastActive": "2026-09-30",
       "cooledAt": null,
-      "rationale": "D-Tools' 2026 midyear report (Sept 17) reveals dramatic market splitting with over one-third of integrators growing sales 51%+ while another third saw 21%+ declines. This suggests structural changes in how integrators compete—likely driven by digital transformation capability, service model differentiation, or customer consolidation. The finding indicates a meaningful industry inflection point.",
+      "rationale": "Multiple articles confirm structural market bifurcation in the security integrator space. D-Tools' 2026 midyear report (Sept 17) found over one-third of integrators grew sales 51%+ while another third saw 21%+ declines, indicating two divergent market tiers. ESA's new Industry Performance Index launch (Sept 28) was explicitly designed to help integrators understand performance gaps. A Security Sales editorial (Sept 18) noted that high-performing integrators analyze margins like CFOs, suggesting differentiation driven by business acumen rather than just volume. GSX 2026 record attendance (Sept 28) indicates continued industry consolidation and professionalization.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 1,
+      "articleCount": 4,
       "sources": [
         "Security Sales"
       ],
@@ -116,6 +122,24 @@
           "title": "D-Tools 2026 Midyear Report Shows Integration Market Splitting in Two",
           "source": "Security Sales",
           "publishedAt": "2026-09-17"
+        },
+        {
+          "url": "https://www.securitysales.com/news/esa-inaugural-industry-performance-index-security-integrators/620766/",
+          "title": "ESA Debuts Industry Performance Index for Security Integrators",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-28"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/from-the-editor-security-integrator-margin-and-where-it-lives/620668/",
+          "title": "From the Editor: Security Integrator Margin and Where It Lives",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-18"
+        },
+        {
+          "url": "https://www.securitysales.com/news/gsx-2026-more-than-16k-registrants-100-countries/620759/",
+          "title": "GSX 2026 Welcomes More Than 16K Registrants from 100 Countries",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-28"
         }
       ]
     },
@@ -124,15 +148,15 @@
       "name": "Access control modernization in government and hospitality sectors",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-09-29",
+      "lastActive": "2026-09-30",
       "cooledAt": null,
-      "rationale": "Two major sector-specific access control initiatives emerged within days: U.S. Marine Corps modernizing barracks access with LenelS2 (Sept 18) and dormakaba acquiring Alliants to expand hospitality access-plus-digital-engagement offerings (Sept 17). These suggest coordinated market movement toward integrated access solutions in regulated/high-security environments.",
+      "rationale": "Two major sector-specific access control modernization initiatives were announced within days, signaling coordinated market movement. The U.S. Marine Corps modernized barracks access management with LenelS2 (Sept 18), supporting the Barracks 2030 modernization effort with centralized management and enhanced security. Dormakaba acquired Alliants (Sept 17) to expand its hospitality offering beyond traditional physical access into integrated digital guest engagement. Both deals target high-security or regulated environments seeking to blend physical access control with operational efficiency and digital integration.",
       "signalTypes": [
         "claim_magnitude",
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales"
       ],
@@ -148,6 +172,43 @@
           "title": "dormakaba to Acquire Alliants",
           "source": "Security Sales",
           "publishedAt": "2026-09-17"
+        },
+        {
+          "url": "https://www.securitysales.com/news/keenfinity-group-two-focused-security-businesses/620682/",
+          "title": "Keenfinity Group Creates Two Focused Security Businesses",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "id": "malware-exploiting-legitimate-security-tools-and-driver-infr",
+      "name": "Malware exploiting legitimate security tools and driver infrastructure",
+      "status": "emerging",
+      "firstDetected": "2026-09-30",
+      "lastActive": "2026-09-30",
+      "cooledAt": null,
+      "rationale": "Two incidents within days (Sept 26–28) show malware campaigns abusing legitimate software and kernel-level infrastructure to evade detection. Lunex stealer malware abuses AMD drivers to disable security monitoring while stealing browser credentials (Sept 26), and CLOSEDQUORUM malware uses AI models to dynamically choose theft targets (Sept 23). Both represent a pattern of attackers weaponizing the security tools and low-level infrastructure meant to protect systems, raising questions about driver attestation and behavioral analysis.",
+      "signalTypes": [
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+          "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-26"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+          "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
         }
       ]
     }
