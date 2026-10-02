@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-01T03:13:30.463Z",
+  "lastRunAt": "2026-10-02T03:14:50.404Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-01",
+      "lastActive": "2026-10-02",
       "cooledAt": null,
-      "rationale": "Five separate incidents across the 14-day window demonstrate AI agents and AI-assisted development creating credential exposure and access control bypass risks. OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal Windows credentials (Sept 23), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), and Zero Trust frameworks are being reconsidered due to AI agent visibility gaps (Sept 26). These incidents span government systems, malware infrastructure, development practices, and cloud SDKs.",
+      "rationale": "Five separate incidents across the 14-day window confirm AI agents and AI-assisted development creating credential exposure and access control bypass risks. OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal Windows credentials (Sept 23), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), and Zero Trust frameworks are being reconsidered due to AI agent visibility gaps (Sept 26). These incidents span government systems, malware infrastructure, development practices, and cloud SDKs across multiple independent sources.",
       "signalTypes": [],
       "articleCount": 7,
       "sources": [
@@ -65,7 +65,7 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-01",
+      "lastActive": "2026-10-02",
       "cooledAt": null,
       "rationale": "Four major incidents in 14 days demonstrate attackers exploiting vulnerabilities in third-party security and development software to achieve high-impact breaches. Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), compromised MemTensor packages delivered credential stealers across npm and PyPI (Sept 23), and GitLab's issue email feature acted as an undisclosed credential allowing unauthorized code commits (Sept 23). The incidents span financial exchanges, cloud infrastructure, package repositories, and DevOps platforms.",
       "signalTypes": [],
@@ -102,17 +102,17 @@
     },
     {
       "id": "security-integrator-market-bifurcation-and-performance-diver",
-      "name": "Security integrator market bifurcation and performance divergence",
+      "name": "Security integrator market consolidation and professionalization accelerating",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-01",
+      "lastActive": "2026-10-02",
       "cooledAt": null,
-      "rationale": "Multiple articles from Security Sales confirm structural market bifurcation in the security integrator space. ESA's new Industry Performance Index launch (Sept 28) was explicitly designed to help integrators understand performance gaps. A Security Sales editorial (Sept 18) noted that high-performing integrators analyze margins like CFOs, suggesting differentiation driven by business acumen rather than just volume. GSX 2026 record attendance of 16K registrants from 100 countries (Sept 28) indicates continued industry consolidation and professionalization. Pye-Barker's acquisition of Union AlarmTronic (Sept 30) demonstrates the consolidation dynamic.",
+      "rationale": "Multiple articles confirm structural market consolidation in the security integrator space through both acquisitions and new performance analytics. ESA's new Industry Performance Index launch (Sept 28) was explicitly designed to help integrators understand and address performance gaps. GSX 2026 record attendance of 16K registrants from 100 countries (Sept 28) indicates continued industry consolidation and professionalization. Acquisitions by Securitas Technology (Sonitrol El Paso, Sept 30) and Pye-Barker (Union AlarmTronic, Sept 30) demonstrate the ongoing consolidation dynamic.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 5,
+      "articleCount": 6,
       "sources": [
         "Security Sales"
       ],
@@ -146,16 +146,128 @@
           "title": "Pye-Barker Acquires Springfield, New Jersey&#8217;s Union AlarmTronic",
           "source": "Security Sales",
           "publishedAt": "2026-09-30"
+        },
+        {
+          "url": "https://www.securitysales.com/news/securitas-technology-sonitrol-el-paso-acquisition/620809/",
+          "title": "Securitas Technology Announces Sonitrol El Paso Acquisition",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "id": "malware-exploiting-legitimate-security-tools-and-driver-infr",
+      "name": "Malware exploiting legitimate security tools and driver infrastructure to evade detection",
+      "status": "emerging",
+      "firstDetected": "2026-09-30",
+      "lastActive": "2026-10-02",
+      "cooledAt": null,
+      "rationale": "Two separate malware campaigns in the 14-day window demonstrate attackers weaponizing legitimate software and kernel-level infrastructure meant to protect systems. Lunex stealer malware abuses AMD drivers to disable security monitoring while stealing browser credentials (Sept 26). CLOSEDQUORUM malware uses AI model voting to dynamically select theft targets while evading traditional detection (Sept 23). Both incidents show a pattern of attackers bypassing security infrastructure rather than defeating it directly, raising questions about driver attestation and behavioral analysis effectiveness.",
+      "signalTypes": [
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+          "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-26"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+          "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "id": "osdp-training-and-standards-adoption-initiatives",
+      "name": "OSDP training and standards adoption reaching market inflection point",
+      "status": "emerging",
+      "firstDetected": "2026-10-01",
+      "lastActive": "2026-10-02",
+      "cooledAt": null,
+      "rationale": "SIA and AMAG Technology launched a new tiered OSDP (Open Supervised Device Protocol) training program (Sept 24) aimed at equipping sales and marketing professionals with foundational knowledge. This signals industry recognition that OSDP adoption requires education beyond technical implementation, suggesting OSDP standardization is becoming a competitive differentiator in access control systems.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/sia-amag-technology-osdp-training-program/620735/",
+          "title": "SIA, AMAG Technology Launching New OSDP Training Program",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "visual-analytics-and-ai-powered-platform-integration-in-acce",
+      "name": "AI-powered visual analytics platforms consolidating multiple security functions",
+      "status": "emerging",
+      "firstDetected": "2026-10-01",
+      "lastActive": "2026-10-02",
+      "cooledAt": null,
+      "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). This represents a market trend toward integrated, AI-enhanced platforms that consolidate multiple security functions into unified visual and operational dashboards, moving beyond siloed access control systems.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/projects/securitas-technology-iqsight-win-best-electronic-security-project/620722/",
+          "title": "Securitas Technology, IQSIGHT Win Best Electronic Security Project",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "video-evidence-integrity-and-authentication-gaining-industry",
+      "name": "Video evidence integrity and authentication gaining industry focus",
+      "status": "emerging",
+      "firstDetected": "2026-10-02",
+      "lastActive": "2026-10-02",
+      "cooledAt": null,
+      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This signals emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical for physical security deployments, particularly as video surveillance continues to proliferate.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/swear-video-evidence-integrity-protection-program/620816/",
+          "title": "SWEAR Launches Video Evidence Integrity Protection Program",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-01"
         }
       ]
     },
     {
       "id": "access-control-modernization-in-government-and-hospitality-s",
       "name": "Access control modernization in government and hospitality sectors",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-09-29",
       "lastActive": "2026-10-01",
-      "cooledAt": null,
+      "cooledAt": "2026-10-02",
       "rationale": "Two major sector-specific access control modernization initiatives were announced within days. The U.S. Marine Corps modernized barracks access management with LenelS2 (Sept 18), supporting the Barracks 2030 modernization effort with centralized management and enhanced security. Keenfinity Group created MiCOS as a focused access control solutions business (Sept 18), signaling renewed market demand for specialized access control. Both initiatives target high-security or regulated environments seeking to blend physical access control with operational efficiency.",
       "signalTypes": [
         "claim_magnitude",
@@ -184,87 +296,6 @@
           "title": "Keenfinity Group Creates Two Focused Security Businesses",
           "source": "Security Sales",
           "publishedAt": "2026-09-18"
-        }
-      ]
-    },
-    {
-      "id": "malware-exploiting-legitimate-security-tools-and-driver-infr",
-      "name": "Malware exploiting legitimate security tools and driver infrastructure",
-      "status": "emerging",
-      "firstDetected": "2026-09-30",
-      "lastActive": "2026-10-01",
-      "cooledAt": null,
-      "rationale": "Two separate incidents within days (Sept 26–28) show malware campaigns abusing legitimate software and kernel-level infrastructure to evade detection. Lunex stealer malware abuses AMD drivers to disable security monitoring while stealing browser credentials (Sept 26). CLOSEDQUORUM malware uses AI models to dynamically choose theft targets (Sept 23). Both represent a pattern of attackers weaponizing the security tools and low-level infrastructure meant to protect systems, raising questions about driver attestation and behavioral analysis.",
-      "signalTypes": [
-        "velocity",
-        "cross_topic"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
-          "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
-          "source": "The Hacker News",
-          "publishedAt": "2026-09-26"
-        },
-        {
-          "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
-          "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
-          "source": "The Hacker News",
-          "publishedAt": "2026-09-23"
-        }
-      ]
-    },
-    {
-      "id": "osdp-training-and-standards-adoption-initiatives",
-      "name": "OSDP training and standards adoption initiatives",
-      "status": "emerging",
-      "firstDetected": "2026-10-01",
-      "lastActive": "2026-10-01",
-      "cooledAt": null,
-      "rationale": "SIA and AMAG Technology launched a new tiered OSDP (Open Supervised Device Protocol) training program (Sept 24) aimed at equipping sales and marketing professionals with foundational knowledge. This signals industry recognition that OSDP adoption requires education beyond technical implementation, suggesting OSDP is reaching a market inflection point where standardization knowledge is becoming a competitive differentiator.",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/sia-amag-technology-osdp-training-program/620735/",
-          "title": "SIA, AMAG Technology Launching New OSDP Training Program",
-          "source": "Security Sales",
-          "publishedAt": "2026-09-24"
-        }
-      ]
-    },
-    {
-      "id": "visual-analytics-and-ai-powered-platform-integration-in-acce",
-      "name": "Visual analytics and AI-powered platform integration in access management",
-      "status": "emerging",
-      "firstDetected": "2026-10-01",
-      "lastActive": "2026-10-01",
-      "cooledAt": null,
-      "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). This represents a market trend toward integrated, AI-enhanced platforms that consolidate multiple security functions into unified visual and operational dashboards, moving beyond siloed access control systems.",
-      "signalTypes": [
-        "source_authority",
-        "claim_magnitude"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/projects/securitas-technology-iqsight-win-best-electronic-security-project/620722/",
-          "title": "Securitas Technology, IQSIGHT Win Best Electronic Security Project",
-          "source": "Security Sales",
-          "publishedAt": "2026-09-24"
         }
       ]
     }
