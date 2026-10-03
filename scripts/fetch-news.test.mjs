@@ -68,6 +68,8 @@ describe('isPhysicalSecurity', () => {
     ['IAM', 'Identity and access management startup raises seed', ''],
     ['MSSP', 'Managed security services provider expands SOC', ''],
     ['lowercase vms', 'attackers encrypt esxi vms overnight', ''],
+    ['chief security officer', 'Former Uber chief security officer Joe Sullivan speaks out', ''],
+    ['SOC monitoring center', 'MDR provider opens 24/7 SOC monitoring center', ''],
   ])('not physical: %s', (_label, title, summary) => {
     expect(isPhysicalSecurity(title, summary)).toBe(false);
   });

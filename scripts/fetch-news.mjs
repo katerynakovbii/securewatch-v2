@@ -85,6 +85,8 @@ const PHYSICAL_GUARDS = [
   /\bsounds? the alarm\b/g,
   /\balarm bells\b/g,
   /\binformation security officers?\b/g,
+  /\b(?:chief|field) security officers?\b/g,
+  /\b(?:security operations|soc|network|cyber(?:security)?|it) monitoring cent(?:er|re)s?\b/g,
 ];
 
 const PHYSICAL_TERMS = [
