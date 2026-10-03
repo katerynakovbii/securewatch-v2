@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-02T03:14:50.404Z",
+  "lastRunAt": "2026-10-03T03:00:40.841Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "Five separate incidents across the 14-day window confirm AI agents and AI-assisted development creating credential exposure and access control bypass risks. OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal Windows credentials (Sept 23), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), and Zero Trust frameworks are being reconsidered due to AI agent visibility gaps (Sept 26). These incidents span government systems, malware infrastructure, development practices, and cloud SDKs across multiple independent sources.",
+      "rationale": "Six articles across 14 days confirm AI agents and AI-assisted development creating credential exposure and access control bypass risks. OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal Windows credentials (Sept 23), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), Zero Trust frameworks require reconsideration due to AI agent visibility gaps (Sept 26), and IAM for AI agents is described as a critical enterprise framework (Sept 28).",
       "signalTypes": [],
       "articleCount": 7,
       "sources": [
@@ -65,9 +65,9 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "Four major incidents in 14 days demonstrate attackers exploiting vulnerabilities in third-party security and development software to achieve high-impact breaches. Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), compromised MemTensor packages delivered credential stealers across npm and PyPI (Sept 23), and GitLab's issue email feature acted as an undisclosed credential allowing unauthorized code commits (Sept 23). The incidents span financial exchanges, cloud infrastructure, package repositories, and DevOps platforms.",
+      "rationale": "Four major incidents across 14 days demonstrate attackers exploiting vulnerabilities in third-party security and development software to achieve substantial breaches. Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), compromised MemTensor packages delivered credential stealers across npm and PyPI (Sept 23), and GitLab's issue email feature enabled unauthorized code commits and CI job execution (Sept 23). These incidents span financial services, cloud SDKs, package repositories, and DevOps platforms.",
       "signalTypes": [],
       "articleCount": 4,
       "sources": [
@@ -105,9 +105,9 @@
       "name": "Security integrator market consolidation and professionalization accelerating",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "Multiple articles confirm structural market consolidation in the security integrator space through both acquisitions and new performance analytics. ESA's new Industry Performance Index launch (Sept 28) was explicitly designed to help integrators understand and address performance gaps. GSX 2026 record attendance of 16K registrants from 100 countries (Sept 28) indicates continued industry consolidation and professionalization. Acquisitions by Securitas Technology (Sonitrol El Paso, Sept 30) and Pye-Barker (Union AlarmTronic, Sept 30) demonstrate the ongoing consolidation dynamic.",
+      "rationale": "Multiple articles confirm structural market consolidation in the security integrator space through acquisitions and new performance analytics tools. ESA launched its Industry Performance Index (Sept 28) to help integrators understand performance gaps. GSX 2026 achieved record attendance of 16K registrants from 100 countries (Sept 28). Securitas Technology acquired Sonitrol El Paso (Sept 30) and Pye-Barker acquired Union AlarmTronic (Sept 30), demonstrating ongoing consolidation dynamics in the market.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -160,9 +160,9 @@
       "name": "Malware exploiting legitimate security tools and driver infrastructure to evade detection",
       "status": "emerging",
       "firstDetected": "2026-09-30",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "Two separate malware campaigns in the 14-day window demonstrate attackers weaponizing legitimate software and kernel-level infrastructure meant to protect systems. Lunex stealer malware abuses AMD drivers to disable security monitoring while stealing browser credentials (Sept 26). CLOSEDQUORUM malware uses AI model voting to dynamically select theft targets while evading traditional detection (Sept 23). Both incidents show a pattern of attackers bypassing security infrastructure rather than defeating it directly, raising questions about driver attestation and behavioral analysis effectiveness.",
+      "rationale": "Two separate malware campaigns across 14 days demonstrate attackers weaponizing legitimate software and kernel-level infrastructure meant to protect systems. Lunex stealer malware abuses AMD drivers to disable security monitoring while stealing browser credentials (Sept 26). CLOSEDQUORUM malware uses AI model voting to dynamically select theft targets while evading traditional detection (Sept 23). Both incidents show attackers bypassing security infrastructure at the driver level rather than defeating detection through obfuscation alone.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -191,12 +191,13 @@
       "name": "OSDP training and standards adoption reaching market inflection point",
       "status": "emerging",
       "firstDetected": "2026-10-01",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "SIA and AMAG Technology launched a new tiered OSDP (Open Supervised Device Protocol) training program (Sept 24) aimed at equipping sales and marketing professionals with foundational knowledge. This signals industry recognition that OSDP adoption requires education beyond technical implementation, suggesting OSDP standardization is becoming a competitive differentiator in access control systems.",
+      "rationale": "SIA and AMAG Technology launched a new tiered OSDP training program (Sept 24) aimed at equipping sales and marketing professionals with foundational knowledge. This signals industry recognition that OSDP adoption requires education beyond technical implementation, suggesting OSDP standardization is becoming a competitive differentiator in access control systems.",
       "signalTypes": [
         "source_authority",
-        "velocity"
+        "velocity",
+        "cross_topic"
       ],
       "articleCount": 1,
       "sources": [
@@ -216,12 +217,13 @@
       "name": "AI-powered visual analytics platforms consolidating multiple security functions",
       "status": "emerging",
       "firstDetected": "2026-10-01",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). This represents a market trend toward integrated, AI-enhanced platforms that consolidate multiple security functions into unified visual and operational dashboards, moving beyond siloed access control systems.",
+      "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). This represents a market trend toward integrated, AI-enhanced platforms that consolidate multiple security functions into unified visual and operational dashboards, moving beyond siloed systems.",
       "signalTypes": [
         "source_authority",
-        "claim_magnitude"
+        "claim_magnitude",
+        "cross_topic"
       ],
       "articleCount": 1,
       "sources": [
@@ -241,12 +243,14 @@
       "name": "Video evidence integrity and authentication gaining industry focus",
       "status": "emerging",
       "firstDetected": "2026-10-02",
-      "lastActive": "2026-10-02",
+      "lastActive": "2026-10-03",
       "cooledAt": null,
-      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This signals emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical for physical security deployments, particularly as video surveillance continues to proliferate.",
+      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This signals emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical for physical security deployments.",
       "signalTypes": [
         "claim_magnitude",
-        "velocity"
+        "velocity",
+        "source_authority",
+        "cross_topic"
       ],
       "articleCount": 1,
       "sources": [
@@ -258,6 +262,31 @@
           "title": "SWEAR Launches Video Evidence Integrity Protection Program",
           "source": "Security Sales",
           "publishedAt": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "id": "ai-overlay-solutions-for-legacy-camera-systems-enabling-cost",
+      "name": "AI overlay solutions for legacy camera systems enabling cost-effective modernization",
+      "status": "emerging",
+      "firstDetected": "2026-10-03",
+      "lastActive": "2026-10-03",
+      "cooledAt": null,
+      "rationale": "Security Sales reports that the next wave of AI adoption will layer onto existing camera infrastructure rather than requiring complete system replacement, fundamentally changing integrator business models (Oct 2). This represents a significant shift toward backward-compatible AI deployment that reduces customer capital requirements and creates new service opportunities for integrators.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/how-to-add-security-ai-to-the-camera-already-on-the-wall/620822/",
+          "title": "How to Add Security AI to the Camera Already on the Wall",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-02"
         }
       ]
     },
