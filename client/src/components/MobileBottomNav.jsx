@@ -43,6 +43,7 @@ export default function MobileBottomNav({ tab, setTab, starCount, filterDrawerOp
   function handleFeed() { setTab('feed'); setFilterDrawerOpen(false); }
   function handleStarred() { setTab('starred'); setFilterDrawerOpen(false); }
   function handleTrends() { setTab('trends'); setFilterDrawerOpen(false); }
+  function handlePsTrends() { setTab('ps-trends'); setFilterDrawerOpen(false); }
   function handleFilter() { setFilterDrawerOpen(!filterDrawerOpen); }
 
   return (
@@ -77,6 +78,12 @@ export default function MobileBottomNav({ tab, setTab, starCount, filterDrawerOp
       <NavBtn active={tab === 'trends' && !filterDrawerOpen} onClick={handleTrends} label="Trends">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="3 17 9 11 13 15 21 6" /><polyline points="15 6 21 6 21 12" />
+        </svg>
+      </NavBtn>
+      <NavBtn active={tab === 'ps-trends' && !filterDrawerOpen} onClick={handlePsTrends} label="PS Trends">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="3 17 9 11 13 15 21 6" /><polyline points="15 6 21 6 21 12" />
+          <circle cx="5" cy="5" r="3" fill="#4fffb0" stroke="none" />
         </svg>
       </NavBtn>
     </div>

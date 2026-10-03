@@ -86,3 +86,25 @@ test('does not show green dot when hasActiveFilter is false', () => {
   const { container } = setup({ hasActiveFilter: false });
   expect(container.querySelector('[data-testid="filter-dot"]')).not.toBeInTheDocument();
 });
+
+
+
+test('renders a PS Trends button', () => {
+  setup();
+  expect(screen.getByText('PS Trends')).toBeInTheDocument();
+});
+
+test('tapping PS Trends calls setTab("ps-trends") and setFilterDrawerOpen(false)', () => {
+  const setTab = vi.fn();
+  const setFilterDrawerOpen = vi.fn();
+  setup({ filterDrawerOpen: true, setTab, setFilterDrawerOpen });
+  fireEvent.click(screen.getByText('PS Trends'));
+  expect(setTab).toHaveBeenCalledWith('ps-trends');
+  expect(setFilterDrawerOpen).toHaveBeenCalledWith(false);
+});
+
+test('PS Trends is active only on the ps-trends tab', () => {
+  setup({ tab: 'ps-trends' });
+  expect(screen.getByRole('button', { name: 'PS Trends' })).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.getByRole('button', { name: 'Trends' })).toHaveAttribute('aria-pressed', 'false');
+});

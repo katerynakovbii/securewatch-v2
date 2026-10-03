@@ -16,6 +16,13 @@ const RANGES = [
   { value: 30, label: 'Last 30 days' },
 ];
 
+const TABS = [
+  { key: 'feed', label: 'Feed' },
+  { key: 'starred', label: 'Starred' },
+  { key: 'trends', label: 'Trends' },
+  { key: 'ps-trends', label: 'PS Trends' },
+];
+
 export default function Topbar({ tab, setTab, starCount, fetchedAt, loading, days, onRefresh, onSwitchRange, query, setQuery, isMobile }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showSearch, setShowSearch]     = useState(false);
@@ -138,7 +145,7 @@ export default function Topbar({ tab, setTab, starCount, fetchedAt, loading, day
 
       {/* Tabs */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 2, background: '#171c27', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 8, padding: 3 }}>
-        {['feed', 'starred', 'trends'].map(t => (
+        {TABS.map(({ key: t, label }) => (
           <button key={t} onClick={() => setTab(t)} style={{
             fontFamily: 'IBM Plex Mono,monospace', fontSize: 11, padding: '6px 16px',
             borderRadius: 5, border: 'none', cursor: 'pointer', letterSpacing: '0.04em',
@@ -146,7 +153,7 @@ export default function Topbar({ tab, setTab, starCount, fetchedAt, loading, day
             color: tab === t ? '#dde2ed' : '#505a6e',
             display: 'flex', alignItems: 'center', gap: 6, transition: 'all .15s',
           }}>
-            {t.charAt(0).toUpperCase() + t.slice(1)}
+            {label}
             {t === 'starred' && starCount > 0 && (
               <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 16, height: 16, background: '#f59e0b', color: '#000', fontSize: 9, fontWeight: 500, borderRadius: '50%' }}>
                 {starCount}

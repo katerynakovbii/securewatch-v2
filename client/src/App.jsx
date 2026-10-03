@@ -15,6 +15,7 @@ import { filterArticles, sortArticles, topicCounts } from './utils.js';
 export default function App() {
   const { articles, loading, error, fetchedAt, days, load, refresh, switchRange } = useNews();
   const { trends, loading: trendsLoading, error: trendsError, lastRunAt, load: loadTrends } = useTrends();
+  const { trends: psTrends, loading: psTrendsLoading, error: psTrendsError, lastRunAt: psLastRunAt, load: loadPsTrends } = useTrends('trends-physical.json');
   const { starred, toggle, isStarred } = useStarred();
   const isMobile = useMobile();
 
@@ -25,7 +26,7 @@ export default function App() {
   const [selected, setSelected]                 = useState(null);
   const [filterDrawerOpen, setFilterDrawerOpen] = useState(false);
 
-  useEffect(() => { load(); loadTrends(); }, []);
+  useEffect(() => { load(); loadTrends(); loadPsTrends(); }, []);
   useEffect(() => { if (!isMobile) setFilterDrawerOpen(false); }, [isMobile]);
 
   const pool = tab === 'starred'
@@ -61,6 +62,16 @@ export default function App() {
             lastRunAt={lastRunAt}
             onRetry={loadTrends}
             isMobile={isMobile}
+          />
+        ) : tab === 'ps-trends' ? (
+          <TrendsPanel
+            trends={psTrends}
+            loading={psTrendsLoading}
+            error={psTrendsError}
+            lastRunAt={psLastRunAt}
+            onRetry={loadPsTrends}
+            isMobile={isMobile}
+            emptyText="No physical security trends detected yet — detection runs daily."
           />
         ) : (
           <>
