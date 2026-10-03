@@ -318,24 +318,51 @@ describe('callClaude', () => {
 });
 
 describe('run() guard paths (Fix 1)', () => {
-  const trendsPath = path.join(process.cwd(), 'client', 'public', 'data', 'trends.json');
+  const now = new Date('2026-10-03T12:00:00.000Z');
+  const ARCHIVE = { lastRunAt: '2026-10-01T00:00:00.000Z', trends: [{ id: 'old', name: 'Old', status: 'emerging', cooledAt: null, articles: [] }] };
+  let dir;
+  let savedKey;
 
-  test('returns the existing archive unchanged, without writing, when no apiKey is set', async () => {
-    const before = JSON.parse(await readFile(trendsPath, 'utf8'));
-    const result = await run({ apiKey: undefined, now: new Date() });
-    const after = JSON.parse(await readFile(trendsPath, 'utf8'));
+  // Records any Claude call; a guard path must never reach it.
+  const recordingClient = () => {
+    const calls = [];
+    return { calls, messages: { create: async req => { calls.push(req); return { content: [{ text: '[]' }] }; } } };
+  };
 
-    expect(result.general.trends).toEqual(before.trends);
-    expect(after).toEqual(before);
+  beforeEach(async () => {
+    savedKey = process.env.ANTHROPIC_API_KEY;
+    process.env.ANTHROPIC_API_KEY = 'env-key-must-not-be-used';
+    dir = await mkdtemp(path.join(os.tmpdir(), 'detect-trends-guard-'));
+    await writeFile(path.join(dir, 'articles.json'), JSON.stringify({ articles: [
+      { url: 'g1', title: 't', summary: '', source: 'S', publishedAt: '2026-10-02', topic: 'video', physical: true },
+    ] }));
+    await writeFile(path.join(dir, 'trends.json'), JSON.stringify(ARCHIVE));
   });
 
-  test('returns the existing archive unchanged, without writing, when the article window is empty', async () => {
-    const before = JSON.parse(await readFile(trendsPath, 'utf8'));
-    const result = await run({ apiKey: 'fake', now: new Date('2030-01-01T00:00:00Z') });
-    const after = JSON.parse(await readFile(trendsPath, 'utf8'));
+  afterEach(async () => {
+    if (savedKey === undefined) delete process.env.ANTHROPIC_API_KEY;
+    else process.env.ANTHROPIC_API_KEY = savedKey;
+    await rm(dir, { recursive: true, force: true });
+  });
 
-    expect(result.general.trends).toEqual(before.trends);
-    expect(after).toEqual(before);
+  test('returns the existing archives unchanged, without writing or calling Claude, when no apiKey is set', async () => {
+    const client = recordingClient();
+    const result = await run({ apiKey: '', now, dataDir: dir, anthropic: client });
+
+    expect(client.calls).toHaveLength(0);
+    expect(result.general.trends).toEqual(ARCHIVE.trends);
+    expect(JSON.parse(await readFile(path.join(dir, 'trends.json'), 'utf8'))).toEqual(ARCHIVE);
+    await expect(readFile(path.join(dir, 'trends-physical.json'), 'utf8')).rejects.toThrow();
+  });
+
+  test('returns the existing archives unchanged, without writing or calling Claude, when the article window is empty', async () => {
+    const client = recordingClient();
+    const result = await run({ apiKey: 'fake', now: new Date('2030-01-01T00:00:00Z'), dataDir: dir, anthropic: client });
+
+    expect(client.calls).toHaveLength(0);
+    expect(result.general.trends).toEqual(ARCHIVE.trends);
+    expect(JSON.parse(await readFile(path.join(dir, 'trends.json'), 'utf8'))).toEqual(ARCHIVE);
+    await expect(readFile(path.join(dir, 'trends-physical.json'), 'utf8')).rejects.toThrow();
   });
 });
 
