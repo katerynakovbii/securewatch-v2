@@ -1,5 +1,5 @@
 import React from 'react';
-import { TOPICS, TAG_STYLES, formatDate } from '../utils.js';
+import { TOPICS, TAG_STYLES, PHYSICAL_BADGE_STYLE, formatDate } from '../utils.js';
 
 export default function ArticleCard({ article, selected, isStarred, onSelect, onToggleStar }) {
   const tag = TAG_STYLES[article.topic] || TAG_STYLES.tech;
@@ -22,6 +22,7 @@ export default function ArticleCard({ article, selected, isStarred, onSelect, on
       <div style={{ minWidth:0 }}>
         <div style={{ display:'flex', alignItems:'center', gap:7, marginBottom:7, flexWrap:'wrap' }}>
           <span style={{ ...tag, fontFamily:'IBM Plex Mono,monospace', fontSize:9, padding:'3px 8px', borderRadius:3, fontWeight:500, letterSpacing:'0.05em', textTransform:'uppercase' }}>{label}</span>
+          {article.physical && <span style={{ ...PHYSICAL_BADGE_STYLE, fontFamily:'IBM Plex Mono,monospace', fontSize:9, padding:'3px 8px', borderRadius:3, fontWeight:500, letterSpacing:'0.05em', textTransform:'uppercase' }}>Physical</span>}
           <span style={{ fontFamily:'IBM Plex Mono,monospace', fontSize:10, color:'#3b82f6' }}>{article.source}</span>
           <span style={{ fontFamily:'IBM Plex Mono,monospace', fontSize:10, color:'#505a6e' }}>{formatDate(article.publishedAt || article.time)}</span>
         </div>

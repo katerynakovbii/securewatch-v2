@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TOPICS, TAG_STYLES, formatDate } from '../utils.js';
+import { TOPICS, TAG_STYLES, PHYSICAL_BADGE_STYLE, formatDate } from '../utils.js';
 
 const SECTION_COLORS = { IMPACT:'#4fffb0', OPPORTUNITY:'#60a5fa', THREAT:'#f87171', WATCH:'#fbbf24' };
 
@@ -54,6 +54,7 @@ export default function DetailPanel({ article, isStarred, onToggleStar, onClose,
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'14px 18px', borderBottom:'1px solid rgba(255,255,255,0.07)', flexShrink:0 }}>
           <div style={{ display:'flex', alignItems:'center', gap:9 }}>
             <span style={{ ...tag, fontFamily:'IBM Plex Mono,monospace', fontSize:9, padding:'3px 8px', borderRadius:3, fontWeight:500, letterSpacing:'0.05em', textTransform:'uppercase' }}>{topicLabel}</span>
+            {article.physical && <span style={{ ...PHYSICAL_BADGE_STYLE, fontFamily:'IBM Plex Mono,monospace', fontSize:9, padding:'3px 8px', borderRadius:3, fontWeight:500, letterSpacing:'0.05em', textTransform:'uppercase' }}>Physical</span>}
             <span style={{ fontFamily:'IBM Plex Mono,monospace', fontSize:10, color:'#3b82f6' }}>{article.source}</span>
           </div>
           <button onClick={onClose} style={{ background:'#171c27', border:'1px solid rgba(255,255,255,0.07)', borderRadius:6, width:28, height:28, display:'flex', alignItems:'center', justifyContent:'center', cursor:'pointer', color:'#8a94a8' }}>
