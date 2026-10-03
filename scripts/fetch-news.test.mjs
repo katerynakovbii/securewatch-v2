@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { classifyTopic, isRelevant, parseRSS, fixDate, diffNew } from './fetch-news.mjs';
+import { classifyTopic, isRelevant, isPhysicalSecurity, parseRSS, fixDate, diffNew } from './fetch-news.mjs';
 
 describe('isRelevant', () => {
   test('matches a keyword in the title', () => {
@@ -28,6 +28,44 @@ describe('classifyTopic', () => {
   });
   test('falls back to tech', () => {
     expect(classifyTopic('Company announces new office', '')).toBe('tech');
+  });
+});
+
+describe('isPhysicalSecurity', () => {
+  test.each([
+    ['access control', 'New mobile credential reader for access control', ''],
+    ['video', 'Milestone adds AI search to its VMS', ''],
+    ['nvr', 'New 32-channel NVR announced', ''],
+    ['perimeter', 'Fence detection upgrade for utility substations', ''],
+    ['alarms', 'Alarm monitoring central station adds video verification', ''],
+    ['ops', 'Schools deploy gunshot detection', ''],
+    ['vendor', 'Genetec launches new release', ''],
+    ['cyber on device', 'Critical CVE in Hikvision NVR firmware', ''],
+    ['perimeter PIDS', 'Airport upgrades perimeter intrusion detection system', ''],
+    ['guard phrase plus physical term', 'Broken access control in door controller firmware', ''],
+    ['summary only', 'Product update', 'adds support for PTZ cameras'],
+  ])('physical: %s', (_label, title, summary) => {
+    expect(isPhysicalSecurity(title, summary)).toBe(true);
+  });
+
+  test.each([
+    ['ransomware', 'Ransomware hits hospital network', ''],
+    ['web app access control', 'Broken access control flaw in web app', ''],
+    ['CVE wording', 'Improper access control in Jenkins plugin', ''],
+    ['network perimeter', 'Network perimeter firewall bypassed', ''],
+    ['lockbit', 'LockBit gang claims attack', ''],
+    ['raises alarm', 'Report raises alarm over phishing', ''],
+    ['spyware surveillance', 'Spyware used for government surveillance', ''],
+    ['virtual machines', 'Attackers encrypt ESXi VMs', ''],
+    ['ciso', 'Chief Information Security Officer resigns after breach', ''],
+    ['network IDS', 'New intrusion detection system for cloud workloads', ''],
+    ['IAM', 'Identity and access management startup raises seed', ''],
+  ])('not physical: %s', (_label, title, summary) => {
+    expect(isPhysicalSecurity(title, summary)).toBe(false);
+  });
+
+  test('handles missing summary', () => {
+    expect(isPhysicalSecurity('Verkada ships new camera')).toBe(true);
   });
 });
 
