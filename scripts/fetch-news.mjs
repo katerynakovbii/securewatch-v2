@@ -60,6 +60,73 @@ export function classifyTopic(title, summary) {
   return 'tech';
 }
 
+// Phrases that look physical but are IT/cyber usage; stripped before matching
+// so they can't trigger the physical flag on their own.
+const PHYSICAL_GUARDS = [
+  /\b(?:broken|improper|missing|insufficient) access control\b/g,
+  /\bidentity and access management\b/g,
+  /\biam\b/g,
+  /\bprivileged access\b/g,
+  /\brole-based access control\b/g,
+  /\baccess control lists?\b/g,
+  /\bacls?\b/g,
+  /\bnetwork perimeter\b/g,
+  /\bperimeter firewalls?\b/g,
+  /\bcloud perimeter\b/g,
+  /(?<!perimeter )\bintrusion (?:detection|prevention) systems?\b/g,
+  /\bids\b/g,
+  /\bthreat detection\b/g,
+  /\bendpoint detection\b/g,
+  /\b[ex]dr\b/g,
+  /\bcredential (?:theft|stuffing)\b/g,
+  /\bstolen credentials\b/g,
+  /\blockbit\b/g,
+  /\braises? (?:the )?alarms?\b/g,
+  /\bsounds? the alarm\b/g,
+  /\balarm bells\b/g,
+  /\binformation security officers?\b/g,
+  /\b(?:chief|field) security officers?\b/g,
+  /\b(?:security operations|soc|network|cyber(?:security)?|it) monitoring cent(?:er|re)s?\b/g,
+];
+
+const PHYSICAL_TERMS = [
+  // Access control
+  /\baccess control\b/, /\bdoor controllers?\b/, /\bbadge readers?\b/, /\bkey ?cards?\b/,
+  /\bproximity cards?\b/, /\bmobile credentials?\b/, /\bbiometric readers?\b/, /\bturnstiles?\b/,
+  /\bmantraps?\b/, /\b(?:electronic|smart|door) locks?\b/, /\bintercoms?\b/, /\bvisitor management\b/, /\bosdp\b/,
+  // Video
+  /\bvideo management systems?\b/, /\b[nd]vrs?\b/, /\bcctv\b/, /\bptz\b/,
+  /\b(?:ip|security|surveillance|thermal|dome) cameras?\b/, /\bvideo surveillance\b/, /\bvsaas\b/,
+  /\bvideo analytics\b/, /\bbody[- ]worn\b/, /\bbody cam(?:era)?s?\b/, /\bsurveillance (?:videos?|footage)\b/,
+  // Perimeter
+  /\bperimeter (?:detection|protection|security|intrusion)\b/, /\bfence (?:detection|sensors?)\b/,
+  /\bground radar\b/, /\blidar sensors?\b/, /\bbollards?\b/, /\bvehicle barriers?\b/, /\bcrash-rated\b/,
+  /\bgate operators?\b/, /\ba[ln]pr\b/, /\blicense plate (?:recognition|readers?)\b/,
+  // Intrusion & alarms
+  /\bintrusion (?:alarms?|panels?)\b/, /\bburglar alarms?\b/, /\balarm (?:panels?|monitoring)\b/,
+  /\bcentral station\b/, /\bmonitoring cent(?:er|re)s?\b/, /\bmotion (?:sensors?|detectors?)\b/,
+  /\bglass[- ]break\b/, /\bpanic buttons?\b/, /\bduress alarms?\b/,
+  /\bsecurity (?:system )?(?:installers?|integrators?)\b/,
+  // Ops & other
+  /\bphysical security\b/, /\bpsim\b/, /\bgsoc\b/, /\bguard tours?\b/, /\bsecurity (?:guards?|officers?)\b/,
+  /\b(?:gunshot|gun|weapons?) detection\b/, /\bmetal detectors?\b/, /\b(?:school|campus) safety\b/,
+  /\belectronic security\b/, /\b(?:gsx|isc west|isc east|ifsec|asis international)\b/,
+  // Vendors
+  /\b(?:genetec|milestone systems|axis communications|hanwha vision|avigilon|hid global|verkada|brivo|lenel|lenels2|pelco|assa abloy|allegion|hikvision|dahua|bosch security|honeywell security|eagle eye networks|openpath|rhombus|axon|amag|securitas|pavion|pye-barker|allied universal|adt|per mar|dormakaba|keenfinity|convergint|salto|identiv|napco|alarm\.com|openeye)\b/,
+];
+
+// Matched case-sensitively on the original text: lowercase "vms" in cyber
+// news is usually virtual machines.
+const PHYSICAL_TERMS_CASED = [/\bVMS\b/];
+
+export function isPhysicalSecurity(title, summary) {
+  const raw = title + ' ' + (summary || '');
+  if (PHYSICAL_TERMS_CASED.some(re => re.test(raw))) return true;
+  let text = raw.toLowerCase();
+  for (const re of PHYSICAL_GUARDS) text = text.replace(re, ' ');
+  return PHYSICAL_TERMS.some(re => re.test(text));
+}
+
 export function fixDate(dateStr) {
   if (!dateStr) return '';
   const today = new Date();
@@ -201,6 +268,7 @@ async function fetchAllRaw() {
     url: a.link,
     publishedAt: fixDate(a.pubDate),
     topic: classifyTopic(a.title, a.summary),
+    physical: isPhysicalSecurity(a.title, a.summary),
     fetchedAt: new Date().toISOString(),
   }));
 }
@@ -249,6 +317,11 @@ export function diffNew(freshArticles, knownArticles) {
     }
     merged.push(prev);
   }
+
+  // Recompute for every article so stored data is backfilled and keyword
+  // changes apply retroactively. Mutate in place: run() attaches .analysis
+  // to the newOnes objects, which must stay the same objects as in merged.
+  for (const a of merged) a.physical = isPhysicalSecurity(a.title || '', a.summary);
 
   return { merged: sortShapedArticles(merged), newOnes };
 }

@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { classifyTopic, isRelevant, parseRSS, fixDate, diffNew } from './fetch-news.mjs';
+import { classifyTopic, isRelevant, isPhysicalSecurity, parseRSS, fixDate, diffNew } from './fetch-news.mjs';
 
 describe('isRelevant', () => {
   test('matches a keyword in the title', () => {
@@ -28,6 +28,54 @@ describe('classifyTopic', () => {
   });
   test('falls back to tech', () => {
     expect(classifyTopic('Company announces new office', '')).toBe('tech');
+  });
+});
+
+describe('isPhysicalSecurity', () => {
+  test.each([
+    ['access control', 'New mobile credential reader for access control', ''],
+    ['video', 'Milestone adds AI search to its VMS', ''],
+    ['nvr', 'New 32-channel NVR announced', ''],
+    ['perimeter', 'Fence detection upgrade for utility substations', ''],
+    ['alarms', 'Alarm monitoring central station adds video verification', ''],
+    ['ops', 'Schools deploy gunshot detection', ''],
+    ['vendor', 'Genetec launches new release', ''],
+    ['cyber on device', 'Critical CVE in Hikvision NVR firmware', ''],
+    ['perimeter PIDS', 'Airport upgrades perimeter intrusion detection system', ''],
+    ['guard phrase plus physical term', 'Broken access control in door controller firmware', ''],
+    ['summary only', 'Product update', 'adds support for PTZ cameras'],
+    ['OSDP protocol', 'SIA, AMAG Technology Launching New OSDP Training Program', ''],
+    ['surveillance videos', 'Fat Bear Week is Bigger Than Ever: Surveillance Videos of the Week', ''],
+    ['electronic security', 'Securitas Technology, IQSIGHT Win Best Electronic Security Project', ''],
+    ['trade show', 'GSX 2026 Welcomes More Than 16K Registrants from 100 Countries', ''],
+    ['vendor Pavion', 'Pavion Appoints Andy Bierer as CEO, Joe Oliveri Named Advisor to the Board', ''],
+    ['vendor Per Mar', 'Chris Edwards, President, Per Mar Security Services: Best Advice', ''],
+  ])('physical: %s', (_label, title, summary) => {
+    expect(isPhysicalSecurity(title, summary)).toBe(true);
+  });
+
+  test.each([
+    ['ransomware', 'Ransomware hits hospital network', ''],
+    ['web app access control', 'Broken access control flaw in web app', ''],
+    ['CVE wording', 'Improper access control in Jenkins plugin', ''],
+    ['network perimeter', 'Network perimeter firewall bypassed', ''],
+    ['lockbit', 'LockBit gang claims attack', ''],
+    ['raises alarm', 'Report raises alarm over phishing', ''],
+    ['spyware surveillance', 'Spyware used for government surveillance', ''],
+    ['virtual machines', 'Attackers encrypt ESXi VMs', ''],
+    ['ciso', 'Chief Information Security Officer resigns after breach', ''],
+    ['network IDS', 'New intrusion detection system for cloud workloads', ''],
+    ['IAM', 'Identity and access management startup raises seed', ''],
+    ['MSSP', 'Managed security services provider expands SOC', ''],
+    ['lowercase vms', 'attackers encrypt esxi vms overnight', ''],
+    ['chief security officer', 'Former Uber chief security officer Joe Sullivan speaks out', ''],
+    ['SOC monitoring center', 'MDR provider opens 24/7 SOC monitoring center', ''],
+  ])('not physical: %s', (_label, title, summary) => {
+    expect(isPhysicalSecurity(title, summary)).toBe(false);
+  });
+
+  test('handles missing summary', () => {
+    expect(isPhysicalSecurity('Verkada ships new camera')).toBe(true);
   });
 });
 
@@ -118,5 +166,34 @@ describe('diffNew', () => {
     ];
     const { merged } = diffNew(fresh, known);
     expect(merged.find(a => a.url === 'https://a.test/too-old')).toBeFalsy();
+  });
+
+  test('sets physical on fresh and retained articles', () => {
+    const today = new Date().toISOString().slice(0, 10);
+    const fresh = [{ url: 'https://a.test/1', title: 'New NVR from Hanwha Vision', summary: '' }];
+    const known = [
+      { url: 'https://a.test/2', title: 'Ransomware hits hospital', summary: '', publishedAt: today, analysis: 'X' },
+      { url: 'https://a.test/3', title: 'Turnstile rollout at stadium', summary: '', publishedAt: today, analysis: 'Y' },
+    ];
+    const { merged } = diffNew(fresh, known);
+    const byUrl = Object.fromEntries(merged.map(a => [a.url, a.physical]));
+    expect(byUrl).toEqual({
+      'https://a.test/1': true,
+      'https://a.test/2': false,
+      'https://a.test/3': true,
+    });
+  });
+
+  test('newOnes share object identity with merged so later analysis lands in output', () => {
+    const fresh = [{ url: 'https://a.test/1', title: 'Access control update', summary: '' }];
+    const { merged, newOnes } = diffNew(fresh, []);
+    newOnes[0].analysis = 'LATER';
+    expect(merged[0].analysis).toBe('LATER');
+    expect(merged[0].physical).toBe(true);
+  });
+
+  test('articles without a title get physical false', () => {
+    const { merged } = diffNew([{ url: 'https://a.test/1' }], []);
+    expect(merged[0].physical).toBe(false);
   });
 });

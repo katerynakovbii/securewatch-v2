@@ -1,5 +1,6 @@
 export const TOPICS = {
   all:        { label: 'All articles',        color: '#6b7280' },
+  physical:   { label: 'Physical Security',   color: '#4fffb0' },
   ai:         { label: 'AI & Analytics',      color: '#60a5fa' },
   video:      { label: 'Video Surveillance',  color: '#34d399' },
   access:     { label: 'Access Control',      color: '#a78bfa' },
@@ -24,6 +25,8 @@ export const TAG_STYLES = {
   regulation:  { background:'rgba(239,68,68,0.1)',    color:'#f87171', border:'1px solid rgba(239,68,68,0.2)'    },
   tech:        { background:'rgba(100,116,139,0.15)', color:'#94a3b8', border:'1px solid rgba(100,116,139,0.2)'  },
 };
+
+export const PHYSICAL_BADGE_STYLE = { background:'rgba(79,255,176,0.08)', color:'#4fffb0', border:'1px solid rgba(79,255,176,0.25)' };
 
 export const SORT_OPTIONS = [
   { value: 'newest',  label: 'Newest first'  },
@@ -67,7 +70,8 @@ export function sortArticles(articles, sortBy) {
 
 export function filterArticles(articles, { topic, query }) {
   return articles.filter(a => {
-    const matchTopic = !topic || topic === 'all' || a.topic === topic;
+    const matchTopic = !topic || topic === 'all' ||
+      (topic === 'physical' ? a.physical === true : a.topic === topic);
     const q = (query || '').toLowerCase();
     const matchQuery = !q ||
       a.title.toLowerCase().includes(q) ||
@@ -84,5 +88,6 @@ export function topicCounts(articles) {
     const t = a.topic || 'tech';
     counts[t] = (counts[t] || 0) + 1;
   }
+  counts.physical = articles.filter(a => a.physical === true).length;
   return counts;
 }
