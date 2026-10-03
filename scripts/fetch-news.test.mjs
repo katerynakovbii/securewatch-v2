@@ -44,6 +44,12 @@ describe('isPhysicalSecurity', () => {
     ['perimeter PIDS', 'Airport upgrades perimeter intrusion detection system', ''],
     ['guard phrase plus physical term', 'Broken access control in door controller firmware', ''],
     ['summary only', 'Product update', 'adds support for PTZ cameras'],
+    ['OSDP protocol', 'SIA, AMAG Technology Launching New OSDP Training Program', ''],
+    ['surveillance videos', 'Fat Bear Week is Bigger Than Ever: Surveillance Videos of the Week', ''],
+    ['electronic security', 'Securitas Technology, IQSIGHT Win Best Electronic Security Project', ''],
+    ['trade show', 'GSX 2026 Welcomes More Than 16K Registrants from 100 Countries', ''],
+    ['vendor Pavion', 'Pavion Appoints Andy Bierer as CEO, Joe Oliveri Named Advisor to the Board', ''],
+    ['vendor Per Mar', 'Chris Edwards, President, Per Mar Security Services: Best Advice', ''],
   ])('physical: %s', (_label, title, summary) => {
     expect(isPhysicalSecurity(title, summary)).toBe(true);
   });
@@ -60,6 +66,8 @@ describe('isPhysicalSecurity', () => {
     ['ciso', 'Chief Information Security Officer resigns after breach', ''],
     ['network IDS', 'New intrusion detection system for cloud workloads', ''],
     ['IAM', 'Identity and access management startup raises seed', ''],
+    ['MSSP', 'Managed security services provider expands SOC', ''],
+    ['lowercase vms', 'attackers encrypt esxi vms overnight', ''],
   ])('not physical: %s', (_label, title, summary) => {
     expect(isPhysicalSecurity(title, summary)).toBe(false);
   });

@@ -91,11 +91,11 @@ const PHYSICAL_TERMS = [
   // Access control
   /\baccess control\b/, /\bdoor controllers?\b/, /\bbadge readers?\b/, /\bkey ?cards?\b/,
   /\bproximity cards?\b/, /\bmobile credentials?\b/, /\bbiometric readers?\b/, /\bturnstiles?\b/,
-  /\bmantraps?\b/, /\b(?:electronic|smart|door) locks?\b/, /\bintercoms?\b/, /\bvisitor management\b/,
+  /\bmantraps?\b/, /\b(?:electronic|smart|door) locks?\b/, /\bintercoms?\b/, /\bvisitor management\b/, /\bosdp\b/,
   // Video
   /\bvideo management systems?\b/, /\b[nd]vrs?\b/, /\bcctv\b/, /\bptz\b/,
   /\b(?:ip|security|surveillance|thermal|dome) cameras?\b/, /\bvideo surveillance\b/, /\bvsaas\b/,
-  /\bvideo analytics\b/, /\bbody[- ]worn\b/, /\bbody cam(?:era)?s?\b/,
+  /\bvideo analytics\b/, /\bbody[- ]worn\b/, /\bbody cam(?:era)?s?\b/, /\bsurveillance (?:videos?|footage)\b/,
   // Perimeter
   /\bperimeter (?:detection|protection|security|intrusion)\b/, /\bfence (?:detection|sensors?)\b/,
   /\bground radar\b/, /\blidar sensors?\b/, /\bbollards?\b/, /\bvehicle barriers?\b/, /\bcrash-rated\b/,
@@ -108,8 +108,9 @@ const PHYSICAL_TERMS = [
   // Ops & other
   /\bphysical security\b/, /\bpsim\b/, /\bgsoc\b/, /\bguard tours?\b/, /\bsecurity (?:guards?|officers?)\b/,
   /\b(?:gunshot|gun|weapons?) detection\b/, /\bmetal detectors?\b/, /\b(?:school|campus) safety\b/,
+  /\belectronic security\b/, /\b(?:gsx|isc west|isc east|ifsec|asis international)\b/,
   // Vendors
-  /\b(?:genetec|milestone systems|axis communications|hanwha vision|avigilon|hid global|verkada|brivo|lenel|lenels2|pelco|assa abloy|allegion|hikvision|dahua|bosch security|honeywell security|eagle eye networks|openpath|rhombus|axon)\b/,
+  /\b(?:genetec|milestone systems|axis communications|hanwha vision|avigilon|hid global|verkada|brivo|lenel|lenels2|pelco|assa abloy|allegion|hikvision|dahua|bosch security|honeywell security|eagle eye networks|openpath|rhombus|axon|amag|securitas|pavion|pye-barker|allied universal|adt|per mar|dormakaba|keenfinity|convergint|salto|identiv|napco|alarm\.com|openeye)\b/,
 ];
 
 // Matched case-sensitively on the original text: lowercase "vms" in cyber
