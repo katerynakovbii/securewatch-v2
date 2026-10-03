@@ -1,0 +1,84 @@
+{
+  "lastRunAt": "2026-10-03T09:33:59.818Z",
+  "trends": [
+    {
+      "id": "regional-consolidation-among-mid-market-security-integrators",
+      "name": "Regional consolidation among mid-market security integrators",
+      "status": "emerging",
+      "firstDetected": "2026-10-03",
+      "lastActive": "2026-10-03",
+      "cooledAt": null,
+      "rationale": "Two separate acquisition announcements within 24 hours show established integrators (Securitas Technology, Pye-Barker) acquiring regional competitors to deepen geographic and operational capacity. Securitas acquired Sonitrol El Paso for Texas coverage on Oct 1, while Pye-Barker acquired Union AlarmTronic in New Jersey on Sep 30. This signals a pattern of market consolidation among mid-market players targeting adjacent service territories.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/securitas-technology-sonitrol-el-paso-acquisition/620809/",
+          "title": "Securitas Technology Announces Sonitrol El Paso Acquisition",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-01"
+        },
+        {
+          "url": "https://www.securitysales.com/news/pye-barker-acquires-union-alarmtronic/620784/",
+          "title": "Pye-Barker Acquires Springfield, New Jersey&#8217;s Union AlarmTronic",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "industry-standardization-efforts-around-osdp-protocol",
+      "name": "Industry standardization efforts around OSDP protocol",
+      "status": "emerging",
+      "firstDetected": "2026-10-03",
+      "lastActive": "2026-10-03",
+      "cooledAt": null,
+      "rationale": "SIA and AMAG Technology announced a new tiered training program on Sep 24 specifically designed to educate sales and marketing professionals on OSDP (Open Supervised Device Protocol). This represents a formal industry-wide push to standardize knowledge and adoption of an open access control standard, indicating growing market momentum around protocol interoperability.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/sia-amag-technology-osdp-training-program/620735/",
+          "title": "SIA, AMAG Technology Launching New OSDP Training Program",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "strong-industry-attendance-and-economic-activity-at-major-se",
+      "name": "Strong industry attendance and economic activity at major security trade events",
+      "status": "emerging",
+      "firstDetected": "2026-10-03",
+      "lastActive": "2026-10-03",
+      "cooledAt": null,
+      "rationale": "GSX 2026 reported over 16,000 registrants from 100 countries and a 17% attendance increase over the prior year, generating over $30 million in regional revenue. This signals robust market health and continued investment in physical security solutions, with global participation indicating strong international demand.",
+      "signalTypes": [
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/gsx-2026-more-than-16k-registrants-100-countries/620759/",
+          "title": "GSX 2026 Welcomes More Than 16K Registrants from 100 Countries",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-28"
+        }
+      ]
+    }
+  ]
+}
