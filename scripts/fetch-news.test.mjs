@@ -157,4 +157,33 @@ describe('diffNew', () => {
     const { merged } = diffNew(fresh, known);
     expect(merged.find(a => a.url === 'https://a.test/too-old')).toBeFalsy();
   });
+
+  test('sets physical on fresh and retained articles', () => {
+    const today = new Date().toISOString().slice(0, 10);
+    const fresh = [{ url: 'https://a.test/1', title: 'New NVR from Hanwha Vision', summary: '' }];
+    const known = [
+      { url: 'https://a.test/2', title: 'Ransomware hits hospital', summary: '', publishedAt: today, analysis: 'X' },
+      { url: 'https://a.test/3', title: 'Turnstile rollout at stadium', summary: '', publishedAt: today, analysis: 'Y' },
+    ];
+    const { merged } = diffNew(fresh, known);
+    const byUrl = Object.fromEntries(merged.map(a => [a.url, a.physical]));
+    expect(byUrl).toEqual({
+      'https://a.test/1': true,
+      'https://a.test/2': false,
+      'https://a.test/3': true,
+    });
+  });
+
+  test('newOnes share object identity with merged so later analysis lands in output', () => {
+    const fresh = [{ url: 'https://a.test/1', title: 'Access control update', summary: '' }];
+    const { merged, newOnes } = diffNew(fresh, []);
+    newOnes[0].analysis = 'LATER';
+    expect(merged[0].analysis).toBe('LATER');
+    expect(merged[0].physical).toBe(true);
+  });
+
+  test('articles without a title get physical false', () => {
+    const { merged } = diffNew([{ url: 'https://a.test/1' }], []);
+    expect(merged[0].physical).toBe(false);
+  });
 });

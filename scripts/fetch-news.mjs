@@ -265,6 +265,7 @@ async function fetchAllRaw() {
     url: a.link,
     publishedAt: fixDate(a.pubDate),
     topic: classifyTopic(a.title, a.summary),
+    physical: isPhysicalSecurity(a.title, a.summary),
     fetchedAt: new Date().toISOString(),
   }));
 }
@@ -313,6 +314,11 @@ export function diffNew(freshArticles, knownArticles) {
     }
     merged.push(prev);
   }
+
+  // Recompute for every article so stored data is backfilled and keyword
+  // changes apply retroactively. Mutate in place: run() attaches .analysis
+  // to the newOnes objects, which must stay the same objects as in merged.
+  for (const a of merged) a.physical = isPhysicalSecurity(a.title || '', a.summary);
 
   return { merged: sortShapedArticles(merged), newOnes };
 }
