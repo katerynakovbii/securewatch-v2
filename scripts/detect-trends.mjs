@@ -2,14 +2,22 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import Anthropic from '@anthropic-ai/sdk';
 
-const OUTPUT_PATH = path.join(process.cwd(), 'client', 'public', 'data', 'trends.json');
-const ARTICLES_PATH = path.join(process.cwd(), 'client', 'public', 'data', 'articles.json');
+const DATA_DIR = path.join(process.cwd(), 'client', 'public', 'data');
 
 const TREND_WINDOW_DAYS = 14;
 const CONFIRMED_MIN_ARTICLES = 4;
 const CONFIRMED_MIN_SOURCES = 2;
 const TREND_RETENTION_DAYS = 365;
 const SIGNAL_TYPES = ['source_authority', 'claim_magnitude', 'cross_topic', 'velocity'];
+
+const PHYSICAL_PROMPT_RESTRICTION = 'Only report physical security themes (access control, video surveillance, perimeter and intrusion detection, alarms and monitoring, guarding, security integrators/industry). A cyber theme qualifies only if it concerns physical security devices or systems.';
+
+// One archive per profile. Each runs independently: own file, own daily
+// guard, own Claude call, so one failing never blocks the other.
+export const PROFILES = [
+  { name: 'general', file: 'trends.json', filter: () => true, promptExtra: '' },
+  { name: 'physical', file: 'trends-physical.json', filter: a => a.physical === true, promptExtra: PHYSICAL_PROMPT_RESTRICTION },
+];
 
 export function windowArticles(articles, days, now = new Date()) {
   const cutoff = new Date(now.getTime() - days * 86400000);
@@ -168,7 +176,7 @@ export function pruneTrends(trends, today, retentionDays = TREND_RETENTION_DAYS)
   });
 }
 
-function buildTrendsPrompt(articles, existingTrends) {
+export function buildTrendsPrompt(articles, existingTrends, promptExtra = '') {
   const articlesBlock = articles.map(a => JSON.stringify({
     url: a.url, title: a.title, summary: a.summary, source: a.source,
     publishedAt: a.publishedAt, topic: a.topic,
@@ -197,7 +205,7 @@ For each distinct trend you identify, output an object with:
   - "velocity": multiple articles published within days of each other
 - "articles": array of {"url", "title", "source", "publishedAt"} for every supporting article from the list above
 
-Respond with ONLY a JSON array of these objects, no markdown fences, no other text. If no theme in the articles rises to either tier, respond with an empty array [].`;
+${promptExtra ? `${promptExtra}\n\n` : ''}Respond with ONLY a JSON array of these objects, no markdown fences, no other text. If no theme in the articles rises to either tier, respond with an empty array [].`;
 }
 
 function parseTrendsResponse(text) {
@@ -206,11 +214,11 @@ function parseTrendsResponse(text) {
   return Array.isArray(parsed) ? parsed : [];
 }
 
-export async function callClaude(anthropic, articles, existingTrends) {
+export async function callClaude(anthropic, articles, existingTrends, promptExtra = '') {
   const response = await anthropic.messages.create({
     model: 'claude-haiku-4-5-20251001',
     max_tokens: 4000,
-    messages: [{ role: 'user', content: buildTrendsPrompt(articles, existingTrends) }],
+    messages: [{ role: 'user', content: buildTrendsPrompt(articles, existingTrends, promptExtra) }],
   });
   const text = response.content[0]?.text;
   if (!text) return null;
@@ -222,9 +230,9 @@ export async function callClaude(anthropic, articles, existingTrends) {
   }
 }
 
-async function loadArticles() {
+async function loadArticles(dataDir) {
   try {
-    const raw = await readFile(ARTICLES_PATH, 'utf8');
+    const raw = await readFile(path.join(dataDir, 'articles.json'), 'utf8');
     const data = JSON.parse(raw);
     return Array.isArray(data.articles) ? data.articles : [];
   } catch {
@@ -232,9 +240,9 @@ async function loadArticles() {
   }
 }
 
-async function loadArchive() {
+async function loadArchive(filePath) {
   try {
-    const raw = await readFile(OUTPUT_PATH, 'utf8');
+    const raw = await readFile(filePath, 'utf8');
     const data = JSON.parse(raw);
     return { lastRunAt: data.lastRunAt || null, trends: Array.isArray(data.trends) ? data.trends : [] };
   } catch {
@@ -242,33 +250,33 @@ async function loadArchive() {
   }
 }
 
-export async function run({ apiKey = process.env.ANTHROPIC_API_KEY, force = false, now = new Date() } = {}) {
-  const archive = await loadArchive();
+async function runProfile(profile, { articles, apiKey, anthropic, force, now, dataDir }) {
+  const tag = `detect-trends[${profile.name}]`;
+  const outputPath = path.join(dataDir, profile.file);
+  const archive = await loadArchive(outputPath);
   if (!shouldRun(archive.lastRunAt, now, force)) {
-    console.log('detect-trends: already ran today, skipping.');
+    console.log(`${tag}: already ran today, skipping.`);
     return archive;
   }
 
   const today = now.toISOString().slice(0, 10);
-  const articles = await loadArticles();
-  const inWindow = windowArticles(articles, TREND_WINDOW_DAYS, now);
+  const inWindow = windowArticles(articles.filter(profile.filter), TREND_WINDOW_DAYS, now);
   const activeExisting = archive.trends.filter(t => t.status !== 'cooled');
 
   if (inWindow.length === 0 || !apiKey) {
-    console.warn('detect-trends: no articles in window or no API key; leaving archive unchanged.');
+    console.warn(`${tag}: no articles in window or no API key; leaving archive unchanged.`);
     return archive;
   }
 
   let clusters = null;
-  const anthropic = new Anthropic({ apiKey });
   try {
-    clusters = await callClaude(anthropic, inWindow, activeExisting);
+    clusters = await callClaude(anthropic, inWindow, activeExisting, profile.promptExtra);
   } catch (e) {
-    console.warn('detect-trends: Claude call failed:', e.message);
+    console.warn(`${tag}: Claude call failed:`, e.message);
   }
 
   if (clusters === null) {
-    console.warn('detect-trends: no usable response from Claude; leaving archive unchanged.');
+    console.warn(`${tag}: no usable response from Claude; leaving archive unchanged.`);
     return archive;
   }
 
@@ -277,15 +285,39 @@ export async function run({ apiKey = process.env.ANTHROPIC_API_KEY, force = fals
   const pruned = pruneTrends(merged, today, TREND_RETENTION_DAYS);
 
   const payload = { lastRunAt: now.toISOString(), trends: pruned };
-  await mkdir(path.dirname(OUTPUT_PATH), { recursive: true });
-  await writeFile(OUTPUT_PATH, JSON.stringify(payload, null, 2));
+  await mkdir(path.dirname(outputPath), { recursive: true });
+  await writeFile(outputPath, JSON.stringify(payload, null, 2));
   return payload;
+}
+
+export async function run({
+  apiKey = process.env.ANTHROPIC_API_KEY,
+  force = false,
+  now = new Date(),
+  dataDir = DATA_DIR,
+  anthropic = apiKey ? new Anthropic({ apiKey }) : null,
+} = {}) {
+  const articles = await loadArticles(dataDir);
+  const results = {};
+  for (const profile of PROFILES) {
+    try {
+      results[profile.name] = await runProfile(profile, { articles, apiKey, anthropic, force, now, dataDir });
+    } catch (e) {
+      console.warn(`detect-trends[${profile.name}]: failed:`, e.message);
+      results[profile.name] = await loadArchive(path.join(dataDir, profile.file));
+    }
+  }
+  return results;
 }
 
 const isMain = import.meta.url === `file://${process.argv[1]}`;
 if (isMain) {
   run({ force: process.env.FORCE_TRENDS === 'true' })
-    .then(p => console.log(`Wrote ${p.trends.length} trends (lastRunAt ${p.lastRunAt}).`))
+    .then(results => {
+      for (const [name, p] of Object.entries(results)) {
+        console.log(`${name}: ${p.trends.length} trends (lastRunAt ${p.lastRunAt}).`);
+      }
+    })
     .catch(e => {
       console.error('detect-trends failed:', e.message);
       process.exit(1);
