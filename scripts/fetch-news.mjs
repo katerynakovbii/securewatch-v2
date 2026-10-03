@@ -136,6 +136,15 @@ export function fixDate(dateStr) {
   return parsed.toISOString().slice(0, 10);
 }
 
+// An article with no parseable publish date can't be shown as current, so
+// it is never kept: without this it slipped past every age cutoff.
+export function isWithinAge(dateStr, now = new Date(), days = MAX_ARTICLE_AGE_DAYS) {
+  if (!dateStr) return false;
+  const d = new Date(dateStr);
+  if (isNaN(d)) return false;
+  return d >= new Date(now.getTime() - days * 86400000);
+}
+
 export function parseRSS(xml, sourceName) {
   const articles = [];
   try {
@@ -217,9 +226,6 @@ async function fetchCorewillsoftBlog() {
 }
 
 async function fetchAllRaw() {
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - MAX_ARTICLE_AGE_DAYS);
-
   const [priorityArticles, rssResults] = await Promise.all([
     fetchCorewillsoftBlog(),
     Promise.allSettled(RSS_FEEDS.map(f => fetchRSSFeed(f))),
@@ -233,10 +239,7 @@ async function fetchAllRaw() {
     PRIORITY_SOURCE,
   ];
   const filtered = combined.filter(a => {
-    if (a.pubDate) {
-      const d = new Date(a.pubDate);
-      if (!isNaN(d) && d < cutoff) return false;
-    }
+    if (!isWithinAge(a.pubDate)) return false;
     if (tradePressFeeds.includes(a.sourceName)) return true;
     return isRelevant(a.title, a.summary);
   });
@@ -307,14 +310,9 @@ export function diffNew(freshArticles, knownArticles) {
     }
   }
 
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - MAX_ARTICLE_AGE_DAYS);
   for (const prev of knownArticles) {
     if (freshByUrl.has(prev.url)) continue;
-    if (prev.publishedAt) {
-      const d = new Date(prev.publishedAt);
-      if (!isNaN(d) && d < cutoff) continue;
-    }
+    if (!isWithinAge(prev.publishedAt)) continue;
     merged.push(prev);
   }
 

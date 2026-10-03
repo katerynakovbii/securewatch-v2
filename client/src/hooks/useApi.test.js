@@ -47,6 +47,22 @@ test('switchRange(30) re-includes the 2020 article without an extra fetch', asyn
   expect(global.fetch.mock.calls.length).toBe(callsAfterLoad); // no new network call
 });
 
+test('hides articles with no publish date in every range', async () => {
+  global.fetch = vi.fn(() => Promise.resolve({ ok: true, json: () => Promise.resolve({
+    ...SAMPLE,
+    articles: [...SAMPLE.articles, { id: '3', url: 'https://a.test/3', title: 'Undated', source: 'CoreWillSoft', topic: 'access', publishedAt: '' }],
+  }) }));
+  const { result } = renderHook(() => useNews());
+  await act(async () => { await result.current.load(); });
+  expect(result.current.articles.map(a => a.url)).not.toContain('https://a.test/3');
+
+  act(() => { result.current.switchRange(30); });
+  await waitFor(() => {
+    expect(result.current.articles.map(a => a.url)).toContain('https://a.test/2');
+  });
+  expect(result.current.articles.map(a => a.url)).not.toContain('https://a.test/3');
+});
+
 test('refresh() cache-busts the URL', async () => {
   const { result } = renderHook(() => useNews());
   await act(async () => { await result.current.refresh(); });

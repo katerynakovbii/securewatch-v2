@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { classifyTopic, isRelevant, isPhysicalSecurity, parseRSS, fixDate, diffNew } from './fetch-news.mjs';
+import { classifyTopic, isRelevant, isPhysicalSecurity, parseRSS, fixDate, diffNew, isWithinAge } from './fetch-news.mjs';
 
 describe('isRelevant', () => {
   test('matches a keyword in the title', () => {
@@ -192,8 +192,38 @@ describe('diffNew', () => {
     expect(merged[0].physical).toBe(true);
   });
 
+  test('drops a previously-known article with no publish date (cannot be shown as current)', () => {
+    const known = [
+      { url: 'https://a.test/undated', title: 'Undated blog post', publishedAt: '' },
+      { url: 'https://a.test/bad', title: 'Garbage date', publishedAt: 'not-a-date' },
+    ];
+    const { merged } = diffNew([], known);
+    expect(merged.map(a => a.url)).toEqual([]);
+  });
+
   test('articles without a title get physical false', () => {
     const { merged } = diffNew([{ url: 'https://a.test/1' }], []);
     expect(merged[0].physical).toBe(false);
+  });
+});
+
+describe('isWithinAge', () => {
+  const now = new Date('2026-10-03T12:00:00.000Z');
+
+  test('accepts a date inside the window', () => {
+    expect(isWithinAge('2026-09-20', now, 30)).toBe(true);
+  });
+
+  test('rejects a date older than the window', () => {
+    expect(isWithinAge('2026-02-22', now, 30)).toBe(false);
+  });
+
+  test('rejects a missing date', () => {
+    expect(isWithinAge('', now, 30)).toBe(false);
+    expect(isWithinAge(undefined, now, 30)).toBe(false);
+  });
+
+  test('rejects an unparseable date', () => {
+    expect(isWithinAge('not-a-date', now, 30)).toBe(false);
   });
 });
