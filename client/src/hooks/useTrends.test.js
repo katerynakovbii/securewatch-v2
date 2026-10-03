@@ -40,3 +40,22 @@ test('sets error when fetch fails', async () => {
   expect(result.current.error).toMatch(/500/);
   expect(result.current.trends).toEqual([]);
 });
+
+test('fetches the file it is given', async () => {
+  const { result } = renderHook(() => useTrends('trends-physical.json'));
+  await act(async () => { await result.current.load(); });
+
+  expect(global.fetch).toHaveBeenCalledWith(expect.stringContaining('data/trends-physical.json'));
+  expect(result.current.trends).toEqual(SAMPLE.trends);
+});
+
+test('treats a 404 (file not generated yet) as empty, not an error', async () => {
+  global.fetch = vi.fn(() => Promise.resolve({ ok: false, status: 404 }));
+  const { result } = renderHook(() => useTrends('trends-physical.json'));
+  await act(async () => { await result.current.load(); });
+
+  expect(result.current.error).toBe(null);
+  expect(result.current.trends).toEqual([]);
+  expect(result.current.lastRunAt).toBe(null);
+  expect(result.current.loading).toBe(false);
+});

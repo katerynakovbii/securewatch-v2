@@ -53,3 +53,14 @@ test('shows a loading state', () => {
   setup({ loading: true });
   expect(screen.getByText('LOADING TRENDS')).toBeInTheDocument();
 });
+
+test('shows the default empty message when there are no active trends', () => {
+  setup({ trends: [] });
+  expect(screen.getByText('No active trends detected yet.')).toBeInTheDocument();
+});
+
+test('shows custom emptyText when given and there are no active trends', () => {
+  setup({ trends: [], emptyText: 'No physical security trends detected yet — detection runs daily.' });
+  expect(screen.getByText('No physical security trends detected yet — detection runs daily.')).toBeInTheDocument();
+  expect(screen.queryByText('No active trends detected yet.')).not.toBeInTheDocument();
+});

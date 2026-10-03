@@ -3,7 +3,7 @@ import TrendCard from './TrendCard.jsx';
 
 function parseDate(str) { return str ? (new Date(str).getTime() || 0) : 0; }
 
-export default function TrendsPanel({ trends, loading, error, lastRunAt, onRetry, isMobile }) {
+export default function TrendsPanel({ trends, loading, error, lastRunAt, onRetry, isMobile, emptyText = 'No active trends detected yet.' }) {
   const [showArchive, setShowArchive] = useState(false);
 
   const active = useMemo(
@@ -49,7 +49,7 @@ export default function TrendsPanel({ trends, loading, error, lastRunAt, onRetry
             {active.length === 0 && (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '80px 20px', gap: 10, color: '#505a6e' }}>
                 <div style={{ fontSize: 28, opacity: 0.4 }}>◫</div>
-                <div style={{ fontFamily: 'IBM Plex Mono,monospace', fontSize: 12 }}>No active trends detected yet.</div>
+                <div style={{ fontFamily: 'IBM Plex Mono,monospace', fontSize: 12 }}>{emptyText}</div>
               </div>
             )}
 
