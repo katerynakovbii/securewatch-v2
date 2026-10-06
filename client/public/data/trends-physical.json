@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-05T03:09:08.843Z",
+  "lastRunAt": "2026-10-06T03:58:06.276Z",
   "trends": [
     {
       "id": "regional-consolidation-among-mid-market-security-integrators",
       "name": "Regional consolidation among mid-market security integrators",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-05",
+      "lastActive": "2026-10-06",
       "cooledAt": null,
       "rationale": "Two separate acquisition announcements within 24 hours show established integrators acquiring regional competitors to deepen geographic and operational capacity. Securitas Technology acquired Sonitrol El Paso for Texas coverage on Oct 1, while Pye-Barker acquired Union AlarmTronic in New Jersey on Sep 30. Both deals explicitly cite expansion of service territory and operational capacity as drivers. This pattern indicates sustained mid-market consolidation activity targeting adjacent service territories.",
       "signalTypes": [
@@ -37,7 +37,7 @@
       "name": "Industry standardization efforts around OSDP protocol",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-05",
+      "lastActive": "2026-10-06",
       "cooledAt": null,
       "rationale": "SIA and AMAG Technology announced a new tiered training program on Sep 24 specifically designed to educate sales and marketing professionals on OSDP (Open Supervised Device Protocol). This formal industry-wide collaboration between the Standards Infrastructure Alliance and a major access control vendor represents a structured push to standardize knowledge and adoption of an open access control standard, indicating growing market momentum around protocol interoperability.",
       "signalTypes": [
@@ -61,7 +61,7 @@
       "name": "Strong industry attendance and economic activity at major security trade events",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-05",
+      "lastActive": "2026-10-06",
       "cooledAt": null,
       "rationale": "GSX 2026 reported over 16,000 registrants from 100 countries and a 17% attendance increase over the prior year, generating over $30 million in regional revenue. This large-scale industry gathering demonstrates robust market health and continued global investment in physical security solutions, with attendance growth and international participation indicating strong demand across multiple regions.",
       "signalTypes": [
@@ -85,7 +85,7 @@
       "name": "Visual analytics and integrated alarm management as competitive differentiation",
       "status": "emerging",
       "firstDetected": "2026-10-05",
-      "lastActive": "2026-10-05",
+      "lastActive": "2026-10-06",
       "cooledAt": null,
       "rationale": "Securitas Technology and IQSIGHT won a Best Electronic Security Project award on Sep 24 for a platform combining visual analytics, alarm management and live communication capabilities. This award recognition signals that integrated video analytics with alarm orchestration is becoming a key competitive differentiator in the market, suggesting vendors are prioritizing convergence of monitoring and response functions.",
       "signalTypes": [
