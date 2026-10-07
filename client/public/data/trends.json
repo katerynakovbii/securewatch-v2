@@ -1,16 +1,16 @@
 {
-  "lastRunAt": "2026-10-06T03:58:06.276Z",
+  "lastRunAt": "2026-10-07T03:25:51.179Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-06",
+      "lastActive": "2026-10-07",
       "cooledAt": null,
-      "rationale": "Seven articles across 14 days from multiple sources confirm AI agents and AI-assisted development creating credential exposure and access control bypass risks. OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), CLOSEDQUORUM malware uses AI model voting to steal Windows credentials (Sept 23), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), Zero Trust frameworks require reconsideration due to AI agent visibility gaps (Sept 26), IAM for AI agents is described as a critical enterprise framework (Sept 28), and Apple is tightening macOS Full Disk Access controls due to risks from AI agents (Oct 5).",
+      "rationale": "OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), Zero Trust frameworks require reconsideration due to AI agent visibility gaps (Sept 26), IAM for AI agents described as critical enterprise framework (Sept 28), and Apple tightening macOS Full Disk Access controls due to AI agent risks (Oct 5). The credential layer is expanding faster than security teams can manage it (Oct 5).",
       "signalTypes": [],
-      "articleCount": 8,
+      "articleCount": 9,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -63,6 +63,12 @@
           "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
           "source": "The Hacker News",
           "publishedAt": "2026-10-05"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
+          "title": "The Credential Layer Is Expanding Faster Than Security Teams Can See It",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-05"
         }
       ]
     },
@@ -71,9 +77,9 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-06",
+      "lastActive": "2026-10-07",
       "cooledAt": null,
-      "rationale": "Four major incidents across 14 days demonstrate attackers exploiting vulnerabilities in third-party security and development software to achieve substantial breaches. Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), compromised MemTensor packages delivered credential stealers across npm and PyPI (Sept 23), and GitLab's issue email feature enabled unauthorized code commits and CI job execution (Sept 23). These incidents span financial services, cloud SDKs, package repositories, and DevOps platforms.",
+      "rationale": "Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), and attackers exploited third-party security product flaws to access high-level internal credentials. Multiple breach incidents across financial services, cloud SDKs, and developer tools demonstrate that third-party dependencies have become primary attack vectors for substantial financial and credential theft.",
       "signalTypes": [],
       "articleCount": 4,
       "sources": [
@@ -111,9 +117,9 @@
       "name": "Security integrator market consolidation and professionalization accelerating",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-06",
+      "lastActive": "2026-10-07",
       "cooledAt": null,
-      "rationale": "Multiple articles confirm structural market consolidation in the security integrator space through acquisitions and new performance analytics tools. ESA launched its Industry Performance Index (Sept 28) to help integrators understand performance gaps. GSX 2026 achieved record attendance of 16K registrants from 100 countries with 17% increase over prior year (Sept 28). Securitas Technology acquired Sonitrol El Paso (Oct 1) and Pye-Barker acquired Union AlarmTronic (Sept 30), demonstrating ongoing consolidation dynamics in the market.",
+      "rationale": "ESA launched its Industry Performance Index (Sept 28) to help integrators understand performance gaps. GSX 2026 achieved record attendance of 16K registrants from 100 countries with 17% increase over prior year (Sept 28). Securitas Technology acquired Sonitrol El Paso (Oct 1) and Pye-Barker acquired Union AlarmTronic (Sept 30), demonstrating ongoing consolidation in the security integrator market alongside increased demand for performance benchmarking tools.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -162,12 +168,147 @@
       ]
     },
     {
+      "id": "china-aligned-threat-actors-targeting-us-ai-policy-expertise",
+      "name": "China-aligned threat actors targeting US AI policy expertise and decision-makers",
+      "status": "emerging",
+      "firstDetected": "2026-10-05",
+      "lastActive": "2026-10-07",
+      "cooledAt": null,
+      "rationale": "China-nexus cyber espionage group TA419 executed multiple credential phishing campaigns targeting AI experts at U.S. think tanks, universities, and legal sector organizations, impersonating prominent economists and AI professionals (Oct 4). This represents strategic targeting of American AI policy influencers and technical expertise holders by state-aligned actors using AitM phishing techniques.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "video-evidence-integrity-and-authentication-gaining-industry-2",
+      "name": "Video evidence integrity and authentication gaining industry focus",
+      "status": "emerging",
+      "firstDetected": "2026-10-04",
+      "lastActive": "2026-10-07",
+      "cooledAt": null,
+      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This demonstrates emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical operational requirements for physical security deployments.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/swear-video-evidence-integrity-protection-program/620816/",
+          "title": "SWEAR Launches Video Evidence Integrity Protection Program",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "id": "phishing-campaigns-targeting-ai-product-platforms-and-creden",
+      "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
+      "status": "emerging",
+      "firstDetected": "2026-10-07",
+      "lastActive": "2026-10-07",
+      "cooledAt": null,
+      "rationale": "A human-operated phishing platform impersonates advertising products for AI chatbots like ChatGPT, Gemini, and Claude to capture credentials and MFA codes (Oct 6). This represents attackers targeting AI platform adoption at scale by spoofing legitimate AI vendor marketing portals.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "id": "ai-overlay-solutions-for-legacy-camera-systems-enabling-cost-2",
+      "name": "AI overlay solutions for legacy camera systems enabling cost-effective modernization",
+      "status": "emerging",
+      "firstDetected": "2026-10-04",
+      "lastActive": "2026-10-07",
+      "cooledAt": null,
+      "rationale": "Security Sales reports that the next wave of AI adoption will layer onto existing camera infrastructure rather than requiring complete system replacement, fundamentally changing integrator business models (Oct 2). This represents a significant shift toward backward-compatible AI deployment that reduces customer capital requirements and creates new service opportunities.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/how-to-add-security-ai-to-the-camera-already-on-the-wall/620822/",
+          "title": "How to Add Security AI to the Camera Already on the Wall",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "id": "visual-analytics-and-ai-powered-platform-integration-in-acce",
+      "name": "AI-powered visual analytics platforms consolidating multiple security functions",
+      "status": "emerging",
+      "firstDetected": "2026-10-01",
+      "lastActive": "2026-10-07",
+      "cooledAt": null,
+      "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). Securitas Technology also released a 2027 Global Technology Outlook Report highlighting how AI, cloud platforms and connected security ecosystems are reshaping security (Oct 5).",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "cross_topic"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/projects/securitas-technology-iqsight-win-best-electronic-security-project/620722/",
+          "title": "Securitas Technology, IQSIGHT Win Best Electronic Security Project",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-24"
+        },
+        {
+          "url": "https://www.securitysales.com/news/securitas-technology-2027-global-technology-outlook-report/620841/",
+          "title": "Securitas Technology Releases 2027 Global Technology Outlook Report",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-05"
+        }
+      ]
+    },
+    {
       "id": "malware-exploiting-legitimate-security-tools-and-driver-infr",
       "name": "Malware exploiting legitimate security tools and driver infrastructure to evade detection",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-09-30",
       "lastActive": "2026-10-06",
-      "cooledAt": null,
+      "cooledAt": "2026-10-07",
       "rationale": "Two separate malware campaigns across 14 days demonstrate attackers weaponizing legitimate software and kernel-level infrastructure meant to protect systems. Lunex stealer malware abuses AMD drivers to disable security monitoring while stealing browser credentials (Sept 26). CLOSEDQUORUM malware uses AI model voting to dynamically select theft targets while evading traditional detection (Sept 23). Both incidents show attackers bypassing security infrastructure at the driver level rather than defeating detection through obfuscation alone.",
       "signalTypes": [
         "velocity",
@@ -195,10 +336,10 @@
     {
       "id": "osdp-training-and-standards-adoption-initiatives",
       "name": "OSDP training and standards adoption reaching market inflection point",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-01",
       "lastActive": "2026-10-06",
-      "cooledAt": null,
+      "cooledAt": "2026-10-07",
       "rationale": "SIA and AMAG Technology launched a new tiered OSDP training program (Sept 24) aimed at equipping sales and marketing professionals with foundational knowledge. This signals industry recognition that OSDP adoption requires education beyond technical implementation, suggesting OSDP standardization is becoming a competitive differentiator in access control systems.",
       "signalTypes": [
         "source_authority",
@@ -215,111 +356,6 @@
           "title": "SIA, AMAG Technology Launching New OSDP Training Program",
           "source": "Security Sales",
           "publishedAt": "2026-09-24"
-        }
-      ]
-    },
-    {
-      "id": "visual-analytics-and-ai-powered-platform-integration-in-acce",
-      "name": "AI-powered visual analytics platforms consolidating multiple security functions",
-      "status": "emerging",
-      "firstDetected": "2026-10-01",
-      "lastActive": "2026-10-06",
-      "cooledAt": null,
-      "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). This represents a market trend toward integrated, AI-enhanced platforms that consolidate multiple security functions into unified visual and operational dashboards, moving beyond siloed systems.",
-      "signalTypes": [
-        "source_authority",
-        "claim_magnitude",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/projects/securitas-technology-iqsight-win-best-electronic-security-project/620722/",
-          "title": "Securitas Technology, IQSIGHT Win Best Electronic Security Project",
-          "source": "Security Sales",
-          "publishedAt": "2026-09-24"
-        }
-      ]
-    },
-    {
-      "id": "video-evidence-integrity-and-authentication-gaining-industry-2",
-      "name": "Video evidence integrity and authentication gaining industry focus",
-      "status": "emerging",
-      "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-06",
-      "cooledAt": null,
-      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This signals emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical for physical security deployments.",
-      "signalTypes": [
-        "source_authority",
-        "velocity",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/swear-video-evidence-integrity-protection-program/620816/",
-          "title": "SWEAR Launches Video Evidence Integrity Protection Program",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-01"
-        }
-      ]
-    },
-    {
-      "id": "ai-overlay-solutions-for-legacy-camera-systems-enabling-cost-2",
-      "name": "AI overlay solutions for legacy camera systems enabling cost-effective modernization",
-      "status": "emerging",
-      "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-06",
-      "cooledAt": null,
-      "rationale": "Security Sales reports that the next wave of AI adoption will layer onto existing camera infrastructure rather than requiring complete system replacement, fundamentally changing integrator business models (Oct 2). This represents a significant shift toward backward-compatible AI deployment that reduces customer capital requirements and creates new service opportunities for integrators.",
-      "signalTypes": [
-        "source_authority",
-        "velocity",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/insights/how-to-add-security-ai-to-the-camera-already-on-the-wall/620822/",
-          "title": "How to Add Security AI to the Camera Already on the Wall",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-02"
-        }
-      ]
-    },
-    {
-      "id": "china-aligned-threat-actors-targeting-us-ai-policy-expertise",
-      "name": "China-aligned threat actors targeting US AI policy expertise and decision-makers",
-      "status": "emerging",
-      "firstDetected": "2026-10-05",
-      "lastActive": "2026-10-06",
-      "cooledAt": null,
-      "rationale": "China-nexus cyber espionage group TA419 executed multiple credential phishing campaigns targeting AI experts at U.S. think tanks, universities, and legal sector organizations, impersonating prominent economists and AI professionals (Oct 4). This demonstrates strategic targeting of American AI policy influencers and technical expertise holders by state-aligned actors.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic",
-        "velocity",
-        "claim_magnitude"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-04"
         }
       ]
     },
