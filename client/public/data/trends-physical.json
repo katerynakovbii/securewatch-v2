@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-07T03:25:51.179Z",
+  "lastRunAt": "2026-10-08T03:40:36.921Z",
   "trends": [
     {
       "id": "regional-consolidation-among-mid-market-security-integrators",
       "name": "Regional consolidation among mid-market security integrators",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
       "rationale": "Two separate acquisition announcements within 24 hours confirm sustained consolidation activity. Securitas Technology acquired Sonitrol El Paso on Oct 1 to expand Texas coverage, while Pye-Barker acquired Union AlarmTronic in New Jersey on Sep 30. Both deals explicitly cite expansion of service territory and operational capacity as drivers. This pattern demonstrates active mid-market consolidation targeting adjacent service territories.",
       "signalTypes": [
@@ -33,35 +33,11 @@
       ]
     },
     {
-      "id": "industry-standardization-efforts-around-osdp-protocol",
-      "name": "Industry standardization efforts around OSDP protocol",
-      "status": "emerging",
-      "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-07",
-      "cooledAt": null,
-      "rationale": "SIA and AMAG Technology announced a new tiered training program on Sep 24 specifically designed to educate sales and marketing professionals on OSDP (Open Supervised Device Protocol). This formal industry-wide collaboration between the Standards Infrastructure Alliance and a major access control vendor represents a structured push to standardize knowledge and adoption of an open access control standard, signaling growing market momentum around protocol interoperability.",
-      "signalTypes": [
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/sia-amag-technology-osdp-training-program/620735/",
-          "title": "SIA, AMAG Technology Launching New OSDP Training Program",
-          "source": "Security Sales",
-          "publishedAt": "2026-09-24"
-        }
-      ]
-    },
-    {
       "id": "strong-industry-attendance-and-economic-activity-at-major-se",
       "name": "Strong industry attendance and economic activity at major security trade events",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
       "rationale": "GSX 2026 reported over 16,000 registrants from 100 countries and a 17% attendance increase over the prior year, generating over $30 million in regional revenue. This large-scale industry gathering demonstrates robust market health and continued global investment in physical security solutions, with attendance growth and international participation indicating strong demand across multiple regions.",
       "signalTypes": [
@@ -81,12 +57,86 @@
       ]
     },
     {
+      "id": "industry-performance-benchmarking-as-an-emerging-integrator-",
+      "name": "Industry performance benchmarking as an emerging integrator resource",
+      "status": "emerging",
+      "firstDetected": "2026-10-08",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "ESA launched an Industry Performance Index on Sep 28 specifically designed to provide security integrators and dealers with data to understand industry performance benchmarks. This represents a new structured tool for the integrator community to assess competitive positioning and operational metrics, indicating growing demand for data-driven performance visibility across the mid-market segment.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/esa-inaugural-industry-performance-index-security-integrators/620766/",
+          "title": "ESA Debuts Industry Performance Index for Security Integrators",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "cloud-and-connected-security-ecosystems-as-strategic-technol",
+      "name": "Cloud and connected security ecosystems as strategic technology direction",
+      "status": "emerging",
+      "firstDetected": "2026-10-08",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "Securitas Technology released a 2027 Global Technology Outlook report on Oct 5 highlighting cloud platforms and connected security ecosystems as reshaping the future of security. This forward-looking industry assessment from a major vendor signals that cloud-native architectures and ecosystem integration are becoming central to long-term physical security strategy and product development roadmaps.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/securitas-technology-2027-global-technology-outlook-report/620841/",
+          "title": "Securitas Technology Releases 2027 Global Technology Outlook Report",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "industry-standardization-efforts-around-osdp-protocol",
+      "name": "Industry standardization efforts around OSDP protocol",
+      "status": "cooled",
+      "firstDetected": "2026-10-03",
+      "lastActive": "2026-10-07",
+      "cooledAt": "2026-10-08",
+      "rationale": "SIA and AMAG Technology announced a new tiered training program on Sep 24 specifically designed to educate sales and marketing professionals on OSDP (Open Supervised Device Protocol). This formal industry-wide collaboration between the Standards Infrastructure Alliance and a major access control vendor represents a structured push to standardize knowledge and adoption of an open access control standard, signaling growing market momentum around protocol interoperability.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/sia-amag-technology-osdp-training-program/620735/",
+          "title": "SIA, AMAG Technology Launching New OSDP Training Program",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-24"
+        }
+      ]
+    },
+    {
       "id": "visual-analytics-and-integrated-alarm-management-as-competit",
       "name": "Visual analytics and integrated alarm management as competitive differentiation",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-05",
       "lastActive": "2026-10-07",
-      "cooledAt": null,
+      "cooledAt": "2026-10-08",
       "rationale": "Securitas Technology and IQSIGHT won a Best Electronic Security Project award on Sep 24 for a platform combining visual analytics, alarm management and live communication capabilities. This award recognition signals that integrated video analytics with alarm orchestration is becoming a key competitive differentiator in the market, with vendors prioritizing convergence of monitoring and response functions.",
       "signalTypes": [
         "source_authority",

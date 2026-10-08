@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-07T03:25:51.179Z",
+  "lastRunAt": "2026-10-08T03:40:36.921Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
-      "rationale": "OpenAI's internal agent bypassed Australian Medicare portal controls (Sept 24), AI-assisted code commits leak secrets at twice the rate of human code (Sept 24), MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), Zero Trust frameworks require reconsideration due to AI agent visibility gaps (Sept 26), IAM for AI agents described as critical enterprise framework (Sept 28), and Apple tightening macOS Full Disk Access controls due to AI agent risks (Oct 5). The credential layer is expanding faster than security teams can manage it (Oct 5).",
+      "rationale": "MCP Python SDK flaws allow malicious servers to steal OAuth credentials (Sept 29), Zero Trust frameworks require reconsideration due to AI agent visibility gaps (Sept 26), IAM for AI agents described as critical enterprise framework (Sept 28), and Apple tightening macOS Full Disk Access controls due to AI agent risks (Oct 5). The credential layer is expanding faster than security teams can manage it (Oct 5), with multiple frameworks and architectural approaches needed to address AI agent identity and access control challenges.",
       "signalTypes": [],
       "articleCount": 9,
       "sources": [
@@ -77,11 +77,11 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
-      "rationale": "Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), and attackers exploited third-party security product flaws to access high-level internal credentials. Multiple breach incidents across financial services, cloud SDKs, and developer tools demonstrate that third-party dependencies have become primary attack vectors for substantial financial and credential theft.",
+      "rationale": "Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), MCP Python SDK had OAuth credential theft vulnerabilities (Sept 29), FortiBleed harvested 86,644 Fortinet device credentials from internet-facing appliances (Oct 7), and attackers exploited third-party security product flaws to access high-level internal credentials. Multiple breach incidents across financial services, cloud SDKs, and networking infrastructure demonstrate that third-party dependencies have become primary attack vectors for substantial financial and credential theft.",
       "signalTypes": [],
-      "articleCount": 4,
+      "articleCount": 5,
       "sources": [
         "The Hacker News"
       ],
@@ -109,6 +109,69 @@
           "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
           "source": "The Hacker News",
           "publishedAt": "2026-09-23"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+          "title": "FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "china-aligned-threat-actors-targeting-us-ai-policy-expertise",
+      "name": "China-aligned threat actors targeting US AI policy expertise and decision-makers",
+      "status": "emerging",
+      "firstDetected": "2026-10-05",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "China-nexus cyber espionage group TA419 executed multiple credential phishing campaigns targeting AI experts at U.S. think tanks, universities, and legal sector organizations, impersonating prominent economists and AI professionals (Oct 4). This represents strategic targeting of American AI policy influencers and technical expertise holders by state-aligned actors using AitM phishing techniques to compromise decision-making infrastructure around U.S. AI regulation and strategy.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "phishing-campaigns-targeting-ai-product-platforms-and-creden",
+      "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
+      "status": "emerging",
+      "firstDetected": "2026-10-07",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "A human-operated phishing platform impersonates advertising products for AI chatbots like ChatGPT, Gemini, and Claude to capture credentials and MFA codes (Oct 6). China-nexus TA419 also targets AI experts via credential phishing (Oct 4). Multiple phishing campaigns spanning different threat actors and techniques are targeting AI platform adoption and AI expertise communities at scale, indicating attackers view AI adoption and AI decision-makers as high-value targets.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-06"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-04"
         }
       ]
     },
@@ -117,9 +180,9 @@
       "name": "Security integrator market consolidation and professionalization accelerating",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
-      "rationale": "ESA launched its Industry Performance Index (Sept 28) to help integrators understand performance gaps. GSX 2026 achieved record attendance of 16K registrants from 100 countries with 17% increase over prior year (Sept 28). Securitas Technology acquired Sonitrol El Paso (Oct 1) and Pye-Barker acquired Union AlarmTronic (Sept 30), demonstrating ongoing consolidation in the security integrator market alongside increased demand for performance benchmarking tools.",
+      "rationale": "ESA launched its Industry Performance Index (Sept 28) to help integrators understand performance gaps. GSX 2026 achieved record attendance of 16K registrants from 100 countries with 17% increase over prior year (Sept 28). Securitas Technology acquired Sonitrol El Paso (Oct 1) and Pye-Barker acquired Union AlarmTronic (Sept 30), demonstrating ongoing consolidation in the security integrator market alongside increased demand for performance benchmarking tools and industry standardization.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -168,40 +231,13 @@
       ]
     },
     {
-      "id": "china-aligned-threat-actors-targeting-us-ai-policy-expertise",
-      "name": "China-aligned threat actors targeting US AI policy expertise and decision-makers",
-      "status": "emerging",
-      "firstDetected": "2026-10-05",
-      "lastActive": "2026-10-07",
-      "cooledAt": null,
-      "rationale": "China-nexus cyber espionage group TA419 executed multiple credential phishing campaigns targeting AI experts at U.S. think tanks, universities, and legal sector organizations, impersonating prominent economists and AI professionals (Oct 4). This represents strategic targeting of American AI policy influencers and technical expertise holders by state-aligned actors using AitM phishing techniques.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic",
-        "velocity",
-        "claim_magnitude"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-04"
-        }
-      ]
-    },
-    {
       "id": "video-evidence-integrity-and-authentication-gaining-industry-2",
       "name": "Video evidence integrity and authentication gaining industry focus",
       "status": "emerging",
       "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
-      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This demonstrates emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical operational requirements for physical security deployments.",
+      "rationale": "SWEAR launched the Community Video Integrity Project (Oct 1) designed to add an independent, complementary layer of video authentication and evidence integrity protection. This demonstrates emerging industry recognition that video evidence authentication and chain-of-custody verification are becoming critical operational requirements for physical security deployments, particularly in law enforcement and legal contexts.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -221,43 +257,19 @@
       ]
     },
     {
-      "id": "phishing-campaigns-targeting-ai-product-platforms-and-creden",
-      "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
-      "status": "emerging",
-      "firstDetected": "2026-10-07",
-      "lastActive": "2026-10-07",
-      "cooledAt": null,
-      "rationale": "A human-operated phishing platform impersonates advertising products for AI chatbots like ChatGPT, Gemini, and Claude to capture credentials and MFA codes (Oct 6). This represents attackers targeting AI platform adoption at scale by spoofing legitimate AI vendor marketing portals.",
-      "signalTypes": [
-        "velocity"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
-          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-06"
-        }
-      ]
-    },
-    {
       "id": "ai-overlay-solutions-for-legacy-camera-systems-enabling-cost-2",
       "name": "AI overlay solutions for legacy camera systems enabling cost-effective modernization",
       "status": "emerging",
       "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-07",
+      "lastActive": "2026-10-08",
       "cooledAt": null,
-      "rationale": "Security Sales reports that the next wave of AI adoption will layer onto existing camera infrastructure rather than requiring complete system replacement, fundamentally changing integrator business models (Oct 2). This represents a significant shift toward backward-compatible AI deployment that reduces customer capital requirements and creates new service opportunities.",
+      "rationale": "Security Sales reports that the next wave of AI adoption will layer onto existing camera infrastructure rather than requiring complete system replacement, fundamentally changing integrator business models (Oct 2). Securitas Technology's 2027 Global Technology Outlook Report highlights how AI and connected security ecosystems are reshaping security (Oct 5). This represents a significant shift toward backward-compatible AI deployment that reduces customer capital requirements and creates new service opportunities for integrators.",
       "signalTypes": [
         "source_authority",
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
@@ -267,16 +279,96 @@
           "title": "How to Add Security AI to the Camera Already on the Wall",
           "source": "Security Sales",
           "publishedAt": "2026-10-02"
+        },
+        {
+          "url": "https://www.securitysales.com/news/securitas-technology-2027-global-technology-outlook-report/620841/",
+          "title": "Securitas Technology Releases 2027 Global Technology Outlook Report",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "credential-harvesting-from-internet-facing-appliances-remain",
+      "name": "Credential harvesting from internet-facing appliances remains active threat",
+      "status": "emerging",
+      "firstDetected": "2026-10-08",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "FBI and Secret Service warned that the FortiBleed credential harvesting campaign targeting internet-facing Fortinet FortiGate firewalls and SSL VPN gateways remains active and has amassed 86,644 device credentials (Oct 7). This demonstrates that large-scale, persistent credential harvesting against perimeter security appliances continues to be a viable attack vector despite public awareness.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+          "title": "FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "agentic-threat-actors-conducting-destructive-cloud-infrastru",
+      "name": "Agentic threat actors conducting destructive cloud infrastructure attacks",
+      "status": "emerging",
+      "firstDetected": "2026-10-08",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "An AI-powered threat actor designated as JadePuffer compromised an Azure tenant and conducted destructive attacks deleting cloud-based storage, applications, and databases, reportedly using exposed credentials to access resources (Sept 28). This represents a new category of autonomous adversaries leveraging AI capabilities to conduct large-scale destructive attacks against cloud infrastructure.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/cloud-security/jadepuffer-ai-actor-azure-tenant-destructive-cloud-attack",
+          "title": "JadePuffer AI Actor Compromises Azure Tenant in Destructive Cloud Attack",
+          "source": "Dark Reading",
+          "publishedAt": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "malware-abusing-privileged-drivers-to-disable-security-monit",
+      "name": "Malware abusing privileged drivers to disable security monitoring",
+      "status": "emerging",
+      "firstDetected": "2026-10-08",
+      "lastActive": "2026-10-08",
+      "cooledAt": null,
+      "rationale": "Lunex Stealer malware distributed via compromised Ukrainian websites abuses AMD drivers to disable security monitoring and steal browser credentials as part of a wider malware-as-a-service platform (Sept 26). This demonstrates sophisticated attack chains that use legitimate driver vulnerabilities to bypass endpoint security controls and enable credential theft at scale.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+          "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-26"
         }
       ]
     },
     {
       "id": "visual-analytics-and-ai-powered-platform-integration-in-acce",
       "name": "AI-powered visual analytics platforms consolidating multiple security functions",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-01",
       "lastActive": "2026-10-07",
-      "cooledAt": null,
+      "cooledAt": "2026-10-08",
       "rationale": "Securitas Technology and IQSIGHT won a best electronic security project award for a platform combining visual analytics, alarm management, and live communication (Sept 24). Securitas Technology also released a 2027 Global Technology Outlook Report highlighting how AI, cloud platforms and connected security ecosystems are reshaping security (Oct 5).",
       "signalTypes": [
         "source_authority",
