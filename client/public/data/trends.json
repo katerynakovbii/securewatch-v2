@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-10T11:37:37.073Z",
+  "lastRunAt": "2026-10-11T03:01:57.317Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
-      "rationale": "Multiple sources confirm that AI agents are creating systemic credential and access control gaps. The 2026 State of Agent Security Report identifies ~1,280 third-party AI products with 282 behind SSO and ~1,000 invisible to identity infrastructure (Oct 10). Apple is tightening macOS Full Disk Access controls specifically due to AI agent security risks (Oct 5). SailPoint's Horizons of Identity Security report highlights a 'velocity paradox' where security architectures lag AI deployment (Oct 9). GitGuardian reports the credential layer is expanding faster than security teams can see it (Oct 5), and a practical enterprise IAM framework for AI agents is now being documented (Sept 28).",
+      "rationale": "Multiple sources confirm that AI agents are creating systemic credential and access control gaps. The 2026 State of Agent Security Report identifies ~1,280 third-party AI products with 282 behind SSO and ~1,000 invisible to identity infrastructure (Oct 10). Apple is tightening macOS Full Disk Access controls specifically due to AI agent security risks (Oct 5). SailPoint's Horizons of Identity Security report highlights a 'velocity paradox' where security architectures lag AI deployment (Oct 9). GitGuardian reports the credential layer is expanding faster than security teams can see it (Oct 5).",
       "signalTypes": [],
       "articleCount": 11,
       "sources": [
@@ -89,7 +89,7 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
       "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. Bitget lost $388M via an unpatched flaw in a third-party security product (Sept 28), credential-stealing GitHub Actions workflows were planted in 340+ repositories via compromised maintainer accounts (Oct 9), FortiBleed harvested 86,644 Fortinet device credentials from internet-facing appliances (Oct 7), and the tensorlake npm package was compromised to deliver credential-stealing malware (Oct 8). ASOS breach demonstrates single compromised identity leading to deep network penetration (Oct 9).",
       "signalTypes": [],
@@ -154,7 +154,7 @@
       "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
       "status": "emerging",
       "firstDetected": "2026-10-07",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
       "rationale": "Multiple coordinated phishing campaigns target AI platform adoption and decision-makers. A human-operated phishing platform impersonates advertising products for ChatGPT, Gemini, Claude, Perplexity, and other AI chatbots to capture credentials and MFA codes (Oct 6). China-nexus TA419 executed credential phishing campaigns specifically targeting AI experts at U.S. think tanks, universities, and legal organizations (Oct 4). Wazza phishing kit demonstrates evolved infrastructure with filtering, session management, and traffic controls targeting banking, government, and manufacturing (Oct 8).",
       "signalTypes": [
@@ -190,7 +190,7 @@
       "name": "Security integrator market consolidation and professionalization accelerating",
       "status": "emerging",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
       "rationale": "Multiple signals show accelerating market consolidation and standardization. ESA launched its Industry Performance Index to help integrators benchmark performance (Sept 28), GSX 2026 achieved record attendance of 16,000+ registrants from 100 countries with 17% growth over 2025 (Sept 28). Securitas Technology acquired Sonitrol El Paso (Oct 1) and Pye-Barker acquired Union AlarmTronic (Sept 30), continuing consolidation trend. ADI is investing heavily in integrator-enabling design and professional services (Oct 8).",
       "signalTypes": [
@@ -251,7 +251,7 @@
       "name": "AI overlay solutions for legacy camera systems enabling cost-effective modernization",
       "status": "emerging",
       "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
       "rationale": "Industry sources confirm AI-as-overlay becomes the next deployment wave rather than forklift replacement. Security Sales reports that the next wave of security AI will layer onto existing camera infrastructure, fundamentally changing integrator business models (Oct 2). Securitas Technology's 2027 Global Technology Outlook Report highlights how AI and connected security ecosystems are reshaping security through backward-compatible deployment (Oct 5). This creates new service opportunities for integrators without requiring customers to replace operational systems.",
       "signalTypes": [
@@ -283,7 +283,7 @@
       "name": "Video evidence integrity and authentication gaining industry focus",
       "status": "emerging",
       "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
       "rationale": "SWEAR launched the Community Video Integrity Project designed to add an independent, complementary layer of video authentication and chain-of-custody verification (Oct 1). This demonstrates emerging industry recognition that video evidence authentication is becoming a critical operational requirement for physical security deployments, particularly in contexts where video evidence must withstand legal or forensic scrutiny.",
       "signalTypes": [
@@ -309,7 +309,7 @@
       "name": "Agentic threat actors conducting destructive cloud infrastructure attacks",
       "status": "emerging",
       "firstDetected": "2026-10-08",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
       "rationale": "JadePuffer, characterized as an AI-powered threat actor, compromised an Azure tenant and conducted destructive attacks deleting cloud-based storage, applications, and databases, reportedly using exposed credentials (Sept 28). This represents the emergence of autonomous adversaries leveraging AI capabilities to conduct large-scale destructive attacks against cloud infrastructure, distinct from traditional credential theft.",
       "signalTypes": [
@@ -335,9 +335,9 @@
       "name": "Multifamily residential property access control transitioning from mechanical to digital systems",
       "status": "emerging",
       "firstDetected": "2026-10-10",
-      "lastActive": "2026-10-10",
+      "lastActive": "2026-10-11",
       "cooledAt": null,
-      "rationale": "Security Sales reports that multifamily security is moving beyond traditional mechanical keys toward digital access control systems where property managers know who has access to what and why (Oct 9). This represents a shift in how integrators approach residential property security, moving from perimeter-focused mechanical solutions to identity-and-access-focused digital systems.",
+      "rationale": "Security Sales reports that multifamily security is moving beyond traditional mechanical keys toward digital access control systems where property managers know who has access to what and why (Oct 9). This represents a shift in how integrators approach residential property security, moving from perimeter-focused mechanical solutions to identity-and-access-focused digital systems, creating new market opportunities for access control integrators.",
       "signalTypes": [
         "cross_topic",
         "source_authority"
@@ -350,6 +350,30 @@
         {
           "url": "https://www.securitysales.com/insights/multifamily-security-outgrown-traditional-key/620903/",
           "title": "How Integrators Move Multifamily Security Beyond Traditional Keys",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "false-alarm-financial-liability-becoming-quantified-industry",
+      "name": "False alarm financial liability becoming quantified industry metric",
+      "status": "emerging",
+      "firstDetected": "2026-10-11",
+      "lastActive": "2026-10-11",
+      "cooledAt": null,
+      "rationale": "Interface Systems released a study revealing that false alarm liabilities comprise 80% of the financial burden for multi-location businesses (Oct 9). This quantification of false alarm costs as a primary financial metric suggests the industry is moving toward treating alarm false positives as a measurable operational and financial risk factor rather than an accepted business cost.",
+      "signalTypes": [
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/interface-systems-report-hidden-cost-false-alarms/620889/",
+          "title": "Interface Systems Report Exposes Hidden Cost of False Alarms",
           "source": "Security Sales",
           "publishedAt": "2026-10-09"
         }
