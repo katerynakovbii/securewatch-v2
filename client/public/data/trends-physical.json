@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-11T03:01:57.317Z",
+  "lastRunAt": "2026-10-12T03:25:01.860Z",
   "trends": [
     {
       "id": "regional-consolidation-among-mid-market-security-integrators",
       "name": "Regional consolidation among mid-market security integrators",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-11",
+      "lastActive": "2026-10-12",
       "cooledAt": null,
-      "rationale": "Two acquisition announcements within 24 hours (Securitas Technology acquiring Sonitrol El Paso on Oct 1 and Pye-Barker acquiring Union AlarmTronic on Sep 30) confirm sustained consolidation activity targeting adjacent service territories. Both deals explicitly cite expansion of service territory and operational capacity as drivers. This pattern demonstrates active mid-market consolidation across multiple regions (Texas and New Jersey), with multiple regional integrators executing similar strategic moves.",
+      "rationale": "Two acquisition announcements within one week (Securitas Technology acquiring Sonitrol El Paso on Oct 1 and Pye-Barker acquiring Union AlarmTronic on Sep 30) confirm sustained consolidation activity targeting adjacent service territories. Both deals explicitly cite expansion of service territory and operational capacity as drivers. This pattern demonstrates active mid-market consolidation across multiple regions (Texas and New Jersey), with multiple regional integrators executing similar strategic moves.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -33,12 +33,38 @@
       ]
     },
     {
+      "id": "cloud-and-connected-security-ecosystems-as-strategic-technol",
+      "name": "Cloud and connected security ecosystems as strategic technology direction",
+      "status": "emerging",
+      "firstDetected": "2026-10-08",
+      "lastActive": "2026-10-12",
+      "cooledAt": null,
+      "rationale": "Securitas Technology released a 2027 Global Technology Outlook report on Oct 5 highlighting cloud platforms and connected security ecosystems as reshaping the future of security. This forward-looking industry assessment from a major vendor signals that cloud-native architectures and ecosystem integration are becoming central to long-term physical security strategy and product development roadmaps.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/securitas-technology-2027-global-technology-outlook-report/620841/",
+          "title": "Securitas Technology Releases 2027 Global Technology Outlook Report",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-05"
+        }
+      ]
+    },
+    {
       "id": "strong-industry-attendance-and-economic-activity-at-major-se",
       "name": "Strong industry attendance and economic activity at major security trade events",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-03",
       "lastActive": "2026-10-11",
-      "cooledAt": null,
+      "cooledAt": "2026-10-12",
       "rationale": "GSX 2026 reported over 16,000 registrants from 100 countries and a 17% attendance increase over the prior year, generating over $30 million in regional revenue. This large-scale industry gathering demonstrates robust market health and continued global investment in physical security solutions, with attendance growth and international participation indicating strong demand across multiple regions and sustained industry confidence.",
       "signalTypes": [
         "claim_magnitude"
@@ -59,10 +85,10 @@
     {
       "id": "industry-performance-benchmarking-as-an-emerging-integrator-",
       "name": "Industry performance benchmarking as an emerging integrator resource",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-08",
       "lastActive": "2026-10-11",
-      "cooledAt": null,
+      "cooledAt": "2026-10-12",
       "rationale": "ESA launched an Industry Performance Index on Sep 28 specifically designed to provide security integrators and dealers with data to understand industry performance benchmarks. This represents a new structured tool for the integrator community to assess competitive positioning and operational metrics, indicating growing demand for data-driven performance visibility and transparency among mid-market operators.",
       "signalTypes": [
         "source_authority",
@@ -79,31 +105,6 @@
           "title": "ESA Debuts Industry Performance Index for Security Integrators",
           "source": "Security Sales",
           "publishedAt": "2026-09-28"
-        }
-      ]
-    },
-    {
-      "id": "cloud-and-connected-security-ecosystems-as-strategic-technol",
-      "name": "Cloud and connected security ecosystems as strategic technology direction",
-      "status": "emerging",
-      "firstDetected": "2026-10-08",
-      "lastActive": "2026-10-11",
-      "cooledAt": null,
-      "rationale": "Securitas Technology released a 2027 Global Technology Outlook report on Oct 5 highlighting cloud platforms and connected security ecosystems as reshaping the future of security. This forward-looking industry assessment from a major vendor signals that cloud-native architectures and ecosystem integration are becoming central to long-term physical security strategy and product development roadmaps.",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/securitas-technology-2027-global-technology-outlook-report/620841/",
-          "title": "Securitas Technology Releases 2027 Global Technology Outlook Report",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-05"
         }
       ]
     },
