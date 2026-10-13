@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-12T03:25:01.860Z",
+  "lastRunAt": "2026-10-13T05:39:58.162Z",
   "trends": [
     {
       "id": "regional-consolidation-among-mid-market-security-integrators",
       "name": "Regional consolidation among mid-market security integrators",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-12",
+      "lastActive": "2026-10-13",
       "cooledAt": null,
       "rationale": "Two acquisition announcements within one week (Securitas Technology acquiring Sonitrol El Paso on Oct 1 and Pye-Barker acquiring Union AlarmTronic on Sep 30) confirm sustained consolidation activity targeting adjacent service territories. Both deals explicitly cite expansion of service territory and operational capacity as drivers. This pattern demonstrates active mid-market consolidation across multiple regions (Texas and New Jersey), with multiple regional integrators executing similar strategic moves.",
       "signalTypes": [
@@ -37,7 +37,7 @@
       "name": "Cloud and connected security ecosystems as strategic technology direction",
       "status": "emerging",
       "firstDetected": "2026-10-08",
-      "lastActive": "2026-10-12",
+      "lastActive": "2026-10-13",
       "cooledAt": null,
       "rationale": "Securitas Technology released a 2027 Global Technology Outlook report on Oct 5 highlighting cloud platforms and connected security ecosystems as reshaping the future of security. This forward-looking industry assessment from a major vendor signals that cloud-native architectures and ecosystem integration are becoming central to long-term physical security strategy and product development roadmaps.",
       "signalTypes": [
