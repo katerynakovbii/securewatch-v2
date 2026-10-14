@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-13T05:39:58.162Z",
+  "lastRunAt": "2026-10-14T02:48:58.729Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents. The 2026 State of Agent Security Report identifies approximately 1,280 third-party AI products with roughly 1,000 invisible to identity infrastructure (Oct 10). Apple is tightening macOS Full Disk Access controls specifically due to AI agent security risks (Oct 5). SailPoint's Horizons of Identity Security report highlights a velocity paradox where security architectures lag AI deployment (Oct 9). GitGuardian reports the credential layer is expanding faster than security teams can see it (Oct 5).",
       "signalTypes": [],
@@ -89,7 +89,7 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors across different supply chain methods. Credential-stealing GitHub Actions workflows were planted in 340+ repositories via compromised maintainer accounts (Oct 9), FortiBleed harvested 86,644 Fortinet device credentials from internet-facing appliances (Oct 7), tensorlake npm package was compromised to deliver credential-stealing malware (Oct 8), and ASOS breach shows single compromised identity leading to deep network penetration (Oct 9). These incidents span code repositories, package managers, and SaaS platforms.",
       "signalTypes": [],
@@ -154,7 +154,7 @@
       "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
       "status": "emerging",
       "firstDetected": "2026-10-07",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "Multiple coordinated phishing campaigns specifically target AI platforms and decision-makers. A human-operated phishing platform impersonates ChatGPT, Gemini, Claude, Perplexity and other AI chatbots to capture credentials and MFA codes (Oct 6). China-nexus TA419 executed credential phishing campaigns targeting AI experts at U.S. think tanks, universities, and legal organizations (Oct 4). Wazza phishing kit demonstrates evolved infrastructure with filtering, session management, and traffic controls targeting banking, government, and manufacturing (Oct 8).",
       "signalTypes": [
@@ -190,7 +190,7 @@
       "name": "Multifamily residential property access control transitioning from mechanical to digital systems",
       "status": "emerging",
       "firstDetected": "2026-10-10",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "Security Sales reports that multifamily security is moving beyond traditional mechanical keys toward digital access control systems where property managers know who has access to what and why (Oct 9). This represents a shift in how integrators approach residential property security, moving from perimeter-focused mechanical solutions to identity-and-access-focused digital systems.",
       "signalTypes": [
@@ -216,13 +216,14 @@
       "name": "Video evidence integrity and authentication gaining industry focus",
       "status": "emerging",
       "firstDetected": "2026-10-04",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "SWEAR launched the Community Video Integrity Project designed to add an independent, complementary layer of video authentication and chain-of-custody verification (Oct 1). This demonstrates emerging industry recognition that video evidence authentication is becoming a critical operational requirement for physical security deployments.",
       "signalTypes": [
         "source_authority",
         "velocity",
-        "cross_topic"
+        "cross_topic",
+        "claim_magnitude"
       ],
       "articleCount": 1,
       "sources": [
@@ -242,11 +243,12 @@
       "name": "False alarm financial liability becoming quantified industry metric",
       "status": "emerging",
       "firstDetected": "2026-10-11",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "Interface Systems released a study revealing that false alarm liabilities comprise 80% of the financial burden for multi-location businesses (Oct 9). This quantification of false alarm costs as a primary financial metric suggests the industry is moving toward treating alarm false positives as a measurable operational and financial risk factor.",
       "signalTypes": [
-        "claim_magnitude"
+        "claim_magnitude",
+        "source_authority"
       ],
       "articleCount": 1,
       "sources": [
@@ -266,11 +268,13 @@
       "name": "Identity infrastructure fragmentation and IAM-centric resilience architecture",
       "status": "emerging",
       "firstDetected": "2026-10-13",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
       "rationale": "Dark Reading reports that cyber resilience now requires rethinking identity security given the proliferation of enterprise apps and centrality of cloud identity providers (Oct 12). The ASOS breach demonstrates how a single compromised identity can penetrate deep into corporate networks (Oct 9). Together these articles highlight that organizations are shifting toward identity-as-the-perimeter architectures.",
       "signalTypes": [
-        "velocity"
+        "velocity",
+        "source_authority",
+        "cross_topic"
       ],
       "articleCount": 2,
       "sources": [
@@ -288,6 +292,81 @@
           "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
           "source": "Dark Reading",
           "publishedAt": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "npm-and-open-source-package-management-security-tightening-i",
+      "name": "npm and open-source package management security tightening in response to supply chain attacks",
+      "status": "emerging",
+      "firstDetected": "2026-10-14",
+      "lastActive": "2026-10-14",
+      "cooledAt": null,
+      "rationale": "GitHub tightened npm publishing by expiring unvalidated trusted publishing configurations 48 hours after creation following researcher findings that attackers could push new versions of different users' packages without credential theft (Oct 13). This represents a platform-level response to demonstrated supply chain vulnerability, distinct from but complementary to individual compromise incidents.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
+          "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "security-workflow-design-prioritizing-operator-context-and-r",
+      "name": "Security workflow design prioritizing operator context and real-world usability",
+      "status": "emerging",
+      "firstDetected": "2026-10-14",
+      "lastActive": "2026-10-14",
+      "cooledAt": null,
+      "rationale": "Security Sales reports that integrators designing systems with better operator context close the gap between test scenarios and real-life situations, resulting in systems customers actually use (Oct 13). This suggests a shift toward human-centered security design where operational context and usability are primary design factors.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/designing-security-workflows-that-give-operators-better-context/620920/",
+          "title": "Designing Security Workflows That Give Operators Better Context",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "ai-powered-security-camera-capabilities-being-retrofitted-to",
+      "name": "AI-powered security camera capabilities being retrofitted to existing physical camera infrastructure",
+      "status": "emerging",
+      "firstDetected": "2026-10-14",
+      "lastActive": "2026-10-14",
+      "cooledAt": null,
+      "rationale": "Security Sales reports that the next wave of security AI will be layered onto existing camera systems already deployed at customer sites, fundamentally changing the business model for integrators (Oct 2). This signals a shift from hardware-centric upgrades to software-centric AI analytics added to legacy infrastructure.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/how-to-add-security-ai-to-the-camera-already-on-the-wall/620822/",
+          "title": "How to Add Security AI to the Camera Already on the Wall",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-02"
         }
       ]
     },

@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-13T05:39:58.162Z",
+  "lastRunAt": "2026-10-14T02:48:58.729Z",
   "trends": [
     {
       "id": "regional-consolidation-among-mid-market-security-integrators",
       "name": "Regional consolidation among mid-market security integrators",
       "status": "emerging",
       "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
-      "rationale": "Two acquisition announcements within one week (Securitas Technology acquiring Sonitrol El Paso on Oct 1 and Pye-Barker acquiring Union AlarmTronic on Sep 30) confirm sustained consolidation activity targeting adjacent service territories. Both deals explicitly cite expansion of service territory and operational capacity as drivers. This pattern demonstrates active mid-market consolidation across multiple regions (Texas and New Jersey), with multiple regional integrators executing similar strategic moves.",
+      "rationale": "The Securitas Technology acquisition of Sonitrol El Paso (Oct 1) provides additional evidence for the ongoing mid-market consolidation trend. This deal explicitly cites geographic service coverage expansion in Texas, consistent with the pattern established by prior consolidation activity. The sustained pace of regional integrator M&A activity within the industry continues to demonstrate this strategic shift.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -37,9 +37,9 @@
       "name": "Cloud and connected security ecosystems as strategic technology direction",
       "status": "emerging",
       "firstDetected": "2026-10-08",
-      "lastActive": "2026-10-13",
+      "lastActive": "2026-10-14",
       "cooledAt": null,
-      "rationale": "Securitas Technology released a 2027 Global Technology Outlook report on Oct 5 highlighting cloud platforms and connected security ecosystems as reshaping the future of security. This forward-looking industry assessment from a major vendor signals that cloud-native architectures and ecosystem integration are becoming central to long-term physical security strategy and product development roadmaps.",
+      "rationale": "The Securitas Technology 2027 Global Technology Outlook Report (Oct 5) reinforces that cloud platforms and connected security ecosystems are central to industry-wide technology strategy and future roadmaps. This forward-looking assessment from a major vendor confirms that cloud-native architectures remain a sustained strategic priority for physical security vendors.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -55,6 +55,30 @@
           "title": "Securitas Technology Releases 2027 Global Technology Outlook Report",
           "source": "Security Sales",
           "publishedAt": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "operator-context-and-workflow-design-as-critical-integration",
+      "name": "Operator context and workflow design as critical integration challenge",
+      "status": "emerging",
+      "firstDetected": "2026-10-14",
+      "lastActive": "2026-10-14",
+      "cooledAt": null,
+      "rationale": "A Security Sales article published Oct 13 highlights that security integrators are designing systems with better operator context and workflow, closing the gap between test scenarios and real-world situations. This reflects a growing industry focus on human factors and usability in security system deployment, signaling that end-user experience has become a competitive differentiator for integrators.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/designing-security-workflows-that-give-operators-better-context/620920/",
+          "title": "Designing Security Workflows That Give Operators Better Context",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-13"
         }
       ]
     },
