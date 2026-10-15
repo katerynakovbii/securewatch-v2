@@ -1,34 +1,27 @@
 {
-  "lastRunAt": "2026-10-14T02:48:58.729Z",
+  "lastRunAt": "2026-10-15T02:28:07.425Z",
   "trends": [
     {
-      "id": "regional-consolidation-among-mid-market-security-integrators",
-      "name": "Regional consolidation among mid-market security integrators",
+      "id": "operator-context-and-workflow-design-as-critical-integration",
+      "name": "Operator context and workflow design as critical integration challenge",
       "status": "emerging",
-      "firstDetected": "2026-10-03",
-      "lastActive": "2026-10-14",
+      "firstDetected": "2026-10-14",
+      "lastActive": "2026-10-15",
       "cooledAt": null,
-      "rationale": "The Securitas Technology acquisition of Sonitrol El Paso (Oct 1) provides additional evidence for the ongoing mid-market consolidation trend. This deal explicitly cites geographic service coverage expansion in Texas, consistent with the pattern established by prior consolidation activity. The sustained pace of regional integrator M&A activity within the industry continues to demonstrate this strategic shift.",
+      "rationale": "A Security Sales article published Oct 13 highlights that security integrators are designing systems with better operator context and workflow, closing the gap between test scenarios and real-world situations. This reflects a growing industry focus on human factors and usability in security system deployment, signaling that end-user experience has become a competitive differentiator for integrators.",
       "signalTypes": [
-        "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 2,
+      "articleCount": 1,
       "sources": [
         "Security Sales"
       ],
       "articles": [
         {
-          "url": "https://www.securitysales.com/news/securitas-technology-sonitrol-el-paso-acquisition/620809/",
-          "title": "Securitas Technology Announces Sonitrol El Paso Acquisition",
+          "url": "https://www.securitysales.com/insights/designing-security-workflows-that-give-operators-better-context/620920/",
+          "title": "Designing Security Workflows That Give Operators Better Context",
           "source": "Security Sales",
-          "publishedAt": "2026-10-01"
-        },
-        {
-          "url": "https://www.securitysales.com/news/pye-barker-acquires-union-alarmtronic/620784/",
-          "title": "Pye-Barker Acquires Springfield, New Jersey&#8217;s Union AlarmTronic",
-          "source": "Security Sales",
-          "publishedAt": "2026-09-30"
+          "publishedAt": "2026-10-13"
         }
       ]
     },
@@ -37,7 +30,7 @@
       "name": "Cloud and connected security ecosystems as strategic technology direction",
       "status": "emerging",
       "firstDetected": "2026-10-08",
-      "lastActive": "2026-10-14",
+      "lastActive": "2026-10-15",
       "cooledAt": null,
       "rationale": "The Securitas Technology 2027 Global Technology Outlook Report (Oct 5) reinforces that cloud platforms and connected security ecosystems are central to industry-wide technology strategy and future roadmaps. This forward-looking assessment from a major vendor confirms that cloud-native architectures remain a sustained strategic priority for physical security vendors.",
       "signalTypes": [
@@ -59,26 +52,33 @@
       ]
     },
     {
-      "id": "operator-context-and-workflow-design-as-critical-integration",
-      "name": "Operator context and workflow design as critical integration challenge",
-      "status": "emerging",
-      "firstDetected": "2026-10-14",
+      "id": "regional-consolidation-among-mid-market-security-integrators",
+      "name": "Regional consolidation among mid-market security integrators",
+      "status": "cooled",
+      "firstDetected": "2026-10-03",
       "lastActive": "2026-10-14",
-      "cooledAt": null,
-      "rationale": "A Security Sales article published Oct 13 highlights that security integrators are designing systems with better operator context and workflow, closing the gap between test scenarios and real-world situations. This reflects a growing industry focus on human factors and usability in security system deployment, signaling that end-user experience has become a competitive differentiator for integrators.",
+      "cooledAt": "2026-10-15",
+      "rationale": "The Securitas Technology acquisition of Sonitrol El Paso (Oct 1) provides additional evidence for the ongoing mid-market consolidation trend. This deal explicitly cites geographic service coverage expansion in Texas, consistent with the pattern established by prior consolidation activity. The sustained pace of regional integrator M&A activity within the industry continues to demonstrate this strategic shift.",
       "signalTypes": [
+        "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
       "articles": [
         {
-          "url": "https://www.securitysales.com/insights/designing-security-workflows-that-give-operators-better-context/620920/",
-          "title": "Designing Security Workflows That Give Operators Better Context",
+          "url": "https://www.securitysales.com/news/securitas-technology-sonitrol-el-paso-acquisition/620809/",
+          "title": "Securitas Technology Announces Sonitrol El Paso Acquisition",
           "source": "Security Sales",
-          "publishedAt": "2026-10-13"
+          "publishedAt": "2026-10-01"
+        },
+        {
+          "url": "https://www.securitysales.com/news/pye-barker-acquires-union-alarmtronic/620784/",
+          "title": "Pye-Barker Acquires Springfield, New Jersey&#8217;s Union AlarmTronic",
+          "source": "Security Sales",
+          "publishedAt": "2026-09-30"
         }
       ]
     },
