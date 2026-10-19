@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-18T02:14:22.296Z",
+  "lastRunAt": "2026-10-19T02:29:58.574Z",
   "trends": [
     {
       "id": "operator-context-and-workflow-design-as-critical-integration",
       "name": "Operator context and workflow design as critical integration challenge",
       "status": "emerging",
       "firstDetected": "2026-10-14",
-      "lastActive": "2026-10-18",
+      "lastActive": "2026-10-19",
       "cooledAt": null,
       "rationale": "The Security Sales article from Oct 13 emphasizes that security integrators are designing systems with better operator context and workflow, closing the gap between test scenarios and real-world situations. This reflects a growing industry focus on human factors and usability as a competitive differentiator in security system deployment.",
       "signalTypes": [
@@ -29,10 +29,10 @@
     {
       "id": "cloud-and-connected-security-ecosystems-as-strategic-technol",
       "name": "Cloud and connected security ecosystems as strategic technology direction",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-08",
       "lastActive": "2026-10-18",
-      "cooledAt": null,
+      "cooledAt": "2026-10-19",
       "rationale": "The Securitas Technology 2027 Global Technology Outlook Report from Oct 5 identifies cloud platforms and connected security ecosystems as central to industry-wide technology strategy. This forward-looking assessment from a major vendor confirms cloud-native architectures remain a sustained strategic priority for physical security vendors.",
       "signalTypes": [
         "source_authority",
