@@ -1,19 +1,20 @@
 {
-  "lastRunAt": "2026-10-19T02:29:58.574Z",
+  "lastRunAt": "2026-10-20T16:04:17.897Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-19",
+      "lastActive": "2026-10-20",
       "cooledAt": null,
-      "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents. SailPoint's Horizons of Identity Security report highlights a velocity paradox where security architectures lag AI deployment (Oct 9). A webinar discusses how AI is accelerating privilege escalation attacks faster than security teams can investigate (Oct 13). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure by default (Oct 10). Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12).",
+      "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents. Lumana and Convergint partnership demonstrates enterprise AI video security deployment (Oct 19). A webinar discusses how AI is accelerating privilege escalation attacks faster than security teams can investigate (Oct 13). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure by default (Oct 10). Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12).",
       "signalTypes": [],
-      "articleCount": 13,
+      "articleCount": 14,
       "sources": [
         "The Hacker News",
-        "Dark Reading"
+        "Dark Reading",
+        "Security Sales"
       ],
       "articles": [
         {
@@ -93,6 +94,12 @@
           "title": "No Identity, No Recovery: Cyber Resilience Starts With IAM",
           "source": "Dark Reading",
           "publishedAt": "2026-10-12"
+        },
+        {
+          "url": "https://www.securitysales.com/news/lumana-convergint-partner-enterprise-ai-video-security/621055/",
+          "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
         }
       ]
     },
@@ -101,11 +108,11 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-19",
+      "lastActive": "2026-10-20",
       "cooledAt": null,
-      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. Credential-stealing GitHub Actions workflows were planted in 340+ repositories via compromised maintainer accounts (Oct 9), tensorlake npm package was compromised to deliver credential-stealing malware (Oct 8), FortiBleed harvested 86,644 Fortinet device credentials (Oct 7), and ASOS breach shows single compromised identity leading to deep network penetration (Oct 9). GitHub also tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13).",
+      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. Credential-stealing GitHub Actions workflows were planted in 340+ repositories via compromised maintainer accounts (Oct 9), tensorlake npm package was compromised to deliver credential-stealing malware (Oct 8), GhostAction expanded to target over 30,000 repositories and 3,000 users (Oct 15), and GitHub tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13). The escalating sophistication and scale of these attacks shows a sustained trend.",
       "signalTypes": [],
-      "articleCount": 9,
+      "articleCount": 10,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -164,42 +171,12 @@
           "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
           "source": "The Hacker News",
           "publishedAt": "2026-10-13"
-        }
-      ]
-    },
-    {
-      "id": "phishing-campaigns-targeting-ai-product-platforms-and-creden",
-      "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
-      "status": "emerging",
-      "firstDetected": "2026-10-07",
-      "lastActive": "2026-10-19",
-      "cooledAt": null,
-      "rationale": "Multiple coordinated phishing campaigns specifically target AI platforms and decision-makers. A human-operated phishing platform impersonates ChatGPT, Gemini, Claude, Perplexity and other AI chatbots to capture credentials and MFA codes (Oct 6). Wazza phishing kit demonstrates evolved infrastructure with filtering and session management targeting banking, government, and manufacturing sectors across US, EU, and Australia (Oct 8). These attacks show sophistication beyond simple credential theft.",
-      "signalTypes": [
-        "velocity"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
-          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-06"
         },
         {
-          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+          "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+          "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
           "source": "The Hacker News",
-          "publishedAt": "2026-10-04"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
-          "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing Across the US, EU, and Australia",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-08"
+          "publishedAt": "2026-10-15"
         }
       ]
     },
@@ -208,7 +185,7 @@
       "name": "Identity infrastructure fragmentation and IAM-centric resilience architecture",
       "status": "confirmed",
       "firstDetected": "2026-10-13",
-      "lastActive": "2026-10-19",
+      "lastActive": "2026-10-20",
       "cooledAt": null,
       "rationale": "Multiple sources highlight identity as the critical security perimeter. Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure (Oct 10). SAP disclosed a critical OAuth2 credential theft vulnerability in Cloud SDK for Python affecting multi-tenant applications (Oct 13). A compromised ConnectWise M365 credential was used to access 173 Microsoft 365 tenants (Oct 17).",
       "signalTypes": [
@@ -255,12 +232,204 @@
       ]
     },
     {
+      "id": "compromised-cloud-service-provider-credentials-enabling-broa",
+      "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
+      "status": "emerging",
+      "firstDetected": "2026-10-19",
+      "lastActive": "2026-10-20",
+      "cooledAt": null,
+      "rationale": "Multiple articles document how a single compromised cloud provider credential can cascade across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential was used to gain unauthorized access to 173 different Microsoft 365 tenants (Oct 17, Oct 19). ConnectWise responded by disabling cloud backups and resetting credentials (Oct 20, Oct 19). This demonstrates a distinct attack vector where cloud service provider account compromise threatens entire customer bases.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "The Hacker News",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-17"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+          "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+          "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "renter-market-expansion-driving-residential-security-system-",
+      "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
+      "status": "emerging",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-20",
+      "cooledAt": null,
+      "rationale": "Parks Associates research highlights that 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this trend with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). This suggests a material shift in residential security market composition toward non-owner-occupied properties.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/37-recent-home-security-system-buyers-renters-parks-associates/621077/",
+          "title": "37% of Recent Home Security System Buyers are Renters: Parks Associates",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/how-connected-technology-holiday-travelers-real-time-visibility-control/620975/",
+          "title": "How Connected Technology Gives Holiday Travelers Real-Time Control",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "credential-stealing-malware-embedding-itself-in-ai-developme",
+      "name": "Credential-stealing malware embedding itself in AI development tools and IDE interfaces",
+      "status": "emerging",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-20",
+      "cooledAt": null,
+      "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click flaw enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a new attack surface where AI development tools themselves become credential harvesting vectors, targeting a high-value population of developers and engineers.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+          "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "evolved-phishing-as-a-service-platforms-with-advanced-filter",
+      "name": "Evolved phishing-as-a-service platforms with advanced filtering and session management capabilities",
+      "status": "emerging",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-20",
+      "cooledAt": null,
+      "rationale": "Wazza phishing kit demonstrates evolved infrastructure with filtering, session management, and traffic controls built into the phishing delivery infrastructure itself, targeting banking, government, and manufacturing sectors across US, EU, and Australia (Oct 8). This shows attackers moving beyond simple credential capture to sophisticated platform-level controls.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
+          "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing Across the US, EU, and Australia",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "id": "industry-m-a-and-facility-expansion-consolidating-regional-s",
+      "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
+      "status": "emerging",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-20",
+      "cooledAt": null,
+      "rationale": "Multiple M&A and expansion announcements show consolidation patterns: RapidFire acquired Access Systems (Oct 13), Guardian Security acquired Keyhole Security (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19). These moves by major vendors indicate market consolidation and confidence in sector growth.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/rapidfire-acquires-access-systems/620915/",
+          "title": "RapidFire Acquires El Dorado Hills, California-Based Access Systems",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.securitysales.com/news/guardian-security-acquires-keyhole-security/621028/",
+          "title": "Guardian Security Acquires Keyhole Security of Wenatchee, Washington",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "url": "https://www.securitysales.com/news/eos-security-101-company-facility-fenton-michigan/621063/",
+          "title": "EOS, a Security 101 Company, Opens New Facility in Fenton, Michigan",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "phishing-campaigns-targeting-ai-product-platforms-and-creden",
+      "name": "Phishing campaigns targeting AI product platforms and credentials at scale",
+      "status": "cooled",
+      "firstDetected": "2026-10-07",
+      "lastActive": "2026-10-19",
+      "cooledAt": "2026-10-20",
+      "rationale": "Multiple coordinated phishing campaigns specifically target AI platforms and decision-makers. A human-operated phishing platform impersonates ChatGPT, Gemini, Claude, Perplexity and other AI chatbots to capture credentials and MFA codes (Oct 6). Wazza phishing kit demonstrates evolved infrastructure with filtering and session management targeting banking, government, and manufacturing sectors across US, EU, and Australia (Oct 8). These attacks show sophistication beyond simple credential theft.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-06"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-04"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
+          "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing Across the US, EU, and Australia",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-08"
+        }
+      ]
+    },
+    {
       "id": "multifamily-residential-property-access-control-transitionin",
       "name": "Multifamily residential property access control transitioning from mechanical to digital systems",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-10",
       "lastActive": "2026-10-19",
-      "cooledAt": null,
+      "cooledAt": "2026-10-20",
       "rationale": "Security Sales reports that multifamily security is moving beyond traditional mechanical keys toward digital access control systems where property managers know who has access to what and why (Oct 9). ADI's Matt Kamp explains why whole-home connected security has become a must-have ahead of holiday travel season (Oct 14). These reports from major industry vendors indicate a broad shift from perimeter-focused mechanical solutions to identity-and-access-focused digital systems.",
       "signalTypes": [
         "cross_topic",
@@ -289,10 +458,10 @@
     {
       "id": "false-alarm-financial-liability-becoming-quantified-industry",
       "name": "False alarm financial liability becoming quantified industry metric",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-11",
       "lastActive": "2026-10-19",
-      "cooledAt": null,
+      "cooledAt": "2026-10-20",
       "rationale": "Interface Systems released a comprehensive study revealing that false alarm liabilities comprise 80% of the financial burden for multi-location businesses (Oct 9). A separate article examines the normalization of alarm suppression and communication failure logging, questioning whether these practices have become industry standard (Oct 14). These reports indicate the industry is quantifying and scrutinizing alarm false positives as a measurable operational and financial risk factor.",
       "signalTypes": [
         "claim_magnitude",
@@ -318,37 +487,12 @@
       ]
     },
     {
-      "id": "compromised-cloud-service-provider-credentials-enabling-broa",
-      "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
-      "status": "emerging",
-      "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-19",
-      "cooledAt": null,
-      "rationale": "ConnectWise Cloud Backup's compromised M365 credential was used to gain unauthorized access to 173 different Microsoft 365 tenants (Oct 17). This demonstrates how a single compromised cloud service provider account can cascade across many enterprise customers. This is a distinct attack vector from general supply chain vulnerabilities.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-17"
-        }
-      ]
-    },
-    {
       "id": "linux-kernel-virtualization-vulnerabilities-exposing-host-me",
       "name": "Linux kernel virtualization vulnerabilities exposing host memory from guest VMs",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-19",
       "lastActive": "2026-10-19",
-      "cooledAt": null,
+      "cooledAt": "2026-10-20",
       "rationale": "A critical Linux kernel vulnerability (CVE-2026-99999, nicknamed PwnEscape) was disclosed allowing code in a virtual machine to read host memory, with proof-of-concept demonstrated against Vercel's live cloud sandboxes (Oct 15). This represents a fundamental infrastructure security threat in cloud environments where multi-tenancy is standard.",
       "signalTypes": [
         "claim_magnitude",
@@ -370,10 +514,10 @@
     {
       "id": "ai-powered-credential-theft-embedded-in-developer-tools-and-",
       "name": "AI-powered credential theft embedded in developer tools and IDE plugins",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-19",
       "lastActive": "2026-10-19",
-      "cooledAt": null,
+      "cooledAt": "2026-10-20",
       "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click flaw enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a new attack surface where AI development tools themselves become credential harvesting vectors.",
       "signalTypes": [
         "source_authority",
@@ -395,10 +539,10 @@
     {
       "id": "ghostaction-credential-theft-campaign-targeting-github-repos",
       "name": "GhostAction credential-theft campaign targeting GitHub repositories at scale",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-19",
       "lastActive": "2026-10-19",
-      "cooledAt": null,
+      "cooledAt": "2026-10-20",
       "rationale": "GhostAction compromised approximately 1,900 GitHub accounts to target over 30,000 repositories across 3,000 users and organizations, with a spike observed on October 8-9, 2026 (Oct 15). This represents a sustained, large-scale campaign leveraging GitHub as a primary attack vector for open-source ecosystems.",
       "signalTypes": [
         "claim_magnitude",
