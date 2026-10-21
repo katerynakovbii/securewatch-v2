@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-20T16:04:17.897Z",
+  "lastRunAt": "2026-10-21T02:36:52.346Z",
   "trends": [
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
       "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents. Lumana and Convergint partnership demonstrates enterprise AI video security deployment (Oct 19). A webinar discusses how AI is accelerating privilege escalation attacks faster than security teams can investigate (Oct 13). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure by default (Oct 10). Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12).",
       "signalTypes": [],
@@ -108,7 +108,7 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
       "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. Credential-stealing GitHub Actions workflows were planted in 340+ repositories via compromised maintainer accounts (Oct 9), tensorlake npm package was compromised to deliver credential-stealing malware (Oct 8), GhostAction expanded to target over 30,000 repositories and 3,000 users (Oct 15), and GitHub tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13). The escalating sophistication and scale of these attacks shows a sustained trend.",
       "signalTypes": [],
@@ -185,7 +185,7 @@
       "name": "Identity infrastructure fragmentation and IAM-centric resilience architecture",
       "status": "confirmed",
       "firstDetected": "2026-10-13",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
       "rationale": "Multiple sources highlight identity as the critical security perimeter. Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure (Oct 10). SAP disclosed a critical OAuth2 credential theft vulnerability in Cloud SDK for Python affecting multi-tenant applications (Oct 13). A compromised ConnectWise M365 credential was used to access 173 Microsoft 365 tenants (Oct 17).",
       "signalTypes": [
@@ -236,7 +236,7 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "emerging",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
       "rationale": "Multiple articles document how a single compromised cloud provider credential can cascade across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential was used to gain unauthorized access to 173 different Microsoft 365 tenants (Oct 17, Oct 19). ConnectWise responded by disabling cloud backups and resetting credentials (Oct 20, Oct 19). This demonstrates a distinct attack vector where cloud service provider account compromise threatens entire customer bases.",
       "signalTypes": [
@@ -274,9 +274,9 @@
       "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
-      "rationale": "Parks Associates research highlights that 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this trend with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). This suggests a material shift in residential security market composition toward non-owner-occupied properties.",
+      "rationale": "Parks Associates research highlights that 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this trend with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). This demonstrates a material shift in residential security market composition toward non-owner-occupied properties with distinct service and installation models.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude"
@@ -305,12 +305,13 @@
       "name": "Credential-stealing malware embedding itself in AI development tools and IDE interfaces",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
-      "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click flaw enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a new attack surface where AI development tools themselves become credential harvesting vectors, targeting a high-value population of developers and engineers.",
+      "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a new attack surface where AI development tools themselves become credential harvesting vectors, targeting a high-value population of developers and engineers with sophisticated zero-click exploitation.",
       "signalTypes": [
         "source_authority",
-        "claim_magnitude"
+        "claim_magnitude",
+        "cross_topic"
       ],
       "articleCount": 1,
       "sources": [
@@ -330,12 +331,13 @@
       "name": "Evolved phishing-as-a-service platforms with advanced filtering and session management capabilities",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
-      "rationale": "Wazza phishing kit demonstrates evolved infrastructure with filtering, session management, and traffic controls built into the phishing delivery infrastructure itself, targeting banking, government, and manufacturing sectors across US, EU, and Australia (Oct 8). This shows attackers moving beyond simple credential capture to sophisticated platform-level controls.",
+      "rationale": "Wazza phishing kit demonstrates evolved infrastructure with filtering, session management, and traffic controls built into the phishing delivery infrastructure itself, targeting banking, government, and manufacturing sectors across US, EU, and Australia (Oct 8). This shows attackers moving beyond simple credential capture to sophisticated platform-level controls and multi-sector targeting strategies.",
       "signalTypes": [
         "claim_magnitude",
-        "velocity"
+        "velocity",
+        "cross_topic"
       ],
       "articleCount": 1,
       "sources": [
@@ -355,12 +357,13 @@
       "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-20",
+      "lastActive": "2026-10-21",
       "cooledAt": null,
-      "rationale": "Multiple M&A and expansion announcements show consolidation patterns: RapidFire acquired Access Systems (Oct 13), Guardian Security acquired Keyhole Security (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19). These moves by major vendors indicate market consolidation and confidence in sector growth.",
+      "rationale": "Multiple M&A and expansion announcements show consolidation patterns: RapidFire acquired Access Systems (Oct 13), Guardian Security acquired Keyhole Security (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft in Fenton, Michigan (Oct 19). These moves by major vendors indicate market consolidation and confidence in sector growth with regional players being absorbed.",
       "signalTypes": [
         "source_authority",
-        "velocity"
+        "velocity",
+        "claim_magnitude"
       ],
       "articleCount": 3,
       "sources": [
@@ -384,6 +387,38 @@
           "title": "EOS, a Security 101 Company, Opens New Facility in Fenton, Michigan",
           "source": "Security Sales",
           "publishedAt": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "service-record-and-documentation-governance-as-business-cont",
+      "name": "Service record and documentation governance as business continuity dependency",
+      "status": "emerging",
+      "firstDetected": "2026-10-21",
+      "lastActive": "2026-10-21",
+      "cooledAt": null,
+      "rationale": "Security Sales reports that reliable security service records matter more to integrators and customers than the software used to maintain them, highlighting hidden costs from missing service history (Oct 20). Interface Systems study found that false alarm liabilities make up 80% of financial burden for multi-location businesses, indicating the critical value of proper documentation and logging (Oct 9). These point to a growing industry recognition that metadata and record-keeping infrastructure directly impacts business continuity and liability management.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "cross_topic"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/hidden-cost-missing-security-service-history/621082/",
+          "title": "The Hidden Cost of a Missing Security Service History",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.securitysales.com/news/interface-systems-report-hidden-cost-false-alarms/620889/",
+          "title": "Interface Systems Report Exposes Hidden Cost of False Alarms",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-09"
         }
       ]
     },
