@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-21T02:36:52.346Z",
+  "lastRunAt": "2026-10-22T02:44:17.138Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-21",
+      "lastActive": "2026-10-22",
       "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. This signals a trend of AI video security vendors leveraging established integrator networks to accelerate enterprise market penetration and installation scale.",
+      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. This represents a concrete signal of AI video security vendors leveraging established integrator networks to scale enterprise deployments and modernize existing camera installations.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -31,9 +31,9 @@
       "name": "Operator context and workflow design as critical integration challenge",
       "status": "emerging",
       "firstDetected": "2026-10-14",
-      "lastActive": "2026-10-21",
+      "lastActive": "2026-10-22",
       "cooledAt": null,
-      "rationale": "The Security Sales article from Oct 13 emphasizes that security integrators are designing systems with better operator context and workflow, closing the gap between test scenarios and real-world situations. This reflects a growing industry focus on human factors and usability as a competitive differentiator in security system deployment.",
+      "rationale": "Security Sales published an article on Oct 13 emphasizing that security integrators are prioritizing operator context and workflow design to close the gap between test scenarios and real-world situations. This reflects growing industry recognition that human factors and system usability are now competitive differentiators in security system deployment.",
       "signalTypes": [
         "velocity",
         "source_authority",
@@ -49,6 +49,31 @@
           "title": "Designing Security Workflows That Give Operators Better Context",
           "source": "Security Sales",
           "publishedAt": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "convergence-of-cyber-and-physical-security-as-executive-safe",
+      "name": "Convergence of cyber and physical security as executive safety imperative",
+      "status": "emerging",
+      "firstDetected": "2026-10-22",
+      "lastActive": "2026-10-22",
+      "cooledAt": null,
+      "rationale": "A 360 Privacy survey published Oct 21 finds that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. This signals industry-wide recognition that cyber breaches can directly enable physical threats.",
+      "signalTypes": [
+        "claim_magnitude",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+          "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-21"
         }
       ]
     },
