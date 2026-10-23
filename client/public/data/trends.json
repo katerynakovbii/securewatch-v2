@@ -1,16 +1,219 @@
 {
-  "lastRunAt": "2026-10-21T02:36:52.346Z",
+  "lastRunAt": "2026-10-23T10:44:34.299Z",
   "trends": [
+    {
+      "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
+      "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
+      "status": "confirmed",
+      "firstDetected": "2026-09-29",
+      "lastActive": "2026-10-23",
+      "cooledAt": null,
+      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors across the 14-day window. LiteLLM Python package was compromised to deliver credential stealer and backdoor (Oct 21-22), GhostAction expanded to target over 30,000 repositories and 1,900 GitHub accounts (Oct 15-19), and GitHub tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13). The escalating sophistication and scale demonstrates a sustained, high-velocity attack trend.",
+      "signalTypes": [],
+      "articleCount": 13,
+      "sources": [
+        "The Hacker News",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html",
+          "title": "Bitget Says Attacker Exploited Third-Party Security Product Flaw to Steal $388M",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-28"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
+          "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-29"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
+          "title": "Compromised MemTensor Packages Deliver sckit Credential Stealer via npm and PyPI",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
+        },
+        {
+          "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
+          "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
+          "source": "The Hacker News",
+          "publishedAt": "2026-09-23"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+          "title": "FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+          "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
+          "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+          "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
+          "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+          "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-15"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+          "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+          "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-22"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+          "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "compromised-cloud-service-provider-credentials-enabling-broa",
+      "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
+      "status": "confirmed",
+      "firstDetected": "2026-10-19",
+      "lastActive": "2026-10-23",
+      "cooledAt": null,
+      "rationale": "Multiple articles document how a single compromised cloud provider credential cascades across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants (Oct 17, Oct 19-20). ConnectWise responded by disabling cloud backups, resetting credentials, and strengthening access protections (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables (Oct 22).",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "The Hacker News",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-17"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+          "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+          "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
+          "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "identity-infrastructure-fragmentation-and-iam-centric-resili",
+      "name": "Identity infrastructure fragmentation and IAM-centric resilience architecture",
+      "status": "confirmed",
+      "firstDetected": "2026-10-13",
+      "lastActive": "2026-10-23",
+      "cooledAt": null,
+      "rationale": "Multiple sources highlight identity as the critical security perimeter requiring rethinking across enterprise infrastructure. Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12). A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated (Oct 21). SAP disclosed critical OAuth2 credential theft vulnerability in Cloud SDK for Python affecting multi-tenant applications (Oct 13).",
+      "signalTypes": [
+        "velocity",
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 7,
+      "sources": [
+        "Dark Reading",
+        "The Hacker News",
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
+          "title": "No Identity, No Recovery: Cyber Resilience Starts With IAM",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
+          "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+          "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-10"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
+          "title": "SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-17"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/high-profile-execs-untouchable-digital-exposure-report-2/621126/",
+          "title": "High-Profile Execs Believe They&#8217;re Untouchable in Digital Exposure",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+          "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-21"
+        }
+      ]
+    },
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-21",
+      "lastActive": "2026-10-23",
       "cooledAt": null,
-      "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents. Lumana and Convergint partnership demonstrates enterprise AI video security deployment (Oct 19). A webinar discusses how AI is accelerating privilege escalation attacks faster than security teams can investigate (Oct 13). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure by default (Oct 10). Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12).",
+      "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents and development tools. Lumana and Convergint partnership demonstrates enterprise AI video security deployment (Oct 19). A webinar discusses how AI is accelerating privilege escalation attacks faster than security teams can investigate (Oct 13). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure by default (Oct 10).",
       "signalTypes": [],
-      "articleCount": 14,
+      "articleCount": 15,
       "sources": [
         "The Hacker News",
         "Dark Reading",
@@ -100,171 +303,43 @@
           "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
           "source": "Security Sales",
           "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
+          "title": "2026 Public Safety Technology Report Reveals Security Trends",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
         }
       ]
     },
     {
-      "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
-      "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
-      "status": "confirmed",
-      "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-21",
+      "id": "credential-stealing-malware-targeting-ai-development-tools-a",
+      "name": "Credential-stealing malware targeting AI development tools and IDE interfaces",
+      "status": "emerging",
+      "firstDetected": "2026-10-23",
+      "lastActive": "2026-10-23",
       "cooledAt": null,
-      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. Credential-stealing GitHub Actions workflows were planted in 340+ repositories via compromised maintainer accounts (Oct 9), tensorlake npm package was compromised to deliver credential-stealing malware (Oct 8), GhostAction expanded to target over 30,000 repositories and 3,000 users (Oct 15), and GitHub tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13). The escalating sophistication and scale of these attacks shows a sustained trend.",
-      "signalTypes": [],
-      "articleCount": 10,
-      "sources": [
-        "The Hacker News",
-        "Dark Reading"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html",
-          "title": "Bitget Says Attacker Exploited Third-Party Security Product Flaw to Steal $388M",
-          "source": "The Hacker News",
-          "publishedAt": "2026-09-28"
-        },
-        {
-          "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
-          "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
-          "source": "The Hacker News",
-          "publishedAt": "2026-09-29"
-        },
-        {
-          "url": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
-          "title": "Compromised MemTensor Packages Deliver sckit Credential Stealer via npm and PyPI",
-          "source": "The Hacker News",
-          "publishedAt": "2026-09-23"
-        },
-        {
-          "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
-          "title": "A Leaked GitLab Issue Email Address Lets Anyone Push Code and Run CI Jobs as You",
-          "source": "The Hacker News",
-          "publishedAt": "2026-09-23"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
-          "title": "FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-07"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
-          "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-08"
-        },
-        {
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
-          "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-09"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-          "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-09"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
-          "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-13"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
-          "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-15"
-        }
-      ]
-    },
-    {
-      "id": "identity-infrastructure-fragmentation-and-iam-centric-resili",
-      "name": "Identity infrastructure fragmentation and IAM-centric resilience architecture",
-      "status": "confirmed",
-      "firstDetected": "2026-10-13",
-      "lastActive": "2026-10-21",
-      "cooledAt": null,
-      "rationale": "Multiple sources highlight identity as the critical security perimeter. Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure (Oct 10). SAP disclosed a critical OAuth2 credential theft vulnerability in Cloud SDK for Python affecting multi-tenant applications (Oct 13). A compromised ConnectWise M365 credential was used to access 173 Microsoft 365 tenants (Oct 17).",
+      "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a novel attack surface where AI development tools themselves become credential harvesting vectors targeting developers and engineers with sophisticated zero-click exploitation. Separately, GhostAction disguised credential stealer malware within a fake font file (Oct 19).",
       "signalTypes": [
-        "velocity",
         "source_authority",
-        "cross_topic"
+        "velocity"
       ],
-      "articleCount": 5,
+      "articleCount": 2,
       "sources": [
         "Dark Reading",
         "The Hacker News"
       ],
       "articles": [
         {
-          "url": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
-          "title": "No Identity, No Recovery: Cyber Resilience Starts With IAM",
+          "url": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+          "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
           "source": "Dark Reading",
-          "publishedAt": "2026-10-12"
+          "publishedAt": "2026-10-14"
         },
         {
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
-          "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-09"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-          "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+          "url": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+          "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
           "source": "The Hacker News",
-          "publishedAt": "2026-10-10"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
-          "title": "SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-13"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-17"
-        }
-      ]
-    },
-    {
-      "id": "compromised-cloud-service-provider-credentials-enabling-broa",
-      "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
-      "status": "emerging",
-      "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-21",
-      "cooledAt": null,
-      "rationale": "Multiple articles document how a single compromised cloud provider credential can cascade across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential was used to gain unauthorized access to 173 different Microsoft 365 tenants (Oct 17, Oct 19). ConnectWise responded by disabling cloud backups and resetting credentials (Oct 20, Oct 19). This demonstrates a distinct attack vector where cloud service provider account compromise threatens entire customer bases.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "The Hacker News",
-        "Dark Reading"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-17"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
-          "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-20"
-        },
-        {
-          "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-          "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
-          "source": "Dark Reading",
           "publishedAt": "2026-10-19"
         }
       ]
@@ -274,9 +349,9 @@
       "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-21",
+      "lastActive": "2026-10-23",
       "cooledAt": null,
-      "rationale": "Parks Associates research highlights that 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this trend with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). This demonstrates a material shift in residential security market composition toward non-owner-occupied properties with distinct service and installation models.",
+      "rationale": "Parks Associates research shows 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). Multiple security integrators are expanding facilities and capabilities to serve this growing segment, indicating material market composition shift toward non-owner-occupied properties with distinct service models.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude"
@@ -301,12 +376,56 @@
       ]
     },
     {
-      "id": "credential-stealing-malware-embedding-itself-in-ai-developme",
-      "name": "Credential-stealing malware embedding itself in AI development tools and IDE interfaces",
+      "id": "industry-m-a-and-facility-expansion-consolidating-regional-s",
+      "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-21",
+      "lastActive": "2026-10-23",
       "cooledAt": null,
+      "rationale": "Multiple M&A and expansion announcements show consolidation patterns: RapidFire acquired Access Systems to enhance comprehensive fire, life safety and security solutions (Oct 13), Guardian Security acquired Keyhole Security of Wenatchee (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19), and LOUD Security Systems celebrated new HQ in Kennesaw, Georgia (Oct 21). These moves indicate market consolidation and confidence in sector growth.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/rapidfire-acquires-access-systems/620915/",
+          "title": "RapidFire Acquires El Dorado Hills, California-Based Access Systems",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.securitysales.com/news/guardian-security-acquires-keyhole-security/621028/",
+          "title": "Guardian Security Acquires Keyhole Security of Wenatchee, Washington",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "url": "https://www.securitysales.com/news/eos-security-101-company-facility-fenton-michigan/621063/",
+          "title": "EOS, a Security 101 Company, Opens New Facility in Fenton, Michigan",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.securitysales.com/news/loud-security-systems-new-headquarters-2/621112/",
+          "title": "LOUD Security Systems Celebrates New HQ in Kennesaw, Georgia",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "credential-stealing-malware-embedding-itself-in-ai-developme",
+      "name": "Credential-stealing malware embedding itself in AI development tools and IDE interfaces",
+      "status": "cooled",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-21",
+      "cooledAt": "2026-10-23",
       "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a new attack surface where AI development tools themselves become credential harvesting vectors, targeting a high-value population of developers and engineers with sophisticated zero-click exploitation.",
       "signalTypes": [
         "source_authority",
@@ -329,10 +448,10 @@
     {
       "id": "evolved-phishing-as-a-service-platforms-with-advanced-filter",
       "name": "Evolved phishing-as-a-service platforms with advanced filtering and session management capabilities",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-20",
       "lastActive": "2026-10-21",
-      "cooledAt": null,
+      "cooledAt": "2026-10-23",
       "rationale": "Wazza phishing kit demonstrates evolved infrastructure with filtering, session management, and traffic controls built into the phishing delivery infrastructure itself, targeting banking, government, and manufacturing sectors across US, EU, and Australia (Oct 8). This shows attackers moving beyond simple credential capture to sophisticated platform-level controls and multi-sector targeting strategies.",
       "signalTypes": [
         "claim_magnitude",
@@ -353,50 +472,12 @@
       ]
     },
     {
-      "id": "industry-m-a-and-facility-expansion-consolidating-regional-s",
-      "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
-      "status": "emerging",
-      "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-21",
-      "cooledAt": null,
-      "rationale": "Multiple M&A and expansion announcements show consolidation patterns: RapidFire acquired Access Systems (Oct 13), Guardian Security acquired Keyhole Security (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft in Fenton, Michigan (Oct 19). These moves by major vendors indicate market consolidation and confidence in sector growth with regional players being absorbed.",
-      "signalTypes": [
-        "source_authority",
-        "velocity",
-        "claim_magnitude"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/rapidfire-acquires-access-systems/620915/",
-          "title": "RapidFire Acquires El Dorado Hills, California-Based Access Systems",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-13"
-        },
-        {
-          "url": "https://www.securitysales.com/news/guardian-security-acquires-keyhole-security/621028/",
-          "title": "Guardian Security Acquires Keyhole Security of Wenatchee, Washington",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-16"
-        },
-        {
-          "url": "https://www.securitysales.com/news/eos-security-101-company-facility-fenton-michigan/621063/",
-          "title": "EOS, a Security 101 Company, Opens New Facility in Fenton, Michigan",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-19"
-        }
-      ]
-    },
-    {
       "id": "service-record-and-documentation-governance-as-business-cont",
       "name": "Service record and documentation governance as business continuity dependency",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-21",
       "lastActive": "2026-10-21",
-      "cooledAt": null,
+      "cooledAt": "2026-10-23",
       "rationale": "Security Sales reports that reliable security service records matter more to integrators and customers than the software used to maintain them, highlighting hidden costs from missing service history (Oct 20). Interface Systems study found that false alarm liabilities make up 80% of financial burden for multi-location businesses, indicating the critical value of proper documentation and logging (Oct 9). These point to a growing industry recognition that metadata and record-keeping infrastructure directly impacts business continuity and liability management.",
       "signalTypes": [
         "source_authority",
