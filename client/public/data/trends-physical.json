@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-23T02:38:49.077Z",
+  "lastRunAt": "2026-10-24T02:36:52.885Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-23",
+      "lastActive": "2026-10-24",
       "cooledAt": null,
       "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. This represents a concrete signal of AI video security vendors leveraging established integrator networks to scale enterprise deployments and modernize existing camera installations.",
       "signalTypes": [
@@ -31,7 +31,7 @@
       "name": "Operator context and workflow design as critical integration challenge",
       "status": "emerging",
       "firstDetected": "2026-10-14",
-      "lastActive": "2026-10-23",
+      "lastActive": "2026-10-24",
       "cooledAt": null,
       "rationale": "Security Sales published an article on Oct 13 emphasizing that security integrators are prioritizing operator context and workflow design to close the gap between test scenarios and real-world situations. This reflects growing industry recognition that human factors and system usability are now competitive differentiators in security system deployment.",
       "signalTypes": [
@@ -57,9 +57,9 @@
       "name": "Convergence of cyber and physical security as executive safety imperative",
       "status": "emerging",
       "firstDetected": "2026-10-22",
-      "lastActive": "2026-10-23",
+      "lastActive": "2026-10-24",
       "cooledAt": null,
-      "rationale": "A 360 Privacy survey published Oct 21 in both Security Sales and Dark Reading finds that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. This signals industry-wide recognition that cyber breaches can directly enable physical threats.",
+      "rationale": "A 360 Privacy survey published Oct 21 in both Security Sales and Dark Reading finds that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. This dual-source coverage signals industry-wide recognition that cyber breaches can directly enable physical threats.",
       "signalTypes": [
         "claim_magnitude",
         "cross_topic",

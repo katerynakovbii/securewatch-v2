@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-23T10:44:34.299Z",
+  "lastRunAt": "2026-10-24T02:36:52.885Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-23",
+      "lastActive": "2026-10-24",
       "cooledAt": null,
       "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors across the 14-day window. LiteLLM Python package was compromised to deliver credential stealer and backdoor (Oct 21-22), GhostAction expanded to target over 30,000 repositories and 1,900 GitHub accounts (Oct 15-19), and GitHub tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13). The escalating sophistication and scale demonstrates a sustained, high-velocity attack trend.",
       "signalTypes": [],
@@ -101,7 +101,7 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "confirmed",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-23",
+      "lastActive": "2026-10-24",
       "cooledAt": null,
       "rationale": "Multiple articles document how a single compromised cloud provider credential cascades across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants (Oct 17, Oct 19-20). ConnectWise responded by disabling cloud backups, resetting credentials, and strengthening access protections (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables (Oct 22).",
       "signalTypes": [
@@ -145,7 +145,7 @@
       "name": "Identity infrastructure fragmentation and IAM-centric resilience architecture",
       "status": "confirmed",
       "firstDetected": "2026-10-13",
-      "lastActive": "2026-10-23",
+      "lastActive": "2026-10-24",
       "cooledAt": null,
       "rationale": "Multiple sources highlight identity as the critical security perimeter requiring rethinking across enterprise infrastructure. Dark Reading reports cyber resilience requires rethinking identity security given proliferation of enterprise apps and cloud identity provider centrality (Oct 12). A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated (Oct 21). SAP disclosed critical OAuth2 credential theft vulnerability in Cloud SDK for Python affecting multi-tenant applications (Oct 13).",
       "signalTypes": [
@@ -153,7 +153,7 @@
         "source_authority",
         "cross_topic"
       ],
-      "articleCount": 7,
+      "articleCount": 8,
       "sources": [
         "Dark Reading",
         "The Hacker News",
@@ -201,16 +201,191 @@
           "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
           "source": "Dark Reading",
           "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/rely-ai-legal-issues-legal-briefing/621152/",
+          "title": "Can You Rely on AI When It Comes to Legal Issues?: Legal Briefing",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "credential-stealing-malware-targeting-ai-development-tools-a",
+      "name": "Credential-stealing malware targeting AI development tools and IDE interfaces",
+      "status": "confirmed",
+      "firstDetected": "2026-10-23",
+      "lastActive": "2026-10-24",
+      "cooledAt": null,
+      "rationale": "Multiple attacks demonstrate credential harvesting from AI development tools themselves becoming attack vectors. Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). GhostAction disguised credential stealer malware within a fake font file to target developers (Oct 19). LiteLLM's supply chain attack involved GitHub token theft from logs (Oct 21-22).",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Dark Reading",
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+          "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-14"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+          "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+          "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+          "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-22"
+        }
+      ]
+    },
+    {
+      "id": "renter-market-expansion-driving-residential-security-system-",
+      "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
+      "status": "emerging",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-24",
+      "cooledAt": null,
+      "rationale": "Parks Associates research shows 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). Multiple security integrators are expanding facilities and capabilities to serve this growing segment, indicating material market composition shift toward non-owner-occupied properties with distinct service models.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/37-recent-home-security-system-buyers-renters-parks-associates/621077/",
+          "title": "37% of Recent Home Security System Buyers are Renters: Parks Associates",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/how-connected-technology-holiday-travelers-real-time-visibility-control/620975/",
+          "title": "How Connected Technology Gives Holiday Travelers Real-Time Control",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "industry-m-a-and-facility-expansion-consolidating-regional-s",
+      "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
+      "status": "emerging",
+      "firstDetected": "2026-10-20",
+      "lastActive": "2026-10-24",
+      "cooledAt": null,
+      "rationale": "Multiple M&A and expansion announcements show consolidation patterns across the 14-day window. RapidFire acquired Access Systems to enhance comprehensive fire, life safety and security solutions (Oct 13), Guardian Security acquired Keyhole Security of Wenatchee (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19), and LOUD Security Systems celebrated new HQ in Kennesaw, Georgia (Oct 21). These moves indicate market consolidation and confidence in sector growth.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/rapidfire-acquires-access-systems/620915/",
+          "title": "RapidFire Acquires El Dorado Hills, California-Based Access Systems",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.securitysales.com/news/guardian-security-acquires-keyhole-security/621028/",
+          "title": "Guardian Security Acquires Keyhole Security of Wenatchee, Washington",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "url": "https://www.securitysales.com/news/eos-security-101-company-facility-fenton-michigan/621063/",
+          "title": "EOS, a Security 101 Company, Opens New Facility in Fenton, Michigan",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.securitysales.com/news/loud-security-systems-new-headquarters-2/621112/",
+          "title": "LOUD Security Systems Celebrates New HQ in Kennesaw, Georgia",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "enterprise-firewall-and-vpn-credential-harvesting-at-network",
+      "name": "Enterprise firewall and VPN credential harvesting at network edge",
+      "status": "emerging",
+      "firstDetected": "2026-10-24",
+      "lastActive": "2026-10-24",
+      "cooledAt": null,
+      "rationale": "Hackers have breached enterprise firewalls and VPNs (Fortinet FortiGate and Palo Alto Networks GlobalProtect) exposing over 70,000 credentials in a large-scale campaign (Oct 23). This represents a targeted attack pattern against network edge devices that defend perimeter access, suggesting attackers are prioritizing initial compromise at infrastructure chokepoints.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+          "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-security-platform-deployment-partnerships-expanding",
+      "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
+      "status": "emerging",
+      "firstDetected": "2026-10-24",
+      "lastActive": "2026-10-24",
+      "cooledAt": null,
+      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platform across existing camera infrastructures (Oct 19). This represents enterprise channel expansion for AI-driven video surveillance capabilities with integrator backing, indicating accelerating adoption of AI video analytics in enterprise security deployments.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/lumana-convergint-partner-enterprise-ai-video-security/621055/",
+          "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
         }
       ]
     },
     {
       "id": "ai-agents-bypassing-access-controls-and-creating-credential-",
       "name": "AI agents bypassing access controls and creating credential exposure risks",
-      "status": "confirmed",
+      "status": "cooled",
       "firstDetected": "2026-09-29",
       "lastActive": "2026-10-23",
-      "cooledAt": null,
+      "cooledAt": "2026-10-24",
       "rationale": "Multiple authoritative sources confirm systemic credential and access control gaps from AI agents and development tools. Lumana and Convergint partnership demonstrates enterprise AI video security deployment (Oct 19). A webinar discusses how AI is accelerating privilege escalation attacks faster than security teams can investigate (Oct 13). The 2026 State of Agent Security Report identifies approximately 1,000 third-party AI products invisible to identity infrastructure by default (Oct 10).",
       "signalTypes": [],
       "articleCount": 15,
@@ -307,113 +482,6 @@
         {
           "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
           "title": "2026 Public Safety Technology Report Reveals Security Trends",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-21"
-        }
-      ]
-    },
-    {
-      "id": "credential-stealing-malware-targeting-ai-development-tools-a",
-      "name": "Credential-stealing malware targeting AI development tools and IDE interfaces",
-      "status": "emerging",
-      "firstDetected": "2026-10-23",
-      "lastActive": "2026-10-23",
-      "cooledAt": null,
-      "rationale": "Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens without user interaction (Oct 14). This represents a novel attack surface where AI development tools themselves become credential harvesting vectors targeting developers and engineers with sophisticated zero-click exploitation. Separately, GhostAction disguised credential stealer malware within a fake font file (Oct 19).",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "Dark Reading",
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
-          "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-14"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-          "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "id": "renter-market-expansion-driving-residential-security-system-",
-      "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
-      "status": "emerging",
-      "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-23",
-      "cooledAt": null,
-      "rationale": "Parks Associates research shows 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). Multiple security integrators are expanding facilities and capabilities to serve this growing segment, indicating material market composition shift toward non-owner-occupied properties with distinct service models.",
-      "signalTypes": [
-        "source_authority",
-        "claim_magnitude"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/37-recent-home-security-system-buyers-renters-parks-associates/621077/",
-          "title": "37% of Recent Home Security System Buyers are Renters: Parks Associates",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-20"
-        },
-        {
-          "url": "https://www.securitysales.com/insights/how-connected-technology-holiday-travelers-real-time-visibility-control/620975/",
-          "title": "How Connected Technology Gives Holiday Travelers Real-Time Control",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-14"
-        }
-      ]
-    },
-    {
-      "id": "industry-m-a-and-facility-expansion-consolidating-regional-s",
-      "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
-      "status": "emerging",
-      "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-23",
-      "cooledAt": null,
-      "rationale": "Multiple M&A and expansion announcements show consolidation patterns: RapidFire acquired Access Systems to enhance comprehensive fire, life safety and security solutions (Oct 13), Guardian Security acquired Keyhole Security of Wenatchee (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19), and LOUD Security Systems celebrated new HQ in Kennesaw, Georgia (Oct 21). These moves indicate market consolidation and confidence in sector growth.",
-      "signalTypes": [
-        "source_authority",
-        "velocity",
-        "claim_magnitude"
-      ],
-      "articleCount": 4,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/rapidfire-acquires-access-systems/620915/",
-          "title": "RapidFire Acquires El Dorado Hills, California-Based Access Systems",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-13"
-        },
-        {
-          "url": "https://www.securitysales.com/news/guardian-security-acquires-keyhole-security/621028/",
-          "title": "Guardian Security Acquires Keyhole Security of Wenatchee, Washington",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-16"
-        },
-        {
-          "url": "https://www.securitysales.com/news/eos-security-101-company-facility-fenton-michigan/621063/",
-          "title": "EOS, a Security 101 Company, Opens New Facility in Fenton, Michigan",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-19"
-        },
-        {
-          "url": "https://www.securitysales.com/news/loud-security-systems-new-headquarters-2/621112/",
-          "title": "LOUD Security Systems Celebrates New HQ in Kennesaw, Georgia",
           "source": "Security Sales",
           "publishedAt": "2026-10-21"
         }
