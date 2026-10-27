@@ -1,19 +1,19 @@
 {
-  "lastRunAt": "2026-10-26T02:24:56.624Z",
+  "lastRunAt": "2026-10-27T03:00:02.840Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. This represents a concrete signal of AI video security vendors leveraging established integrator networks to scale enterprise deployments and modernize existing camera installations.",
+      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. This is reinforced by Security Sales' Oct 26 article on video surveillance moving from motion detection to intent understanding, with monitoring centers that harness this shift expected to lead in 2027. Both articles signal concrete vendor-integrator collaboration and industry momentum around AI-driven video analytics as a competitive differentiator.",
       "signalTypes": [
         "source_authority",
         "velocity"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
@@ -23,32 +23,12 @@
           "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
           "source": "Security Sales",
           "publishedAt": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "id": "operator-context-and-workflow-design-as-critical-integration",
-      "name": "Operator context and workflow design as critical integration challenge",
-      "status": "emerging",
-      "firstDetected": "2026-10-14",
-      "lastActive": "2026-10-26",
-      "cooledAt": null,
-      "rationale": "Security Sales published an article on Oct 13 emphasizing that security integrators are prioritizing operator context and workflow design to close the gap between test scenarios and real-world situations. This reflects growing industry recognition that human factors and system usability are now competitive differentiators in security system deployment.",
-      "signalTypes": [
-        "velocity",
-        "source_authority",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
+        },
         {
-          "url": "https://www.securitysales.com/insights/designing-security-workflows-that-give-operators-better-context/620920/",
-          "title": "Designing Security Workflows That Give Operators Better Context",
+          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
+          "title": "Connecting the Video Dots in 2027",
           "source": "Security Sales",
-          "publishedAt": "2026-10-13"
+          "publishedAt": "2026-10-26"
         }
       ]
     },
@@ -57,9 +37,9 @@
       "name": "Convergence of cyber and physical security as executive safety imperative",
       "status": "emerging",
       "firstDetected": "2026-10-22",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "A 360 Privacy survey published Oct 21 in both Security Sales and Dark Reading finds that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. This dual-source coverage signals industry-wide recognition that cyber breaches can directly enable physical threats.",
+      "rationale": "The 360 Privacy survey published on Oct 21 across both Security Sales and Dark Reading reports that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. The dual-source coverage and consistent messaging across outlets signal industry-wide recognition that cyber breaches directly enable physical threats.",
       "signalTypes": [
         "claim_magnitude",
         "cross_topic",
@@ -82,6 +62,57 @@
           "title": "High-Profile Execs Believe They&#8217;re Untouchable in Digital Exposure",
           "source": "Security Sales",
           "publishedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "residential-intrusion-alarm-business-consolidation-and-portf",
+      "name": "Residential intrusion alarm business consolidation and portfolio refocus",
+      "status": "emerging",
+      "firstDetected": "2026-10-27",
+      "lastActive": "2026-10-27",
+      "cooledAt": null,
+      "rationale": "Johnson Controls announced on Oct 26 the sale of its residential intrusion alarm products business to Truelink Capital to focus on mission-critical and thermal management work. This signals a broader consolidation trend in the residential intrusion detection market, with major players divesting lower-margin residential segments in favor of higher-value enterprise and mission-critical applications.",
+      "signalTypes": [
+        "claim_magnitude",
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
+          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "operator-context-and-workflow-design-as-critical-integration",
+      "name": "Operator context and workflow design as critical integration challenge",
+      "status": "cooled",
+      "firstDetected": "2026-10-14",
+      "lastActive": "2026-10-26",
+      "cooledAt": "2026-10-27",
+      "rationale": "Security Sales published an article on Oct 13 emphasizing that security integrators are prioritizing operator context and workflow design to close the gap between test scenarios and real-world situations. This reflects growing industry recognition that human factors and system usability are now competitive differentiators in security system deployment.",
+      "signalTypes": [
+        "velocity",
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/designing-security-workflows-that-give-operators-better-context/620920/",
+          "title": "Designing Security Workflows That Give Operators Better Context",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-13"
         }
       ]
     },

@@ -1,16 +1,16 @@
 {
-  "lastRunAt": "2026-10-26T02:24:56.624Z",
+  "lastRunAt": "2026-10-27T03:00:02.840Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors across the 14-day window. LiteLLM Python package was compromised to deliver credential stealer and backdoor (Oct 21-22), GhostAction expanded to target over 30,000 repositories and 1,900 GitHub accounts (Oct 15-19), and GitHub tightened npm publishing controls in response to supply chain vulnerabilities (Oct 13). The escalating sophistication and scale demonstrates a sustained, high-velocity attack trend affecting thousands of repositories and developers.",
+      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. GhostAction compromised about 1,900 GitHub accounts targeting over 30,000 repositories (Oct 15, 19), LiteLLM Python package was compromised to deliver credential stealer and backdoor (Oct 21-22), and Gheist weaponized GitHub tokens to steal cloud secrets from developer repositories (Oct 26). The escalating sophistication and scale across multiple supply chain attack vectors demonstrates sustained, high-velocity threats affecting thousands of developers and organizations.",
       "signalTypes": [],
-      "articleCount": 13,
+      "articleCount": 14,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -93,6 +93,12 @@
           "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
           "source": "The Hacker News",
           "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+          "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-26"
         }
       ]
     },
@@ -101,9 +107,9 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "confirmed",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Multiple articles document how a single compromised cloud provider credential cascades across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants (Oct 17, Oct 19-20), with ConnectWise responding by disabling cloud backups, resetting credentials, and strengthening access protections (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk in cloud infrastructure dependencies.",
+      "rationale": "Multiple articles document how single compromised cloud provider credentials cascade across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants (Oct 17, 19-20), leading to credential resets and cloud backup disabling (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk in cloud infrastructure dependencies where one compromise affects thousands of downstream customers.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -145,9 +151,9 @@
       "name": "Credential-stealing malware targeting AI development tools and IDE interfaces",
       "status": "confirmed",
       "firstDetected": "2026-10-23",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Multiple attacks demonstrate credential harvesting from AI development tools themselves becoming attack vectors. Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens (Oct 14). GhostAction disguised credential stealer malware within a fake font file to target developers (Oct 19). LiteLLM's supply chain attack involved GitHub token theft from logs (Oct 21-22). This pattern shows attackers targeting developer infrastructure as a vector to compromise downstream applications.",
+      "rationale": "Multiple attacks demonstrate credential harvesting from AI development tools themselves becoming attack vectors. Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens (Oct 14). GhostAction disguised credential stealer malware within a fake font file to target developers (Oct 19). LiteLLM's supply chain attack involved GitHub token theft from logs (Oct 21-22). This pattern shows attackers systematically targeting developer infrastructure and AI tools as vectors to compromise downstream applications and customer environments.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -195,9 +201,9 @@
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign (Oct 23). This represents a targeted attack pattern against network edge devices that defend perimeter access, suggesting attackers are prioritizing initial compromise at infrastructure chokepoints. The scale and targeting of major vendors indicates sustained threat actor focus on this attack vector.",
+      "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign (Oct 23). This represents a targeted attack pattern against network edge devices that defend perimeter access, suggesting attackers are prioritizing initial compromise at infrastructure chokepoints. The scale and targeting of major vendors indicates sustained threat actor focus on this attack vector as a primary entry point for enterprise networks.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -220,9 +226,9 @@
       "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Parks Associates research shows 37% of recent home security system buyers are renters, representing a significant market segment opportunity (Oct 20). Industry vendors are capitalizing on this with messaging around whole-home connected security becoming a must-have for holiday travelers (Oct 14). Multiple security integrators are expanding facilities and capabilities to serve this growing segment, with industry commentary highlighting co-installation opportunities and increased recurring revenue potential.",
+      "rationale": "Parks Associates research shows 37% of recent home security system buyers are renters, representing a significant and growing market segment (Oct 20). Industry commentary emphasizes whole-home connected security becoming a must-have for holiday travelers rather than an add-on (Oct 14). The research highlights co-installation opportunities and increased recurring revenue potential for providers expanding into the renter segment. This trend reflects a fundamental shift in residential security system purchasing patterns and business models.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude"
@@ -251,15 +257,15 @@
       "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Multiple M&A and expansion announcements show consolidation patterns across the 14-day window. RapidFire acquired Access Systems to enhance fire, life safety and security solutions (Oct 13), Guardian Security acquired Keyhole Security of Wenatchee (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19), and LOUD Security Systems celebrated new HQ in Kennesaw, Georgia (Oct 21). These moves indicate market consolidation and confidence in sector growth.",
+      "rationale": "Multiple M&A and expansion announcements show consolidation patterns across the 14-day window. Guardian Security acquired Keyhole Security of Wenatchee (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19), and LOUD Security Systems celebrated new HQ in Kennesaw, Georgia (Oct 21). Johnson Controls sold its residential intrusion alarm products business to Truelink Capital to focus on mission-critical work (Oct 26). These moves indicate market consolidation, strategic portfolio reshaping, and vendor confidence in sector growth and specialization opportunities.",
       "signalTypes": [
         "source_authority",
         "velocity",
         "claim_magnitude"
       ],
-      "articleCount": 4,
+      "articleCount": 5,
       "sources": [
         "Security Sales"
       ],
@@ -287,6 +293,12 @@
           "title": "LOUD Security Systems Celebrates New HQ in Kennesaw, Georgia",
           "source": "Security Sales",
           "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
+          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
         }
       ]
     },
@@ -295,14 +307,14 @@
       "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
       "status": "emerging",
       "firstDetected": "2026-10-24",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platform across existing camera infrastructures (Oct 19). i-PRO introduced a new remote head camera that extends edge AI capabilities (Oct 16). Haivision's 2026 Public Safety Technology Report highlights adoption and investment in live video, drones, command centers and AI (Oct 21). These announcements represent enterprise channel expansion for AI-driven video surveillance capabilities with integrator backing.",
+      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platform across existing camera infrastructures (Oct 19). i-PRO introduced a new remote head camera extending edge AI capabilities (Oct 16). Haivision's 2026 Public Safety Technology Report highlights adoption and investment in live video, drones, command centers and AI (Oct 21). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements represent enterprise channel expansion for AI-driven video surveillance with integrator backing.",
       "signalTypes": [
         "source_authority",
         "velocity"
       ],
-      "articleCount": 3,
+      "articleCount": 4,
       "sources": [
         "Security Sales"
       ],
@@ -324,6 +336,12 @@
           "title": "2026 Public Safety Technology Report Reveals Security Trends",
           "source": "Security Sales",
           "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
+          "title": "Connecting the Video Dots in 2027",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
         }
       ]
     },
@@ -332,9 +350,9 @@
       "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
       "status": "emerging",
       "firstDetected": "2026-10-26",
-      "lastActive": "2026-10-26",
+      "lastActive": "2026-10-27",
       "cooledAt": null,
-      "rationale": "Multiple sources highlight the inseparability of cybersecurity and physical security in enterprise risk management. A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated (Oct 21), with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading's coverage echoes this finding, treating cybersecurity-physical security convergence as a material business risk requiring integrated approaches. This represents a paradigm shift in how enterprises conceptualize their security posture.",
+      "rationale": "Multiple independent sources highlight the inseparability of cybersecurity and physical security in enterprise risk management. A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading's coverage independently echoes this finding, treating cybersecurity-physical security convergence as a material business risk requiring integrated approaches. This represents a paradigm shift in how enterprises conceptualize their security posture across both domains.",
       "signalTypes": [],
       "articleCount": 2,
       "sources": [
