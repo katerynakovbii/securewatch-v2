@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-27T03:00:02.840Z",
+  "lastRunAt": "2026-10-28T03:10:59.948Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-27",
+      "lastActive": "2026-10-28",
       "cooledAt": null,
-      "rationale": "Multiple high-impact breaches demonstrate third-party dependencies as primary attack vectors. GhostAction compromised about 1,900 GitHub accounts targeting over 30,000 repositories (Oct 15, 19), LiteLLM Python package was compromised to deliver credential stealer and backdoor (Oct 21-22), and Gheist weaponized GitHub tokens to steal cloud secrets from developer repositories (Oct 26). The escalating sophistication and scale across multiple supply chain attack vectors demonstrates sustained, high-velocity threats affecting thousands of developers and organizations.",
+      "rationale": "GhostAction compromised about 1,900 GitHub accounts targeting over 30,000 repositories (Oct 15, 19), LiteLLM Python package was compromised to deliver credential stealer and backdoor (Oct 21-22), and Gheist weaponized GitHub tokens to steal cloud secrets from developer repositories (Oct 26). The escalating sophistication and scale across multiple supply chain attack vectors demonstrates sustained, high-velocity threats affecting thousands of developers and organizations.",
       "signalTypes": [],
       "articleCount": 14,
       "sources": [
@@ -107,9 +107,9 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "confirmed",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-27",
+      "lastActive": "2026-10-28",
       "cooledAt": null,
-      "rationale": "Multiple articles document how single compromised cloud provider credentials cascade across many enterprise customers. ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants (Oct 17, 19-20), leading to credential resets and cloud backup disabling (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk in cloud infrastructure dependencies where one compromise affects thousands of downstream customers.",
+      "rationale": "ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants (Oct 17, 19-20), leading to credential resets and cloud backup disabling (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk in cloud infrastructure dependencies where one compromise affects thousands of downstream customers.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -147,12 +147,158 @@
       ]
     },
     {
+      "id": "enterprise-firewall-and-vpn-credential-harvesting-targeting-",
+      "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
+      "status": "emerging",
+      "firstDetected": "2026-10-25",
+      "lastActive": "2026-10-28",
+      "cooledAt": null,
+      "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents a targeted attack pattern against infrastructure chokepoints, suggesting attackers are prioritizing initial compromise at the network perimeter. The scale and targeting of major vendors indicates sustained threat actor focus on this attack vector as a primary entry point for enterprise networks.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+          "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-security-platform-deployment-partnerships-expanding",
+      "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
+      "status": "emerging",
+      "firstDetected": "2026-10-24",
+      "lastActive": "2026-10-28",
+      "cooledAt": null,
+      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platform across existing camera infrastructures (Oct 19). i-PRO introduced a new remote head camera extending edge AI capabilities (Oct 16). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements represent enterprise channel expansion for AI-driven video surveillance with integrator backing.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/lumana-convergint-partner-enterprise-ai-video-security/621055/",
+          "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.securitysales.com/news/i-pro-remote-head-camera-extends-edge-ai/621045/",
+          "title": "i-PRO Introduces New Remote Head Camera That Extends Edge AI",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
+          "title": "2026 Public Safety Technology Report Reveals Security Trends",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
+          "title": "Connecting the Video Dots in 2027",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity-and-physical-security-convergence-becoming-ess",
+      "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
+      "status": "emerging",
+      "firstDetected": "2026-10-26",
+      "lastActive": "2026-10-28",
+      "cooledAt": null,
+      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading's independent coverage echoes this finding, treating cybersecurity-physical security convergence as a material business risk requiring integrated approaches. This represents a paradigm shift in how enterprises conceptualize their security posture across both domains.",
+      "signalTypes": [],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/high-profile-execs-untouchable-digital-exposure-report-2/621126/",
+          "title": "High-Profile Execs Believe They&#8217;re Untouchable in Digital Exposure",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+          "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "specialized-ip-camera-vulnerabilities-enabling-unauthorized-",
+      "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
+      "status": "emerging",
+      "firstDetected": "2026-10-28",
+      "lastActive": "2026-10-28",
+      "cooledAt": null,
+      "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident appears tied to active geopolitical tensions in the region and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems. The timing and targeting suggest coordinated exploitation of a specific vendor's authentication mechanisms.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+          "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "k-12-school-security-moving-beyond-threat-detection-to-layer",
+      "name": "K-12 school security moving beyond threat detection to layered mass-notification systems",
+      "status": "emerging",
+      "firstDetected": "2026-10-28",
+      "lastActive": "2026-10-28",
+      "cooledAt": null,
+      "rationale": "AtlasIED published analysis explaining why threat detection alone is insufficient in K-12 environments, emphasizing the need for layered mass-notification strategies and faster, better-informed safety responses (Oct 27). This reflects a maturation in how school security professionals approach integrated safety systems beyond individual detection technologies. The emphasis on notification speed and information quality suggests evolving best practices in enterprise school safety architecture.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/atlasied-why-threat-detection-isnt-enough-k-12-mass-notification/621205/",
+          "title": "AtlasIED on Why Threat Detection Isn&#8217;t Enough in K-12 Mass Notification",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
       "id": "credential-stealing-malware-targeting-ai-development-tools-a",
       "name": "Credential-stealing malware targeting AI development tools and IDE interfaces",
-      "status": "confirmed",
+      "status": "cooled",
       "firstDetected": "2026-10-23",
       "lastActive": "2026-10-27",
-      "cooledAt": null,
+      "cooledAt": "2026-10-28",
       "rationale": "Multiple attacks demonstrate credential harvesting from AI development tools themselves becoming attack vectors. Anthropic's Claude Code Desktop preview pane contained a zero-click vulnerability enabling silent credential theft of SSH keys, AWS credentials, and Claude OAuth tokens (Oct 14). GhostAction disguised credential stealer malware within a fake font file to target developers (Oct 19). LiteLLM's supply chain attack involved GitHub token theft from logs (Oct 21-22). This pattern shows attackers systematically targeting developer infrastructure and AI tools as vectors to compromise downstream applications and customer environments.",
       "signalTypes": [
         "source_authority",
@@ -197,37 +343,12 @@
       ]
     },
     {
-      "id": "enterprise-firewall-and-vpn-credential-harvesting-targeting-",
-      "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
-      "status": "emerging",
-      "firstDetected": "2026-10-25",
-      "lastActive": "2026-10-27",
-      "cooledAt": null,
-      "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign (Oct 23). This represents a targeted attack pattern against network edge devices that defend perimeter access, suggesting attackers are prioritizing initial compromise at infrastructure chokepoints. The scale and targeting of major vendors indicates sustained threat actor focus on this attack vector as a primary entry point for enterprise networks.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
-          "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-23"
-        }
-      ]
-    },
-    {
       "id": "renter-market-expansion-driving-residential-security-system-",
       "name": "Renter market expansion driving residential security system adoption and recurring revenue models",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-20",
       "lastActive": "2026-10-27",
-      "cooledAt": null,
+      "cooledAt": "2026-10-28",
       "rationale": "Parks Associates research shows 37% of recent home security system buyers are renters, representing a significant and growing market segment (Oct 20). Industry commentary emphasizes whole-home connected security becoming a must-have for holiday travelers rather than an add-on (Oct 14). The research highlights co-installation opportunities and increased recurring revenue potential for providers expanding into the renter segment. This trend reflects a fundamental shift in residential security system purchasing patterns and business models.",
       "signalTypes": [
         "source_authority",
@@ -255,10 +376,10 @@
     {
       "id": "industry-m-a-and-facility-expansion-consolidating-regional-s",
       "name": "Industry M&A and facility expansion consolidating regional security integrators and providers",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-20",
       "lastActive": "2026-10-27",
-      "cooledAt": null,
+      "cooledAt": "2026-10-28",
       "rationale": "Multiple M&A and expansion announcements show consolidation patterns across the 14-day window. Guardian Security acquired Keyhole Security of Wenatchee (Oct 16), EOS (Security 101 subsidiary) opened new facility doubling space to 24,000 sq ft (Oct 19), and LOUD Security Systems celebrated new HQ in Kennesaw, Georgia (Oct 21). Johnson Controls sold its residential intrusion alarm products business to Truelink Capital to focus on mission-critical work (Oct 26). These moves indicate market consolidation, strategic portfolio reshaping, and vendor confidence in sector growth and specialization opportunities.",
       "signalTypes": [
         "source_authority",
@@ -299,78 +420,6 @@
           "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
           "source": "Security Sales",
           "publishedAt": "2026-10-26"
-        }
-      ]
-    },
-    {
-      "id": "ai-video-security-platform-deployment-partnerships-expanding",
-      "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
-      "status": "emerging",
-      "firstDetected": "2026-10-24",
-      "lastActive": "2026-10-27",
-      "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platform across existing camera infrastructures (Oct 19). i-PRO introduced a new remote head camera extending edge AI capabilities (Oct 16). Haivision's 2026 Public Safety Technology Report highlights adoption and investment in live video, drones, command centers and AI (Oct 21). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements represent enterprise channel expansion for AI-driven video surveillance with integrator backing.",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 4,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/lumana-convergint-partner-enterprise-ai-video-security/621055/",
-          "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-19"
-        },
-        {
-          "url": "https://www.securitysales.com/news/i-pro-remote-head-camera-extends-edge-ai/621045/",
-          "title": "i-PRO Introduces New Remote Head Camera That Extends Edge AI",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-16"
-        },
-        {
-          "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
-          "title": "2026 Public Safety Technology Report Reveals Security Trends",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-21"
-        },
-        {
-          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
-          "title": "Connecting the Video Dots in 2027",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        }
-      ]
-    },
-    {
-      "id": "cybersecurity-and-physical-security-convergence-becoming-ess",
-      "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
-      "status": "emerging",
-      "firstDetected": "2026-10-26",
-      "lastActive": "2026-10-27",
-      "cooledAt": null,
-      "rationale": "Multiple independent sources highlight the inseparability of cybersecurity and physical security in enterprise risk management. A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading's coverage independently echoes this finding, treating cybersecurity-physical security convergence as a material business risk requiring integrated approaches. This represents a paradigm shift in how enterprises conceptualize their security posture across both domains.",
-      "signalTypes": [],
-      "articleCount": 2,
-      "sources": [
-        "Security Sales",
-        "Dark Reading"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/insights/high-profile-execs-untouchable-digital-exposure-report-2/621126/",
-          "title": "High-Profile Execs Believe They&#8217;re Untouchable in Digital Exposure",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-21"
-        },
-        {
-          "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
-          "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-21"
         }
       ]
     },

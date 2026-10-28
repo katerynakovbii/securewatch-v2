@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-27T03:00:02.840Z",
+  "lastRunAt": "2026-10-28T03:10:59.948Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-27",
+      "lastActive": "2026-10-28",
       "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. This is reinforced by Security Sales' Oct 26 article on video surveillance moving from motion detection to intent understanding, with monitoring centers that harness this shift expected to lead in 2027. Both articles signal concrete vendor-integrator collaboration and industry momentum around AI-driven video analytics as a competitive differentiator.",
+      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. Security Sales' Oct 26 article on video surveillance moving from motion detection to intent understanding reinforces this momentum, with monitoring centers expected to lead in 2027. The theme spans vendor-integrator collaboration, AI-driven video analytics as competitive differentiator, and enterprise deployment strategy across multiple sources.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -37,9 +37,9 @@
       "name": "Convergence of cyber and physical security as executive safety imperative",
       "status": "emerging",
       "firstDetected": "2026-10-22",
-      "lastActive": "2026-10-27",
+      "lastActive": "2026-10-28",
       "cooledAt": null,
-      "rationale": "The 360 Privacy survey published on Oct 21 across both Security Sales and Dark Reading reports that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. The dual-source coverage and consistent messaging across outlets signal industry-wide recognition that cyber breaches directly enable physical threats.",
+      "rationale": "The 360 Privacy survey published on Oct 21 across Security Sales and Dark Reading reports that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. Dual-source coverage and consistent messaging signal industry-wide recognition that cyber breaches directly enable physical threats to personnel.",
       "signalTypes": [
         "claim_magnitude",
         "cross_topic",
@@ -70,9 +70,9 @@
       "name": "Residential intrusion alarm business consolidation and portfolio refocus",
       "status": "emerging",
       "firstDetected": "2026-10-27",
-      "lastActive": "2026-10-27",
+      "lastActive": "2026-10-28",
       "cooledAt": null,
-      "rationale": "Johnson Controls announced on Oct 26 the sale of its residential intrusion alarm products business to Truelink Capital to focus on mission-critical and thermal management work. This signals a broader consolidation trend in the residential intrusion detection market, with major players divesting lower-margin residential segments in favor of higher-value enterprise and mission-critical applications.",
+      "rationale": "Johnson Controls announced on Oct 26 the sale of its residential intrusion alarm products business to Truelink Capital, stating intent to focus on mission-critical and thermal management work. This represents a major vendor divesting lower-margin residential intrusion detection assets in favor of higher-value enterprise and critical infrastructure applications.",
       "signalTypes": [
         "claim_magnitude",
         "source_authority"
@@ -87,6 +87,31 @@
           "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
           "source": "Security Sales",
           "publishedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "dahua-ip-camera-p2p-and-authentication-vulnerabilities-enabl",
+      "name": "Dahua IP camera P2P and authentication vulnerabilities enabling unauthorized remote access",
+      "status": "emerging",
+      "firstDetected": "2026-10-28",
+      "lastActive": "2026-10-28",
+      "cooledAt": null,
+      "rationale": "CERT-UA issued a formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, with attackers gaining control over video streams and device configuration. The alert from a national CERT represents authoritative disclosure of active exploitation targeting critical surveillance infrastructure.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+          "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-27"
         }
       ]
     },
