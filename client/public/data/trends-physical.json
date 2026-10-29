@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-28T03:10:59.948Z",
+  "lastRunAt": "2026-10-29T03:36:20.011Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-28",
+      "lastActive": "2026-10-29",
       "cooledAt": null,
       "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. Security Sales' Oct 26 article on video surveillance moving from motion detection to intent understanding reinforces this momentum, with monitoring centers expected to lead in 2027. The theme spans vendor-integrator collaboration, AI-driven video analytics as competitive differentiator, and enterprise deployment strategy across multiple sources.",
       "signalTypes": [
@@ -37,7 +37,7 @@
       "name": "Convergence of cyber and physical security as executive safety imperative",
       "status": "emerging",
       "firstDetected": "2026-10-22",
-      "lastActive": "2026-10-28",
+      "lastActive": "2026-10-29",
       "cooledAt": null,
       "rationale": "The 360 Privacy survey published on Oct 21 across Security Sales and Dark Reading reports that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. Dual-source coverage and consistent messaging signal industry-wide recognition that cyber breaches directly enable physical threats to personnel.",
       "signalTypes": [
@@ -70,7 +70,7 @@
       "name": "Residential intrusion alarm business consolidation and portfolio refocus",
       "status": "emerging",
       "firstDetected": "2026-10-27",
-      "lastActive": "2026-10-28",
+      "lastActive": "2026-10-29",
       "cooledAt": null,
       "rationale": "Johnson Controls announced on Oct 26 the sale of its residential intrusion alarm products business to Truelink Capital, stating intent to focus on mission-critical and thermal management work. This represents a major vendor divesting lower-margin residential intrusion detection assets in favor of higher-value enterprise and critical infrastructure applications.",
       "signalTypes": [
@@ -95,7 +95,7 @@
       "name": "Dahua IP camera P2P and authentication vulnerabilities enabling unauthorized remote access",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-10-28",
+      "lastActive": "2026-10-29",
       "cooledAt": null,
       "rationale": "CERT-UA issued a formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, with attackers gaining control over video streams and device configuration. The alert from a national CERT represents authoritative disclosure of active exploitation targeting critical surveillance infrastructure.",
       "signalTypes": [
@@ -112,6 +112,30 @@
           "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
           "source": "The Hacker News",
           "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "professional-monitoring-center-infrastructure-modernization-",
+      "name": "Professional monitoring center infrastructure modernization and first responder integration",
+      "status": "emerging",
+      "firstDetected": "2026-10-29",
+      "lastActive": "2026-10-29",
+      "cooledAt": null,
+      "rationale": "ADT unveiled a renovated 24/7 monitoring center in Irving, Texas on Oct 28, marking a significant infrastructure investment in professional monitoring capabilities. The timing and emphasis on National First Responders Day recognition signals industry focus on upgrading monitoring center facilities to support modern response protocols.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/adt-renovated-24-7-monitoring-center-irving-texas/621249/",
+          "title": "ADT Unveils Renovated 24/7 Monitoring Center in Irving, Texas",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-28"
         }
       ]
     },
