@@ -1,16 +1,16 @@
 {
-  "lastRunAt": "2026-10-29T03:36:20.011Z",
+  "lastRunAt": "2026-10-30T17:29:50.148Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
-      "rationale": "GhostAction attackers planted credential stealer in 94 GitHub repositories disguised as fonts (Oct 19), LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), and Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26). The escalating sophistication across multiple supply chain vectors targeting developers and open-source infrastructure demonstrates sustained, high-velocity threats.",
+      "rationale": "GhostAction attackers planted credential stealer in 94 GitHub repositories disguised as fonts (Oct 19), LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
       "signalTypes": [],
-      "articleCount": 14,
+      "articleCount": 15,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -99,6 +99,12 @@
           "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
           "source": "Dark Reading",
           "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
+          "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-29"
         }
       ]
     },
@@ -107,9 +113,9 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "confirmed",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
-      "rationale": "ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants, prompting credential resets and cloud backup disabling (Oct 17, 19-20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers.",
+      "rationale": "ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants, with attackers using the credential to sign into customer environments (Oct 17, 19-20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers, prompting credential resets and service disabling.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -151,7 +157,7 @@
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
       "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents sustained threat actor focus on network perimeter chokepoints as primary entry points for enterprise networks, with major vendor infrastructure specifically targeted.",
       "signalTypes": [
@@ -176,9 +182,9 @@
       "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
       "status": "emerging",
       "firstDetected": "2026-10-24",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platforms across existing camera infrastructures (Oct 19). i-PRO introduced a new remote head camera extending edge AI capabilities (Oct 16). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These represent enterprise channel expansion for AI-driven video with integrator backing.",
+      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platforms across existing camera infrastructures (Oct 19). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements demonstrate enterprise channel expansion for AI-driven video analytics with integrator backing.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -219,11 +225,11 @@
       "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
       "status": "emerging",
       "firstDetected": "2026-10-26",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
       "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading independently covered this finding, treating cybersecurity-physical security convergence as a material business risk. This represents a paradigm shift in how enterprises conceptualize integrated security posture.",
       "signalTypes": [],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales",
         "Dark Reading"
@@ -240,6 +246,12 @@
           "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
           "source": "Dark Reading",
           "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+          "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-28"
         }
       ]
     },
@@ -248,7 +260,7 @@
       "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
       "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident is tied to active geopolitical tensions and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems.",
       "signalTypes": [
@@ -269,35 +281,11 @@
       ]
     },
     {
-      "id": "k-12-school-security-moving-beyond-threat-detection-to-layer",
-      "name": "K-12 school security moving beyond threat detection to layered mass-notification systems",
-      "status": "emerging",
-      "firstDetected": "2026-10-28",
-      "lastActive": "2026-10-29",
-      "cooledAt": null,
-      "rationale": "AtlasIED published analysis explaining why threat detection alone is insufficient in K-12 environments, emphasizing the need for layered mass-notification strategies and faster, better-informed safety responses (Oct 27). This reflects maturation in how school security professionals approach integrated safety systems beyond individual detection technologies, with emphasis on notification speed and information quality.",
-      "signalTypes": [
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/sponsored/atlasied-why-threat-detection-isnt-enough-k-12-mass-notification/621205/",
-          "title": "AtlasIED on Why Threat Detection Isn&#8217;t Enough in K-12 Mass Notification",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-27"
-        }
-      ]
-    },
-    {
       "id": "security-infrastructure-monetization-through-business-intell",
       "name": "Security infrastructure monetization through business intelligence and operational insights",
       "status": "emerging",
       "firstDetected": "2026-10-29",
-      "lastActive": "2026-10-29",
+      "lastActive": "2026-10-30",
       "cooledAt": null,
       "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives (Oct 28). This represents a shift from security systems as standalone cost centers to platforms generating operational value across enterprise departments.",
       "signalTypes": [
@@ -318,12 +306,104 @@
       ]
     },
     {
+      "id": "major-security-vendor-consolidation-and-portfolio-restructur",
+      "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
+      "status": "emerging",
+      "firstDetected": "2026-10-30",
+      "lastActive": "2026-10-30",
+      "cooledAt": null,
+      "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26), and i-PRO strengthened Americas leadership structure for sector specialization (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
+          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/integrated-openings-solutions-ios-joseph-grillo-ceo/621278/",
+          "title": "Integrated Openings Solutions Names Joseph Grillo New CEO",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
+          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/news/i-pro-americas-leadership-next-phase-growth/621195/",
+          "title": "i-PRO Strengthens Leadership in Americas for Next Phase of Growth",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "ai-assisted-alarm-monitoring-requiring-responsible-verificat",
+      "name": "AI-assisted alarm monitoring requiring responsible verification protocols similar to human signal handling",
+      "status": "emerging",
+      "firstDetected": "2026-10-30",
+      "lastActive": "2026-10-30",
+      "cooledAt": null,
+      "rationale": "Security Sales published analysis on artificial intelligence-assisted alarm monitoring development, stating that the responsible path for alarm monitoring vendors is treating AI output the way a good central station treats an unverified signal (Oct 30). This emerging standard-setting discussion suggests industry is formalizing how to integrate AI recommendations into established central station operations while maintaining operator judgment.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/artificial-intelligence-assisted-alarm-monitoring-development-part-2/621282/",
+          "title": "Artificial Intelligence-Assisted Alarm Monitoring Development, Part 2",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "k-12-school-security-moving-beyond-threat-detection-to-layer",
+      "name": "K-12 school security moving beyond threat detection to layered mass-notification systems",
+      "status": "cooled",
+      "firstDetected": "2026-10-28",
+      "lastActive": "2026-10-29",
+      "cooledAt": "2026-10-30",
+      "rationale": "AtlasIED published analysis explaining why threat detection alone is insufficient in K-12 environments, emphasizing the need for layered mass-notification strategies and faster, better-informed safety responses (Oct 27). This reflects maturation in how school security professionals approach integrated safety systems beyond individual detection technologies, with emphasis on notification speed and information quality.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/atlasied-why-threat-detection-isnt-enough-k-12-mass-notification/621205/",
+          "title": "AtlasIED on Why Threat Detection Isn&#8217;t Enough in K-12 Mass Notification",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
       "id": "threat-actors-impersonating-ai-platforms-and-services-to-con",
       "name": "Threat actors impersonating AI platforms and services to conduct credential harvesting",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-29",
       "lastActive": "2026-10-29",
-      "cooledAt": null,
+      "cooledAt": "2026-10-30",
       "rationale": "Dark Reading reported that threat actors impersonated AI bots posing as agents from OpenAI, Anthropic, Meta and others to find and harvest exposed data (Oct 28). This social engineering tactic exploits the trust and ubiquity of AI platforms to conduct reconnaissance and credential theft at scale.",
       "signalTypes": [
         "claim_magnitude",
@@ -345,10 +425,10 @@
     {
       "id": "cloud-authentication-abuse-and-device-code-phishing-targetin",
       "name": "Cloud authentication abuse and device code phishing targeting American enterprises",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-29",
       "lastActive": "2026-10-29",
-      "cooledAt": null,
+      "cooledAt": "2026-10-30",
       "rationale": "The Hacker News reported on the Skyw4lker device code phishing campaign targeting American organizations, where attackers abuse legitimate cloud services, authentication mechanisms and trusted business workflows to compromise corporate accounts without traditional credential theft (Oct 28). This represents evolving evasion techniques against modern authentication infrastructure.",
       "signalTypes": [
         "claim_magnitude",
