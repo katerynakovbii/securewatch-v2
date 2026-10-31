@@ -1,19 +1,19 @@
 {
-  "lastRunAt": "2026-10-30T03:39:25.192Z",
+  "lastRunAt": "2026-10-31T03:24:09.195Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. Security Sales' Oct 26 article on video surveillance moving from motion detection to intent understanding reinforces this momentum, with monitoring centers expected to lead in 2027. The theme spans vendor-integrator collaboration, AI-driven video analytics as competitive differentiator, and enterprise deployment strategy across multiple sources.",
+      "rationale": "Lumana and Convergint announced a partnership on Oct 19 to design, deploy and service AI video security platforms across existing camera infrastructures. Security Sales' Oct 26 article on video surveillance moving from motion detection to intent understanding reinforces this momentum. A Security Sales Oct 30 article emphasizes responsible AI output treatment in alarm monitoring, establishing vendor accountability standards. Multiple sources consistently signal AI-driven video analytics as competitive differentiator for monitoring centers in 2027.",
       "signalTypes": [
         "source_authority",
         "velocity"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales"
       ],
@@ -29,6 +29,12 @@
           "title": "Connecting the Video Dots in 2027",
           "source": "Security Sales",
           "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/artificial-intelligence-assisted-alarm-monitoring-development-part-2/621282/",
+          "title": "Artificial Intelligence-Assisted Alarm Monitoring Development, Part 2",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-30"
         }
       ]
     },
@@ -37,9 +43,9 @@
       "name": "Convergence of cyber and physical security as executive safety imperative",
       "status": "emerging",
       "firstDetected": "2026-10-22",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "The 360 Privacy survey published on Oct 21 across Security Sales and Dark Reading reports that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. Dual-source coverage and consistent messaging signal industry-wide recognition that cyber breaches directly enable physical threats to personnel.",
+      "rationale": "The 360 Privacy survey published on Oct 21 across Security Sales and Dark Reading reports that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. Dual-source coverage from both industry trade press and cybersecurity media signals mainstream industry recognition that cyber breaches directly enable physical threats to personnel.",
       "signalTypes": [
         "claim_magnitude",
         "cross_topic",
@@ -70,12 +76,13 @@
       "name": "Residential intrusion alarm business consolidation and portfolio refocus",
       "status": "emerging",
       "firstDetected": "2026-10-27",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "Johnson Controls announced on Oct 26 the sale of its residential intrusion alarm products business to Truelink Capital, stating intent to focus on mission-critical and thermal management work. This represents a major vendor divesting lower-margin residential intrusion detection assets in favor of higher-value enterprise and critical infrastructure applications.",
+      "rationale": "Johnson Controls announced on Oct 26 the sale of its residential intrusion alarm products business to Truelink Capital, citing focus on mission-critical and thermal management work. This represents a major incumbent vendor divesting lower-margin residential intrusion detection assets, signaling potential industry-wide shift toward higher-value enterprise and critical infrastructure applications.",
       "signalTypes": [
         "claim_magnitude",
-        "source_authority"
+        "source_authority",
+        "velocity"
       ],
       "articleCount": 1,
       "sources": [
@@ -95,9 +102,9 @@
       "name": "Dahua IP camera P2P and authentication vulnerabilities enabling unauthorized remote access",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "CERT-UA issued a formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, with attackers gaining control over video streams and device configuration. The alert from a national CERT represents authoritative disclosure of active exploitation targeting critical surveillance infrastructure.",
+      "rationale": "CERT-UA issued a formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, with attackers gaining control over video streams and device configuration. Alert from a national CERT authority represents authoritative disclosure of active exploitation targeting critical surveillance infrastructure in an active conflict zone.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude"
@@ -120,11 +127,12 @@
       "name": "Professional monitoring center infrastructure modernization and first responder integration",
       "status": "emerging",
       "firstDetected": "2026-10-29",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "ADT unveiled a renovated 24/7 monitoring center in Irving, Texas on Oct 28, marking a significant infrastructure investment in professional monitoring capabilities. The timing and emphasis on National First Responders Day recognition signals industry focus on upgrading monitoring center facilities to support modern response protocols.",
+      "rationale": "ADT unveiled a renovated 24/7 monitoring center in Irving, Texas on Oct 28, marking a significant infrastructure investment in professional monitoring capabilities. The timing and emphasis on National First Responders Day recognition signals industry focus on upgrading monitoring center facilities to support modern response protocols and integrator partnerships.",
       "signalTypes": [
-        "source_authority"
+        "source_authority",
+        "claim_magnitude"
       ],
       "articleCount": 1,
       "sources": [
@@ -144,9 +152,9 @@
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "Security Sales published an Oct 29 article titled 'Access Control is Having Its Moment' highlighting continued innovations in the access control space making it more omnipresent than ever, with security integrators reporting more momentum to come. This signals emerging market expansion and product innovation cycles in access control technology.",
+      "rationale": "Security Sales published an Oct 29 article titled 'Access Control is Having Its Moment' highlighting continued innovations in the access control space making it more omnipresent than ever, with security integrators reporting more momentum to come. The framing signals emerging market expansion and product innovation cycles in access control technology as integrators identify new deployment opportunities.",
       "signalTypes": [
         "velocity"
       ],
@@ -168,9 +176,9 @@
       "name": "Large-scale M&A consolidation reshaping physical security landscape",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion on Oct 29, forming the foundation of Thrive's smart home security business. Combined with Johnson Controls' divestiture of residential intrusion alarms on Oct 26, this signals major portfolio restructuring and consolidation across the physical security industry.",
+      "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion on Oct 29, forming the foundation of Thrive's smart home security business. Combined with Johnson Controls' divestiture of residential intrusion alarms on Oct 26, this signals major portfolio restructuring and consolidation across the physical security industry, with established players reshaping business models.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
