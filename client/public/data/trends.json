@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-10-30T17:29:50.148Z",
+  "lastRunAt": "2026-10-31T11:27:05.881Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "GhostAction attackers planted credential stealer in 94 GitHub repositories disguised as fonts (Oct 19), LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
       "signalTypes": [],
@@ -113,9 +113,9 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "confirmed",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
-      "rationale": "ConnectWise Cloud Backup's compromised M365 credential enabled unauthorized access to 173 Microsoft 365 tenants, with attackers using the credential to sign into customer environments (Oct 17, 19-20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers, prompting credential resets and service disabling.",
+      "rationale": "ConnectWise Cloud Backup's compromised credentials enabled unauthorized access to multiple Microsoft 365 tenants, with attackers using credentials to sign into customer environments (Oct 19-20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers, prompting credential resets and service disabling.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -157,7 +157,7 @@
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents sustained threat actor focus on network perimeter chokepoints as primary entry points for enterprise networks, with major vendor infrastructure specifically targeted.",
       "signalTypes": [
@@ -182,7 +182,7 @@
       "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
       "status": "emerging",
       "firstDetected": "2026-10-24",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platforms across existing camera infrastructures (Oct 19). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements demonstrate enterprise channel expansion for AI-driven video analytics with integrator backing.",
       "signalTypes": [
@@ -225,11 +225,11 @@
       "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
       "status": "emerging",
       "firstDetected": "2026-10-26",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading independently covered this finding, treating cybersecurity-physical security convergence as a material business risk. This represents a paradigm shift in how enterprises conceptualize integrated security posture.",
       "signalTypes": [],
-      "articleCount": 3,
+      "articleCount": 4,
       "sources": [
         "Security Sales",
         "Dark Reading"
@@ -252,6 +252,12 @@
           "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
           "source": "Dark Reading",
           "publishedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+          "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-26"
         }
       ]
     },
@@ -260,7 +266,7 @@
       "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident is tied to active geopolitical tensions and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems.",
       "signalTypes": [
@@ -285,7 +291,7 @@
       "name": "Security infrastructure monetization through business intelligence and operational insights",
       "status": "emerging",
       "firstDetected": "2026-10-29",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives (Oct 28). This represents a shift from security systems as standalone cost centers to platforms generating operational value across enterprise departments.",
       "signalTypes": [
@@ -310,7 +316,7 @@
       "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26), and i-PRO strengthened Americas leadership structure for sector specialization (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
       "signalTypes": [
@@ -353,7 +359,7 @@
       "name": "AI-assisted alarm monitoring requiring responsible verification protocols similar to human signal handling",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-10-30",
+      "lastActive": "2026-10-31",
       "cooledAt": null,
       "rationale": "Security Sales published analysis on artificial intelligence-assisted alarm monitoring development, stating that the responsible path for alarm monitoring vendors is treating AI output the way a good central station treats an unverified signal (Oct 30). This emerging standard-setting discussion suggests industry is formalizing how to integrate AI recommendations into established central station operations while maintaining operator judgment.",
       "signalTypes": [
@@ -368,6 +374,55 @@
         {
           "url": "https://www.securitysales.com/insights/artificial-intelligence-assisted-alarm-monitoring-development-part-2/621282/",
           "title": "Artificial Intelligence-Assisted Alarm Monitoring Development, Part 2",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "access-control-technology-advancement-and-market-adoption-ac",
+      "name": "Access control technology advancement and market adoption acceleration",
+      "status": "emerging",
+      "firstDetected": "2026-10-31",
+      "lastActive": "2026-10-31",
+      "cooledAt": null,
+      "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). This represents a shift in market focus toward access control as a primary growth segment within physical security integration.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
+          "title": "Access Control is Having Its Moment",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "end-user-expectations-driving-integrator-business-model-and-",
+      "name": "End-user expectations driving integrator business model and service delivery transformation",
+      "status": "emerging",
+      "firstDetected": "2026-10-31",
+      "lastActive": "2026-10-31",
+      "cooledAt": null,
+      "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). This signals industry-wide recognition that customer expectations are fundamentally reshaping how security integrators must operate and deliver services.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/five-end-user-expectations-integrators-must-adapt-to/621286/",
+          "title": "Five End User Expectations Integrators Must Adapt To",
           "source": "Security Sales",
           "publishedAt": "2026-10-30"
         }
