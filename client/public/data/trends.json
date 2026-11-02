@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-10-31T11:27:05.881Z",
+  "lastRunAt": "2026-11-02T03:31:56.376Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
-      "rationale": "GhostAction attackers planted credential stealer in 94 GitHub repositories disguised as fonts (Oct 19), LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
+      "rationale": "LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
       "signalTypes": [],
       "articleCount": 15,
       "sources": [
@@ -113,9 +113,9 @@
       "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
       "status": "confirmed",
       "firstDetected": "2026-10-19",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
-      "rationale": "ConnectWise Cloud Backup's compromised credentials enabled unauthorized access to multiple Microsoft 365 tenants, with attackers using credentials to sign into customer environments (Oct 19-20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers, prompting credential resets and service disabling.",
+      "rationale": "ConnectWise Cloud Backup's compromised credentials enabled unauthorized access to multiple customer environments, with attackers using credentials to sign into customer environments (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -157,7 +157,7 @@
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
       "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents sustained threat actor focus on network perimeter chokepoints as primary entry points for enterprise networks, with major vendor infrastructure specifically targeted.",
       "signalTypes": [
@@ -178,56 +178,13 @@
       ]
     },
     {
-      "id": "ai-video-security-platform-deployment-partnerships-expanding",
-      "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
-      "status": "emerging",
-      "firstDetected": "2026-10-24",
-      "lastActive": "2026-10-31",
-      "cooledAt": null,
-      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platforms across existing camera infrastructures (Oct 19). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements demonstrate enterprise channel expansion for AI-driven video analytics with integrator backing.",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 4,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/lumana-convergint-partner-enterprise-ai-video-security/621055/",
-          "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-19"
-        },
-        {
-          "url": "https://www.securitysales.com/news/i-pro-remote-head-camera-extends-edge-ai/621045/",
-          "title": "i-PRO Introduces New Remote Head Camera That Extends Edge AI",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-16"
-        },
-        {
-          "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
-          "title": "2026 Public Safety Technology Report Reveals Security Trends",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-21"
-        },
-        {
-          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
-          "title": "Connecting the Video Dots in 2027",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        }
-      ]
-    },
-    {
       "id": "cybersecurity-and-physical-security-convergence-becoming-ess",
       "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
       "status": "emerging",
       "firstDetected": "2026-10-26",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
-      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives believing they are untouchable in digital exposure (Oct 21). Dark Reading independently covered this finding, treating cybersecurity-physical security convergence as a material business risk. This represents a paradigm shift in how enterprises conceptualize integrated security posture.",
+      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives' digital exposure creating physical risk (Oct 21). Dark Reading independently covered this finding, treating cybersecurity-physical security convergence as a material business risk across two sources within the same timeframe.",
       "signalTypes": [],
       "articleCount": 4,
       "sources": [
@@ -266,7 +223,7 @@
       "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
       "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident is tied to active geopolitical tensions and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems.",
       "signalTypes": [
@@ -287,38 +244,13 @@
       ]
     },
     {
-      "id": "security-infrastructure-monetization-through-business-intell",
-      "name": "Security infrastructure monetization through business intelligence and operational insights",
-      "status": "emerging",
-      "firstDetected": "2026-10-29",
-      "lastActive": "2026-10-31",
-      "cooledAt": null,
-      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives (Oct 28). This represents a shift from security systems as standalone cost centers to platforms generating operational value across enterprise departments.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/insights/turning-security-infrastructure-business-intelligence-platform/621245/",
-          "title": "Turning Security Infrastructure Into a Business Intelligence Platform",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-28"
-        }
-      ]
-    },
-    {
       "id": "major-security-vendor-consolidation-and-portfolio-restructur",
       "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
-      "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26), and i-PRO strengthened Americas leadership structure for sector specialization (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
+      "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), and Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -359,7 +291,7 @@
       "name": "AI-assisted alarm monitoring requiring responsible verification protocols similar to human signal handling",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
       "rationale": "Security Sales published analysis on artificial intelligence-assisted alarm monitoring development, stating that the responsible path for alarm monitoring vendors is treating AI output the way a good central station treats an unverified signal (Oct 30). This emerging standard-setting discussion suggests industry is formalizing how to integrate AI recommendations into established central station operations while maintaining operator judgment.",
       "signalTypes": [
@@ -384,14 +316,14 @@
       "name": "Access control technology advancement and market adoption acceleration",
       "status": "emerging",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
-      "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). This represents a shift in market focus toward access control as a primary growth segment within physical security integration.",
+      "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). NAPCO released new GEM-XK5 slimline keypad with expanded capabilities (Oct 22), demonstrating product-level advancement supporting the market trend.",
       "signalTypes": [
         "source_authority",
         "velocity"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
@@ -401,6 +333,12 @@
           "title": "Access Control is Having Its Moment",
           "source": "Security Sales",
           "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
+          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-22"
         }
       ]
     },
@@ -409,9 +347,9 @@
       "name": "End-user expectations driving integrator business model and service delivery transformation",
       "status": "emerging",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-10-31",
+      "lastActive": "2026-11-02",
       "cooledAt": null,
-      "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). This signals industry-wide recognition that customer expectations are fundamentally reshaping how security integrators must operate and deliver services.",
+      "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). Security Sales also published analysis on how integrators must adapt to changing customer expectations for technology integration and service delivery (Oct 30).",
       "signalTypes": [
         "source_authority"
       ],
@@ -425,6 +363,148 @@
           "title": "Five End User Expectations Integrators Must Adapt To",
           "source": "Security Sales",
           "publishedAt": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "video-surveillance-analytics-shifting-from-motion-detection-",
+      "name": "Video surveillance analytics shifting from motion detection to intent recognition",
+      "status": "emerging",
+      "firstDetected": "2026-11-02",
+      "lastActive": "2026-11-02",
+      "cooledAt": null,
+      "rationale": "Security Sales published analysis that video surveillance is moving from detecting motion to understanding intent, with monitoring centers that harness that shift expected to lead in 2027 (Oct 26). This represents a qualitative upgrade in video security platform capabilities, marking a shift in industry technology focus and monitoring center operations strategy.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
+          "title": "Connecting the Video Dots in 2027",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "security-infrastructure-monetization-as-business-intelligenc",
+      "name": "Security infrastructure monetization as business intelligence and operational value driver",
+      "status": "emerging",
+      "firstDetected": "2026-11-02",
+      "lastActive": "2026-11-02",
+      "cooledAt": null,
+      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives beyond traditional security monitoring (Oct 28). This represents a shift in how enterprises and integrators conceptualize security systems' business value.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/turning-security-infrastructure-business-intelligence-platform/621245/",
+          "title": "Turning Security Infrastructure Into a Business Intelligence Platform",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "multifamily-property-system-integration-fragmentation-drivin",
+      "name": "Multifamily property system integration fragmentation driving total cost of ownership concerns",
+      "status": "emerging",
+      "firstDetected": "2026-11-02",
+      "lastActive": "2026-11-02",
+      "cooledAt": null,
+      "rationale": "HCI Systems' Tyler Peters highlighted the challenge of making diverse technology systems work together in multifamily properties, emphasizing early integrator collaboration to avoid fragmentation costs (Nov 1). This signals a growing market pain point as properties adopt more disparate systems without coordinated architecture.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/intentional-by-design-avoiding-the-hidden-cost-of-fragmentation-in-multifamily/621228/",
+          "title": "Intentional by Design: Avoiding the Hidden Cost of Fragmentation in Multifamily",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-security-platform-deployment-partnerships-expanding",
+      "name": "AI video security platform deployment partnerships expanding across enterprise customer base",
+      "status": "cooled",
+      "firstDetected": "2026-10-24",
+      "lastActive": "2026-10-31",
+      "cooledAt": "2026-11-02",
+      "rationale": "Lumana and Convergint announced a partnership to design, deploy and service AI video security platforms across existing camera infrastructures (Oct 19). Security Sales published analysis that video surveillance is moving from motion detection to understanding intent, with monitoring centers adopting these capabilities leading in 2027 (Oct 26). These announcements demonstrate enterprise channel expansion for AI-driven video analytics with integrator backing.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/lumana-convergint-partner-enterprise-ai-video-security/621055/",
+          "title": "Lumana and Convergint Partner on Enterprise AI Video Security",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://www.securitysales.com/news/i-pro-remote-head-camera-extends-edge-ai/621045/",
+          "title": "i-PRO Introduces New Remote Head Camera That Extends Edge AI",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
+          "title": "2026 Public Safety Technology Report Reveals Security Trends",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
+          "title": "Connecting the Video Dots in 2027",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "security-infrastructure-monetization-through-business-intell",
+      "name": "Security infrastructure monetization through business intelligence and operational insights",
+      "status": "cooled",
+      "firstDetected": "2026-10-29",
+      "lastActive": "2026-10-31",
+      "cooledAt": "2026-11-02",
+      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives (Oct 28). This represents a shift from security systems as standalone cost centers to platforms generating operational value across enterprise departments.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/turning-security-infrastructure-business-intelligence-platform/621245/",
+          "title": "Turning Security Infrastructure Into a Business Intelligence Platform",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-28"
         }
       ]
     },
