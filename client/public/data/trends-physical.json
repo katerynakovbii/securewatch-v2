@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-02T03:31:56.376Z",
+  "lastRunAt": "2026-11-03T00:13:55.119Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "Three articles across two sources document sustained AI video security momentum: Security Sales Oct 26 article emphasizing video surveillance moving from motion detection to intent understanding; Security Sales Oct 30 article on responsible AI treatment in alarm monitoring establishing vendor accountability standards. The Oct 26 piece specifically positions analytics-driven video monitoring as competitive leadership capability for 2027, while Oct 30 establishes governance frameworks for AI-assisted alarm systems. Multi-week coverage with vendor accountability focus signals industry-wide deployment acceleration.",
+      "rationale": "Security Sales Oct 26 article 'Connecting the Video Dots in 2027' emphasizes video surveillance moving from motion detection to intent understanding, positioning analytics-driven video monitoring as competitive leadership capability. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multi-week coverage from single source with vendor focus on AI governance and capability advancement in both video and alarm domains signals sustained industry deployment momentum.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -43,9 +43,9 @@
       "name": "Convergence of cyber and physical security as executive safety imperative",
       "status": "emerging",
       "firstDetected": "2026-10-22",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "The 360 Privacy survey was published across two distinct sources on Oct 21: Dark Reading and Security Sales. Both reported that over 80% of security and wealth professionals now view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. Dual-source coverage from both cybersecurity and physical security media demonstrates mainstream industry recognition of the cyber-to-physical threat continuum affecting executive protection.",
+      "rationale": "360 Privacy survey published across Dark Reading and Security Sales on Oct 21 reports over 80% of security and wealth professionals view cybersecurity and physical security as inseparable, with digital exposure creating tangible physical risk for high-profile executives. Dual-source coverage spanning both cybersecurity and physical security media outlets demonstrates mainstream industry recognition of cyber-to-physical threat continuum affecting executive protection strategies.",
       "signalTypes": [
         "claim_magnitude",
         "cross_topic",
@@ -76,9 +76,9 @@
       "name": "Residential intrusion alarm business consolidation and portfolio refocus",
       "status": "emerging",
       "firstDetected": "2026-10-27",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "Johnson Controls announced sale of its residential intrusion alarm products business to Truelink Capital on Oct 26, citing strategic focus on mission-critical and thermal management work. ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. Two major deals within four days from different sources signal accelerating industry consolidation and portfolio restructuring in residential intrusion detection assets.",
+      "rationale": "Johnson Controls announced sale of residential intrusion alarm products business to Truelink Capital on Oct 26, citing strategic refocus on mission-critical work. ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. Two major transactions within four days from same source signal accelerating industry consolidation and strategic portfolio reshuffling in residential intrusion detection assets driven by shift toward integrated smart home platforms.",
       "signalTypes": [
         "claim_magnitude",
         "source_authority",
@@ -108,9 +108,9 @@
       "name": "Dahua IP camera P2P and authentication vulnerabilities enabling unauthorized remote access",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "CERT-UA (Computer Emergency Response Team of Ukraine) issued formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, with attackers gaining control over video streams and device configuration. Alert from a national CERT authority representing active exploitation of critical surveillance infrastructure constitutes authoritative disclosure of material vulnerability affecting physical security systems deployed globally.",
+      "rationale": "CERT-UA (Computer Emergency Response Team of Ukraine) issued formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, enabling attackers to control video streams and device configuration. Alert from national CERT authority documenting active exploitation of critical surveillance infrastructure represents authoritative disclosure of material vulnerability affecting globally deployed physical security systems.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude"
@@ -133,12 +133,13 @@
       "name": "Professional monitoring center infrastructure modernization and first responder integration",
       "status": "emerging",
       "firstDetected": "2026-10-29",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "ADT unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28, marking significant infrastructure investment in professional monitoring capabilities timed to National First Responders Day. Combined with ADT's Oct 29 acquisition by Thrive Holdings emphasizing smart home security expansion, these two consecutive announcements signal industry-wide focus on upgrading monitoring center facilities and capabilities to support modern response protocols and first responder integration.",
+      "rationale": "ADT unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28 marking significant infrastructure investment in professional monitoring capabilities timed to National First Responders Day. Combined with ADT's Oct 29 acquisition by Thrive Holdings emphasizing smart home security expansion, these consecutive announcements signal industry-wide focus on upgrading monitoring center facilities and capabilities to support modern response protocols.",
       "signalTypes": [
         "source_authority",
-        "claim_magnitude"
+        "claim_magnitude",
+        "velocity"
       ],
       "articleCount": 2,
       "sources": [
@@ -164,14 +165,14 @@
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "Security Sales published Oct 29 article titled 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent than ever, with security integrators reporting additional momentum to come. The framing emphasizes emerging market expansion and product innovation cycles in access control technology as integrators identify new deployment opportunities.",
+      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent than ever, with security integrators reporting additional momentum to come. Same source published Nov 2 article on PDK's latest hardware offerings including wireless locks and high-security readers at ISC East 2026. Consecutive coverage emphasizes emerging market expansion and product innovation cycles in access control technology.",
       "signalTypes": [
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
@@ -181,6 +182,12 @@
           "title": "Access Control is Having Its Moment",
           "source": "Security Sales",
           "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
+          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
         }
       ]
     },
