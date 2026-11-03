@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-02T03:31:56.376Z",
+  "lastRunAt": "2026-11-03T22:43:17.668Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
       "rationale": "LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
       "signalTypes": [],
@@ -109,55 +109,11 @@
       ]
     },
     {
-      "id": "compromised-cloud-service-provider-credentials-enabling-broa",
-      "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
-      "status": "confirmed",
-      "firstDetected": "2026-10-19",
-      "lastActive": "2026-11-02",
-      "cooledAt": null,
-      "rationale": "ConnectWise Cloud Backup's compromised credentials enabled unauthorized access to multiple customer environments, with attackers using credentials to sign into customer environments (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 4,
-      "sources": [
-        "The Hacker News",
-        "Dark Reading"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-17"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
-          "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-20"
-        },
-        {
-          "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-          "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-19"
-        },
-        {
-          "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
-          "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-22"
-        }
-      ]
-    },
-    {
       "id": "enterprise-firewall-and-vpn-credential-harvesting-targeting-",
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
       "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents sustained threat actor focus on network perimeter chokepoints as primary entry points for enterprise networks, with major vendor infrastructure specifically targeted.",
       "signalTypes": [
@@ -182,9 +138,9 @@
       "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
       "status": "emerging",
       "firstDetected": "2026-10-26",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives' digital exposure creating physical risk (Oct 21). Dark Reading independently covered this finding, treating cybersecurity-physical security convergence as a material business risk across two sources within the same timeframe.",
+      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives' digital exposure creating physical risk (Oct 21). Dark Reading and Security Sales independently covered this finding, treating cybersecurity-physical security convergence as a material business risk across two sources within the same timeframe.",
       "signalTypes": [],
       "articleCount": 4,
       "sources": [
@@ -223,7 +179,7 @@
       "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
       "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident is tied to active geopolitical tensions and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems.",
       "signalTypes": [
@@ -248,7 +204,7 @@
       "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
       "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), and Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
       "signalTypes": [
@@ -291,7 +247,7 @@
       "name": "AI-assisted alarm monitoring requiring responsible verification protocols similar to human signal handling",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
       "rationale": "Security Sales published analysis on artificial intelligence-assisted alarm monitoring development, stating that the responsible path for alarm monitoring vendors is treating AI output the way a good central station treats an unverified signal (Oct 30). This emerging standard-setting discussion suggests industry is formalizing how to integrate AI recommendations into established central station operations while maintaining operator judgment.",
       "signalTypes": [
@@ -316,14 +272,14 @@
       "name": "Access control technology advancement and market adoption acceleration",
       "status": "emerging",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). NAPCO released new GEM-XK5 slimline keypad with expanded capabilities (Oct 22), demonstrating product-level advancement supporting the market trend.",
+      "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). NAPCO released new GEM-XK5 slimline keypad with expanded capabilities (Oct 22), and PDK announced wireless locks and high-security readers at ISC East (Nov 2), demonstrating product-level advancement supporting the market trend.",
       "signalTypes": [
         "source_authority",
         "velocity"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales"
       ],
@@ -339,6 +295,12 @@
           "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
           "source": "Security Sales",
           "publishedAt": "2026-10-22"
+        },
+        {
+          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
+          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
         }
       ]
     },
@@ -347,13 +309,13 @@
       "name": "End-user expectations driving integrator business model and service delivery transformation",
       "status": "emerging",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). Security Sales also published analysis on how integrators must adapt to changing customer expectations for technology integration and service delivery (Oct 30).",
+      "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). Security Sales also published analysis on how integrators must adapt to changing customer expectations for technology integration and service delivery, with findings that older adults are more confident managing smart security systems independently than industry expectations suggest (Nov 2).",
       "signalTypes": [
         "source_authority"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
@@ -363,6 +325,12 @@
           "title": "Five End User Expectations Integrators Must Adapt To",
           "source": "Security Sales",
           "publishedAt": "2026-10-30"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/story-security-industry-older-adults-out-of-date/621312/",
+          "title": "The Story the Security Industry Tells About Older Adults Is Out of Date",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
         }
       ]
     },
@@ -371,7 +339,7 @@
       "name": "Video surveillance analytics shifting from motion detection to intent recognition",
       "status": "emerging",
       "firstDetected": "2026-11-02",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
       "rationale": "Security Sales published analysis that video surveillance is moving from detecting motion to understanding intent, with monitoring centers that harness that shift expected to lead in 2027 (Oct 26). This represents a qualitative upgrade in video security platform capabilities, marking a shift in industry technology focus and monitoring center operations strategy.",
       "signalTypes": [
@@ -396,14 +364,14 @@
       "name": "Security infrastructure monetization as business intelligence and operational value driver",
       "status": "emerging",
       "firstDetected": "2026-11-02",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives beyond traditional security monitoring (Oct 28). This represents a shift in how enterprises and integrators conceptualize security systems' business value.",
+      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives beyond traditional security monitoring (Oct 28). Haivision's 2026 Public Safety Technology Report separately reinforced this trend, highlighting investment priorities in live video, drones, command centers and AI integration for operational value (Oct 21).",
       "signalTypes": [
         "source_authority",
         "cross_topic"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "Security Sales"
       ],
@@ -413,6 +381,12 @@
           "title": "Turning Security Infrastructure Into a Business Intelligence Platform",
           "source": "Security Sales",
           "publishedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.securitysales.com/news/haivision-2026-public-safety-technology-report-trends/621101/",
+          "title": "2026 Public Safety Technology Report Reveals Security Trends",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
         }
       ]
     },
@@ -421,9 +395,9 @@
       "name": "Multifamily property system integration fragmentation driving total cost of ownership concerns",
       "status": "emerging",
       "firstDetected": "2026-11-02",
-      "lastActive": "2026-11-02",
+      "lastActive": "2026-11-03",
       "cooledAt": null,
-      "rationale": "HCI Systems' Tyler Peters highlighted the challenge of making diverse technology systems work together in multifamily properties, emphasizing early integrator collaboration to avoid fragmentation costs (Nov 1). This signals a growing market pain point as properties adopt more disparate systems without coordinated architecture.",
+      "rationale": "Security Sales published sponsored analysis highlighting the challenge of making diverse technology systems work together in multifamily properties, emphasizing early integrator collaboration to avoid fragmentation costs (Nov 1). This signals a growing market pain point as properties adopt more disparate systems without coordinated architecture.",
       "signalTypes": [
         "source_authority"
       ],
@@ -437,6 +411,50 @@
           "title": "Intentional by Design: Avoiding the Hidden Cost of Fragmentation in Multifamily",
           "source": "Security Sales",
           "publishedAt": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "compromised-cloud-service-provider-credentials-enabling-broa",
+      "name": "Compromised cloud service provider credentials enabling broad multi-tenant access",
+      "status": "cooled",
+      "firstDetected": "2026-10-19",
+      "lastActive": "2026-11-02",
+      "cooledAt": "2026-11-03",
+      "rationale": "ConnectWise Cloud Backup's compromised credentials enabled unauthorized access to multiple customer environments, with attackers using credentials to sign into customer environments (Oct 20). Railway disclosed unauthorized third-party access to encrypted environment variables storing customer secrets (Oct 22). This pattern demonstrates systemic risk where a single cloud provider compromise cascades to thousands of downstream customers.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "The Hacker News",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-17"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+          "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+          "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-19"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
+          "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-22"
         }
       ]
     },
