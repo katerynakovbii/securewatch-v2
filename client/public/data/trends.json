@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-03T22:43:17.668Z",
+  "lastRunAt": "2026-11-04T04:00:23.888Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
       "signalTypes": [],
@@ -113,7 +113,7 @@
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents sustained threat actor focus on network perimeter chokepoints as primary entry points for enterprise networks, with major vendor infrastructure specifically targeted.",
       "signalTypes": [
@@ -134,52 +134,11 @@
       ]
     },
     {
-      "id": "cybersecurity-and-physical-security-convergence-becoming-ess",
-      "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
-      "status": "emerging",
-      "firstDetected": "2026-10-26",
-      "lastActive": "2026-11-03",
-      "cooledAt": null,
-      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives' digital exposure creating physical risk (Oct 21). Dark Reading and Security Sales independently covered this finding, treating cybersecurity-physical security convergence as a material business risk across two sources within the same timeframe.",
-      "signalTypes": [],
-      "articleCount": 4,
-      "sources": [
-        "Security Sales",
-        "Dark Reading"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/insights/high-profile-execs-untouchable-digital-exposure-report-2/621126/",
-          "title": "High-Profile Execs Believe They&#8217;re Untouchable in Digital Exposure",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-21"
-        },
-        {
-          "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
-          "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-21"
-        },
-        {
-          "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-          "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-28"
-        },
-        {
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-          "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
-          "source": "Dark Reading",
-          "publishedAt": "2026-10-26"
-        }
-      ]
-    },
-    {
       "id": "specialized-ip-camera-vulnerabilities-enabling-unauthorized-",
       "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident is tied to active geopolitical tensions and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems.",
       "signalTypes": [
@@ -204,7 +163,7 @@
       "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), and Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
       "signalTypes": [
@@ -247,7 +206,7 @@
       "name": "AI-assisted alarm monitoring requiring responsible verification protocols similar to human signal handling",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "Security Sales published analysis on artificial intelligence-assisted alarm monitoring development, stating that the responsible path for alarm monitoring vendors is treating AI output the way a good central station treats an unverified signal (Oct 30). This emerging standard-setting discussion suggests industry is formalizing how to integrate AI recommendations into established central station operations while maintaining operator judgment.",
       "signalTypes": [
@@ -272,7 +231,7 @@
       "name": "Access control technology advancement and market adoption acceleration",
       "status": "emerging",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). NAPCO released new GEM-XK5 slimline keypad with expanded capabilities (Oct 22), and PDK announced wireless locks and high-security readers at ISC East (Nov 2), demonstrating product-level advancement supporting the market trend.",
       "signalTypes": [
@@ -309,7 +268,7 @@
       "name": "End-user expectations driving integrator business model and service delivery transformation",
       "status": "emerging",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). Security Sales also published analysis on how integrators must adapt to changing customer expectations for technology integration and service delivery, with findings that older adults are more confident managing smart security systems independently than industry expectations suggest (Nov 2).",
       "signalTypes": [
@@ -339,7 +298,7 @@
       "name": "Video surveillance analytics shifting from motion detection to intent recognition",
       "status": "emerging",
       "firstDetected": "2026-11-02",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "Security Sales published analysis that video surveillance is moving from detecting motion to understanding intent, with monitoring centers that harness that shift expected to lead in 2027 (Oct 26). This represents a qualitative upgrade in video security platform capabilities, marking a shift in industry technology focus and monitoring center operations strategy.",
       "signalTypes": [
@@ -364,14 +323,14 @@
       "name": "Security infrastructure monetization as business intelligence and operational value driver",
       "status": "emerging",
       "firstDetected": "2026-11-02",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
-      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives beyond traditional security monitoring (Oct 28). Haivision's 2026 Public Safety Technology Report separately reinforced this trend, highlighting investment priorities in live video, drones, command centers and AI integration for operational value (Oct 21).",
+      "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives beyond traditional security monitoring (Oct 28). Synology will showcase AI-powered monitoring with flexible deployment and scalable storage solutions, emphasizing how surveillance ecosystems integrate with broader business operations (Nov 3).",
       "signalTypes": [
         "source_authority",
         "cross_topic"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales"
       ],
@@ -387,6 +346,12 @@
           "title": "2026 Public Safety Technology Report Reveals Security Trends",
           "source": "Security Sales",
           "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/as-ai-raises-new-data-security-questions-synology-to-showcase-its-surveillance-ecosystem-at-isc-east-2026/621291/",
+          "title": "As AI Raises New Data Security Questions, Synology to Showcase Its Surveillance Ecosystem at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-03"
         }
       ]
     },
@@ -395,7 +360,7 @@
       "name": "Multifamily property system integration fragmentation driving total cost of ownership concerns",
       "status": "emerging",
       "firstDetected": "2026-11-02",
-      "lastActive": "2026-11-03",
+      "lastActive": "2026-11-04",
       "cooledAt": null,
       "rationale": "Security Sales published sponsored analysis highlighting the challenge of making diverse technology systems work together in multifamily properties, emphasizing early integrator collaboration to avoid fragmentation costs (Nov 1). This signals a growing market pain point as properties adopt more disparate systems without coordinated architecture.",
       "signalTypes": [
@@ -411,6 +376,98 @@
           "title": "Intentional by Design: Avoiding the Hidden Cost of Fragmentation in Multifamily",
           "source": "Security Sales",
           "publishedAt": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "identity-and-secure-printing-convergence-expanding-trusted-i",
+      "name": "Identity and secure printing convergence expanding trusted identity infrastructure",
+      "status": "emerging",
+      "firstDetected": "2026-11-04",
+      "lastActive": "2026-11-04",
+      "cooledAt": null,
+      "rationale": "HID announced acquisition of inepro ID to expand its secure print portfolio as part of effort to extend trusted identities to how people work every day (Nov 3). This signals vendor strategy to consolidate identity management across physical and digital workspaces through secure printing and credentialing integration.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/hid-acquisition-of-inepro-id-expands-companys-secure-print-portfolio/621334/",
+          "title": "HID Acquisition of inepro ID Expands Company&#8217;s Secure Print Portfolio",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "k-12-mass-notification-layered-strategy-beyond-threat-detect",
+      "name": "K-12 mass notification layered strategy beyond threat detection",
+      "status": "emerging",
+      "firstDetected": "2026-11-04",
+      "lastActive": "2026-11-04",
+      "cooledAt": null,
+      "rationale": "AtlasIED published analysis explaining why threat detection alone is insufficient for K-12 mass notification, emphasizing layered strategy approach for faster, better-informed safety response (Oct 27). This signals emerging best practice in school security moving beyond single-point detection solutions.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/atlasied-why-threat-detection-isnt-enough-k-12-mass-notification/621205/",
+          "title": "AtlasIED on Why Threat Detection Isn&#8217;t Enough in K-12 Mass Notification",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity-and-physical-security-convergence-becoming-ess",
+      "name": "Cybersecurity and physical security convergence becoming essential enterprise risk discipline",
+      "status": "cooled",
+      "firstDetected": "2026-10-26",
+      "lastActive": "2026-11-03",
+      "cooledAt": "2026-11-04",
+      "rationale": "A 360 Privacy survey found over 80% of security and wealth professionals say cybersecurity and physical security can no longer be separated, with high-profile executives' digital exposure creating physical risk (Oct 21). Dark Reading and Security Sales independently covered this finding, treating cybersecurity-physical security convergence as a material business risk across two sources within the same timeframe.",
+      "signalTypes": [],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/high-profile-execs-untouchable-digital-exposure-report-2/621126/",
+          "title": "High-Profile Execs Believe They&#8217;re Untouchable in Digital Exposure",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+          "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-21"
+        },
+        {
+          "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+          "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+          "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-26"
         }
       ]
     },
