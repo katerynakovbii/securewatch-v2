@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-04T04:00:23.888Z",
+  "lastRunAt": "2026-11-05T04:22:09.291Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
-      "rationale": "Security Sales Oct 26 article 'Connecting the Video Dots in 2027' emphasizes video surveillance moving from motion detection to intent understanding, positioning analytics-driven video monitoring as competitive leadership capability. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multi-week coverage from single authoritative source with multiple vendor announcements and strategic positioning signals sustained industry deployment momentum.",
+      "rationale": "Security Sales Oct 26 article 'Connecting the Video Dots in 2027' emphasizes video surveillance moving from motion detection to intent understanding, positioning analytics-driven video monitoring as competitive leadership capability. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multiple articles across 7 days from authoritative source signal sustained industry deployment momentum.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -49,7 +49,7 @@
       "name": "Residential intrusion alarm business consolidation and portfolio refocus",
       "status": "emerging",
       "firstDetected": "2026-10-27",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
       "rationale": "Johnson Controls announced sale of residential intrusion alarm products business to Truelink Capital on Oct 26, citing strategic refocus on mission-critical work. ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. Two major transactions within four days from same authoritative source signal accelerating industry consolidation and strategic portfolio reshuffling in residential intrusion detection assets driven by shift toward integrated smart home platforms.",
       "signalTypes": [
@@ -81,7 +81,7 @@
       "name": "Dahua IP camera P2P and authentication vulnerabilities enabling unauthorized remote access",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
       "rationale": "CERT-UA (Computer Emergency Response Team of Ukraine) issued formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, enabling attackers to control video streams and device configuration. Alert from national CERT authority documenting active exploitation of critical surveillance infrastructure represents authoritative disclosure of material vulnerability affecting globally deployed physical security systems.",
       "signalTypes": [
@@ -106,7 +106,7 @@
       "name": "Professional monitoring center infrastructure modernization and first responder integration",
       "status": "emerging",
       "firstDetected": "2026-10-29",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
       "rationale": "ADT unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28 marking significant infrastructure investment in professional monitoring capabilities timed to National First Responders Day. Combined with ADT's Oct 29 acquisition by Thrive Holdings emphasizing smart home security expansion, these consecutive announcements from same authoritative source signal industry-wide focus on upgrading monitoring center facilities and capabilities to support modern response protocols.",
       "signalTypes": [
@@ -138,14 +138,14 @@
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
-      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent than ever, with security integrators reporting additional momentum to come. Same source published Nov 2 article on PDK's latest hardware offerings including wireless locks and high-security readers at ISC East 2026. Consecutive coverage emphasizes emerging market expansion and product innovation cycles in access control technology.",
+      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent than ever, with security integrators reporting additional momentum to come. Same source published Nov 2 article on PDK's latest hardware offerings including wireless locks and high-security readers at ISC East 2026. Nov 4 article on Allegion's open architecture and collaborative security ecosystems demonstrates multi-vendor innovation cycle. Consecutive coverage emphasizes emerging market expansion and product innovation cycles in access control technology.",
       "signalTypes": [
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales"
       ],
@@ -161,6 +161,12 @@
           "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
           "source": "Security Sales",
           "publishedAt": "2026-11-02"
+        },
+        {
+          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
+          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
         }
       ]
     },
