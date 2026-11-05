@@ -1,16 +1,115 @@
 {
-  "lastRunAt": "2026-11-04T04:00:23.888Z",
+  "lastRunAt": "2026-11-05T13:45:12.112Z",
   "trends": [
+    {
+      "id": "access-control-technology-advancement-and-market-adoption-ac",
+      "name": "Access control technology advancement and market adoption acceleration",
+      "status": "confirmed",
+      "firstDetected": "2026-10-31",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "Multiple vendors announced significant access control innovations at ISC East 2026: Allegion highlighted open architecture and collaborative ecosystems (Nov 4), PDK showcased wireless locks and high-security readers with new platform features (Nov 2), and Yubico introduced YubiID service bridging identity verification with phishing-resistant authentication (Nov 4). Security Sales analysis confirmed access control is having its moment with integrators indicating more innovations to come (Oct 29), demonstrating sustained product-level advancement and market acceleration across multiple manufacturers.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 5,
+      "sources": [
+        "Security Sales",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
+          "title": "Access Control is Having Its Moment",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
+          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-22"
+        },
+        {
+          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
+          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
+        },
+        {
+          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
+          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+          "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "major-security-vendor-consolidation-and-portfolio-restructur",
+      "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
+      "status": "emerging",
+      "firstDetected": "2026-10-30",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "Four significant M&A and restructuring events occurred within the 14-day window: ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting to partnerships and acquisitions (Oct 29), Johnson Controls announced sale of residential intrusion alarm products business to Truelink Capital (Oct 26), and HID acquired inepro ID to expand secure print portfolio (Nov 3). Multiple major industry players restructuring simultaneously signals rapid market consolidation reshaping competitive landscape.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 5,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
+          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/integrated-openings-solutions-ios-joseph-grillo-ceo/621278/",
+          "title": "Integrated Openings Solutions Names Joseph Grillo New CEO",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
+          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/news/i-pro-americas-leadership-next-phase-growth/621195/",
+          "title": "i-PRO Strengthens Leadership in Americas for Next Phase of Growth",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/news/hid-acquisition-of-inepro-id-expands-companys-secure-print-portfolio/621334/",
+          "title": "HID Acquisition of inepro ID Expands Company&#8217;s Secure Print Portfolio",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-03"
+        }
+      ]
+    },
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
-      "rationale": "LiteLLM Python package compromised to deliver credential stealer and backdoor with GitHub token leak (Oct 21-22), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Multiple high-velocity supply chain attacks across different platforms demonstrate sustained threat actor focus on developer infrastructure and open-source ecosystems.",
+      "rationale": "Additional evidence confirms sustained threat actor focus on developer infrastructure: Chainalysis suffered intrusion with exposure of customer identity data (Oct 31), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Combined with previously documented LiteLLM compromise, these incidents across multiple platforms within 14 days demonstrate ongoing, systematic exploitation of developer ecosystems and open-source supply chains.",
       "signalTypes": [],
-      "articleCount": 15,
+      "articleCount": 16,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -105,6 +204,12 @@
           "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
           "source": "The Hacker News",
           "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+          "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-31"
         }
       ]
     },
@@ -113,9 +218,145 @@
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
       "status": "emerging",
       "firstDetected": "2026-10-25",
-      "lastActive": "2026-11-04",
+      "lastActive": "2026-11-05",
       "cooledAt": null,
-      "rationale": "Hackers breached enterprise firewalls and VPNs including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in a large-scale campaign targeting exposed network edge devices (Oct 23). This represents sustained threat actor focus on network perimeter chokepoints as primary entry points for enterprise networks, with major vendor infrastructure specifically targeted.",
+      "rationale": "Threat actors continue targeting network perimeter infrastructure: hackers breached enterprise firewalls including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in large-scale campaign (Oct 23), and threat actors abused legitimate cloud services and authentication mechanisms in Skyw4lker device code phishing campaign targeting American organizations (Oct 28). Two independent, high-impact campaigns within days demonstrate sustained attacker focus on network edge devices as primary enterprise entry points.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+          "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-23"
+        },
+        {
+          "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+          "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "specialized-ip-camera-vulnerabilities-creating-critical-surv",
+      "name": "Specialized IP camera vulnerabilities creating critical surveillance infrastructure risks in conflict zones",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "CERT-UA issued alert of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses (Oct 27), while researchers also documented attackers hijacking Dahua devices using similar vulnerabilities (Oct 27). Active geopolitical tensions combined with specialized surveillance equipment vulnerabilities create cascading risks for physical security systems in conflict environments.",
+      "signalTypes": [
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+          "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "industry-workforce-development-and-diversity-initiatives-add",
+      "name": "Industry workforce development and diversity initiatives addressing talent pipeline challenges",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "SIA revealed 12 security industry professionals and students earning scholarships for continuing education and professional development through Women in Security Forum (Nov 4), while PSA Network partnered with Community College of Denver connecting 66 students with security industry professionals to explore career pathways (Nov 4). Multiple initiatives within days signal coordinated industry focus on workforce pipeline development.",
+      "signalTypes": [
+        "velocity",
+        "source_authority"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/sia-2026-women-in-security-forum-wisf-scholarship-winners/621345/",
+          "title": "SIA Reveals 2026 Women in Security Forum Scholarship Winners",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.securitysales.com/news/psa-network-partners-community-college-denver/621351/",
+          "title": "PSA Network Partners With Community College of Denver",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "security-and-safety-communications-infrastructure-consolidat",
+      "name": "Security and safety communications infrastructure consolidation through unified platform providers",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "StoneOne unified brand announcement combines BearCom and Stone Security, connecting security, safety and critical communications through single partner (Nov 4). This represents a strategic consolidation of previously separate communications and security functions into integrated platform approach.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/stoneone-unified-brand-bearcom-stone-security/621340/",
+          "title": "StoneOne Becomes Unified Brand for BearCom and Stone Security",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "hypervisor-and-virtualization-infrastructure-vulnerabilities",
+      "name": "Hypervisor and virtualization infrastructure vulnerabilities exposing multi-tenant security boundaries",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "Researchers disclosed critical flaws in Xen hypervisor allowing malicious guest virtual machine to read and write memory of other VMs and dom0 (Nov 4), with patches released and no known mitigation available. This represents a fundamental vulnerability in foundational virtualization infrastructure used across enterprise security systems.",
+      "signalTypes": [
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+          "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "cryptopayment-wordpress-plugin-exploitation-targeting-unpatc",
+      "name": "CryptoPayment WordPress plugin exploitation targeting unpatched maximum-severity vulnerabilities",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "Threat actors actively exploiting unpatched CVE-2026-81648 in CryptoPayment Gateway WordPress plugin with CVSS score of 10.0 (Nov 3), demonstrating real-time exploitation of maximum-severity vulnerabilities in web-based payment infrastructure.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -126,20 +367,45 @@
       ],
       "articles": [
         {
-          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
-          "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+          "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+          "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
           "source": "The Hacker News",
-          "publishedAt": "2026-10-23"
+          "publishedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "threat-actors-impersonating-legitimate-ai-service-providers-",
+      "name": "Threat actors impersonating legitimate AI service providers to harvest credentials and sensitive data",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-05",
+      "cooledAt": null,
+      "rationale": "Attacker relentlessly scanned for exposed credentials by impersonating AI bots posing as agents from OpenAI, Anthropic, Meta and others (Oct 28). This represents emerging tactic of abusing AI brand recognition and trust to conduct reconnaissance and credential harvesting.",
+      "signalTypes": [
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+          "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
+          "source": "Dark Reading",
+          "publishedAt": "2026-10-28"
         }
       ]
     },
     {
       "id": "specialized-ip-camera-vulnerabilities-enabling-unauthorized-",
       "name": "Specialized IP camera vulnerabilities enabling unauthorized remote access during geopolitical tensions",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-28",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "CERT-UA issued an alert warning of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses to change device configuration and create third-party access (Oct 27). This incident is tied to active geopolitical tensions and demonstrates how surveillance infrastructure vulnerabilities create cascading risks for physical security systems.",
       "signalTypes": [
         "claim_magnitude",
@@ -159,55 +425,12 @@
       ]
     },
     {
-      "id": "major-security-vendor-consolidation-and-portfolio-restructur",
-      "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
-      "status": "emerging",
-      "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-04",
-      "cooledAt": null,
-      "rationale": "ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting focus to partnerships and acquisitions (Oct 29), and Johnson Controls selling residential intrusion alarm products business to Truelink Capital (Oct 26). Multiple significant M&A and restructuring events within 14-day window signal rapid market consolidation.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 4,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
-          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/integrated-openings-solutions-ios-joseph-grillo-ceo/621278/",
-          "title": "Integrated Openings Solutions Names Joseph Grillo New CEO",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
-          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        },
-        {
-          "url": "https://www.securitysales.com/news/i-pro-americas-leadership-next-phase-growth/621195/",
-          "title": "i-PRO Strengthens Leadership in Americas for Next Phase of Growth",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        }
-      ]
-    },
-    {
       "id": "ai-assisted-alarm-monitoring-requiring-responsible-verificat",
       "name": "AI-assisted alarm monitoring requiring responsible verification protocols similar to human signal handling",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-30",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "Security Sales published analysis on artificial intelligence-assisted alarm monitoring development, stating that the responsible path for alarm monitoring vendors is treating AI output the way a good central station treats an unverified signal (Oct 30). This emerging standard-setting discussion suggests industry is formalizing how to integrate AI recommendations into established central station operations while maintaining operator judgment.",
       "signalTypes": [
         "source_authority",
@@ -227,49 +450,12 @@
       ]
     },
     {
-      "id": "access-control-technology-advancement-and-market-adoption-ac",
-      "name": "Access control technology advancement and market adoption acceleration",
-      "status": "emerging",
-      "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-04",
-      "cooledAt": null,
-      "rationale": "Security Sales published analysis that access control is having its moment with continued innovations making it more omnipresent than ever, with security integrators indicating more innovations to come (Oct 29). NAPCO released new GEM-XK5 slimline keypad with expanded capabilities (Oct 22), and PDK announced wireless locks and high-security readers at ISC East (Nov 2), demonstrating product-level advancement supporting the market trend.",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
-          "title": "Access Control is Having Its Moment",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
-          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-22"
-        },
-        {
-          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
-          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-02"
-        }
-      ]
-    },
-    {
       "id": "end-user-expectations-driving-integrator-business-model-and-",
       "name": "End-user expectations driving integrator business model and service delivery transformation",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-31",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "Security Sales and NSCA published webinar content on five shifts integrators must address now to meet evolving end-user expectations (Oct 30). Security Sales also published analysis on how integrators must adapt to changing customer expectations for technology integration and service delivery, with findings that older adults are more confident managing smart security systems independently than industry expectations suggest (Nov 2).",
       "signalTypes": [
         "source_authority"
@@ -296,10 +482,10 @@
     {
       "id": "video-surveillance-analytics-shifting-from-motion-detection-",
       "name": "Video surveillance analytics shifting from motion detection to intent recognition",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-02",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "Security Sales published analysis that video surveillance is moving from detecting motion to understanding intent, with monitoring centers that harness that shift expected to lead in 2027 (Oct 26). This represents a qualitative upgrade in video security platform capabilities, marking a shift in industry technology focus and monitoring center operations strategy.",
       "signalTypes": [
         "source_authority",
@@ -321,10 +507,10 @@
     {
       "id": "security-infrastructure-monetization-as-business-intelligenc",
       "name": "Security infrastructure monetization as business intelligence and operational value driver",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-02",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "Security Sales published analysis on turning security infrastructure into a business intelligence platform, noting that AI is increasingly used to support operations, safety, customer experience and other business initiatives beyond traditional security monitoring (Oct 28). Synology will showcase AI-powered monitoring with flexible deployment and scalable storage solutions, emphasizing how surveillance ecosystems integrate with broader business operations (Nov 3).",
       "signalTypes": [
         "source_authority",
@@ -358,10 +544,10 @@
     {
       "id": "multifamily-property-system-integration-fragmentation-drivin",
       "name": "Multifamily property system integration fragmentation driving total cost of ownership concerns",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-02",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "Security Sales published sponsored analysis highlighting the challenge of making diverse technology systems work together in multifamily properties, emphasizing early integrator collaboration to avoid fragmentation costs (Nov 1). This signals a growing market pain point as properties adopt more disparate systems without coordinated architecture.",
       "signalTypes": [
         "source_authority"
@@ -382,10 +568,10 @@
     {
       "id": "identity-and-secure-printing-convergence-expanding-trusted-i",
       "name": "Identity and secure printing convergence expanding trusted identity infrastructure",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-04",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "HID announced acquisition of inepro ID to expand its secure print portfolio as part of effort to extend trusted identities to how people work every day (Nov 3). This signals vendor strategy to consolidate identity management across physical and digital workspaces through secure printing and credentialing integration.",
       "signalTypes": [
         "source_authority",
@@ -408,10 +594,10 @@
     {
       "id": "k-12-mass-notification-layered-strategy-beyond-threat-detect",
       "name": "K-12 mass notification layered strategy beyond threat detection",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-04",
       "lastActive": "2026-11-04",
-      "cooledAt": null,
+      "cooledAt": "2026-11-05",
       "rationale": "AtlasIED published analysis explaining why threat detection alone is insufficient for K-12 mass notification, emphasizing layered strategy approach for faster, better-informed safety response (Oct 27). This signals emerging best practice in school security moving beyond single-point detection solutions.",
       "signalTypes": [
         "source_authority",
