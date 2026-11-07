@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-05T13:45:12.112Z",
+  "lastRunAt": "2026-11-07T03:49:34.225Z",
   "trends": [
     {
       "id": "access-control-technology-advancement-and-market-adoption-ac",
       "name": "Access control technology advancement and market adoption acceleration",
       "status": "confirmed",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-05",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
       "rationale": "Multiple vendors announced significant access control innovations at ISC East 2026: Allegion highlighted open architecture and collaborative ecosystems (Nov 4), PDK showcased wireless locks and high-security readers with new platform features (Nov 2), and Yubico introduced YubiID service bridging identity verification with phishing-resistant authentication (Nov 4). Security Sales analysis confirmed access control is having its moment with integrators indicating more innovations to come (Oct 29), demonstrating sustained product-level advancement and market acceleration across multiple manufacturers.",
       "signalTypes": [
@@ -56,7 +56,7 @@
       "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-05",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
       "rationale": "Four significant M&A and restructuring events occurred within the 14-day window: ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting to partnerships and acquisitions (Oct 29), Johnson Controls announced sale of residential intrusion alarm products business to Truelink Capital (Oct 26), and HID acquired inepro ID to expand secure print portfolio (Nov 3). Multiple major industry players restructuring simultaneously signals rapid market consolidation reshaping competitive landscape.",
       "signalTypes": [
@@ -105,11 +105,11 @@
       "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-05",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "Additional evidence confirms sustained threat actor focus on developer infrastructure: Chainalysis suffered intrusion with exposure of customer identity data (Oct 31), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Combined with previously documented LiteLLM compromise, these incidents across multiple platforms within 14 days demonstrate ongoing, systematic exploitation of developer ecosystems and open-source supply chains.",
+      "rationale": "Additional evidence confirms sustained threat actor focus on developer infrastructure: Chainalysis suffered intrusion with exposure of customer identity data (Oct 31), Gheist weaponized GitHub tokens to steal cloud secrets from thousands of developer repositories (Oct 26), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Combined with exploitation patterns across multiple platforms within 14 days, these incidents demonstrate ongoing, systematic exploitation of developer ecosystems and open-source supply chains.",
       "signalTypes": [],
-      "articleCount": 16,
+      "articleCount": 17,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -210,16 +210,182 @@
           "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
           "source": "The Hacker News",
           "publishedAt": "2026-10-31"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+          "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "specialized-ip-camera-vulnerabilities-creating-critical-surv",
+      "name": "Specialized IP camera vulnerabilities creating critical surveillance infrastructure risks in conflict zones",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-07",
+      "cooledAt": null,
+      "rationale": "CERT-UA issued alert of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses (Oct 27). This represents an active geopolitical threat where specialized surveillance equipment vulnerabilities create cascading risks for physical security systems in conflict environments, with documented cases of compromised video streams and device configuration changes.",
+      "signalTypes": [
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+          "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+          "source": "The Hacker News",
+          "publishedAt": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "id": "industry-workforce-development-and-diversity-initiatives-add",
+      "name": "Industry workforce development and diversity initiatives addressing talent pipeline challenges",
+      "status": "emerging",
+      "firstDetected": "2026-11-05",
+      "lastActive": "2026-11-07",
+      "cooledAt": null,
+      "rationale": "SIA revealed 12 security industry professionals and students earning scholarships for continuing education and professional development through Women in Security Forum (Nov 4), while PSA Network partnered with Community College of Denver connecting 66 students with security industry professionals to explore career pathways (Nov 4). Additionally, SIA hosted inaugural StartUps in Security Pitch Competition at ISC East (Nov 5) spotlighting emerging companies. Multiple coordinated initiatives within days signal industry-wide focus on workforce pipeline development and talent cultivation.",
+      "signalTypes": [
+        "velocity",
+        "source_authority"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/sia-2026-women-in-security-forum-wisf-scholarship-winners/621345/",
+          "title": "SIA Reveals 2026 Women in Security Forum Scholarship Winners",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.securitysales.com/news/psa-network-partners-community-college-denver/621351/",
+          "title": "PSA Network Partners With Community College of Denver",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.securitysales.com/news/sia-2026-startups-in-security-pitch-competition-isc-east/621408/",
+          "title": "SIA Hosts First StartUps in Security Pitch Competition at ISC East",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "ai-powered-surveillance-analytics-shifting-from-motion-detec",
+      "name": "AI-powered surveillance analytics shifting from motion detection to intent understanding",
+      "status": "emerging",
+      "firstDetected": "2026-11-07",
+      "lastActive": "2026-11-07",
+      "cooledAt": null,
+      "rationale": "Security Sales analysis identifies that video surveillance is moving from detecting motion to understanding intent, with monitoring centers that harness this shift expected to lead in 2027 (Oct 26). Synology announced AI-powered monitoring capabilities for ISC East 2026 (Nov 3), and multiple articles discuss using AI to support operations and business initiatives beyond traditional security monitoring. This represents a fundamental shift in surveillance system capabilities and value proposition.",
+      "signalTypes": [
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/connecting-video-monitoring-dots-analytics-2027/621176/",
+          "title": "Connecting the Video Dots in 2027",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/as-ai-raises-new-data-security-questions-synology-to-showcase-its-surveillance-ecosystem-at-isc-east-2026/621291/",
+          "title": "As AI Raises New Data Security Questions, Synology to Showcase Its Surveillance Ecosystem at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-03"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/turning-security-infrastructure-business-intelligence-platform/621245/",
+          "title": "Turning Security Infrastructure Into a Business Intelligence Platform",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/see-security-smarter-building-safer-k-12-learning-environments/621380/",
+          "title": "See Security Smarter: Building Safer K–12 Learning Environments",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "integration-complexity-and-platform-fragmentation-challenges",
+      "name": "Integration complexity and platform fragmentation challenges in multifamily and enterprise deployments",
+      "status": "emerging",
+      "firstDetected": "2026-11-07",
+      "lastActive": "2026-11-07",
+      "cooledAt": null,
+      "rationale": "Security Sales analysis identifies that as multifamily properties adopt more technology, the challenge is making disparate systems work together rather than adding smarter systems (Nov 1). This signals a growing pain point where integrators must address technology fragmentation across security, safety, and communications infrastructure in complex deployments.",
+      "signalTypes": [
+        "cross_topic",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/intentional-by-design-avoiding-the-hidden-cost-of-fragmentation-in-multifamily/621228/",
+          "title": "Intentional by Design: Avoiding the Hidden Cost of Fragmentation in Multifamily",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-01"
+        },
+        {
+          "url": "https://www.securitysales.com/news/five-end-user-expectations-integrators-must-adapt-to/621286/",
+          "title": "Five End User Expectations Integrators Must Adapt To",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "facial-recognition-implementation-gap-between-customer-inten",
+      "name": "Facial recognition implementation gap between customer intent and technical specification",
+      "status": "emerging",
+      "firstDetected": "2026-11-07",
+      "lastActive": "2026-11-07",
+      "cooledAt": null,
+      "rationale": "Security Sales identifies that customer requests for facial recognition require deeper conversation about what customers actually want the system to do (Nov 6), indicating a significant disconnect between technology capability marketing and actual end-user requirements. This signals an emerging challenge for integrators in translating customer needs into appropriate technical solutions.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/what-does-customer-really-mean-by-facial-recognition/621415/",
+          "title": "What Does the Customer Really Mean by &#8220;Facial Recognition&#8221;?",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-06"
         }
       ]
     },
     {
       "id": "enterprise-firewall-and-vpn-credential-harvesting-targeting-",
       "name": "Enterprise firewall and VPN credential harvesting targeting network edge devices",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-10-25",
       "lastActive": "2026-11-05",
-      "cooledAt": null,
+      "cooledAt": "2026-11-07",
       "rationale": "Threat actors continue targeting network perimeter infrastructure: hackers breached enterprise firewalls including Fortinet FortiGate and Palo Alto Networks GlobalProtect, exposing over 70,000 credentials in large-scale campaign (Oct 23), and threat actors abused legitimate cloud services and authentication mechanisms in Skyw4lker device code phishing campaign targeting American organizations (Oct 28). Two independent, high-impact campaigns within days demonstrate sustained attacker focus on network edge devices as primary enterprise entry points.",
       "signalTypes": [
         "claim_magnitude",
@@ -245,68 +411,12 @@
       ]
     },
     {
-      "id": "specialized-ip-camera-vulnerabilities-creating-critical-surv",
-      "name": "Specialized IP camera vulnerabilities creating critical surveillance infrastructure risks in conflict zones",
-      "status": "emerging",
-      "firstDetected": "2026-11-05",
-      "lastActive": "2026-11-05",
-      "cooledAt": null,
-      "rationale": "CERT-UA issued alert of unauthorized remote access to Dahua IP cameras and DVRs in Ukraine, with attackers exploiting P2P access and authentication weaknesses (Oct 27), while researchers also documented attackers hijacking Dahua devices using similar vulnerabilities (Oct 27). Active geopolitical tensions combined with specialized surveillance equipment vulnerabilities create cascading risks for physical security systems in conflict environments.",
-      "signalTypes": [
-        "velocity",
-        "claim_magnitude"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
-          "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
-          "source": "The Hacker News",
-          "publishedAt": "2026-10-27"
-        }
-      ]
-    },
-    {
-      "id": "industry-workforce-development-and-diversity-initiatives-add",
-      "name": "Industry workforce development and diversity initiatives addressing talent pipeline challenges",
-      "status": "emerging",
-      "firstDetected": "2026-11-05",
-      "lastActive": "2026-11-05",
-      "cooledAt": null,
-      "rationale": "SIA revealed 12 security industry professionals and students earning scholarships for continuing education and professional development through Women in Security Forum (Nov 4), while PSA Network partnered with Community College of Denver connecting 66 students with security industry professionals to explore career pathways (Nov 4). Multiple initiatives within days signal coordinated industry focus on workforce pipeline development.",
-      "signalTypes": [
-        "velocity",
-        "source_authority"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/sia-2026-women-in-security-forum-wisf-scholarship-winners/621345/",
-          "title": "SIA Reveals 2026 Women in Security Forum Scholarship Winners",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-04"
-        },
-        {
-          "url": "https://www.securitysales.com/news/psa-network-partners-community-college-denver/621351/",
-          "title": "PSA Network Partners With Community College of Denver",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-04"
-        }
-      ]
-    },
-    {
       "id": "security-and-safety-communications-infrastructure-consolidat",
       "name": "Security and safety communications infrastructure consolidation through unified platform providers",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-05",
       "lastActive": "2026-11-05",
-      "cooledAt": null,
+      "cooledAt": "2026-11-07",
       "rationale": "StoneOne unified brand announcement combines BearCom and Stone Security, connecting security, safety and critical communications through single partner (Nov 4). This represents a strategic consolidation of previously separate communications and security functions into integrated platform approach.",
       "signalTypes": [
         "source_authority",
@@ -328,10 +438,10 @@
     {
       "id": "hypervisor-and-virtualization-infrastructure-vulnerabilities",
       "name": "Hypervisor and virtualization infrastructure vulnerabilities exposing multi-tenant security boundaries",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-05",
       "lastActive": "2026-11-05",
-      "cooledAt": null,
+      "cooledAt": "2026-11-07",
       "rationale": "Researchers disclosed critical flaws in Xen hypervisor allowing malicious guest virtual machine to read and write memory of other VMs and dom0 (Nov 4), with patches released and no known mitigation available. This represents a fundamental vulnerability in foundational virtualization infrastructure used across enterprise security systems.",
       "signalTypes": [
         "claim_magnitude"
@@ -352,10 +462,10 @@
     {
       "id": "cryptopayment-wordpress-plugin-exploitation-targeting-unpatc",
       "name": "CryptoPayment WordPress plugin exploitation targeting unpatched maximum-severity vulnerabilities",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-05",
       "lastActive": "2026-11-05",
-      "cooledAt": null,
+      "cooledAt": "2026-11-07",
       "rationale": "Threat actors actively exploiting unpatched CVE-2026-81648 in CryptoPayment Gateway WordPress plugin with CVSS score of 10.0 (Nov 3), demonstrating real-time exploitation of maximum-severity vulnerabilities in web-based payment infrastructure.",
       "signalTypes": [
         "claim_magnitude",
@@ -377,10 +487,10 @@
     {
       "id": "threat-actors-impersonating-legitimate-ai-service-providers-",
       "name": "Threat actors impersonating legitimate AI service providers to harvest credentials and sensitive data",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-05",
       "lastActive": "2026-11-05",
-      "cooledAt": null,
+      "cooledAt": "2026-11-07",
       "rationale": "Attacker relentlessly scanned for exposed credentials by impersonating AI bots posing as agents from OpenAI, Anthropic, Meta and others (Oct 28). This represents emerging tactic of abusing AI brand recognition and trust to conduct reconnaissance and credential harvesting.",
       "signalTypes": [
         "velocity",

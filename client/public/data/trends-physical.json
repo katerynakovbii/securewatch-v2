@@ -1,19 +1,19 @@
 {
-  "lastRunAt": "2026-11-06T04:19:40.346Z",
+  "lastRunAt": "2026-11-07T03:49:34.225Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-06",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "Security Sales Oct 26 article 'Connecting the Video Dots in 2027' emphasizes video surveillance moving from motion detection to intent understanding, positioning analytics-driven video monitoring as competitive leadership capability. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multiple articles across 7 days from authoritative source signal sustained industry deployment momentum.",
+      "rationale": "Security Sales Oct 26 article 'Connecting the Video Dots in 2027' emphasizes video surveillance moving from motion detection to intent understanding. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Security Sales Nov 6 article addresses customer expectations around facial recognition capabilities in integrator conversations. Multiple articles across 8 days from authoritative source signal sustained industry deployment momentum.",
       "signalTypes": [
         "source_authority",
         "velocity"
       ],
-      "articleCount": 4,
+      "articleCount": 5,
       "sources": [
         "Security Sales"
       ],
@@ -41,6 +41,12 @@
           "title": "As AI Raises New Data Security Questions, Synology to Showcase Its Surveillance Ecosystem at ISC East 2026",
           "source": "Security Sales",
           "publishedAt": "2026-11-03"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/what-does-customer-really-mean-by-facial-recognition/621415/",
+          "title": "What Does the Customer Really Mean by &#8220;Facial Recognition&#8221;?",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-06"
         }
       ]
     },
@@ -49,9 +55,9 @@
       "name": "Residential intrusion alarm business consolidation and portfolio refocus",
       "status": "emerging",
       "firstDetected": "2026-10-27",
-      "lastActive": "2026-11-06",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "Johnson Controls announced sale of residential intrusion alarm products business to Truelink Capital on Oct 26, citing strategic refocus on mission-critical work. ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. Two major transactions within four days from same authoritative source signal accelerating industry consolidation and strategic portfolio reshuffling in residential intrusion detection assets driven by shift toward integrated smart home platforms.",
+      "rationale": "Johnson Controls announced sale of residential intrusion alarm products business to Truelink Capital on Oct 26, citing strategic refocus on mission-critical work. ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. Two major transactions within four days from authoritative source signal accelerating industry consolidation and strategic portfolio reshuffling in residential intrusion detection assets driven by shift toward integrated smart home platforms.",
       "signalTypes": [
         "claim_magnitude",
         "source_authority",
@@ -81,9 +87,9 @@
       "name": "Dahua IP camera P2P and authentication vulnerabilities enabling unauthorized remote access",
       "status": "emerging",
       "firstDetected": "2026-10-28",
-      "lastActive": "2026-11-06",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "CERT-UA (Computer Emergency Response Team of Ukraine) issued formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, enabling attackers to control video streams and device configuration. Alert from national CERT authority documenting active exploitation of critical surveillance infrastructure represents authoritative disclosure of material vulnerability affecting globally deployed physical security systems.",
+      "rationale": "CERT-UA (Computer Emergency Response Team of Ukraine) issued formal alert on Oct 27 warning of unauthorized remote access to Dahua IP cameras and DVRs via P2P access and authentication weaknesses, enabling attackers to control video streams and device configuration. This represents authoritative disclosure of material vulnerability affecting globally deployed physical security systems used in video surveillance infrastructure.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude"
@@ -102,45 +108,13 @@
       ]
     },
     {
-      "id": "professional-monitoring-center-infrastructure-modernization-",
-      "name": "Professional monitoring center infrastructure modernization and first responder integration",
-      "status": "emerging",
-      "firstDetected": "2026-10-29",
-      "lastActive": "2026-11-06",
-      "cooledAt": null,
-      "rationale": "ADT unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28 marking significant infrastructure investment in professional monitoring capabilities timed to National First Responders Day. Combined with ADT's Oct 29 acquisition by Thrive Holdings emphasizing smart home security expansion, these consecutive announcements from same authoritative source signal industry-wide focus on upgrading monitoring center facilities and capabilities to support modern response protocols.",
-      "signalTypes": [
-        "source_authority",
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/adt-renovated-24-7-monitoring-center-irving-texas/621249/",
-          "title": "ADT Unveils Renovated 24/7 Monitoring Center in Irving, Texas",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-28"
-        },
-        {
-          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
-          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        }
-      ]
-    },
-    {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-06",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent than ever. Nov 2 article on PDK's latest hardware offerings including wireless locks and high-security readers at ISC East 2026. Nov 4 article on Allegion's open architecture and collaborative security ecosystems demonstrates multi-vendor innovation cycle. Nov 5 article on ASSA ABLOY showcasing evolving digital access portfolio. Consecutive coverage across one week emphasizes sustained market expansion and product innovation cycles in access control technology.",
+      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent. Nov 2 article on PDK's latest hardware offerings including wireless locks and high-security readers at ISC East 2026. Nov 4 article on Allegion's open architecture and collaborative security ecosystems. Nov 5 article on ASSA ABLOY showcasing evolving digital access portfolio. Consecutive coverage across one week emphasizes sustained market expansion and product innovation cycles in access control technology.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -181,9 +155,9 @@
       "name": "ISC East 2026 as industry innovation showcase and market confidence signal",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-06",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "Five articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements including PDK wireless locks, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. Combined with Nov 5 article on SIA's inaugural StartUps in Security pitch competition at ISC East, the conference represents concentrated venue for vendor innovation announcements and emerging company spotlighting.",
+      "rationale": "Five articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements including PDK wireless locks, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. Nov 5 article on SIA's inaugural StartUps in Security pitch competition at ISC East demonstrates concentrated venue for vendor innovation announcements and emerging company spotlighting, signaling broad industry participation and confidence.",
       "signalTypes": [
         "velocity",
         "source_authority",
@@ -231,9 +205,9 @@
       "name": "Fire protection service integration and geographic market expansion via acquisition",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-06",
+      "lastActive": "2026-11-07",
       "cooledAt": null,
-      "rationale": "Pye-Barker Fire & Safety announced acquisition of St. John's Fire Equipment in St. Augustine, Florida on Nov 5, strengthening fire protection offerings in central/northern Florida and Panhandle. Same company received Nov 3 profile featuring Regional VP Jason Uhrich discussing business philosophy. Two articles within three days signal consolidation in fire protection service delivery and geographic market expansion through acquisition.",
+      "rationale": "Pye-Barker Fire & Safety announced acquisition of St. John's Fire Equipment in St. Augustine, Florida on Nov 5, strengthening fire protection offerings in central/northern Florida and Panhandle. Nov 3 Security Sales profile of Regional VP Jason Uhrich discussing Pye-Barker business philosophy appears within same timeframe. Two articles within three days signal consolidation in fire protection service delivery and geographic market expansion through acquisition.",
       "signalTypes": [
         "velocity",
         "claim_magnitude"
@@ -254,6 +228,38 @@
           "title": "Jason Uhrich, Regional VP, Pye-Barker Fire &#038; Safety: Best Advice",
           "source": "Security Sales",
           "publishedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "professional-monitoring-center-infrastructure-modernization-",
+      "name": "Professional monitoring center infrastructure modernization and first responder integration",
+      "status": "emerging",
+      "firstDetected": "2026-10-29",
+      "lastActive": "2026-11-07",
+      "cooledAt": null,
+      "rationale": "ADT unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28, marking significant infrastructure investment in professional monitoring capabilities. Combined with ADT's Oct 29 acquisition by Thrive Holdings emphasizing smart home security expansion, these consecutive announcements signal industry focus on upgrading monitoring center facilities and capabilities to support modern response protocols.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/adt-renovated-24-7-monitoring-center-irving-texas/621249/",
+          "title": "ADT Unveils Renovated 24/7 Monitoring Center in Irving, Texas",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
+          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
         }
       ]
     },
