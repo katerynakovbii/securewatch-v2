@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-10T00:59:42.185Z",
+  "lastRunAt": "2026-11-11T03:51:46.763Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-10",
+      "lastActive": "2026-11-11",
       "cooledAt": null,
-      "rationale": "Security Sales Nov 6 article addresses customer expectations around facial recognition capabilities in integrator conversations. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Four articles from Security Sales across two weeks signal sustained industry deployment momentum with integrator focus.",
+      "rationale": "Security Sales Nov 6 article addresses customer expectations around facial recognition capabilities in integrator conversations. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multiple articles across two weeks from Security Sales signal sustained industry deployment momentum with integrator focus.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -51,51 +51,13 @@
       ]
     },
     {
-      "id": "residential-intrusion-alarm-business-consolidation-and-portf",
-      "name": "Residential intrusion alarm business consolidation and portfolio refocus",
-      "status": "emerging",
-      "firstDetected": "2026-10-27",
-      "lastActive": "2026-11-10",
-      "cooledAt": null,
-      "rationale": "ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. ADT also unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28 marking infrastructure investment in professional monitoring. Two major transactions and facility investments within days from authoritative source signal accelerating industry consolidation and strategic portfolio reshuffling in residential intrusion detection and monitoring assets.",
-      "signalTypes": [
-        "claim_magnitude",
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
-          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        },
-        {
-          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
-          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/adt-renovated-24-7-monitoring-center-irving-texas/621249/",
-          "title": "ADT Unveils Renovated 24/7 Monitoring Center in Irving, Texas",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-28"
-        }
-      ]
-    },
-    {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-10",
+      "lastActive": "2026-11-11",
       "cooledAt": null,
-      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space making it more omnipresent. Nov 2 article on PDK's latest hardware offerings including wireless locks and high-security readers at ISC East 2026. Nov 4 article on Allegion's open architecture and collaborative security ecosystems. Nov 5 article on ASSA ABLOY showcasing evolving digital access portfolio. Four articles across one week from major vendors emphasize sustained market expansion and product innovation cycles in access control technology.",
+      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space. Nov 2 article on PDK's wireless locks and high-security readers at ISC East 2026. Nov 4 article on Allegion's open architecture and collaborative security ecosystems. Nov 5 article on ASSA ABLOY showcasing evolving digital access portfolio. Four articles across one week from major vendors emphasize sustained market expansion and product innovation cycles.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -136,9 +98,9 @@
       "name": "ISC East 2026 as industry innovation showcase and market confidence signal",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-10",
+      "lastActive": "2026-11-11",
       "cooledAt": null,
-      "rationale": "Five articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements including PDK wireless locks, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. Nov 5 article on SIA's inaugural StartUps in Security pitch competition at ISC East demonstrates concentrated venue for vendor innovation announcements and emerging company spotlighting, signaling broad industry participation and confidence.",
+      "rationale": "Five articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements including PDK wireless locks, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. Nov 5 article on SIA's inaugural StartUps in Security pitch competition at ISC East demonstrates concentrated venue for vendor innovation announcements and emerging company spotlighting, signaling broad industry participation.",
       "signalTypes": [
         "velocity",
         "source_authority",
@@ -182,12 +144,106 @@
       ]
     },
     {
+      "id": "integrated-showroom-and-unified-product-demonstration-spaces",
+      "name": "Integrated showroom and unified product demonstration spaces driving customer engagement",
+      "status": "emerging",
+      "firstDetected": "2026-11-10",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "NAPCO celebrated grand opening of NapcONE showroom in New York on Nov 9, featuring an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY article on Nov 10 highlights video intercom market expansion beyond multifamily with integrator selection guidance emphasizing compatibility assessment. These demonstrate deliberate industry shift toward physical, unified demonstration environments and cross-product selling strategies designed to help integrators assess customer needs.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/napco-grand-opening-new-york-napcone-showroom/621432/",
+          "title": "NAPCO Celebrates Grand Opening of New York NapcONE Showroom",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-09"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/assa-abloy-video-intercoms-finding-homes-beyond-multifamily/621439/",
+          "title": "ASSA ABLOY: Video Intercoms Are Finding Homes Beyond Multifamily",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "cloud-based-real-time-location-services-expanding-in-healthc",
+      "name": "Cloud-based real-time location services expanding in healthcare security",
+      "status": "emerging",
+      "firstDetected": "2026-11-11",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "Securitas Healthcare launched MobileView RTLS Next Generation on Nov 10, introducing MobileView Cloud with expanded platform capabilities and flexible deployment options. This represents vendor investment in cloud infrastructure for real-time location tracking in healthcare environments, a specialized but growing vertical within physical security.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/securitas-healthcare-mobileview-rtls-next-generation/621454/",
+          "title": "Securitas Healthcare Launches MobileView RTLS Next Generation",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "residential-intrusion-alarm-business-consolidation-and-portf",
+      "name": "Residential intrusion alarm business consolidation and portfolio refocus",
+      "status": "cooled",
+      "firstDetected": "2026-10-27",
+      "lastActive": "2026-11-10",
+      "cooledAt": "2026-11-11",
+      "rationale": "ADT announced $15.3 billion acquisition by Thrive Holdings on Oct 29 specifically to form foundation of smart home security business. ADT also unveiled renovated 24/7 monitoring center in Irving, Texas on Oct 28 marking infrastructure investment in professional monitoring. Two major transactions and facility investments within days from authoritative source signal accelerating industry consolidation and strategic portfolio reshuffling in residential intrusion detection and monitoring assets.",
+      "signalTypes": [
+        "claim_magnitude",
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
+          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
+          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/adt-renovated-24-7-monitoring-center-irving-texas/621249/",
+          "title": "ADT Unveils Renovated 24/7 Monitoring Center in Irving, Texas",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-28"
+        }
+      ]
+    },
+    {
       "id": "fire-protection-service-integration-and-geographic-market-ex",
       "name": "Fire protection service integration and geographic market expansion via acquisition",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-06",
       "lastActive": "2026-11-10",
-      "cooledAt": null,
+      "cooledAt": "2026-11-11",
       "rationale": "Pye-Barker Fire & Safety announced acquisition of St. John's Fire Equipment in St. Augustine, Florida on Nov 5, strengthening fire protection offerings in central and northern Florida and the Panhandle. This acquisition signal reflects consolidation in fire protection service delivery and geographic market expansion within the broader security industry.",
       "signalTypes": [
         "velocity",
@@ -210,30 +266,6 @@
           "title": "Jason Uhrich, Regional VP, Pye-Barker Fire &#038; Safety: Best Advice",
           "source": "Security Sales",
           "publishedAt": "2026-11-03"
-        }
-      ]
-    },
-    {
-      "id": "integrated-showroom-and-unified-product-demonstration-spaces",
-      "name": "Integrated showroom and unified product demonstration spaces driving customer engagement",
-      "status": "emerging",
-      "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-10",
-      "cooledAt": null,
-      "rationale": "NAPCO celebrated grand opening of NapcONE showroom in New York on Nov 9, featuring an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access to help security professionals expand business opportunities. This represents a deliberate industry shift toward physical, unified demonstration environments designed to enable integrator discovery and cross-product selling.",
-      "signalTypes": [
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/napco-grand-opening-new-york-napcone-showroom/621432/",
-          "title": "NAPCO Celebrates Grand Opening of New York NapcONE Showroom",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-09"
         }
       ]
     },

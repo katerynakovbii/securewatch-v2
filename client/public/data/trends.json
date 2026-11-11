@@ -1,121 +1,16 @@
 {
-  "lastRunAt": "2026-11-10T00:59:42.185Z",
+  "lastRunAt": "2026-11-11T03:51:46.763Z",
   "trends": [
     {
-      "id": "access-control-technology-advancement-and-market-adoption-ac",
-      "name": "Access control technology advancement and market adoption acceleration",
-      "status": "confirmed",
-      "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-10",
-      "cooledAt": null,
-      "rationale": "Multiple vendors announced significant access control innovations at ISC East 2026: Allegion highlighted open architecture and collaborative ecosystems (Nov 4), PDK showcased wireless locks and high-security readers with new platform features (Nov 2), and Yubico introduced YubiID service bridging identity verification with phishing-resistant authentication (Nov 4). Security Sales analysis confirmed access control is having its moment with integrators indicating more innovations to come (Oct 29), demonstrating sustained product-level advancement and market acceleration across multiple manufacturers.",
-      "signalTypes": [
-        "source_authority",
-        "velocity"
-      ],
-      "articleCount": 5,
-      "sources": [
-        "Security Sales",
-        "Dark Reading"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
-          "title": "Access Control is Having Its Moment",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
-          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-22"
-        },
-        {
-          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
-          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-02"
-        },
-        {
-          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
-          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-04"
-        },
-        {
-          "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-          "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
-          "source": "Dark Reading",
-          "publishedAt": "2026-11-04"
-        }
-      ]
-    },
-    {
-      "id": "major-security-vendor-consolidation-and-portfolio-restructur",
-      "name": "Major security vendor consolidation and portfolio restructuring reshaping market competition",
-      "status": "emerging",
-      "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-10",
-      "cooledAt": null,
-      "rationale": "Four significant M&A and restructuring events occurred within the 14-day window: ADT announced acquisition by Thrive Holdings for $15.3 billion to form foundation of smart home security business (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting to partnerships and acquisitions (Oct 29), HID acquired inepro ID to expand secure print portfolio (Nov 3), and Pye-Barker acquired St. John's Fire Equipment (Nov 5). Multiple major industry players restructuring simultaneously signals rapid market consolidation reshaping competitive landscape.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 6,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
-          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/integrated-openings-solutions-ios-joseph-grillo-ceo/621278/",
-          "title": "Integrated Openings Solutions Names Joseph Grillo New CEO",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
-          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        },
-        {
-          "url": "https://www.securitysales.com/news/i-pro-americas-leadership-next-phase-growth/621195/",
-          "title": "i-PRO Strengthens Leadership in Americas for Next Phase of Growth",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-26"
-        },
-        {
-          "url": "https://www.securitysales.com/news/hid-acquisition-of-inepro-id-expands-companys-secure-print-portfolio/621334/",
-          "title": "HID Acquisition of inepro ID Expands Company&#8217;s Secure Print Portfolio",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-03"
-        },
-        {
-          "url": "https://www.securitysales.com/news/pye-barker-acquires-st-johns-fire-equipment/621385/",
-          "title": "Pye-Barker Acquires St. John&#8217;s Fire Equipment of St. Augustine, Florida",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-05"
-        }
-      ]
-    },
-    {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
-      "name": "Third-party software supply chain vulnerabilities enabling high-impact breaches",
+      "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-10",
+      "lastActive": "2026-11-11",
       "cooledAt": null,
-      "rationale": "Multiple evidence points confirm sustained threat actor focus on developer infrastructure and credential exposure: Chainalysis suffered intrusion with exposure of customer identity data and all users' credentials including password hashes and live tokens (Oct 31, Nov 6), and 26,400 valid cloud and AI credentials found exposed in public Gitee repositories (Oct 29). Additionally, attackers are exploiting unpatched CryptoPayment Gateway WordPress plugin with maximum severity CVE-2026-81648 (Nov 3), demonstrating systematic exploitation of developer ecosystems and open-source supply chains.",
+      "rationale": "Multiple high-impact incidents confirm developers as attack vector: AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 26,400 valid cloud and AI credentials exposed in Gitee repositories still functional (Oct 29), and Chainalysis breach exposed all users' credentials including password hashes and live tokens (Oct 31, Nov 6). Threat actors are systematically targeting developer infrastructure and AI platforms to harvest credentials at scale.",
       "signalTypes": [],
-      "articleCount": 18,
+      "articleCount": 19,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -228,16 +123,238 @@
           "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
           "source": "The Hacker News",
           "publishedAt": "2026-11-03"
+        },
+        {
+          "url": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
+          "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "trusted-cloud-provider-account-compromise-enabling-multi-cus",
+      "name": "Trusted cloud provider credentials weaponized to cascade breach across customer base",
+      "status": "emerging",
+      "firstDetected": "2026-11-10",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts between Oct 14-26 (Nov 9), and Xen Orchestra authentication bypass allowed active exploitation for admin access (Nov 10). Both incidents demonstrate attackers targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems.",
+      "signalTypes": [
+        "claim_magnitude",
+        "source_authority"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+          "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-09"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "access-control-technology-advancement-and-market-adoption-ac",
+      "name": "Access control market consolidation through phishing-resistant authentication and open ecosystems",
+      "status": "confirmed",
+      "firstDetected": "2026-10-31",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "Yubico launched YubiID service bridging identity verification with phishing-resistant authentication and post-quantum YubiKey beta (Nov 4), Allegion emphasized open architecture and collaborative ecosystems (Nov 4), and PDK showcased wireless locks with controller replacement capabilities (Nov 2). Security Sales analysis confirmed access control is experiencing accelerated adoption with integrators reporting continued innovation (Oct 29), indicating sustained vendor-led advancement and ecosystem interoperability focus.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 5,
+      "sources": [
+        "Security Sales",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
+          "title": "Access Control is Having Its Moment",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
+          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-22"
+        },
+        {
+          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
+          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
+        },
+        {
+          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
+          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+          "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "major-security-vendor-consolidation-and-portfolio-restructur",
+      "name": "Wave of M&A and restructuring reshaping security industry competitive structure",
+      "status": "emerging",
+      "firstDetected": "2026-10-30",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "ADT acquired by Thrive Holdings for $15.3 billion to form smart home security foundation (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting to partnerships and acquisitions focus (Oct 29), HID acquired inepro ID to expand secure print portfolio (Nov 3), Pye-Barker acquired St. John's Fire Equipment (Nov 5), and StoneOne unified BearCom and Stone Security (Nov 4). Five major consolidation events within seven days signal rapid reshaping of market structure and competitive positioning.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 7,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/adt-acquired-thrive-holdings-15-3-billion/621271/",
+          "title": "ADT to Be Acquired by Thrive Holdings for $15.3 Billion",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/integrated-openings-solutions-ios-joseph-grillo-ceo/621278/",
+          "title": "Integrated Openings Solutions Names Joseph Grillo New CEO",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/johnson-controls-residential-intrusion-alarm-products-business/621190/",
+          "title": "Johnson Controls Selling Residential Intrusion Alarm Products Business",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/news/i-pro-americas-leadership-next-phase-growth/621195/",
+          "title": "i-PRO Strengthens Leadership in Americas for Next Phase of Growth",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-26"
+        },
+        {
+          "url": "https://www.securitysales.com/news/hid-acquisition-of-inepro-id-expands-companys-secure-print-portfolio/621334/",
+          "title": "HID Acquisition of inepro ID Expands Company&#8217;s Secure Print Portfolio",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-03"
+        },
+        {
+          "url": "https://www.securitysales.com/news/pye-barker-acquires-st-johns-fire-equipment/621385/",
+          "title": "Pye-Barker Acquires St. John&#8217;s Fire Equipment of St. Augustine, Florida",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-05"
+        },
+        {
+          "url": "https://www.securitysales.com/news/stoneone-unified-brand-bearcom-stone-security/621340/",
+          "title": "StoneOne Becomes Unified Brand for BearCom and Stone Security",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "open-source-pen-testing-tools-repurposed-for-production-cred",
+      "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
+      "status": "emerging",
+      "firstDetected": "2026-11-11",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed across multiple industries (Nov 10). This represents attackers leveraging legitimate security testing tooling for offensive operations, indicating a supply chain attack surface within the penetration testing ecosystem.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+          "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "mobile-platform-sandbox-escapes-enabling-cross-app-credentia",
+      "name": "Mobile platform sandbox escapes enabling cross-app credential harvesting from encrypted wallets",
+      "status": "emerging",
+      "firstDetected": "2026-11-11",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance warned that Apple's recent security updates did not fix the vulnerability, indicating active exploitation window for financial credential theft.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+          "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "hypervisor-and-virtualization-flaws-enabling-guest-to-guest-",
+      "name": "Hypervisor and virtualization flaws enabling guest-to-guest and guest-to-dom0 memory access",
+      "status": "emerging",
+      "firstDetected": "2026-11-11",
+      "lastActive": "2026-11-11",
+      "cooledAt": null,
+      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0 (Nov 4), representing critical infrastructure compromise vector. Patches are available but no known mitigation exists for unpatched systems, creating immediate risk across virtualized infrastructure deployments.",
+      "signalTypes": [
+        "claim_magnitude"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+          "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-04"
         }
       ]
     },
     {
       "id": "industry-workforce-development-and-diversity-initiatives-add",
       "name": "Industry workforce development and diversity initiatives addressing talent pipeline challenges",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-05",
       "lastActive": "2026-11-10",
-      "cooledAt": null,
+      "cooledAt": "2026-11-11",
       "rationale": "SIA revealed 12 security industry professionals and students earning scholarships for continuing education and professional development through Women in Security Forum (Nov 4), while PSA Network partnered with Community College of Denver connecting 66 students with security industry professionals to explore career pathways (Nov 4). Additionally, SIA hosted inaugural StartUps in Security Pitch Competition at ISC East (Nov 5) spotlighting emerging companies. Multiple coordinated initiatives within days signal industry-wide focus on workforce pipeline development and talent cultivation.",
       "signalTypes": [
         "velocity",
@@ -271,10 +388,10 @@
     {
       "id": "ai-powered-surveillance-analytics-shifting-from-motion-detec",
       "name": "AI-powered surveillance analytics shifting from motion detection to intent understanding",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-07",
       "lastActive": "2026-11-10",
-      "cooledAt": null,
+      "cooledAt": "2026-11-11",
       "rationale": "Multiple articles discuss AI-powered monitoring capabilities evolving beyond traditional motion detection. Synology announced AI-powered monitoring with data security considerations for ISC East 2026 (Nov 3), while Security Sales analysis identifies intelligent video technology helping administrators improve visibility and accelerate investigations in K-12 environments (Nov 5). Articles discuss using AI to support operations and business initiatives beyond traditional security monitoring (Oct 28), indicating industry shift toward AI-powered intent and behavioral analysis.",
       "signalTypes": [
         "velocity",
@@ -321,10 +438,10 @@
     {
       "id": "smart-home-security-market-growth-and-consumer-adoption-acce",
       "name": "Smart home security market growth and consumer adoption acceleration",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-09",
       "lastActive": "2026-11-10",
-      "cooledAt": null,
+      "cooledAt": "2026-11-11",
       "rationale": "Multiple indicators signal accelerating consumer adoption of smart home security: Parks Associates research found average security system spending increased 26% while 19 million U.S. households purchased smart video devices (Nov 5), and Brinks Home commands highest monthly fees indicating premium market segment growth (Nov 5). The ADT acquisition by Thrive Holdings for $15.3 billion explicitly positions ADT to form the foundation of Thrive's smart home security business (Oct 29), signaling major capital deployment targeting this growing segment.",
       "signalTypes": [
         "claim_magnitude",
@@ -351,37 +468,12 @@
       ]
     },
     {
-      "id": "trusted-cloud-provider-account-compromise-enabling-multi-cus",
-      "name": "Trusted cloud provider account compromise enabling multi-customer breaches",
-      "status": "emerging",
-      "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-10",
-      "cooledAt": null,
-      "rationale": "Qubole suffered a breach where attackers exploited trusted AWS access credentials to breach multiple customer accounts between October 14-26, stealing secrets and data (Nov 9). This represents a distinct supply chain attack vector where compromised platform provider credentials cascade to impact all downstream customers, creating systemic risk across cloud-dependent security deployments.",
-      "signalTypes": [
-        "claim_magnitude",
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
-          "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-09"
-        }
-      ]
-    },
-    {
       "id": "unified-brand-consolidation-consolidating-complementary-serv",
       "name": "Unified brand consolidation consolidating complementary service divisions into integrated companies",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-10",
       "lastActive": "2026-11-10",
-      "cooledAt": null,
+      "cooledAt": "2026-11-11",
       "rationale": "StoneOne emerged as unified brand for BearCom and Stone Security (Nov 4), connecting security, safety and critical communications through one partner. This represents a specific consolidation pattern where complementary service providers are merged under unified branding to offer integrated solutions, distinct from traditional M&A plays focused on market capture.",
       "signalTypes": [
         "source_authority",
@@ -403,10 +495,10 @@
     {
       "id": "credential-theft-via-ai-bot-impersonation-targeting-cloud-pl",
       "name": "Credential theft via AI bot impersonation targeting cloud platform users",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-10",
       "lastActive": "2026-11-10",
-      "cooledAt": null,
+      "cooledAt": "2026-11-11",
       "rationale": "An attacker relentlessly scanned for exposed credentials by impersonating AI bots from OpenAI, Anthropic, Meta and others (Oct 28), targeting cloud and AI developers. This represents a novel social engineering attack vector leveraging the proliferation of legitimate AI services to deceive developers into revealing credentials.",
       "signalTypes": [
         "velocity",
