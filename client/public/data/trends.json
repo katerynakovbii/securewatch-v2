@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-11T03:51:46.763Z",
+  "lastRunAt": "2026-11-12T04:59:15.359Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Multiple high-impact incidents confirm developers as attack vector: AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 26,400 valid cloud and AI credentials exposed in Gitee repositories still functional (Oct 29), and Chainalysis breach exposed all users' credentials including password hashes and live tokens (Oct 31, Nov 6). Threat actors are systematically targeting developer infrastructure and AI platforms to harvest credentials at scale.",
+      "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), and Chainalysis breach exposed all users' credentials including password hashes and live tokens (Nov 6). Both incidents demonstrate developers and AI platforms as systematic attack vectors for credential harvesting at scale. Multiple sources confirm threat actors are targeting developer infrastructure to compromise authentication systems.",
       "signalTypes": [],
       "articleCount": 19,
       "sources": [
@@ -137,14 +137,14 @@
       "name": "Trusted cloud provider credentials weaponized to cascade breach across customer base",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts between Oct 14-26 (Nov 9), and Xen Orchestra authentication bypass allowed active exploitation for admin access (Nov 10). Both incidents demonstrate attackers targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems.",
+      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts between Oct 14-26 (Nov 9), and Xen Orchestra authentication bypass allowed active exploitation for admin access (Nov 10). Both incidents demonstrate attackers systematically targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems. AntiFox AI pentesting platform was linked to AWS credential theft and lateral movement attacks (Nov 11).",
       "signalTypes": [
         "claim_magnitude",
         "source_authority"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "The Hacker News"
       ],
@@ -160,56 +160,44 @@
           "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
           "source": "The Hacker News",
           "publishedAt": "2026-11-10"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+          "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-11"
         }
       ]
     },
     {
-      "id": "access-control-technology-advancement-and-market-adoption-ac",
-      "name": "Access control market consolidation through phishing-resistant authentication and open ecosystems",
-      "status": "confirmed",
-      "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-11",
+      "id": "open-source-pen-testing-tools-repurposed-for-production-cred",
+      "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
+      "status": "emerging",
+      "firstDetected": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Yubico launched YubiID service bridging identity verification with phishing-resistant authentication and post-quantum YubiKey beta (Nov 4), Allegion emphasized open architecture and collaborative ecosystems (Nov 4), and PDK showcased wireless locks with controller replacement capabilities (Nov 2). Security Sales analysis confirmed access control is experiencing accelerated adoption with integrators reporting continued innovation (Oct 29), indicating sustained vendor-led advancement and ecosystem interoperability focus.",
+      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed across multiple industries (Nov 10). AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally (Nov 11). Multiple sources confirm legitimate security testing tools are being weaponized for offensive operations against production environments.",
       "signalTypes": [
-        "source_authority",
+        "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 5,
+      "articleCount": 2,
       "sources": [
-        "Security Sales",
-        "Dark Reading"
+        "Dark Reading",
+        "The Hacker News"
       ],
       "articles": [
         {
-          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
-          "title": "Access Control is Having Its Moment",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-29"
-        },
-        {
-          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
-          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
-          "source": "Security Sales",
-          "publishedAt": "2026-10-22"
-        },
-        {
-          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
-          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-02"
-        },
-        {
-          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
-          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-04"
-        },
-        {
-          "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-          "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+          "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
           "source": "Dark Reading",
-          "publishedAt": "2026-11-04"
+          "publishedAt": "2026-11-10"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+          "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-11"
         }
       ]
     },
@@ -218,9 +206,9 @@
       "name": "Wave of M&A and restructuring reshaping security industry competitive structure",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "ADT acquired by Thrive Holdings for $15.3 billion to form smart home security foundation (Oct 29), Integrated Openings Solutions appointed new CEO with co-founders shifting to partnerships and acquisitions focus (Oct 29), HID acquired inepro ID to expand secure print portfolio (Nov 3), Pye-Barker acquired St. John's Fire Equipment (Nov 5), and StoneOne unified BearCom and Stone Security (Nov 4). Five major consolidation events within seven days signal rapid reshaping of market structure and competitive positioning.",
+      "rationale": "HID acquired inepro ID to expand secure print portfolio (Nov 3), Pye-Barker acquired St. John's Fire Equipment (Nov 5), and StoneOne unified BearCom and Stone Security (Nov 4). Three major consolidation events within three days demonstrate rapid reshaping of market structure. Security Sales reporting on multiple acquisitions and integrator consolidation signals accelerating M&A activity reshaping competitive positioning.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -275,27 +263,52 @@
       ]
     },
     {
-      "id": "open-source-pen-testing-tools-repurposed-for-production-cred",
-      "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
-      "status": "emerging",
-      "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-11",
+      "id": "access-control-technology-advancement-and-market-adoption-ac",
+      "name": "Access control market consolidation through phishing-resistant authentication and open ecosystems",
+      "status": "confirmed",
+      "firstDetected": "2026-10-31",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed across multiple industries (Nov 10). This represents attackers leveraging legitimate security testing tooling for offensive operations, indicating a supply chain attack surface within the penetration testing ecosystem.",
+      "rationale": "Yubico launched YubiID service bridging identity verification with phishing-resistant authentication and post-quantum YubiKey beta (Nov 4), Allegion emphasized open architecture and collaborative ecosystems at ISC East (Nov 4), and PDK showcased wireless locks with controller replacement capabilities (Nov 2). Multiple vendors are advancing phishing-resistant authentication and interoperable platforms, indicating accelerated market-wide shift toward unified access control architecture.",
       "signalTypes": [
-        "claim_magnitude",
+        "source_authority",
         "velocity"
       ],
-      "articleCount": 1,
+      "articleCount": 5,
       "sources": [
+        "Security Sales",
         "Dark Reading"
       ],
       "articles": [
         {
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-          "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+          "url": "https://www.securitysales.com/news/access-control-having-moment-2026-deep-dive/621255/",
+          "title": "Access Control is Having Its Moment",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-29"
+        },
+        {
+          "url": "https://www.securitysales.com/news/napco-gem-xk5-slimline-keypad-available/621146/",
+          "title": "NAPCO GEM-XK5 Slimline Keypad Now Available Through Distribution",
+          "source": "Security Sales",
+          "publishedAt": "2026-10-22"
+        },
+        {
+          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
+          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
+        },
+        {
+          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
+          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+          "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
           "source": "Dark Reading",
-          "publishedAt": "2026-11-10"
+          "publishedAt": "2026-11-04"
         }
       ]
     },
@@ -304,9 +317,9 @@
       "name": "Mobile platform sandbox escapes enabling cross-app credential harvesting from encrypted wallets",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance warned that Apple's recent security updates did not fix the vulnerability, indicating active exploitation window for financial credential theft.",
+      "rationale": "iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance warned that Apple's recent security updates did not fix the vulnerability, indicating an active exploitation window for financial credential theft across iOS ecosystem.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -329,11 +342,12 @@
       "name": "Hypervisor and virtualization flaws enabling guest-to-guest and guest-to-dom0 memory access",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0 (Nov 4), representing critical infrastructure compromise vector. Patches are available but no known mitigation exists for unpatched systems, creating immediate risk across virtualized infrastructure deployments.",
+      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0, the privileged management VM (Nov 4). Patches are available but no known mitigation exists for unpatched systems, creating immediate risk across virtualized infrastructure deployments where VMs host multi-tenant workloads.",
       "signalTypes": [
-        "claim_magnitude"
+        "claim_magnitude",
+        "velocity"
       ],
       "articleCount": 1,
       "sources": [

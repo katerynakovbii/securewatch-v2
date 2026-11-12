@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-11T03:51:46.763Z",
+  "lastRunAt": "2026-11-12T04:59:15.359Z",
   "trends": [
     {
       "id": "ai-video-security-platform-deployment-via-integrator-partner",
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Security Sales Nov 6 article addresses customer expectations around facial recognition capabilities in integrator conversations. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multiple articles across two weeks from Security Sales signal sustained industry deployment momentum with integrator focus.",
+      "rationale": "Security Sales Nov 6 article addresses customer expectations around facial recognition capabilities in integrator conversations, establishing the translation challenge integrators face. Security Sales Nov 3 article on Synology's AI-powered monitoring and surveillance ecosystem at ISC East 2026 demonstrates vendor showcase of AI capabilities. Security Sales Oct 30 article on AI-assisted alarm monitoring establishes vendor accountability standards for responsible AI treatment. Multiple articles across two weeks from Security Sales signal sustained industry deployment momentum with integrator focus.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -55,9 +55,9 @@
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Security Sales published Oct 29 article 'Access Control is Having Its Moment' highlighting continued innovations in access control space. Nov 2 article on PDK's wireless locks and high-security readers at ISC East 2026. Nov 4 article on Allegion's open architecture and collaborative security ecosystems. Nov 5 article on ASSA ABLOY showcasing evolving digital access portfolio. Four articles across one week from major vendors emphasize sustained market expansion and product innovation cycles.",
+      "rationale": "Nov 2 article on PDK's wireless locks and high-security readers at ISC East 2026, Nov 4 article on Allegion's open architecture and collaborative security ecosystems, and Nov 5 article on ASSA ABLOY showcasing evolving digital access portfolio demonstrate concentrated vendor innovation cycles. Three major access control manufacturers announced product innovations and platform expansions within a four-day window, signaling sustained market momentum and competitive advancement in the access control category.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -98,9 +98,9 @@
       "name": "ISC East 2026 as industry innovation showcase and market confidence signal",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Five articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements including PDK wireless locks, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. Nov 5 article on SIA's inaugural StartUps in Security pitch competition at ISC East demonstrates concentrated venue for vendor innovation announcements and emerging company spotlighting, signaling broad industry participation.",
+      "rationale": "Five articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements including PDK wireless locks, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. Nov 5 article on SIA's inaugural StartUps in Security pitch competition at ISC East demonstrates concentrated venue for vendor innovation announcements and emerging company spotlighting, signaling broad industry participation and confidence in the conference as a market catalyst.",
       "signalTypes": [
         "velocity",
         "source_authority",
@@ -148,9 +148,9 @@
       "name": "Integrated showroom and unified product demonstration spaces driving customer engagement",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "NAPCO celebrated grand opening of NapcONE showroom in New York on Nov 9, featuring an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY article on Nov 10 highlights video intercom market expansion beyond multifamily with integrator selection guidance emphasizing compatibility assessment. These demonstrate deliberate industry shift toward physical, unified demonstration environments and cross-product selling strategies designed to help integrators assess customer needs.",
+      "rationale": "NAPCO celebrated grand opening of NapcONE showroom in New York on Nov 9, featuring an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access to help security professionals expand business opportunities. ASSA ABLOY article on Nov 10 highlights video intercom market expansion beyond multifamily with integrator selection guidance emphasizing compatibility assessment. These demonstrate deliberate industry shift toward physical, unified demonstration environments and cross-product selling strategies.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -179,9 +179,9 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-11",
+      "lastActive": "2026-11-12",
       "cooledAt": null,
-      "rationale": "Securitas Healthcare launched MobileView RTLS Next Generation on Nov 10, introducing MobileView Cloud with expanded platform capabilities and flexible deployment options. This represents vendor investment in cloud infrastructure for real-time location tracking in healthcare environments, a specialized but growing vertical within physical security.",
+      "rationale": "Securitas Healthcare launched MobileView RTLS Next Generation on Nov 10, introducing MobileView Cloud with expanded platform capabilities, enhanced user experiences, and flexible deployment options. This represents vendor investment in cloud infrastructure for real-time location tracking in healthcare environments, a specialized but growing vertical within physical security.",
       "signalTypes": [
         "source_authority",
         "velocity"
