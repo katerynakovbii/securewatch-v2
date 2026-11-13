@@ -1,16 +1,16 @@
 {
-  "lastRunAt": "2026-11-12T04:59:15.359Z",
+  "lastRunAt": "2026-11-13T04:14:15.769Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
-      "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), and Chainalysis breach exposed all users' credentials including password hashes and live tokens (Nov 6). Both incidents demonstrate developers and AI platforms as systematic attack vectors for credential harvesting at scale. Multiple sources confirm threat actors are targeting developer infrastructure to compromise authentication systems.",
+      "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 4,837 hijacked GitHub accounts used to plant secret stealers in 1,806+ repositories (Nov 12), and Chainalysis breach exposed all users' credentials including password hashes and live tokens (Nov 6). Multiple sources confirm developers and AI platforms as systematic attack vectors for credential harvesting at scale across infrastructure.",
       "signalTypes": [],
-      "articleCount": 19,
+      "articleCount": 20,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -129,6 +129,12 @@
           "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
           "source": "Dark Reading",
           "publishedAt": "2026-11-10"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+          "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-12"
         }
       ]
     },
@@ -137,14 +143,14 @@
       "name": "Trusted cloud provider credentials weaponized to cascade breach across customer base",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
-      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts between Oct 14-26 (Nov 9), and Xen Orchestra authentication bypass allowed active exploitation for admin access (Nov 10). Both incidents demonstrate attackers systematically targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems. AntiFox AI pentesting platform was linked to AWS credential theft and lateral movement attacks (Nov 11).",
+      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts between Oct 14-26 (Nov 9), AntiFox AI pentesting platform was linked to AWS credential theft and lateral movement attacks (Nov 11), and Google Cloud warned of AMD Turin CPU flaws enabling data leaks across VMs (Nov 12). Multiple sources demonstrate attackers systematically targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems.",
       "signalTypes": [
         "claim_magnitude",
         "source_authority"
       ],
-      "articleCount": 3,
+      "articleCount": 4,
       "sources": [
         "The Hacker News"
       ],
@@ -166,6 +172,12 @@
           "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
           "source": "The Hacker News",
           "publishedAt": "2026-11-11"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+          "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-12"
         }
       ]
     },
@@ -174,7 +186,7 @@
       "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
       "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed across multiple industries (Nov 10). AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally (Nov 11). Multiple sources confirm legitimate security testing tools are being weaponized for offensive operations against production environments.",
       "signalTypes": [
@@ -206,14 +218,14 @@
       "name": "Wave of M&A and restructuring reshaping security industry competitive structure",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
-      "rationale": "HID acquired inepro ID to expand secure print portfolio (Nov 3), Pye-Barker acquired St. John's Fire Equipment (Nov 5), and StoneOne unified BearCom and Stone Security (Nov 4). Three major consolidation events within three days demonstrate rapid reshaping of market structure. Security Sales reporting on multiple acquisitions and integrator consolidation signals accelerating M&A activity reshaping competitive positioning.",
+      "rationale": "HID acquired inepro ID to expand secure print portfolio (Nov 3), Pye-Barker acquired St. John's Fire Equipment (Nov 5), Security 101 acquired LVSI Corporation (Nov 12), and StoneOne unified BearCom and Stone Security (Nov 4). Four major consolidation events within nine days demonstrate rapid reshaping of market structure across security integrators and vendors.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 7,
+      "articleCount": 8,
       "sources": [
         "Security Sales"
       ],
@@ -259,6 +271,12 @@
           "title": "StoneOne Becomes Unified Brand for BearCom and Stone Security",
           "source": "Security Sales",
           "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.securitysales.com/news/security-101-acquires-lvsi-corporation/621481/",
+          "title": "Security 101 Acquires LVSI Corporation of Springfield, Virginia",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-12"
         }
       ]
     },
@@ -267,7 +285,7 @@
       "name": "Access control market consolidation through phishing-resistant authentication and open ecosystems",
       "status": "confirmed",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
       "rationale": "Yubico launched YubiID service bridging identity verification with phishing-resistant authentication and post-quantum YubiKey beta (Nov 4), Allegion emphasized open architecture and collaborative ecosystems at ISC East (Nov 4), and PDK showcased wireless locks with controller replacement capabilities (Nov 2). Multiple vendors are advancing phishing-resistant authentication and interoperable platforms, indicating accelerated market-wide shift toward unified access control architecture.",
       "signalTypes": [
@@ -317,7 +335,7 @@
       "name": "Mobile platform sandbox escapes enabling cross-app credential harvesting from encrypted wallets",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
       "rationale": "iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance warned that Apple's recent security updates did not fix the vulnerability, indicating an active exploitation window for financial credential theft across iOS ecosystem.",
       "signalTypes": [
@@ -342,14 +360,14 @@
       "name": "Hypervisor and virtualization flaws enabling guest-to-guest and guest-to-dom0 memory access",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-12",
+      "lastActive": "2026-11-13",
       "cooledAt": null,
-      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0, the privileged management VM (Nov 4). Patches are available but no known mitigation exists for unpatched systems, creating immediate risk across virtualized infrastructure deployments where VMs host multi-tenant workloads.",
+      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0, the privileged management VM (Nov 4). Xen Orchestra authentication bypass also allowed active exploitation for admin access (Nov 10). Patches are available but no known mitigation exists for unpatched systems, creating immediate risk across virtualized infrastructure deployments.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "sources": [
         "The Hacker News"
       ],
@@ -359,6 +377,55 @@
           "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
           "source": "The Hacker News",
           "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "isc-east-2026-driving-product-innovation-announcements-and-e",
+      "name": "ISC East 2026 driving product innovation announcements and ecosystem showcases",
+      "status": "emerging",
+      "firstDetected": "2026-11-13",
+      "lastActive": "2026-11-13",
+      "cooledAt": null,
+      "rationale": "Multiple announcements clustered around ISC East 2026 (Nov 2-5) including ASSA ABLOY digital access portfolio showcase, Allegion open architecture emphasis, PDK wireless locks and controller replacement, and Synology AI surveillance ecosystem demonstrations. ISC East appears to be serving as a major inflection point for access control and video technology vendors to unveil strategic product advances and ecosystem partnerships.",
+      "signalTypes": [
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/allegion-us-accelerates-modern-access-control-isc-east-2026/621358/",
+          "title": "Allegion US Accelerates Modern Access Control at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-04"
+        },
+        {
+          "url": "https://www.securitysales.com/news/what-to-expect-pdk-isc-east-2026/621301/",
+          "title": "What to Expect from PDK at ISC East: Wireless Locks, High-Security Readers, New Features and More",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-02"
+        },
+        {
+          "url": "https://www.securitysales.com/news/assa-abloy-evolving-digital-access-portfolio-isc-east/621373/",
+          "title": "ASSA ABLOY Showcases Evolving Digital Access Portfolio at ISC East",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-05"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/as-ai-raises-new-data-security-questions-synology-to-showcase-its-surveillance-ecosystem-at-isc-east-2026/621291/",
+          "title": "As AI Raises New Data Security Questions, Synology to Showcase Its Surveillance Ecosystem at ISC East 2026",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-03"
         }
       ]
     },
