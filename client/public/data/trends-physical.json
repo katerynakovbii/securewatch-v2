@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-13T04:14:15.769Z",
+  "lastRunAt": "2026-11-14T04:10:29.582Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Four articles published Nov 2-5 from Security Sales document concentrated vendor innovation cycles in access control. PDK's Nov 2 announcement of wireless locks and high-security readers, Allegion's Nov 4 showcase of open architecture and collaborative security ecosystems, and ASSA ABLOY's Nov 5 digital access portfolio announcement demonstrate sustained competitive advancement. Additionally, Nov 12 PDK interview reinforces cloud-based access control as an evolving platform strategy with enduring post-deployment value.",
+      "rationale": "Five articles from Security Sales published Nov 2-12 document sustained vendor innovation in access control. PDK's Nov 2 wireless locks and high-security readers announcement, Allegion's Nov 4 open architecture showcase, ASSA ABLOY's Nov 5 digital access portfolio, and PDK's Nov 12 cloud access control interview demonstrate concentrated competitive advancement. This represents confirmed multi-vendor momentum across a two-week period with reinforcing product strategy announcements.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -55,9 +55,9 @@
       "name": "ISC East 2026 as industry innovation showcase and market confidence signal",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Six articles published Nov 2-5 focus on ISC East 2026 exhibitor announcements across multiple product categories: PDK wireless locks and readers, Allegion open architecture, ASSA ABLOY digital access portfolio, and Synology AI-powered surveillance. The Nov 5 SIA StartUps in Security pitch competition announcement demonstrates the conference as a concentrated venue for vendor innovation and emerging company spotlighting, signaling broad industry participation and market confidence in the event as a catalyst.",
+      "rationale": "Six articles from Security Sales published Nov 2-5 focus on ISC East 2026 exhibitor announcements spanning access control, video surveillance, and emerging vendors. PDK, Allegion, ASSA ABLOY, and Synology announcements demonstrate broad vendor participation, while the Nov 5 SIA StartUps in Security pitch competition announcement shows the conference's role in spotlighting emerging companies. This concentration of announcements in a four-day window signals ISC East 2026 as a major industry convergence event.",
       "signalTypes": [
         "velocity",
         "source_authority",
@@ -105,9 +105,9 @@
       "name": "Integrated showroom and unified product demonstration spaces driving customer engagement",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "NAPCO's grand opening of the NapcONE showroom in New York on Nov 9 features an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access to help security professionals expand business opportunities. ASSA ABLOY's Nov 10 article on video intercom market expansion highlights integrator selection guidance emphasizing compatibility assessment and customer needs. These articles demonstrate a deliberate industry shift toward physical, unified demonstration environments and cross-product selling strategies.",
+      "rationale": "Two Security Sales articles published Nov 9-10 document the shift toward physical, unified demonstration environments and cross-product selling strategies. NAPCO's NapcONE showroom grand opening features an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY's Nov 10 article on video intercom market expansion emphasizes integrator selection guidance and compatibility assessment. These articles signal deliberate industry movement toward consolidated customer engagement spaces.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -136,9 +136,9 @@
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "The Nov 6 Security Sales article on facial recognition customer expectations establishes the translation challenge integrators face in clarifying customer requirements. The Nov 3 Synology article on AI-powered monitoring and surveillance ecosystem demonstrates vendor showcase of AI capabilities with data security considerations. These articles, spanning two weeks, signal sustained industry deployment momentum with focus on integrator-customer dialogue and vendor accountability in AI-powered surveillance systems.",
+      "rationale": "Three Security Sales articles published Nov 3-6 establish the integrator role in translating AI video security requirements and deploying AI-powered surveillance systems. The Nov 6 article on facial recognition customer expectations highlights the translation challenge integrators face, while the Nov 3 Synology article on AI-powered monitoring and data security demonstrates vendor accountability. Together these articles signal sustained industry momentum in AI-powered video surveillance with integrator-customer dialogue as a critical deployment pathway.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -185,9 +185,9 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Securitas Healthcare launched MobileView RTLS Next Generation on Nov 10, introducing MobileView Cloud with expanded platform capabilities, enhanced user experiences, and flexible deployment options. This represents vendor investment in cloud infrastructure for real-time location tracking in healthcare environments, a specialized but growing vertical within physical security.",
+      "rationale": "Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation introducing MobileView Cloud represents vendor investment in cloud infrastructure for real-time location tracking in healthcare environments. This announcement demonstrates expansion of RTLS capabilities and flexible deployment options tailored to healthcare security needs.",
       "signalTypes": [
         "source_authority",
         "velocity",

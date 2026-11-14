@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-13T04:14:15.769Z",
+  "lastRunAt": "2026-11-14T04:10:29.582Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
       "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 4,837 hijacked GitHub accounts used to plant secret stealers in 1,806+ repositories (Nov 12), and Chainalysis breach exposed all users' credentials including password hashes and live tokens (Nov 6). Multiple sources confirm developers and AI platforms as systematic attack vectors for credential harvesting at scale across infrastructure.",
       "signalTypes": [],
@@ -143,9 +143,9 @@
       "name": "Trusted cloud provider credentials weaponized to cascade breach across customer base",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts between Oct 14-26 (Nov 9), AntiFox AI pentesting platform was linked to AWS credential theft and lateral movement attacks (Nov 11), and Google Cloud warned of AMD Turin CPU flaws enabling data leaks across VMs (Nov 12). Multiple sources demonstrate attackers systematically targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems.",
+      "rationale": "Qubole suffered breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts (Nov 9), AntiFox AI pentesting platform was linked to AWS credential theft and lateral movement attacks (Nov 11), and Google Cloud warned of AMD Turin CPU flaws enabling data leaks across VMs (Nov 12). Multiple sources demonstrate attackers systematically targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems.",
       "signalTypes": [
         "claim_magnitude",
         "source_authority"
@@ -186,9 +186,9 @@
       "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed across multiple industries (Nov 10). AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally (Nov 11). Multiple sources confirm legitimate security testing tools are being weaponized for offensive operations against production environments.",
+      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed across industries (Nov 10), and AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally (Nov 11). Multiple independent threat disclosures from different security vendors confirm legitimate security testing tools are being weaponized for offensive operations against production environments.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -218,7 +218,7 @@
       "name": "Wave of M&A and restructuring reshaping security industry competitive structure",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
       "rationale": "HID acquired inepro ID to expand secure print portfolio (Nov 3), Pye-Barker acquired St. John's Fire Equipment (Nov 5), Security 101 acquired LVSI Corporation (Nov 12), and StoneOne unified BearCom and Stone Security (Nov 4). Four major consolidation events within nine days demonstrate rapid reshaping of market structure across security integrators and vendors.",
       "signalTypes": [
@@ -285,7 +285,7 @@
       "name": "Access control market consolidation through phishing-resistant authentication and open ecosystems",
       "status": "confirmed",
       "firstDetected": "2026-10-31",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
       "rationale": "Yubico launched YubiID service bridging identity verification with phishing-resistant authentication and post-quantum YubiKey beta (Nov 4), Allegion emphasized open architecture and collaborative ecosystems at ISC East (Nov 4), and PDK showcased wireless locks with controller replacement capabilities (Nov 2). Multiple vendors are advancing phishing-resistant authentication and interoperable platforms, indicating accelerated market-wide shift toward unified access control architecture.",
       "signalTypes": [
@@ -335,12 +335,13 @@
       "name": "Mobile platform sandbox escapes enabling cross-app credential harvesting from encrypted wallets",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance warned that Apple's recent security updates did not fix the vulnerability, indicating an active exploitation window for financial credential theft across iOS ecosystem.",
+      "rationale": "iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance publicly warned that Apple's recent security updates did not fix the vulnerability, indicating an active exploitation window for financial credential theft across iOS ecosystem.",
       "signalTypes": [
         "claim_magnitude",
-        "velocity"
+        "velocity",
+        "source_authority"
       ],
       "articleCount": 1,
       "sources": [
@@ -360,12 +361,13 @@
       "name": "Hypervisor and virtualization flaws enabling guest-to-guest and guest-to-dom0 memory access",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0, the privileged management VM (Nov 4). Xen Orchestra authentication bypass also allowed active exploitation for admin access (Nov 10). Patches are available but no known mitigation exists for unpatched systems, creating immediate risk across virtualized infrastructure deployments.",
+      "rationale": "Two flaws in Xen hypervisor allow malicious guest VMs to read and write memory of other VMs including dom0, the privileged management VM (Nov 4). Xen Orchestra authentication bypass also allowed active exploitation for admin access (Nov 10). Multiple virtualization vulnerabilities disclosed within days demonstrate an emerging class of VM-escape attacks targeting hypervisor isolation mechanisms.",
       "signalTypes": [
         "claim_magnitude",
-        "velocity"
+        "velocity",
+        "cross_topic"
       ],
       "articleCount": 2,
       "sources": [
@@ -391,12 +393,13 @@
       "name": "ISC East 2026 driving product innovation announcements and ecosystem showcases",
       "status": "emerging",
       "firstDetected": "2026-11-13",
-      "lastActive": "2026-11-13",
+      "lastActive": "2026-11-14",
       "cooledAt": null,
-      "rationale": "Multiple announcements clustered around ISC East 2026 (Nov 2-5) including ASSA ABLOY digital access portfolio showcase, Allegion open architecture emphasis, PDK wireless locks and controller replacement, and Synology AI surveillance ecosystem demonstrations. ISC East appears to be serving as a major inflection point for access control and video technology vendors to unveil strategic product advances and ecosystem partnerships.",
+      "rationale": "Multiple coordinated announcements clustered around ISC East 2026 (Nov 2-5) including ASSA ABLOY digital access portfolio showcase, Allegion open architecture emphasis, PDK wireless locks and controller replacement, and Synology AI surveillance ecosystem demonstrations. ISC East appears to be serving as a major inflection point for access control and video technology vendors to unveil strategic product advances and ecosystem partnerships.",
       "signalTypes": [
         "velocity",
-        "cross_topic"
+        "cross_topic",
+        "source_authority"
       ],
       "articleCount": 4,
       "sources": [
@@ -426,6 +429,38 @@
           "title": "As AI Raises New Data Security Questions, Synology to Showcase Its Surveillance Ecosystem at ISC East 2026",
           "source": "Security Sales",
           "publishedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "cpu-side-channel-vulnerabilities-in-cloud-infrastructure-ena",
+      "name": "CPU side-channel vulnerabilities in cloud infrastructure enabling cross-process data leakage",
+      "status": "emerging",
+      "firstDetected": "2026-11-14",
+      "lastActive": "2026-11-14",
+      "cooledAt": null,
+      "rationale": "Google Cloud disclosed three AMD Turin CPU flaws that may allow attackers within a VM to leak data across processes (Nov 12), and earlier AMD SEV-SNP VM escapes (Mior and Skyfall attacks) allowed malicious hosts to read data and modify VM memory (Nov 13). Multiple CPU-level vulnerabilities disclosed against major cloud providers within days suggest an emerging pattern of hardware-level isolation failures in cloud computing infrastructure.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+          "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-12"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+          "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-13"
         }
       ]
     },
