@@ -1,19 +1,19 @@
 {
-  "lastRunAt": "2026-11-15T03:55:50.138Z",
+  "lastRunAt": "2026-11-16T03:55:50.788Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-15",
+      "lastActive": "2026-11-16",
       "cooledAt": null,
-      "rationale": "Five articles from Security Sales published Nov 2-12 document sustained vendor innovation in access control. PDK's Nov 2 wireless locks and high-security readers announcement, Allegion's Nov 4 open architecture showcase, ASSA ABLOY's Nov 5 digital access portfolio, and PDK's Nov 12 cloud access control interview demonstrate concentrated competitive advancement across product launches and strategic positioning.",
+      "rationale": "Five articles from Security Sales published between Nov 3-12 document sustained vendor innovation in access control. Allegion's Nov 4 open architecture showcase, ASSA ABLOY's Nov 5 digital access portfolio announcement, PDK's Nov 12 cloud access control interview, and NAPCO's Nov 9 NapcONE showroom grand opening featuring integrated access solutions demonstrate concentrated competitive advancement across product launches and strategic positioning at ISC East 2026.",
       "signalTypes": [
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 5,
+      "articleCount": 6,
       "sources": [
         "Security Sales"
       ],
@@ -47,6 +47,12 @@
           "title": "Why Cloud Access Control Only Gets Better After Day One &#124; PDK",
           "source": "Security Sales",
           "publishedAt": "2026-11-12"
+        },
+        {
+          "url": "https://www.securitysales.com/news/napco-grand-opening-new-york-napcone-showroom/621432/",
+          "title": "NAPCO Celebrates Grand Opening of New York NapcONE Showroom",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-09"
         }
       ]
     },
@@ -55,9 +61,9 @@
       "name": "ISC East 2026 as industry innovation showcase and market confidence signal",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-15",
+      "lastActive": "2026-11-16",
       "cooledAt": null,
-      "rationale": "Six articles from Security Sales published Nov 2-5 focus on ISC East 2026 exhibitor announcements spanning access control, video surveillance, and emerging vendors. PDK, Allegion, ASSA ABLOY, and Synology announcements demonstrate broad vendor participation, while the Nov 5 SIA StartUps in Security pitch competition announcement shows the conference's role in spotlighting emerging companies and market momentum.",
+      "rationale": "Six articles from Security Sales published Nov 3-5 focus on ISC East 2026 exhibitor announcements spanning access control, video surveillance, and emerging vendors. Allegion, ASSA ABLOY, and Synology product announcements demonstrate broad vendor participation, while the Nov 5 SIA StartUps in Security pitch competition announcement shows the conference's role in spotlighting emerging companies, indicating sustained market momentum and industry engagement.",
       "signalTypes": [
         "velocity",
         "source_authority",
@@ -105,9 +111,9 @@
       "name": "Integrated showroom and unified product demonstration spaces driving customer engagement",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-15",
+      "lastActive": "2026-11-16",
       "cooledAt": null,
-      "rationale": "Two Security Sales articles published Nov 9-10 document the shift toward physical, unified demonstration environments and cross-product selling strategies. NAPCO's NapcONE showroom grand opening features an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY's Nov 10 article on video intercom market expansion emphasizes integrator selection guidance and compatibility assessment as drivers of showroom value.",
+      "rationale": "Two Security Sales articles published Nov 9-10 document the shift toward physical, unified demonstration environments and cross-product selling strategies. NAPCO's NapcONE showroom grand opening features an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY's Nov 10 article on video intercom market expansion emphasizes integrator selection guidance and compatibility assessment as critical drivers of showroom and customer engagement value.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -136,7 +142,7 @@
       "name": "AI video security platform deployment via integrator partnerships",
       "status": "emerging",
       "firstDetected": "2026-10-20",
-      "lastActive": "2026-11-15",
+      "lastActive": "2026-11-16",
       "cooledAt": null,
       "rationale": "Three Security Sales articles published Nov 3-6 establish the integrator role in translating AI video security requirements and deploying AI-powered surveillance systems. The Nov 6 article on facial recognition customer expectations highlights the translation challenge integrators face, while the Nov 3 Synology article on AI-powered monitoring and data security demonstrates vendor accountability and the critical integrator-customer dialogue pathway.",
       "signalTypes": [
@@ -185,7 +191,7 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-15",
+      "lastActive": "2026-11-16",
       "cooledAt": null,
       "rationale": "Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation introducing MobileView Cloud represents targeted vendor investment in cloud infrastructure for real-time location tracking in healthcare environments. This announcement signals expansion of RTLS capabilities and flexible deployment options designed to address healthcare-specific security and operational needs.",
       "signalTypes": [
@@ -203,6 +209,37 @@
           "title": "Securitas Healthcare Launches MobileView RTLS Next Generation",
           "source": "Security Sales",
           "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "video-intercom-market-diversification-beyond-multifamily-res",
+      "name": "Video intercom market diversification beyond multifamily residential",
+      "status": "emerging",
+      "firstDetected": "2026-11-16",
+      "lastActive": "2026-11-16",
+      "cooledAt": null,
+      "rationale": "Two Security Sales articles published Nov 10 and Nov 13 signal expanding video intercom adoption across market segments beyond multifamily housing. ASSA ABLOY's Nov 10 article explicitly addresses integrator guidance for identifying video intercom applications beyond multifamily, while the Nov 13 surveillance video roundup demonstrates broader security video capture use cases, suggesting market consolidation toward integrated intercom-surveillance ecosystems.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/assa-abloy-video-intercoms-finding-homes-beyond-multifamily/621439/",
+          "title": "ASSA ABLOY: Video Intercoms Are Finding Homes Beyond Multifamily",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-10"
+        },
+        {
+          "url": "https://www.securitysales.com/news/ntsb-learjet-voice-recorder-surveillance-videos-of-the-week/621501/",
+          "title": "NTSB Finds Learjet Voice Recorder: Surveillance Videos of the Week",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-13"
         }
       ]
     },
