@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-17T01:19:13.097Z",
+  "lastRunAt": "2026-11-18T00:15:43.254Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-17",
+      "lastActive": "2026-11-18",
       "cooledAt": null,
-      "rationale": "Five articles from Security Sales published between Nov 4-12 document sustained vendor innovation in access control. Allegion's Nov 4 open architecture showcase, ASSA ABLOY's Nov 5 digital access portfolio announcement, PDK's Nov 12 cloud access control interview, and NAPCO's Nov 9 NapcONE showroom grand opening featuring integrated access solutions demonstrate concentrated competitive advancement across product launches and strategic positioning at ISC East 2026.",
+      "rationale": "Five articles from Security Sales published between Nov 4-12 document sustained vendor innovation in access control. PDK's Nov 12 cloud access control interview emphasizes enduring value post-installation, NAPCO's Nov 9 NapcONE showroom grand opening features integrated access solutions, and ASSA ABLOY's Nov 5 digital access portfolio announcement at ISC East demonstrate concentrated competitive advancement across product launches and strategic positioning.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -61,15 +61,15 @@
       "name": "ISC East 2026 as industry innovation showcase and market confidence signal",
       "status": "emerging",
       "firstDetected": "2026-11-06",
-      "lastActive": "2026-11-17",
+      "lastActive": "2026-11-18",
       "cooledAt": null,
-      "rationale": "Four articles from Security Sales published Nov 4-5 focus on ISC East 2026 exhibitor announcements spanning access control and video surveillance. Allegion, ASSA ABLOY product announcements demonstrate broad vendor participation, while the Nov 5 SIA StartUps in Security pitch competition announcement shows the conference's role in spotlighting emerging companies, indicating sustained market momentum and industry engagement.",
+      "rationale": "Four articles from Security Sales published Nov 4-5 focus on ISC East 2026 exhibitor announcements and industry events. ASSA ABLOY's digital access portfolio announcement, NAPCO's showroom participation, and the Nov 5 SIA StartUps in Security pitch competition announcement demonstrate broad vendor participation and the conference's role in spotlighting emerging companies and new solutions.",
       "signalTypes": [
         "velocity",
         "source_authority",
         "cross_topic"
       ],
-      "articleCount": 5,
+      "articleCount": 6,
       "sources": [
         "Security Sales"
       ],
@@ -103,6 +103,12 @@
           "title": "As AI Raises New Data Security Questions, Synology to Showcase Its Surveillance Ecosystem at ISC East 2026",
           "source": "Security Sales",
           "publishedAt": "2026-11-03"
+        },
+        {
+          "url": "https://www.securitysales.com/news/napco-grand-opening-new-york-napcone-showroom/621432/",
+          "title": "NAPCO Celebrates Grand Opening of New York NapcONE Showroom",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-09"
         }
       ]
     },
@@ -111,9 +117,9 @@
       "name": "Integrated showroom and unified product demonstration spaces driving customer engagement",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-17",
+      "lastActive": "2026-11-18",
       "cooledAt": null,
-      "rationale": "Two Security Sales articles published Nov 9-10 document the shift toward physical, unified demonstration environments and cross-product selling strategies. NAPCO's NapcONE showroom grand opening features an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY's Nov 10 article on video intercom market expansion emphasizes integrator selection guidance and compatibility assessment as critical drivers of showroom and customer engagement value.",
+      "rationale": "Two Security Sales articles published Nov 9-10 document the shift toward physical, unified demonstration environments and cross-product selling strategies. NAPCO's NapcONE showroom grand opening features an interactive demonstration space uniting NAPCO, Alarm Lock, Marks USA, and NAPCO Access. ASSA ABLOY's Nov 10 article on video intercom market expansion emphasizes integrator selection guidance and compatibility assessment as critical drivers of showroom engagement value.",
       "signalTypes": [
         "source_authority",
         "velocity"
@@ -142,9 +148,9 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-17",
+      "lastActive": "2026-11-18",
       "cooledAt": null,
-      "rationale": "Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation introducing MobileView Cloud represents targeted vendor investment in cloud infrastructure for real-time location tracking in healthcare environments, while PDK's Nov 12 cloud access control commentary demonstrates broader healthcare and enterprise adoption of cloud-based security systems. These announcements signal expansion of RTLS and cloud access capabilities designed to address healthcare-specific security and operational needs.",
+      "rationale": "Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation introducing MobileView Cloud represents targeted vendor investment in cloud infrastructure for real-time location tracking in healthcare environments. PDK's Nov 12 cloud access control commentary demonstrates broader healthcare adoption of cloud-based security systems, signaling vendor expansion of RTLS and cloud capabilities designed to address healthcare-specific security needs.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -174,7 +180,7 @@
       "name": "Video intercom market diversification beyond multifamily residential",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-17",
+      "lastActive": "2026-11-18",
       "cooledAt": null,
       "rationale": "ASSA ABLOY's Nov 10 article explicitly addresses integrator guidance for identifying video intercom applications beyond multifamily residential, signaling vendor strategic focus on market segment expansion. The article emphasizes compatibility assessment and customer needs analysis as drivers of cross-segment adoption, indicating emerging opportunity for integrators to position video intercoms across diverse vertical markets.",
       "signalTypes": [
@@ -197,6 +203,31 @@
           "title": "NTSB Finds Learjet Voice Recorder: Surveillance Videos of the Week",
           "source": "Security Sales",
           "publishedAt": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "id": "facial-recognition-deployment-requiring-customer-intent-clar",
+      "name": "Facial recognition deployment requiring customer intent clarification",
+      "status": "emerging",
+      "firstDetected": "2026-11-18",
+      "lastActive": "2026-11-18",
+      "cooledAt": null,
+      "rationale": "Security Sales' Nov 6 article directly addresses the gap between customer requests for facial recognition and actual intended functionality. The piece frames facial recognition as a conversation starter requiring integrators to understand customer needs, suggesting growing market demand but also implementation complexity that requires vendor and integrator guidance.",
+      "signalTypes": [
+        "cross_topic",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/what-does-customer-really-mean-by-facial-recognition/621415/",
+          "title": "What Does the Customer Really Mean by &#8220;Facial Recognition&#8221;?",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-06"
         }
       ]
     },
