@@ -1,16 +1,16 @@
 {
-  "lastRunAt": "2026-11-18T00:15:43.254Z",
+  "lastRunAt": "2026-11-19T05:09:20.722Z",
   "trends": [
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
-      "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 4,837 hijacked GitHub accounts used to plant secret stealers in 1,806+ repositories (Nov 12), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17). Multiple independent sources across different platforms confirm developers and AI platforms as systematic attack vectors for credential harvesting at scale.",
+      "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 4,837 hijacked GitHub accounts used to plant secret stealers in 1,806+ repositories (Nov 12), Microsoft's agent-framework PyPI package compromised to push credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17). Multiple independent sources across different platforms confirm developers and AI platforms as systematic attack vectors for credential harvesting at scale affecting thousands of repositories and organizations.",
       "signalTypes": [],
-      "articleCount": 21,
+      "articleCount": 22,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -141,6 +141,12 @@
           "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
           "source": "Dark Reading",
           "publishedAt": "2026-11-17"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+          "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-18"
         }
       ]
     },
@@ -149,9 +155,9 @@
       "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
-      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed (Nov 10), and AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally (Nov 11). Multiple independent threat disclosures from Dark Reading and The Hacker News confirm legitimate security testing tools are being weaponized for offensive operations against production environments.",
+      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed (Nov 10), and AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally into compromised customer environments (Nov 11). Multiple independent threat disclosures from Dark Reading and The Hacker News confirm legitimate security testing tools are being weaponized for offensive operations against production environments at scale.",
       "signalTypes": [
         "claim_magnitude",
         "velocity"
@@ -181,7 +187,7 @@
       "name": "CPU side-channel vulnerabilities in cloud infrastructure enabling cross-process data leakage",
       "status": "emerging",
       "firstDetected": "2026-11-14",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
       "rationale": "Google Cloud disclosed three AMD Turin CPU flaws allowing attackers within a VM to leak data across processes (Nov 12), and AMD SEV-SNP VM escapes (Mior and Skyfall attacks) allowed malicious hosts to read data and modify VM memory (Nov 13). Multiple CPU-level vulnerabilities disclosed against major cloud providers within days demonstrate an emerging pattern of hardware-level isolation failures in cloud computing infrastructure.",
       "signalTypes": [
@@ -213,7 +219,7 @@
       "name": "Trusted cloud provider credentials weaponized to cascade breach across customer base",
       "status": "emerging",
       "firstDetected": "2026-11-10",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
       "rationale": "Qubole suffered a breach where attackers exploited trusted AWS access credentials to compromise multiple customer accounts and steal stored secrets and data (Nov 9), and AntiFox AI pentesting platform was linked to AWS credential theft and lateral movement attacks affecting multiple organizations (Nov 11). Multiple threat disclosures demonstrate attackers systematically targeting privileged access mechanisms within infrastructure providers to gain leverage over entire customer ecosystems.",
       "signalTypes": [
@@ -256,7 +262,7 @@
       "name": "State-sponsored telecom infrastructure exploitation for SMS 2FA interception and surveillance",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
       "rationale": "A newly identified spying group named SilentAir used hacked equipment inside Asian mobile operators to intercept SMS 2FA codes and conduct surveillance, primarily targeting Taiwanese users (Nov 13). The attack was detected by Enea with sources in at least six Asian countries, demonstrating a sophisticated state-level capability to bypass SMS-based authentication at the telecom infrastructure layer.",
       "signalTypes": [
@@ -282,7 +288,7 @@
       "name": "Mobile platform sandbox escape enabling cross-app credential theft from crypto wallets",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
       "rationale": "An iOS sandbox escape published on GitHub allows malicious apps to read other apps' files on iOS 26-27, exposing crypto seed phrases, private keys, and login credentials (Nov 10). Binance publicly warned that Apple's recent security updates did not fix the vulnerability, indicating an active exploitation window for financial credential theft across the iOS ecosystem.",
       "signalTypes": [
@@ -307,7 +313,7 @@
       "name": "AI adoption uncertainty in video security due to trust and accountability gaps",
       "status": "emerging",
       "firstDetected": "2026-11-18",
-      "lastActive": "2026-11-18",
+      "lastActive": "2026-11-19",
       "cooledAt": null,
       "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate piece emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), indicating the market recognizes a critical gap between AI demand and implementation maturity.",
       "signalTypes": [
@@ -335,12 +341,60 @@
       ]
     },
     {
+      "id": "access-control-technician-shortage-creating-market-friction-",
+      "name": "Access control technician shortage creating market friction and integration challenges",
+      "status": "emerging",
+      "firstDetected": "2026-11-19",
+      "lastActive": "2026-11-19",
+      "cooledAt": null,
+      "rationale": "NAPCO VP of Sales Rob Etmans reported that dealers struggle to find technicians who understand access control systems (Nov 18). This signals a supply-side constraint in the physical security workforce that may impact project delivery and system deployment across the integrator base.",
+      "signalTypes": [
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
+          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "id": "active-exploitation-of-authentication-bypass-vulnerabilities",
+      "name": "Active exploitation of authentication bypass vulnerabilities in hypervisor and virtualization platforms",
+      "status": "emerging",
+      "firstDetected": "2026-11-19",
+      "lastActive": "2026-11-19",
+      "cooledAt": null,
+      "rationale": "A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) is being actively exploited in the wild to gain admin access (Nov 10). The vulnerability affects REST cookie parsing and represents an active attack vector against virtualization infrastructure.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-10"
+        }
+      ]
+    },
+    {
       "id": "cloud-access-control-platforms-emerging-as-long-term-value-d",
       "name": "Cloud access control platforms emerging as long-term value drivers post-deployment",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-18",
       "lastActive": "2026-11-18",
-      "cooledAt": null,
+      "cooledAt": "2026-11-19",
       "rationale": "PDK emphasized that cloud access control platforms deliver increasing value after the initial installation, with features continuing to improve post-deployment (Nov 12). This positions cloud-based access control as a business model shift from one-time hardware sales toward continuous software-driven value delivery.",
       "signalTypes": [
         "source_authority",
@@ -362,10 +416,10 @@
     {
       "id": "security-industry-acquisition-consolidation-wave-reshaping-c",
       "name": "Security industry acquisition consolidation wave reshaping competitive structure",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-18",
       "lastActive": "2026-11-18",
-      "cooledAt": null,
+      "cooledAt": "2026-11-19",
       "rationale": "Pye-Barker acquired St. John's Fire Equipment (Nov 5), Security 101 acquired LVSI Corporation (Nov 12), and multiple other consolidation activities signal rapid reshaping of the market structure across security integrators and regional operators.",
       "signalTypes": [
         "claim_magnitude",
@@ -393,10 +447,10 @@
     {
       "id": "video-surveillance-and-facial-recognition-creating-integrato",
       "name": "Video surveillance and facial recognition creating integrator support friction",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-18",
       "lastActive": "2026-11-18",
-      "cooledAt": null,
+      "cooledAt": "2026-11-19",
       "rationale": "A Security Sales analysis highlights that customer requests for facial recognition require clarification of actual use case intent, suggesting implementation challenges in translating customer requirements into effective surveillance solutions (Nov 6). This indicates growing market demand but persistent gaps in customer specification clarity.",
       "signalTypes": [
         "cross_topic"
