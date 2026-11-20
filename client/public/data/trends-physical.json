@@ -1,19 +1,19 @@
 {
-  "lastRunAt": "2026-11-19T05:09:20.722Z",
+  "lastRunAt": "2026-11-20T00:02:59.301Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-19",
+      "lastActive": "2026-11-20",
       "cooledAt": null,
-      "rationale": "Three new articles from Security Sales published between Nov 10-18 add to prior evidence of sustained access control vendor innovation. PDK's Nov 12 cloud access control interview emphasizes enduring post-installation value, NAPCO's Nov 18 article on labor and technician awareness challenges highlights ongoing market barriers, and the existing Nov 9-12 articles on NAPCO's NapcONE showroom and ASSA ABLOY's digital access portfolio demonstrate concentrated competitive advancement across product launches and strategic positioning.",
+      "rationale": "Four articles from Security Sales published between Nov 9-19 document sustained access control vendor innovation and market positioning. NAPCO's Nov 9 NapcONE showroom launch, PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, and the Nov 19 Rapid Response First/Resideo One integration announcement demonstrate concentrated competitive advancement across product launches, cloud infrastructure, and strategic partnerships driving access control market expansion.",
       "signalTypes": [
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 8,
+      "articleCount": 9,
       "sources": [
         "Security Sales"
       ],
@@ -65,6 +65,69 @@
           "title": "ASSA ABLOY: Video Intercoms Are Finding Homes Beyond Multifamily",
           "source": "Security Sales",
           "publishedAt": "2026-11-10"
+        },
+        {
+          "url": "https://www.securitysales.com/news/rapid-response-first-monitoring-center-integrate-resideo-one/621609/",
+          "title": "Rapid Response First Monitoring Center to Integrate with Resideo One",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "access-control-technician-labor-shortage-and-skill-gaps",
+      "name": "Access control technician labor shortage and skill gaps",
+      "status": "emerging",
+      "firstDetected": "2026-11-19",
+      "lastActive": "2026-11-20",
+      "cooledAt": null,
+      "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as a core market barrier in the Nov 18 Security Sales article, stating dealers struggle to find technicians who understand access control. This represents a specific constraint on access control deployment and integrator growth potential within the broader access control market expansion.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
+          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "id": "access-control-interoperability-and-integration-standards-de",
+      "name": "Access control interoperability and integration standards demand",
+      "status": "emerging",
+      "firstDetected": "2026-11-20",
+      "lastActive": "2026-11-20",
+      "cooledAt": null,
+      "rationale": "The Nov 19 Security Sales article on access control interoperability explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as an emerging market demand. This aligns with the same day's Rapid Response First/Resideo One integration announcement, suggesting vendor movement toward addressing interoperability gaps.",
+      "signalTypes": [
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/access-control-closed-on-purpose-its-time-to-open-it/621592/",
+          "title": "Access Control Was Closed on Purpose. It’s Time to Open It.",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
+        },
+        {
+          "url": "https://www.securitysales.com/news/rapid-response-first-monitoring-center-integrate-resideo-one/621609/",
+          "title": "Rapid Response First Monitoring Center to Integrate with Resideo One",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
         }
       ]
     },
@@ -73,9 +136,9 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-19",
+      "lastActive": "2026-11-20",
       "cooledAt": null,
-      "rationale": "Two articles from Security Sales published on Nov 10 and Nov 12 document vendor investment in cloud infrastructure for healthcare security. Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation with MobileView Cloud and PDK's Nov 12 cloud access control commentary for healthcare demonstrate sustained expansion of RTLS and cloud-based security capabilities designed to address healthcare-specific security needs.",
+      "rationale": "Two articles from Security Sales published on Nov 10 and Nov 12 document vendor investment in cloud infrastructure for healthcare security. Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation with MobileView Cloud and PDK's Nov 12 cloud access control commentary demonstrate sustained expansion of RTLS and cloud-based security capabilities designed to address healthcare-specific security needs.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -105,7 +168,7 @@
       "name": "Video intercom market diversification beyond multifamily residential",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-19",
+      "lastActive": "2026-11-20",
       "cooledAt": null,
       "rationale": "ASSA ABLOY's Nov 10 article explicitly addresses integrator guidance for identifying video intercom applications beyond multifamily residential markets, signaling vendor strategic focus on market segment expansion. The article emphasizes compatibility assessment and customer needs analysis as drivers of cross-segment adoption, indicating emerging opportunity for integrators to position video intercoms across diverse vertical markets.",
       "signalTypes": [
@@ -134,10 +197,10 @@
     {
       "id": "facial-recognition-deployment-requiring-customer-intent-clar",
       "name": "Facial recognition deployment requiring customer intent clarification",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-18",
       "lastActive": "2026-11-19",
-      "cooledAt": null,
+      "cooledAt": "2026-11-20",
       "rationale": "Security Sales' Nov 6 article directly addresses the gap between customer requests for facial recognition and actual intended functionality, framing facial recognition as a conversation starter requiring integrators to understand customer needs. This suggests growing market demand but also implementation complexity that requires vendor and integrator guidance.",
       "signalTypes": [
         "cross_topic",
@@ -154,31 +217,6 @@
           "title": "What Does the Customer Really Mean by &#8220;Facial Recognition&#8221;?",
           "source": "Security Sales",
           "publishedAt": "2026-11-06"
-        }
-      ]
-    },
-    {
-      "id": "access-control-technician-labor-shortage-and-skill-gaps",
-      "name": "Access control technician labor shortage and skill gaps",
-      "status": "emerging",
-      "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-19",
-      "cooledAt": null,
-      "rationale": "NAPCO vice president of sales Rob Etmans states in the Nov 18 Security Sales article that dealers struggle to find technicians who understand access control, identifying labor cost and awareness as real hurdles to access control adoption. This represents a specific market barrier emerging as a constraint on access control deployment and integrator growth.",
-      "signalTypes": [
-        "source_authority",
-        "claim_magnitude"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
-          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-18"
         }
       ]
     },
