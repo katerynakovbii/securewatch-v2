@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-21T04:53:12.162Z",
+  "lastRunAt": "2026-11-22T04:10:40.130Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-21",
+      "lastActive": "2026-11-22",
       "cooledAt": null,
       "rationale": "Five articles from Security Sales published between Nov 9-20 document sustained access control vendor innovation and market positioning. NAPCO's Nov 9 NapcONE showroom launch, PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, the Nov 19 Rapid Response First/Resideo One integration announcement, and the Nov 20 SIA OSDP training program milestone (150 graduates with 200 in pipeline) demonstrate concentrated competitive advancement across product launches, cloud infrastructure, strategic partnerships, and industry certification driving access control market expansion.",
       "signalTypes": [
@@ -85,7 +85,7 @@
       "name": "Access control technician labor shortage and skill gaps",
       "status": "emerging",
       "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-21",
+      "lastActive": "2026-11-22",
       "cooledAt": null,
       "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as a core market barrier in the Nov 18 article, stating dealers struggle to find technicians who understand access control. The Nov 20 SIA OSDP training program announcement (150 graduates with 200 in pipeline) directly responds to this skill gap by establishing industry-recognized certification, confirming this as a sustained market constraint on access control deployment and integrator growth potential.",
       "signalTypes": [
@@ -117,9 +117,9 @@
       "name": "Access control interoperability and integration standards demand",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-21",
+      "lastActive": "2026-11-22",
       "cooledAt": null,
-      "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as an emerging market demand. This same-day alignment with the Rapid Response First/Resideo One integration announcement, combined with the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols, demonstrates vendor and industry movement toward addressing documented interoperability gaps in access control systems.",
+      "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as a documented market demand. This alignment with the Nov 19 Rapid Response First/Resideo One integration announcement and the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols demonstrates vendor and industry movement toward addressing interoperability gaps in access control systems.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -154,13 +154,14 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-21",
+      "lastActive": "2026-11-22",
       "cooledAt": null,
-      "rationale": "Two articles from Security Sales published on Nov 10 and Nov 12 document vendor investment in cloud infrastructure for healthcare security. Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation with MobileView Cloud and PDK's Nov 12 cloud access control commentary demonstrate sustained expansion of RTLS and cloud-based security capabilities designed to address healthcare-specific security needs.",
+      "rationale": "Two articles from Security Sales published on Nov 10 and Nov 12 document vendor investment in cloud infrastructure for healthcare security. Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation with MobileView Cloud and PDK's Nov 12 cloud access control commentary demonstrate vendor expansion of RTLS and cloud-based security capabilities designed to address healthcare-specific security needs.",
       "signalTypes": [
         "source_authority",
         "velocity",
-        "claim_magnitude"
+        "claim_magnitude",
+        "cross_topic"
       ],
       "articleCount": 2,
       "sources": [
@@ -186,7 +187,7 @@
       "name": "Video intercom market diversification beyond multifamily residential",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-21",
+      "lastActive": "2026-11-22",
       "cooledAt": null,
       "rationale": "ASSA ABLOY's Nov 10 article explicitly addresses integrator guidance for identifying video intercom applications beyond multifamily residential markets, signaling vendor strategic focus on market segment expansion. The article emphasizes compatibility assessment and customer needs analysis as drivers of cross-segment adoption, indicating emerging opportunity for integrators to position video intercoms across diverse vertical markets.",
       "signalTypes": [
