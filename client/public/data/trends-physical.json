@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-22T04:10:40.130Z",
+  "lastRunAt": "2026-11-23T04:51:48.612Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-22",
+      "lastActive": "2026-11-23",
       "cooledAt": null,
-      "rationale": "Five articles from Security Sales published between Nov 9-20 document sustained access control vendor innovation and market positioning. NAPCO's Nov 9 NapcONE showroom launch, PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, the Nov 19 Rapid Response First/Resideo One integration announcement, and the Nov 20 SIA OSDP training program milestone (150 graduates with 200 in pipeline) demonstrate concentrated competitive advancement across product launches, cloud infrastructure, strategic partnerships, and industry certification driving access control market expansion.",
+      "rationale": "Five articles from Security Sales published between Nov 10-20 document sustained access control vendor innovation and market positioning. PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, the Nov 19 Rapid Response First/Resideo One integration announcement, and the Nov 20 SIA OSDP training program milestone (150 graduates with 200 in pipeline) demonstrate concentrated competitive advancement across product launches, cloud infrastructure, strategic partnerships, and industry certification driving access control market expansion.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -85,9 +85,9 @@
       "name": "Access control technician labor shortage and skill gaps",
       "status": "emerging",
       "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-22",
+      "lastActive": "2026-11-23",
       "cooledAt": null,
-      "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as a core market barrier in the Nov 18 article, stating dealers struggle to find technicians who understand access control. The Nov 20 SIA OSDP training program announcement (150 graduates with 200 in pipeline) directly responds to this skill gap by establishing industry-recognized certification, confirming this as a sustained market constraint on access control deployment and integrator growth potential.",
+      "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as core market barriers in the Nov 18 article, stating dealers struggle to find technicians who understand access control. The Nov 20 SIA OSDP training program announcement (150 graduates with 200 in pipeline) directly responds to this skill gap by establishing industry-recognized certification, confirming this as a sustained market constraint on access control deployment.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude",
@@ -117,9 +117,9 @@
       "name": "Access control interoperability and integration standards demand",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-22",
+      "lastActive": "2026-11-23",
       "cooledAt": null,
-      "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as a documented market demand. This alignment with the Nov 19 Rapid Response First/Resideo One integration announcement and the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols demonstrates vendor and industry movement toward addressing interoperability gaps in access control systems.",
+      "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as documented market demand. This aligns directly with the Nov 19 Rapid Response First/Resideo One integration announcement and the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols, demonstrating vendor and industry movement toward addressing interoperability gaps.",
       "signalTypes": [
         "velocity",
         "cross_topic"
@@ -154,7 +154,7 @@
       "name": "Cloud-based real-time location services expanding in healthcare security",
       "status": "emerging",
       "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-22",
+      "lastActive": "2026-11-23",
       "cooledAt": null,
       "rationale": "Two articles from Security Sales published on Nov 10 and Nov 12 document vendor investment in cloud infrastructure for healthcare security. Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation with MobileView Cloud and PDK's Nov 12 cloud access control commentary demonstrate vendor expansion of RTLS and cloud-based security capabilities designed to address healthcare-specific security needs.",
       "signalTypes": [
@@ -187,7 +187,7 @@
       "name": "Video intercom market diversification beyond multifamily residential",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-22",
+      "lastActive": "2026-11-23",
       "cooledAt": null,
       "rationale": "ASSA ABLOY's Nov 10 article explicitly addresses integrator guidance for identifying video intercom applications beyond multifamily residential markets, signaling vendor strategic focus on market segment expansion. The article emphasizes compatibility assessment and customer needs analysis as drivers of cross-segment adoption, indicating emerging opportunity for integrators to position video intercoms across diverse vertical markets.",
       "signalTypes": [
