@@ -1,16 +1,135 @@
 {
-  "lastRunAt": "2026-11-23T16:54:21.012Z",
+  "lastRunAt": "2026-11-24T03:38:54.056Z",
   "trends": [
+    {
+      "id": "ai-adoption-uncertainty-in-video-security-due-to-trust-and-a",
+      "name": "AI adoption uncertainty in video security due to trust and accountability gaps",
+      "status": "emerging",
+      "firstDetected": "2026-11-18",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19). This pattern demonstrates widespread recognition of a critical mismatch between AI demand and implementation maturity across the video security sector.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "cross_topic"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/ai-1-video-security-investment-priority-fewer-than-10-ready/621554/",
+          "title": "AI #1 Video Security Investment Priority, Fewer Than 10% Ready",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-17"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/building-trust-ai-one-install-at-a-time/621546/",
+          "title": "Building Trust in Artificial Intelligence, One Install at a Time",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-17"
+        },
+        {
+          "url": "https://www.securitysales.com/news/resideo-cx6t-camera-software-portal-ai-security-portfolio/621602/",
+          "title": "Resideo Adds Camera and Software Portal to AI Security Portfolio",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
+        }
+      ]
+    },
+    {
+      "id": "access-control-system-interoperability-emerging-as-market-de",
+      "name": "Access control system interoperability emerging as market demand forcing industry standardization",
+      "status": "emerging",
+      "firstDetected": "2026-11-20",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet, highlighting this as a critical market gap (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/access-control-closed-on-purpose-its-time-to-open-it/621592/",
+          "title": "Access Control Was Closed on Purpose. It’s Time to Open It.",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/allegion-on-vertically-integrated-solutions-for-access-control/621489/",
+          "title": "Allegion on Vertically Integrated Solutions for Access Control",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
+        },
+        {
+          "url": "https://www.securitysales.com/news/amag-sia-150-osdp-training-program-graduates/621636/",
+          "title": "AMAG and SIA Celebrate First 150 OSDP Training Program Graduates",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "id": "cpu-side-channel-vulnerabilities-in-cloud-infrastructure-ena",
+      "name": "CPU side-channel vulnerabilities in cloud infrastructure enabling cross-process data leakage",
+      "status": "emerging",
+      "firstDetected": "2026-11-14",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "Google Cloud disclosed three AMD Turin CPU flaws allowing attackers within a VM to leak data across processes (Nov 12), and AMD SEV-SNP VM escapes (Mior and Skyfall attacks) allowed malicious hosts to read data and modify VM memory (Nov 13). Linux KVM hypervisor flaw CVE-2026-99312 allowed researchers to read 127 GB of cloud server memory from inside a guest VM on shared infrastructure (Nov 20). Multiple CPU-level vulnerabilities disclosed against major cloud providers within days demonstrate an emerging pattern of hardware-level isolation failures in cloud computing infrastructure.",
+      "signalTypes": [
+        "source_authority",
+        "velocity",
+        "claim_magnitude"
+      ],
+      "articleCount": 4,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+          "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-12"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+          "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-13"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+          "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-21"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+          "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-20"
+        }
+      ]
+    },
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-23",
+      "lastActive": "2026-11-24",
       "cooledAt": null,
-      "rationale": "AI Coding Agents inadvertently leak credentials to public GitHub repos (Nov 10), 4,837 hijacked GitHub accounts used to plant secret stealers in 1,806+ repositories (Nov 12), Microsoft's agent-framework PyPI package compromised to push credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17). Multiple independent sources across different platforms confirm developers and AI platforms as systematic attack vectors for credential harvesting at scale affecting thousands of repositories and organizations.",
+      "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and 4,837 hijacked GitHub accounts were used to plant secret stealers in 1,806+ repositories (Nov 12). Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17), and an emerging AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot into production environments (Nov 11). Multiple independent sources across different platforms confirm developers and AI platforms as systematic attack vectors for credential harvesting at scale affecting thousands of repositories and organizations.",
       "signalTypes": [],
-      "articleCount": 22,
+      "articleCount": 23,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -147,102 +266,6 @@
           "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
           "source": "The Hacker News",
           "publishedAt": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "cpu-side-channel-vulnerabilities-in-cloud-infrastructure-ena",
-      "name": "CPU side-channel vulnerabilities in cloud infrastructure enabling cross-process data leakage",
-      "status": "emerging",
-      "firstDetected": "2026-11-14",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "Google Cloud disclosed three AMD Turin CPU flaws allowing attackers within a VM to leak data across processes (Nov 12), and AMD SEV-SNP VM escapes (Mior and Skyfall attacks) allowed malicious hosts to read data and modify VM memory (Nov 13). Linux KVM hypervisor flaw CVE-2026-99312 allowed researchers to read 127 GB of cloud server memory from inside a guest VM on shared infrastructure (Nov 20). Multiple CPU-level vulnerabilities disclosed against major cloud providers within days demonstrate an emerging pattern of hardware-level isolation failures in cloud computing infrastructure.",
-      "signalTypes": [
-        "source_authority",
-        "velocity",
-        "claim_magnitude"
-      ],
-      "articleCount": 4,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
-          "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-12"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-          "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-13"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-          "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-21"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-          "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "state-sponsored-telecom-infrastructure-exploitation-for-sms-",
-      "name": "State-sponsored telecom infrastructure exploitation for SMS 2FA interception and surveillance",
-      "status": "emerging",
-      "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "A newly identified spying group named SilentAir used hacked equipment inside Asian mobile operators to intercept SMS 2FA codes and conduct surveillance, primarily targeting Taiwanese users, with attack sources discovered in at least six Asian countries (Nov 13). This sophisticated attack directly bypasses SMS-based authentication, a widely-deployed security mechanism across the security industry and beyond.",
-      "signalTypes": [
-        "source_authority",
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-          "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-13"
-        }
-      ]
-    },
-    {
-      "id": "open-source-pen-testing-tools-repurposed-for-production-cred",
-      "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
-      "status": "emerging",
-      "firstDetected": "2026-11-11",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed (Nov 10), and AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally into compromised customer environments (Nov 11). Multiple independent threat disclosures confirm legitimate security testing tools are being weaponized for offensive operations against production environments at scale.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "Dark Reading",
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-          "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
-          "source": "Dark Reading",
-          "publishedAt": "2026-11-10"
         },
         {
           "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
@@ -253,136 +276,11 @@
       ]
     },
     {
-      "id": "ai-adoption-uncertainty-in-video-security-due-to-trust-and-a",
-      "name": "AI adoption uncertainty in video security due to trust and accountability gaps",
-      "status": "emerging",
-      "firstDetected": "2026-11-18",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19), indicating widespread recognition of a critical mismatch between AI demand and implementation maturity.",
-      "signalTypes": [
-        "source_authority",
-        "velocity",
-        "cross_topic"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/news/ai-1-video-security-investment-priority-fewer-than-10-ready/621554/",
-          "title": "AI #1 Video Security Investment Priority, Fewer Than 10% Ready",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-17"
-        },
-        {
-          "url": "https://www.securitysales.com/insights/building-trust-ai-one-install-at-a-time/621546/",
-          "title": "Building Trust in Artificial Intelligence, One Install at a Time",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-17"
-        },
-        {
-          "url": "https://www.securitysales.com/news/resideo-cx6t-camera-software-portal-ai-security-portfolio/621602/",
-          "title": "Resideo Adds Camera and Software Portal to AI Security Portfolio",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-19"
-        }
-      ]
-    },
-    {
-      "id": "access-control-technician-shortage-creating-market-friction-",
-      "name": "Access control technician shortage creating market friction and integration challenges",
-      "status": "emerging",
-      "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "NAPCO VP of Sales Rob Etmans reported that dealers struggle to find technicians who understand access control systems, citing labor and awareness as real hurdles to market adoption (Nov 18). This signals a critical supply-side constraint in the physical security workforce that impacts project delivery and system deployment, particularly as access control infrastructure undergoes interoperability transformation.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
-          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "access-control-system-interoperability-emerging-as-market-de",
-      "name": "Access control system interoperability emerging as market demand forcing industry standardization",
-      "status": "emerging",
-      "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet, highlighting this as a critical market gap (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic"
-      ],
-      "articleCount": 3,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/insights/access-control-closed-on-purpose-its-time-to-open-it/621592/",
-          "title": "Access Control Was Closed on Purpose. It’s Time to Open It.",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-19"
-        },
-        {
-          "url": "https://www.securitysales.com/sponsored/allegion-on-vertically-integrated-solutions-for-access-control/621489/",
-          "title": "Allegion on Vertically Integrated Solutions for Access Control",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-23"
-        },
-        {
-          "url": "https://www.securitysales.com/news/amag-sia-150-osdp-training-program-graduates/621636/",
-          "title": "AMAG and SIA Celebrate First 150 OSDP Training Program Graduates",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "active-exploitation-of-authentication-bypass-vulnerabilities",
-      "name": "Active exploitation of authentication bypass vulnerabilities in hypervisor and virtualization platforms",
-      "status": "emerging",
-      "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-23",
-      "cooledAt": null,
-      "rationale": "A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) is being actively exploited in the wild to gain admin access, with the flaw affecting REST cookie parsing (Nov 10). Active exploitation of virtualization infrastructure vulnerabilities represents a direct attack vector against cloud and on-premise server environments used throughout the security industry.",
-      "signalTypes": [
-        "velocity",
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-10"
-        }
-      ]
-    },
-    {
       "id": "ai-agents-creating-new-unauthorized-access-and-control-risks",
       "name": "AI agents creating new unauthorized access and control risks requiring runtime enforcement",
       "status": "emerging",
       "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-23",
+      "lastActive": "2026-11-24",
       "cooledAt": null,
       "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. The Hacker News (Nov 13) presented a scenario where an AI agent receiving instruction injection could export sensitive records to unfamiliar destinations because its identity has access and tools allow the action, highlighting a gap between traditional access control models and AI agent behavior.",
       "signalTypes": [
@@ -411,16 +309,43 @@
       ]
     },
     {
+      "id": "state-sponsored-telecom-infrastructure-exploitation-for-sms-",
+      "name": "State-sponsored telecom infrastructure exploitation for SMS 2FA interception and surveillance",
+      "status": "emerging",
+      "firstDetected": "2026-11-16",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "A newly identified spying group named SilentAir used hacked equipment inside Asian mobile operators to intercept SMS 2FA codes and conduct surveillance, primarily targeting Taiwanese users, with attack sources discovered in at least six Asian countries (Nov 13). This sophisticated attack directly bypasses SMS-based authentication, a widely-deployed security mechanism across the security industry and beyond.",
+      "signalTypes": [
+        "source_authority",
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+          "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-13"
+        }
+      ]
+    },
+    {
       "id": "llm-integrated-mobile-malware-enabling-automated-credential-",
       "name": "LLM-integrated mobile malware enabling automated credential harvesting at scale",
       "status": "emerging",
       "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-23",
+      "lastActive": "2026-11-24",
       "cooledAt": null,
       "rationale": "Bazuka, a previously unknown Android malware framework discovered by ThreatFabric (Nov 20), integrates large language models for victim management and control at scale, using fake screen overlays to hide credential theft and device control. The integration of LLM capabilities into mobile malware represents an escalation in automation and sophistication for targeting credential harvesting across potentially thousands of devices.",
       "signalTypes": [
         "claim_magnitude",
-        "velocity"
+        "velocity",
+        "source_authority"
       ],
       "articleCount": 1,
       "sources": [
@@ -432,6 +357,113 @@
           "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
           "source": "The Hacker News",
           "publishedAt": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "id": "access-control-technician-shortage-creating-market-friction-",
+      "name": "Access control technician shortage creating market friction and integration challenges",
+      "status": "emerging",
+      "firstDetected": "2026-11-19",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "NAPCO VP of Sales Rob Etmans reported that dealers struggle to find technicians who understand access control systems, citing labor and awareness as real hurdles to market adoption (Nov 18). This signals a critical supply-side constraint in the physical security workforce that impacts project delivery and system deployment, particularly as access control infrastructure undergoes interoperability transformation.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
+          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "id": "holiday-seasonal-staffing-creating-critical-physical-securit",
+      "name": "Holiday seasonal staffing creating critical physical security vulnerability windows",
+      "status": "emerging",
+      "firstDetected": "2026-11-24",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "Security Sales editorial highlights that seasonal hiring during the holiday season puts pressure on physical security in ways that are easy to miss, suggesting integrators can position themselves by addressing these gaps (Nov 23). This identifies a recurring, predictable window of heightened risk created by temporary workforce expansion and reduced security oversight during peak retail activity periods.",
+      "signalTypes": [
+        "cross_topic",
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/closing-security-gaps-holiday-season-staffing-surge/621649/",
+          "title": "Closing the Security Gaps During the Holiday Season Staffing Surge",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "open-source-pen-testing-tools-repurposed-for-production-cred",
+      "name": "Open-source pen-testing tools repurposed for production credential and cloud attacks",
+      "status": "cooled",
+      "firstDetected": "2026-11-11",
+      "lastActive": "2026-11-23",
+      "cooledAt": "2026-11-24",
+      "rationale": "Forks of open-source Artex framework and 45 similar pen-testing tools remain operational for executing credential attacks and cloud breaches at machine speed (Nov 10), and AntiFox AI pentesting platform was actively used to steal AWS credentials and pivot laterally into compromised customer environments (Nov 11). Multiple independent threat disclosures confirm legitimate security testing tools are being weaponized for offensive operations against production environments at scale.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Dark Reading",
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+          "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-10"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+          "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "active-exploitation-of-authentication-bypass-vulnerabilities",
+      "name": "Active exploitation of authentication bypass vulnerabilities in hypervisor and virtualization platforms",
+      "status": "cooled",
+      "firstDetected": "2026-11-19",
+      "lastActive": "2026-11-23",
+      "cooledAt": "2026-11-24",
+      "rationale": "A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) is being actively exploited in the wild to gain admin access, with the flaw affecting REST cookie parsing (Nov 10). Active exploitation of virtualization infrastructure vulnerabilities represents a direct attack vector against cloud and on-premise server environments used throughout the security industry.",
+      "signalTypes": [
+        "velocity",
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-10"
         }
       ]
     },

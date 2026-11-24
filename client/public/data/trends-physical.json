@@ -1,19 +1,19 @@
 {
-  "lastRunAt": "2026-11-23T04:51:48.612Z",
+  "lastRunAt": "2026-11-24T03:38:54.056Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-23",
+      "lastActive": "2026-11-24",
       "cooledAt": null,
-      "rationale": "Five articles from Security Sales published between Nov 10-20 document sustained access control vendor innovation and market positioning. PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, the Nov 19 Rapid Response First/Resideo One integration announcement, and the Nov 20 SIA OSDP training program milestone (150 graduates with 200 in pipeline) demonstrate concentrated competitive advancement across product launches, cloud infrastructure, strategic partnerships, and industry certification driving access control market expansion.",
+      "rationale": "Six articles from Security Sales between Nov 12-23 document sustained access control vendor innovation and market positioning. PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, the Nov 19 Rapid Response First/Resideo One integration announcement, Allegion's Nov 23 vertically integrated solutions positioning, and the Nov 20 SIA OSDP training program milestone (150 graduates with 200 in pipeline) demonstrate concentrated competitive advancement across product launches, cloud infrastructure, strategic partnerships, and industry certification driving access control market expansion.",
       "signalTypes": [
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 10,
+      "articleCount": 12,
       "sources": [
         "Security Sales"
       ],
@@ -77,6 +77,18 @@
           "title": "AMAG and SIA Celebrate First 150 OSDP Training Program Graduates",
           "source": "Security Sales",
           "publishedAt": "2026-11-20"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/access-control-closed-on-purpose-its-time-to-open-it/621592/",
+          "title": "Access Control Was Closed on Purpose. It’s Time to Open It.",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/allegion-on-vertically-integrated-solutions-for-access-control/621489/",
+          "title": "Allegion on Vertically Integrated Solutions for Access Control",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
         }
       ]
     },
@@ -85,15 +97,15 @@
       "name": "Access control technician labor shortage and skill gaps",
       "status": "emerging",
       "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-23",
+      "lastActive": "2026-11-24",
       "cooledAt": null,
-      "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as core market barriers in the Nov 18 article, stating dealers struggle to find technicians who understand access control. The Nov 20 SIA OSDP training program announcement (150 graduates with 200 in pipeline) directly responds to this skill gap by establishing industry-recognized certification, confirming this as a sustained market constraint on access control deployment.",
+      "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as core market barriers in the Nov 18 article, stating dealers struggle to find technicians who understand access control. The Nov 20 SIA OSDP training program announcement (150 graduates with 200 in pipeline) directly responds to this skill gap by establishing industry-recognized certification, and the Nov 23 holiday staffing article raises seasonal pressure on physical security staffing, confirming this as a sustained and multi-faceted market constraint.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude",
         "velocity"
       ],
-      "articleCount": 2,
+      "articleCount": 3,
       "sources": [
         "Security Sales"
       ],
@@ -109,6 +121,12 @@
           "title": "AMAG and SIA Celebrate First 150 OSDP Training Program Graduates",
           "source": "Security Sales",
           "publishedAt": "2026-11-20"
+        },
+        {
+          "url": "https://www.securitysales.com/insights/closing-security-gaps-holiday-season-staffing-surge/621649/",
+          "title": "Closing the Security Gaps During the Holiday Season Staffing Surge",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
         }
       ]
     },
@@ -117,14 +135,14 @@
       "name": "Access control interoperability and integration standards demand",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-23",
+      "lastActive": "2026-11-24",
       "cooledAt": null,
-      "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as documented market demand. This aligns directly with the Nov 19 Rapid Response First/Resideo One integration announcement and the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols, demonstrating vendor and industry movement toward addressing interoperability gaps.",
+      "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as documented market demand. This aligns directly with the Nov 19 Rapid Response First/Resideo One integration announcement, the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols, and the Nov 23 Allegion article on vertically integrated solutions, demonstrating vendor and industry movement toward addressing interoperability gaps.",
       "signalTypes": [
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 3,
+      "articleCount": 4,
       "sources": [
         "Security Sales"
       ],
@@ -146,16 +164,46 @@
           "title": "AMAG and SIA Celebrate First 150 OSDP Training Program Graduates",
           "source": "Security Sales",
           "publishedAt": "2026-11-20"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/allegion-on-vertically-integrated-solutions-for-access-control/621489/",
+          "title": "Allegion on Vertically Integrated Solutions for Access Control",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "holiday-seasonal-staffing-creating-physical-security-vulnera",
+      "name": "Holiday seasonal staffing creating physical security vulnerabilities",
+      "status": "emerging",
+      "firstDetected": "2026-11-24",
+      "lastActive": "2026-11-24",
+      "cooledAt": null,
+      "rationale": "The Nov 23 Security Sales article identifies seasonal hiring during the holiday surge as a specific physical security vulnerability that integrators can help customers address. This signals a timely market opportunity for integrators to position security solutions around predictable annual staffing peaks.",
+      "signalTypes": [
+        "velocity"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/closing-security-gaps-holiday-season-staffing-surge/621649/",
+          "title": "Closing the Security Gaps During the Holiday Season Staffing Surge",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
         }
       ]
     },
     {
       "id": "cloud-based-real-time-location-services-expanding-in-healthc",
       "name": "Cloud-based real-time location services expanding in healthcare security",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-11",
       "lastActive": "2026-11-23",
-      "cooledAt": null,
+      "cooledAt": "2026-11-24",
       "rationale": "Two articles from Security Sales published on Nov 10 and Nov 12 document vendor investment in cloud infrastructure for healthcare security. Securitas Healthcare's Nov 10 launch of MobileView RTLS Next Generation with MobileView Cloud and PDK's Nov 12 cloud access control commentary demonstrate vendor expansion of RTLS and cloud-based security capabilities designed to address healthcare-specific security needs.",
       "signalTypes": [
         "source_authority",
@@ -185,10 +233,10 @@
     {
       "id": "video-intercom-market-diversification-beyond-multifamily-res",
       "name": "Video intercom market diversification beyond multifamily residential",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-16",
       "lastActive": "2026-11-23",
-      "cooledAt": null,
+      "cooledAt": "2026-11-24",
       "rationale": "ASSA ABLOY's Nov 10 article explicitly addresses integrator guidance for identifying video intercom applications beyond multifamily residential markets, signaling vendor strategic focus on market segment expansion. The article emphasizes compatibility assessment and customer needs analysis as drivers of cross-segment adoption, indicating emerging opportunity for integrators to position video intercoms across diverse vertical markets.",
       "signalTypes": [
         "source_authority",
