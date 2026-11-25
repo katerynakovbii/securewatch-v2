@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-24T03:38:54.056Z",
+  "lastRunAt": "2026-11-25T01:46:45.862Z",
   "trends": [
     {
       "id": "access-control-innovation-momentum-and-market-expansion",
       "name": "Access control innovation momentum and market expansion",
       "status": "emerging",
       "firstDetected": "2026-10-30",
-      "lastActive": "2026-11-24",
+      "lastActive": "2026-11-25",
       "cooledAt": null,
       "rationale": "Six articles from Security Sales between Nov 12-23 document sustained access control vendor innovation and market positioning. PDK's Nov 12 cloud access control capabilities, NAPCO's Nov 18 article on labor and technician awareness challenges, the Nov 19 Rapid Response First/Resideo One integration announcement, Allegion's Nov 23 vertically integrated solutions positioning, and the Nov 20 SIA OSDP training program milestone (150 graduates with 200 in pipeline) demonstrate concentrated competitive advancement across product launches, cloud infrastructure, strategic partnerships, and industry certification driving access control market expansion.",
       "signalTypes": [
@@ -97,7 +97,7 @@
       "name": "Access control technician labor shortage and skill gaps",
       "status": "emerging",
       "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-24",
+      "lastActive": "2026-11-25",
       "cooledAt": null,
       "rationale": "NAPCO vice president of sales Rob Etmans explicitly identifies technician shortage and skill gaps as core market barriers in the Nov 18 article, stating dealers struggle to find technicians who understand access control. The Nov 20 SIA OSDP training program announcement (150 graduates with 200 in pipeline) directly responds to this skill gap by establishing industry-recognized certification, and the Nov 23 holiday staffing article raises seasonal pressure on physical security staffing, confirming this as a sustained and multi-faceted market constraint.",
       "signalTypes": [
@@ -135,7 +135,7 @@
       "name": "Access control interoperability and integration standards demand",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-24",
+      "lastActive": "2026-11-25",
       "cooledAt": null,
       "rationale": "The Nov 19 Security Sales article explicitly states that people want interoperability in access control systems but it basically doesn't exist yet, positioning this as documented market demand. This aligns directly with the Nov 19 Rapid Response First/Resideo One integration announcement, the Nov 20 SIA OSDP training program milestone emphasizing standardized protocols, and the Nov 23 Allegion article on vertically integrated solutions, demonstrating vendor and industry movement toward addressing interoperability gaps.",
       "signalTypes": [
@@ -178,9 +178,9 @@
       "name": "Holiday seasonal staffing creating physical security vulnerabilities",
       "status": "emerging",
       "firstDetected": "2026-11-24",
-      "lastActive": "2026-11-24",
+      "lastActive": "2026-11-25",
       "cooledAt": null,
-      "rationale": "The Nov 23 Security Sales article identifies seasonal hiring during the holiday surge as a specific physical security vulnerability that integrators can help customers address. This signals a timely market opportunity for integrators to position security solutions around predictable annual staffing peaks.",
+      "rationale": "The Nov 23 Security Sales article identifies seasonal hiring during the holiday surge as a specific physical security vulnerability that integrators can help customers address. This signals a timely market opportunity for integrators to position security solutions around predictable annual staffing peaks, with potential to become a sustained annual planning cycle for the industry.",
       "signalTypes": [
         "velocity"
       ],
@@ -194,6 +194,43 @@
           "title": "Closing the Security Gaps During the Holiday Season Staffing Surge",
           "source": "Security Sales",
           "publishedAt": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "physical-security-ecosystem-consolidation-and-technology-par",
+      "name": "Physical security ecosystem consolidation and technology partnership expansion",
+      "status": "emerging",
+      "firstDetected": "2026-11-25",
+      "lastActive": "2026-11-25",
+      "cooledAt": null,
+      "rationale": "Multiple articles from Nov 19-24 document strategic partnerships and ecosystem expansion among major vendors. The Nov 19 Rapid Response First/Resideo One integration, the Nov 23 Allegion vertically integrated solutions announcement, and the Nov 24 Milestone Systems Developer Summit (160+ developers from 35 countries) demonstrate coordinated movement toward platform consolidation and partner ecosystem deepening as competitive strategy.",
+      "signalTypes": [
+        "source_authority",
+        "velocity"
+      ],
+      "articleCount": 3,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/news/rapid-response-first-monitoring-center-integrate-resideo-one/621609/",
+          "title": "Rapid Response First Monitoring Center to Integrate with Resideo One",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-19"
+        },
+        {
+          "url": "https://www.securitysales.com/sponsored/allegion-on-vertically-integrated-solutions-for-access-control/621489/",
+          "title": "Allegion on Vertically Integrated Solutions for Access Control",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
+        },
+        {
+          "url": "https://www.securitysales.com/news/milestone-partners-developers-annual-summit/621687/",
+          "title": "Milestone Brings Together Partners and Developers for Annual Summit",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-24"
         }
       ]
     },
