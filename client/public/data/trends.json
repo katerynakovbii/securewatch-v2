@@ -1,12 +1,12 @@
 {
-  "lastRunAt": "2026-11-25T01:46:45.862Z",
+  "lastRunAt": "2026-11-26T01:21:05.639Z",
   "trends": [
     {
       "id": "ai-adoption-uncertainty-in-video-security-due-to-trust-and-a",
       "name": "AI adoption uncertainty in video security due to trust and accountability gaps",
-      "status": "emerging",
+      "status": "confirmed",
       "firstDetected": "2026-11-18",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
       "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19). Multiple vendors are actively addressing this gap with new products and frameworks designed to increase user confidence in AI-driven security systems.",
       "signalTypes": [
@@ -14,9 +14,10 @@
         "velocity",
         "cross_topic"
       ],
-      "articleCount": 4,
+      "articleCount": 5,
       "sources": [
-        "Security Sales"
+        "Security Sales",
+        "Dark Reading"
       ],
       "articles": [
         {
@@ -42,6 +43,12 @@
           "title": "Rapid Response First Monitoring Center to Integrate with Resideo One",
           "source": "Security Sales",
           "publishedAt": "2026-11-19"
+        },
+        {
+          "url": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
+          "title": "How Southeastern University Got a Handle on Its Data",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-24"
         }
       ]
     },
@@ -50,9 +57,9 @@
       "name": "Access control system interoperability emerging as market demand forcing industry standardization",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet, highlighting this as a critical market gap (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols. NAPCO addressing access control technician shortage (Nov 18) further confirms this is a priority area requiring industry alignment.",
+      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols. NAPCO addressing access control technician shortage (Nov 18) further confirms this is a priority area requiring industry alignment.",
       "signalTypes": [
         "source_authority",
         "cross_topic"
@@ -93,9 +100,9 @@
       "name": "CPU side-channel vulnerabilities in cloud infrastructure enabling cross-process data leakage",
       "status": "emerging",
       "firstDetected": "2026-11-14",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Google Cloud disclosed three AMD Turin CPU flaws allowing attackers within a VM to leak data across processes (Nov 12), and AMD SEV-SNP VM escapes (Mior and Skyfall attacks) allowed malicious hosts to read data and modify VM memory (Nov 13). Linux KVM hypervisor flaw CVE-2026-99312 allowed researchers to read 127 GB of cloud server memory from inside a guest VM on shared infrastructure (Nov 20). Multiple CPU-level vulnerabilities disclosed against major cloud providers within days demonstrate an emerging pattern of hardware-level isolation failures in cloud computing infrastructure.",
+      "rationale": "Linux KVM hypervisor flaw CVE-2026-99312 allowed researchers to read 127 GB of cloud server memory from inside a guest VM on shared infrastructure (Nov 20). AMD SEV-SNP VM escape attacks Mior and Skyfall allowed malicious hosts to read data inside protected virtual machines and modify VM memory (Nov 13). These independent hardware-level vulnerabilities disclosed against major cloud providers within days demonstrate an emerging pattern of isolation failures in cloud computing infrastructure affecting customer data confidentiality.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -137,11 +144,11 @@
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "confirmed",
       "firstDetected": "2026-09-29",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and 4,837 hijacked GitHub accounts were used to plant secret stealers in 1,806+ repositories (Nov 12). Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17). These independent incidents across multiple developer platforms demonstrate developers and AI tools as systematic attack vectors for credential harvesting at scale affecting thousands of organizations.",
+      "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17). These independent incidents across multiple developer platforms demonstrate developers and AI tools as systematic attack vectors for credential harvesting at scale affecting multiple organizations. The GitGuardian report also reveals that 64% of valid secrets discovered in 2022 still worked in January 2026, indicating widespread remediation delays.",
       "signalTypes": [],
-      "articleCount": 23,
+      "articleCount": 24,
       "sources": [
         "The Hacker News",
         "Dark Reading"
@@ -284,6 +291,12 @@
           "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
           "source": "The Hacker News",
           "publishedAt": "2026-11-11"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+          "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-25"
         }
       ]
     },
@@ -292,9 +305,9 @@
       "name": "AI agents creating new unauthorized access and control risks requiring runtime enforcement",
       "status": "emerging",
       "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. The Hacker News (Nov 13) presented a scenario where an AI agent receiving instruction injection could export sensitive records to unfamiliar destinations because its identity has access and tools allow the action. These incidents reveal a fundamental gap between traditional access control models and AI agent behavior.",
+      "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. The Hacker News (Nov 13) presented a scenario where an AI agent receiving instruction injection could export sensitive records because its identity has access and tools allow the action. These independent analyses from security experts reveal a fundamental gap between traditional access control models and AI agent behavior in production environments.",
       "signalTypes": [
         "source_authority",
         "cross_topic",
@@ -325,9 +338,9 @@
       "name": "State-sponsored telecom infrastructure exploitation for SMS 2FA interception and surveillance",
       "status": "emerging",
       "firstDetected": "2026-11-16",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "A newly identified spying group named SilentAir used hacked equipment inside Asian mobile operators to intercept SMS 2FA codes and conduct surveillance, primarily targeting Taiwanese users, with attack sources discovered in at least six Asian countries (Nov 13). This sophisticated attack directly bypasses SMS-based authentication, a widely-deployed security mechanism, signaling a critical vulnerability in telecom infrastructure used by security professionals and organizations globally.",
+      "rationale": "A newly identified spying group named SilentAir used hacked equipment inside Asian mobile operators to intercept SMS 2FA codes and conduct surveillance, primarily targeting Taiwanese users, with attack sources discovered in at least six Asian countries (Nov 13). This sophisticated attack directly bypasses SMS-based authentication, a widely-deployed security mechanism, signaling a critical vulnerability in telecom infrastructure. The attack represents a nation-state capability to intercept security-critical communications.",
       "signalTypes": [
         "source_authority",
         "claim_magnitude",
@@ -351,9 +364,9 @@
       "name": "LLM-integrated mobile malware enabling automated credential harvesting at scale",
       "status": "emerging",
       "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Bazuka, a previously unknown Android malware framework discovered by ThreatFabric (Nov 20), integrates large language models for victim management and control at scale, using fake screen overlays to hide credential theft and device control. The integration of LLM capabilities into mobile malware represents an escalation in automation and sophistication for targeting credential harvesting across potentially thousands of devices simultaneously.",
+      "rationale": "Bazuka, a previously unknown Android malware framework discovered by ThreatFabric (Nov 20), integrates large language models for victim management and control at scale, using fake screen overlays to hide credential theft and device control. The integration of LLM capabilities into mobile malware represents a significant escalation in automation and sophistication for targeting credential harvesting across potentially thousands of devices simultaneously, combining AI with traditional mobile exploit techniques.",
       "signalTypes": [
         "claim_magnitude",
         "velocity",
@@ -373,38 +386,13 @@
       ]
     },
     {
-      "id": "access-control-technician-shortage-creating-market-friction-",
-      "name": "Access control technician shortage creating market friction and integration challenges",
-      "status": "emerging",
-      "firstDetected": "2026-11-19",
-      "lastActive": "2026-11-25",
-      "cooledAt": null,
-      "rationale": "NAPCO VP of Sales Rob Etmans reported that dealers struggle to find technicians who understand access control systems, citing labor and awareness as real hurdles to market adoption (Nov 18). This signals a critical supply-side constraint in the physical security workforce that impacts project delivery and system deployment, particularly as access control infrastructure undergoes interoperability transformation and increased complexity.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
-          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-18"
-        }
-      ]
-    },
-    {
       "id": "holiday-seasonal-staffing-creating-critical-physical-securit",
       "name": "Holiday seasonal staffing creating critical physical security vulnerability windows",
       "status": "emerging",
       "firstDetected": "2026-11-24",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Security Sales editorial highlights that seasonal hiring during the holiday season puts pressure on physical security in ways that are easy to miss, suggesting integrators can position themselves by addressing these gaps (Nov 23). This identifies a recurring, predictable window of heightened risk created by temporary workforce expansion and reduced security oversight during peak retail activity periods.",
+      "rationale": "Security Sales editorial highlights that seasonal hiring during the holiday season puts pressure on physical security in ways that are easy to miss, suggesting integrators can position themselves by addressing these gaps (Nov 23). This identifies a recurring, predictable window of heightened risk created by temporary workforce expansion and reduced security oversight during peak retail activity periods that creates exploitable security vulnerabilities.",
       "signalTypes": [
         "cross_topic",
         "velocity",
@@ -428,9 +416,9 @@
       "name": "Meta Muse privacy vulnerabilities enabling unauthorized access to private data and credentials",
       "status": "emerging",
       "firstDetected": "2026-11-25",
-      "lastActive": "2026-11-25",
+      "lastActive": "2026-11-26",
       "cooledAt": null,
-      "rationale": "Researchers demonstrated that a malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt (Nov 21). The same attack could reach credentials Muse stores for the user's connected accounts, revealing fundamental privacy architecture flaws in AI assistants that have access to sensitive user data and authentication credentials.",
+      "rationale": "Researchers demonstrated that a malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt (Nov 21). The same attack could reach credentials Muse stores for the user's connected accounts, revealing fundamental privacy architecture flaws in AI assistants that have access to sensitive user data and authentication credentials without proper authorization gates.",
       "signalTypes": [
         "claim_magnitude",
         "source_authority"
@@ -445,6 +433,31 @@
           "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
           "source": "The Hacker News",
           "publishedAt": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "id": "access-control-technician-shortage-creating-market-friction-",
+      "name": "Access control technician shortage creating market friction and integration challenges",
+      "status": "emerging",
+      "firstDetected": "2026-11-19",
+      "lastActive": "2026-11-26",
+      "cooledAt": null,
+      "rationale": "NAPCO VP of Sales Rob Etmans reported that dealers struggle to find technicians who understand access control systems, citing labor and awareness as real hurdles to market adoption (Nov 18). This signals a critical supply-side constraint in the physical security workforce that impacts project delivery and system deployment, particularly as access control infrastructure undergoes interoperability transformation and increased complexity requiring specialized technical knowledge.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/sponsored/napco-access-control-real-hurdles-labor-cost-and-awareness/621580/",
+          "title": "Access Control&#8217;s Real Hurdles: Labor, Cost and Awareness",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-18"
         }
       ]
     },
