@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-26T01:21:05.639Z",
+  "lastRunAt": "2026-11-27T01:19:16.728Z",
   "trends": [
     {
       "id": "ai-adoption-uncertainty-in-video-security-due-to-trust-and-a",
       "name": "AI adoption uncertainty in video security due to trust and accountability gaps",
       "status": "confirmed",
       "firstDetected": "2026-11-18",
-      "lastActive": "2026-11-26",
+      "lastActive": "2026-11-27",
       "cooledAt": null,
-      "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19). Multiple vendors are actively addressing this gap with new products and frameworks designed to increase user confidence in AI-driven security systems.",
+      "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19). This pattern continues with Southeastern University using DSPM to enable safer AI adoption (Nov 24), demonstrating widespread organizational concern about deploying AI without proper trust frameworks.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -57,9 +57,9 @@
       "name": "Access control system interoperability emerging as market demand forcing industry standardization",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-26",
+      "lastActive": "2026-11-27",
       "cooledAt": null,
-      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols. NAPCO addressing access control technician shortage (Nov 18) further confirms this is a priority area requiring industry alignment.",
+      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols. NAPCO addressing access control technician shortage (Nov 18) further confirms this is a priority area requiring industry alignment and market consolidation around open standards.",
       "signalTypes": [
         "source_authority",
         "cross_topic"
@@ -96,12 +96,132 @@
       ]
     },
     {
+      "id": "credential-exposure-in-developer-platforms-and-ai-coding-too",
+      "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
+      "status": "emerging",
+      "firstDetected": "2026-11-27",
+      "lastActive": "2026-11-27",
+      "cooledAt": null,
+      "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17), demonstrating developers and AI tools as systematic attack vectors for credential harvesting across multiple platforms. The GitGuardian report reveals that 64% of valid secrets discovered in 2022 still worked in January 2026, indicating widespread remediation delays (Nov 25). These independent incidents across multiple developer platforms combined with the credential persistence data signal a systemic risk in how development organizations handle credential lifecycle management.",
+      "signalTypes": [],
+      "articleCount": 3,
+      "sources": [
+        "The Hacker News",
+        "Dark Reading"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+          "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-18"
+        },
+        {
+          "url": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+          "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-17"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+          "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-25"
+        }
+      ]
+    },
+    {
+      "id": "ai-agents-creating-new-unauthorized-access-and-control-risks",
+      "name": "AI agents creating new unauthorized access and control risks requiring runtime enforcement",
+      "status": "emerging",
+      "firstDetected": "2026-11-23",
+      "lastActive": "2026-11-27",
+      "cooledAt": null,
+      "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. Vendors are approaching these access-control challenges differently, forcing CISOs to evaluate competing solutions (Nov 21). The trend reflects fundamental architectural mismatch between traditional access control models designed for human users and the runtime behavior of autonomous AI agents that can execute multiple actions based on natural language instructions.",
+      "signalTypes": [
+        "source_authority",
+        "cross_topic",
+        "velocity"
+      ],
+      "articleCount": 2,
+      "sources": [
+        "Dark Reading",
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+          "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
+          "source": "Dark Reading",
+          "publishedAt": "2026-11-21"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+          "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "id": "llm-integrated-mobile-malware-enabling-automated-credential-",
+      "name": "LLM-integrated mobile malware enabling automated credential harvesting at scale",
+      "status": "emerging",
+      "firstDetected": "2026-11-23",
+      "lastActive": "2026-11-27",
+      "cooledAt": null,
+      "rationale": "Bazuka, a previously unknown Android malware framework discovered by ThreatFabric (Nov 20), integrates large language models for victim management and control at scale, using fake screen overlays to hide credential theft and device control. The integration of LLM capabilities into mobile malware represents a significant escalation in automation and sophistication for targeting credential harvesting across potentially thousands of devices simultaneously, combining AI with traditional mobile exploit techniques for mass-scale attacks.",
+      "signalTypes": [
+        "claim_magnitude",
+        "velocity",
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "The Hacker News"
+      ],
+      "articles": [
+        {
+          "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+          "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+          "source": "The Hacker News",
+          "publishedAt": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "id": "holiday-seasonal-staffing-creating-critical-physical-securit",
+      "name": "Holiday seasonal staffing creating critical physical security vulnerability windows",
+      "status": "emerging",
+      "firstDetected": "2026-11-24",
+      "lastActive": "2026-11-27",
+      "cooledAt": null,
+      "rationale": "Security Sales editorial highlights that seasonal hiring during the holiday season puts pressure on physical security in ways that are easy to miss, suggesting integrators can position themselves by addressing these gaps (Nov 23). This identifies a recurring, predictable window of heightened risk created by temporary workforce expansion and reduced security oversight during peak retail activity periods that creates exploitable security vulnerabilities coinciding with high-value inventory periods.",
+      "signalTypes": [
+        "cross_topic",
+        "velocity",
+        "source_authority"
+      ],
+      "articleCount": 1,
+      "sources": [
+        "Security Sales"
+      ],
+      "articles": [
+        {
+          "url": "https://www.securitysales.com/insights/closing-security-gaps-holiday-season-staffing-surge/621649/",
+          "title": "Closing the Security Gaps During the Holiday Season Staffing Surge",
+          "source": "Security Sales",
+          "publishedAt": "2026-11-23"
+        }
+      ]
+    },
+    {
       "id": "cpu-side-channel-vulnerabilities-in-cloud-infrastructure-ena",
       "name": "CPU side-channel vulnerabilities in cloud infrastructure enabling cross-process data leakage",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-14",
       "lastActive": "2026-11-26",
-      "cooledAt": null,
+      "cooledAt": "2026-11-27",
       "rationale": "Linux KVM hypervisor flaw CVE-2026-99312 allowed researchers to read 127 GB of cloud server memory from inside a guest VM on shared infrastructure (Nov 20). AMD SEV-SNP VM escape attacks Mior and Skyfall allowed malicious hosts to read data inside protected virtual machines and modify VM memory (Nov 13). These independent hardware-level vulnerabilities disclosed against major cloud providers within days demonstrate an emerging pattern of isolation failures in cloud computing infrastructure affecting customer data confidentiality.",
       "signalTypes": [
         "source_authority",
@@ -142,10 +262,10 @@
     {
       "id": "third-party-software-supply-chain-vulnerabilities-enabling-h",
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
-      "status": "confirmed",
+      "status": "cooled",
       "firstDetected": "2026-09-29",
       "lastActive": "2026-11-26",
-      "cooledAt": null,
+      "cooledAt": "2026-11-27",
       "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17). These independent incidents across multiple developer platforms demonstrate developers and AI tools as systematic attack vectors for credential harvesting at scale affecting multiple organizations. The GitGuardian report also reveals that 64% of valid secrets discovered in 2022 still worked in January 2026, indicating widespread remediation delays.",
       "signalTypes": [],
       "articleCount": 24,
@@ -301,45 +421,12 @@
       ]
     },
     {
-      "id": "ai-agents-creating-new-unauthorized-access-and-control-risks",
-      "name": "AI agents creating new unauthorized access and control risks requiring runtime enforcement",
-      "status": "emerging",
-      "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-26",
-      "cooledAt": null,
-      "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. The Hacker News (Nov 13) presented a scenario where an AI agent receiving instruction injection could export sensitive records because its identity has access and tools allow the action. These independent analyses from security experts reveal a fundamental gap between traditional access control models and AI agent behavior in production environments.",
-      "signalTypes": [
-        "source_authority",
-        "cross_topic",
-        "velocity"
-      ],
-      "articleCount": 2,
-      "sources": [
-        "Dark Reading",
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
-          "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
-          "source": "Dark Reading",
-          "publishedAt": "2026-11-21"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
-          "title": "When an AI Agent Goes Wrong, Can You Stop It?",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-13"
-        }
-      ]
-    },
-    {
       "id": "state-sponsored-telecom-infrastructure-exploitation-for-sms-",
       "name": "State-sponsored telecom infrastructure exploitation for SMS 2FA interception and surveillance",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-16",
       "lastActive": "2026-11-26",
-      "cooledAt": null,
+      "cooledAt": "2026-11-27",
       "rationale": "A newly identified spying group named SilentAir used hacked equipment inside Asian mobile operators to intercept SMS 2FA codes and conduct surveillance, primarily targeting Taiwanese users, with attack sources discovered in at least six Asian countries (Nov 13). This sophisticated attack directly bypasses SMS-based authentication, a widely-deployed security mechanism, signaling a critical vulnerability in telecom infrastructure. The attack represents a nation-state capability to intercept security-critical communications.",
       "signalTypes": [
         "source_authority",
@@ -360,64 +447,12 @@
       ]
     },
     {
-      "id": "llm-integrated-mobile-malware-enabling-automated-credential-",
-      "name": "LLM-integrated mobile malware enabling automated credential harvesting at scale",
-      "status": "emerging",
-      "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-26",
-      "cooledAt": null,
-      "rationale": "Bazuka, a previously unknown Android malware framework discovered by ThreatFabric (Nov 20), integrates large language models for victim management and control at scale, using fake screen overlays to hide credential theft and device control. The integration of LLM capabilities into mobile malware represents a significant escalation in automation and sophistication for targeting credential harvesting across potentially thousands of devices simultaneously, combining AI with traditional mobile exploit techniques.",
-      "signalTypes": [
-        "claim_magnitude",
-        "velocity",
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "The Hacker News"
-      ],
-      "articles": [
-        {
-          "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-          "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-          "source": "The Hacker News",
-          "publishedAt": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "holiday-seasonal-staffing-creating-critical-physical-securit",
-      "name": "Holiday seasonal staffing creating critical physical security vulnerability windows",
-      "status": "emerging",
-      "firstDetected": "2026-11-24",
-      "lastActive": "2026-11-26",
-      "cooledAt": null,
-      "rationale": "Security Sales editorial highlights that seasonal hiring during the holiday season puts pressure on physical security in ways that are easy to miss, suggesting integrators can position themselves by addressing these gaps (Nov 23). This identifies a recurring, predictable window of heightened risk created by temporary workforce expansion and reduced security oversight during peak retail activity periods that creates exploitable security vulnerabilities.",
-      "signalTypes": [
-        "cross_topic",
-        "velocity",
-        "source_authority"
-      ],
-      "articleCount": 1,
-      "sources": [
-        "Security Sales"
-      ],
-      "articles": [
-        {
-          "url": "https://www.securitysales.com/insights/closing-security-gaps-holiday-season-staffing-surge/621649/",
-          "title": "Closing the Security Gaps During the Holiday Season Staffing Surge",
-          "source": "Security Sales",
-          "publishedAt": "2026-11-23"
-        }
-      ]
-    },
-    {
       "id": "meta-muse-privacy-vulnerabilities-enabling-unauthorized-acce",
       "name": "Meta Muse privacy vulnerabilities enabling unauthorized access to private data and credentials",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-25",
       "lastActive": "2026-11-26",
-      "cooledAt": null,
+      "cooledAt": "2026-11-27",
       "rationale": "Researchers demonstrated that a malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt (Nov 21). The same attack could reach credentials Muse stores for the user's connected accounts, revealing fundamental privacy architecture flaws in AI assistants that have access to sensitive user data and authentication credentials without proper authorization gates.",
       "signalTypes": [
         "claim_magnitude",
@@ -439,10 +474,10 @@
     {
       "id": "access-control-technician-shortage-creating-market-friction-",
       "name": "Access control technician shortage creating market friction and integration challenges",
-      "status": "emerging",
+      "status": "cooled",
       "firstDetected": "2026-11-19",
       "lastActive": "2026-11-26",
-      "cooledAt": null,
+      "cooledAt": "2026-11-27",
       "rationale": "NAPCO VP of Sales Rob Etmans reported that dealers struggle to find technicians who understand access control systems, citing labor and awareness as real hurdles to market adoption (Nov 18). This signals a critical supply-side constraint in the physical security workforce that impacts project delivery and system deployment, particularly as access control infrastructure undergoes interoperability transformation and increased complexity requiring specialized technical knowledge.",
       "signalTypes": [
         "source_authority",
