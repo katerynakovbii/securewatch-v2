@@ -1,14 +1,14 @@
 {
-  "lastRunAt": "2026-11-27T01:19:16.728Z",
+  "lastRunAt": "2026-11-28T00:52:27.769Z",
   "trends": [
     {
       "id": "ai-adoption-uncertainty-in-video-security-due-to-trust-and-a",
       "name": "AI adoption uncertainty in video security due to trust and accountability gaps",
       "status": "confirmed",
       "firstDetected": "2026-11-18",
-      "lastActive": "2026-11-27",
+      "lastActive": "2026-11-28",
       "cooledAt": null,
-      "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19). This pattern continues with Southeastern University using DSPM to enable safer AI adoption (Nov 24), demonstrating widespread organizational concern about deploying AI without proper trust frameworks.",
+      "rationale": "IQSIGHT report shows AI is the #1 video security investment priority but fewer than 10% of organizations are ready, with trust, proof and accountability identified as gatekeepers to adoption (Nov 17). A separate editorial emphasizes building trust in AI tools through guardrails and accountability mechanisms (Nov 17), and Resideo's launch of AI camera and software portal reflects the market push to address these gaps (Nov 19). Southeastern University using DSPM to enable safer AI adoption (Nov 24) demonstrates widespread organizational concern about deploying AI without proper trust frameworks.",
       "signalTypes": [
         "source_authority",
         "velocity",
@@ -57,9 +57,9 @@
       "name": "Access control system interoperability emerging as market demand forcing industry standardization",
       "status": "emerging",
       "firstDetected": "2026-11-20",
-      "lastActive": "2026-11-27",
+      "lastActive": "2026-11-28",
       "cooledAt": null,
-      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols. NAPCO addressing access control technician shortage (Nov 18) further confirms this is a priority area requiring industry alignment and market consolidation around open standards.",
+      "rationale": "Security Sales editorial states that people want interoperability in access control systems but it essentially doesn't exist yet (Nov 19). Allegion's vertically integrated solutions showcase breadth across ecosystem components (Nov 23), and AMAG and SIA celebrated 150 graduates of OSDP training program with 200 more in pipeline (Nov 20), signaling industry-wide standardization efforts around interoperability protocols. NAPCO addressing access control technician shortage (Nov 18) further confirms this is a priority area requiring industry alignment around open standards.",
       "signalTypes": [
         "source_authority",
         "cross_topic"
@@ -100,9 +100,9 @@
       "name": "Credential exposure in developer platforms and AI coding tools creating systemic risk",
       "status": "emerging",
       "firstDetected": "2026-11-27",
-      "lastActive": "2026-11-27",
+      "lastActive": "2026-11-28",
       "cooledAt": null,
-      "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17), demonstrating developers and AI tools as systematic attack vectors for credential harvesting across multiple platforms. The GitGuardian report reveals that 64% of valid secrets discovered in 2022 still worked in January 2026, indicating widespread remediation delays (Nov 25). These independent incidents across multiple developer platforms combined with the credential persistence data signal a systemic risk in how development organizations handle credential lifecycle management.",
+      "rationale": "Microsoft's agent-framework PyPI package was compromised to push a credential stealer (Nov 18), and Cursor's malicious Claude Code extension exposed credentials via compromised Fireworks API key (Nov 17), demonstrating developers and AI tools as systematic attack vectors for credential harvesting. The GitGuardian report reveals that 64% of valid secrets discovered in 2022 still worked in January 2026, indicating widespread remediation delays (Nov 25). These independent incidents across multiple developer platforms combined with credential persistence data signal systemic risk in how development organizations handle credential lifecycle management.",
       "signalTypes": [],
       "articleCount": 3,
       "sources": [
@@ -135,9 +135,9 @@
       "name": "AI agents creating new unauthorized access and control risks requiring runtime enforcement",
       "status": "emerging",
       "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-27",
+      "lastActive": "2026-11-28",
       "cooledAt": null,
-      "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. Vendors are approaching these access-control challenges differently, forcing CISOs to evaluate competing solutions (Nov 21). The trend reflects fundamental architectural mismatch between traditional access control models designed for human users and the runtime behavior of autonomous AI agents that can execute multiple actions based on natural language instructions.",
+      "rationale": "Dark Reading analysis (Nov 21) details how AI agents operating within enterprise systems create new access control challenges, as identity, runtime, and development controls must converge to keep agents within assigned tasks. Vendors are approaching these access-control challenges differently, forcing CISOs to evaluate competing solutions. The trend reflects fundamental architectural mismatch between traditional access control models designed for human users and the runtime behavior of autonomous AI agents that can execute multiple actions based on natural language instructions.",
       "signalTypes": [
         "source_authority",
         "cross_topic",
@@ -168,7 +168,7 @@
       "name": "LLM-integrated mobile malware enabling automated credential harvesting at scale",
       "status": "emerging",
       "firstDetected": "2026-11-23",
-      "lastActive": "2026-11-27",
+      "lastActive": "2026-11-28",
       "cooledAt": null,
       "rationale": "Bazuka, a previously unknown Android malware framework discovered by ThreatFabric (Nov 20), integrates large language models for victim management and control at scale, using fake screen overlays to hide credential theft and device control. The integration of LLM capabilities into mobile malware represents a significant escalation in automation and sophistication for targeting credential harvesting across potentially thousands of devices simultaneously, combining AI with traditional mobile exploit techniques for mass-scale attacks.",
       "signalTypes": [
@@ -194,7 +194,7 @@
       "name": "Holiday seasonal staffing creating critical physical security vulnerability windows",
       "status": "emerging",
       "firstDetected": "2026-11-24",
-      "lastActive": "2026-11-27",
+      "lastActive": "2026-11-28",
       "cooledAt": null,
       "rationale": "Security Sales editorial highlights that seasonal hiring during the holiday season puts pressure on physical security in ways that are easy to miss, suggesting integrators can position themselves by addressing these gaps (Nov 23). This identifies a recurring, predictable window of heightened risk created by temporary workforce expansion and reduced security oversight during peak retail activity periods that creates exploitable security vulnerabilities coinciding with high-value inventory periods.",
       "signalTypes": [
